@@ -1,0 +1,260 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.665649732,
+                61.133719199
+              ],
+              [
+                14.665288153,
+                61.134024331
+              ],
+              [
+                14.665682403,
+                61.134477132
+              ],
+              [
+                14.665611989,
+                61.13450751
+              ],
+              [
+                14.66390908,
+                61.134531463
+              ],
+              [
+                14.664872233,
+                61.133579762
+              ],
+              [
+                14.665649732,
+                61.133719199
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 5678,
+        "source_key": "f0741e9e-7e6c-8249-e4b0-0f5d249fbcbb",
+        "county_code": "20",
+        "designation": "ORSA STACKMORA 3:12>1",
+        "raw_properties": {
+          "block": "3",
+          "enhet": 12,
+          "trakt": "STACKMORA",
+          "etikett": "3:12>1",
+          "lanskod": "20",
+          "kommunkod": "2034",
+          "objekttyp": "fastighetsområde",
+          "kommunnamn": "ORSA",
+          "senastandrad": "2019-08-12T18:17:00Z",
+          "omradesnummer": 1,
+          "objektidentitet": "f0741e9e-7e6c-8249-e4b0-0f5d249fbcbb",
+          "registerenhetsreferens": "909a6a7c-8ac0-90ec-e040-ed8f66444c3f"
+        },
+        "source_dataset": "Lantmateriet Fastighetsindelning Direkt",
+        "designation_norm": "ORSA STACKMORA 3:12>1",
+        "municipality_code": "2034",
+        "municipality_name": "ORSA",
+        "source_updated_at": "2026-03-30T00:05:33.461672+02:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.664544963,
+                61.136740396
+              ],
+              [
+                14.664461696,
+                61.136553371
+              ],
+              [
+                14.664461767,
+                61.136443348
+              ],
+              [
+                14.664384098,
+                61.136224106
+              ],
+              [
+                14.664279415,
+                61.135985413
+              ],
+              [
+                14.664189033,
+                61.135748265
+              ],
+              [
+                14.664166844,
+                61.135576895
+              ],
+              [
+                14.664209089,
+                61.135407032
+              ],
+              [
+                14.664236515,
+                61.13535976
+              ],
+              [
+                14.664275705,
+                61.135292219
+              ],
+              [
+                14.664387169,
+                61.135185659
+              ],
+              [
+                14.664457797,
+                61.13513722
+              ],
+              [
+                14.66465251,
+                61.135017454
+              ],
+              [
+                14.664886612,
+                61.134914537
+              ],
+              [
+                14.665276871,
+                61.134748337
+              ],
+              [
+                14.665302072,
+                61.134737491
+              ],
+              [
+                14.666120137,
+                61.135453822
+              ],
+              [
+                14.666859266,
+                61.136182487
+              ],
+              [
+                14.666678187,
+                61.136227882
+              ],
+              [
+                14.664544963,
+                61.136740396
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 5679,
+        "source_key": "56b2c19a-c301-bcfe-7897-359c0de2a1b8",
+        "county_code": "20",
+        "designation": "ORSA STACKMORA 3:12>3",
+        "raw_properties": {
+          "block": "3",
+          "enhet": 12,
+          "trakt": "STACKMORA",
+          "etikett": "3:12>3",
+          "lanskod": "20",
+          "kommunkod": "2034",
+          "objekttyp": "fastighetsområde",
+          "kommunnamn": "ORSA",
+          "senastandrad": "2019-08-12T18:17:00Z",
+          "omradesnummer": 3,
+          "objektidentitet": "56b2c19a-c301-bcfe-7897-359c0de2a1b8",
+          "registerenhetsreferens": "909a6a7c-8ac0-90ec-e040-ed8f66444c3f"
+        },
+        "source_dataset": "Lantmateriet Fastighetsindelning Direkt",
+        "designation_norm": "ORSA STACKMORA 3:12>3",
+        "municipality_code": "2034",
+        "municipality_name": "ORSA",
+        "source_updated_at": "2026-03-30T00:05:33.461672+02:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.663559524,
+                61.13487685
+              ],
+              [
+                14.663876279,
+                61.134563881
+              ],
+              [
+                14.665535363,
+                61.134540547
+              ],
+              [
+                14.664543441,
+                61.134968362
+              ],
+              [
+                14.664338691,
+                61.135094316
+              ],
+              [
+                14.664259572,
+                61.135148579
+              ],
+              [
+                14.664136665,
+                61.135266072
+              ],
+              [
+                14.664064922,
+                61.135389697
+              ],
+              [
+                14.663559524,
+                61.13487685
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 5680,
+        "source_key": "845bb3ed-da12-4187-33d8-c601c6de5d94",
+        "county_code": "20",
+        "designation": "ORSA STACKMORA 3:12>2",
+        "raw_properties": {
+          "block": "3",
+          "enhet": 12,
+          "trakt": "STACKMORA",
+          "etikett": "3:12>2",
+          "lanskod": "20",
+          "kommunkod": "2034",
+          "objekttyp": "fastighetsområde",
+          "kommunnamn": "ORSA",
+          "senastandrad": "2019-08-12T18:17:00Z",
+          "omradesnummer": 2,
+          "objektidentitet": "845bb3ed-da12-4187-33d8-c601c6de5d94",
+          "registerenhetsreferens": "909a6a7c-8ac0-90ec-e040-ed8f66444c3f"
+        },
+        "source_dataset": "Lantmateriet Fastighetsindelning Direkt",
+        "designation_norm": "ORSA STACKMORA 3:12>2",
+        "municipality_code": "2034",
+        "municipality_name": "ORSA",
+        "source_updated_at": "2026-03-30T00:05:33.461672+02:00"
+      }
+    }
+  ]
+}

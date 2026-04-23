@@ -1,0 +1,12 @@
+{
+  "output": "data/orsa_stackmora_3_12_tower_site.geojson",
+  "metadata": "data/orsa_stackmora_3_12_tower_site_metadata.json",
+  "workarea": "data/orsa_stackmora_3_12_workarea.geojson",
+  "dem": "data/orsa_stackmora_3_12_markhojd.tif",
+  "tower_site_rule": "Use the highest valid DEM cell inside the property workarea as the tower anchor.",
+  "longitude": 14.665000888999685,
+  "latitude": 61.133607498854104,
+  "elevation_m": 250.89999389648438,
+  "sweref99_tm_easting": 481957.5,
+  "sweref99_tm_northing": 6777715.5
+}

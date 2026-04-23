@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="sv">
+    <id>https://api.lantmateriet.se/tyngdkraft/atom/v1/</id>
+    <title>Tyngdkraft Nedladdning</title>
+    <subtitle>Nedladdningstjänst för tyngdkraft med fördefinierade datamängder</subtitle>
+    <updated>2025-11-12T21:08:09+01:00</updated>
+    <link href="https://api.lantmateriet.se/tyngdkraft/atom/v1/" rel="self" type="application/atom+xml" hreflang="sv" title="Detta dokument"/>
+    <rights/>
+    <author/>
+    <entry>
+        <id>https://api.lantmateriet.se/tyngdkraft/atom/v1/inspire/ge_gp</id>
+        <title>Inspire Geology Geophysics</title>
+        <updated>2025-11-12T21:06:04+01:00</updated>
+        <link href="https://api.lantmateriet.se/tyngdkraft/atom/v1/inspire/ge_gp" rel="alternate" type="application/atom+xml" hreflang="sv" title="Inspire Geology Geophysics"/>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/tyngdkraft/atom/v1/text/ge_gp</id>
+        <title>Tyngdkraftspunkter i textformat</title>
+        <updated>2025-11-12T21:08:09+01:00</updated>
+        <link href="https://api.lantmateriet.se/tyngdkraft/atom/v1/text/ge_gp" rel="alternate" type="application/atom+xml" hreflang="sv" title="Tyngdkraftspunkter i textformat"/>
+    </entry>
+</feed>

@@ -1,0 +1,410 @@
+[
+  {
+    "source": "v1.1_inspire_bu",
+    "title": "Inspire Buildings, Orsa (2034)",
+    "id": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu/2034",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu/2034",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Buildings, Orsa (2034)"
+      },
+      {
+        "href": "https://www.geodata.se/geodataportalen/srv/swe/csw-inspire?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&id=cd8f3195-fc4e-40f5-941c-5d0d449fb09e&outputSchema=csw:IsoRecord",
+        "rel": "describedby",
+        "type": "application/xml",
+        "title": "Metadata för datamängden Inspire Buildings"
+      },
+      {
+        "href": "https://www.geodata.se/geodataportalen/GetMetaDataById?id=cd8f3195-fc4e-40f5-941c-5d0d449fb09e",
+        "rel": "describedby",
+        "type": "text/html",
+        "title": "Metadata för datamängden Inspire Buildings (HTML)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Inspire Buildings, Orsa (2034)",
+    "updated": "2024-10-11T06:00:49+02:00"
+  },
+  {
+    "source": "v1.1_inspire_lc",
+    "title": "Inspire Land Cover, Orsa (2034)",
+    "id": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc/2034",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc/2034",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Land Cover, Orsa (2034)"
+      },
+      {
+        "href": "https://www.geodata.se/geodataportalen/srv/swe/csw-inspire?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&id=3542ba2c-db3e-409b-b357-723864763373&outputSchema=csw:IsoRecord",
+        "rel": "describedby",
+        "type": "application/xml",
+        "title": "Metadata för datamängden Inspire Land Cover"
+      },
+      {
+        "href": "https://www.geodata.se/geodataportalen/GetMetaDataById?id=3542ba2c-db3e-409b-b357-723864763373",
+        "rel": "describedby",
+        "type": "text/html",
+        "title": "Metadata för datamängden Inspire Land Cover (HTML)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Inspire Land Cover, Orsa (2034)",
+    "updated": "2025-09-10T23:02:18+02:00"
+  },
+  {
+    "source": "v1_inspire_gn",
+    "title": "Inspire Geographical Names, Orsa (2034)",
+    "id": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn/2034",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn/2034",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Geographical Names, Orsa (2034)"
+      },
+      {
+        "href": "https://www.geodata.se/geodataportalen/srv/swe/csw-inspire?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&id=21f64a74-ef54-42db-88e9-adb9bb533dc8&outputSchema=csw:IsoRecord",
+        "rel": "describedby",
+        "type": "application/xml",
+        "title": "Metadata för datamängden Inspire Geographical Names"
+      },
+      {
+        "href": "https://www.geodata.se/geodataportalen/GetMetaDataById?id=21f64a74-ef54-42db-88e9-adb9bb533dc8",
+        "rel": "describedby",
+        "type": "text/html",
+        "title": "Metadata för datamängden Inspire Geographical Names (HTML)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Inspire Geographical Names, Orsa (2034)",
+    "updated": "2025-09-09T23:05:56+02:00"
+  },
+  {
+    "source": "v1.1_inspire_au",
+    "title": "Inspire Administrative Units, Sverige (sverige)",
+    "id": "https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au/sverige",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au/sverige",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Administrative Units, Sverige (sverige)"
+      },
+      {
+        "href": "https://www.geodata.se/geodataportalen/srv/swe/csw-inspire?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&id=1f185d81-c699-48e3-9ada-c9e1ae297557&outputSchema=csw:IsoRecord",
+        "rel": "describedby",
+        "type": "application/xml",
+        "title": "Metadata för datamängden Inspire Administrative Units"
+      },
+      {
+        "href": "https://www.geodata.se/geodataportalen/GetMetaDataById?id=1f185d81-c699-48e3-9ada-c9e1ae297557",
+        "rel": "describedby",
+        "type": "text/html",
+        "title": "Metadata för datamängden Inspire Administrative Units (HTML)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Inspire Administrative Units, Sverige (sverige)",
+    "updated": "2025-09-09T08:12:29+02:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Torneälven (1000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/1000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/1000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Torneälven (1000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Torneälven (1000)",
+    "updated": "2026-01-24T16:05:12+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Kusten (1112)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/1112",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/1112",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Kusten (1112)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Kusten (1112)",
+    "updated": "2026-01-26T21:06:49+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Keräsjoki (2000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/2000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/2000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Keräsjoki (2000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Keräsjoki (2000)",
+    "updated": "2026-01-23T20:47:48+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Sangisälven (3000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/3000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/3000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Sangisälven (3000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Sangisälven (3000)",
+    "updated": "2026-01-23T20:51:45+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Kalixälven (4000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/4000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/4000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Kalixälven (4000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Kalixälven (4000)",
+    "updated": "2026-01-23T22:49:50+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Töreälven (5000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/5000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/5000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Töreälven (5000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Töreälven (5000)",
+    "updated": "2026-01-23T20:49:09+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Vitån (6000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/6000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/6000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Vitån (6000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Vitån (6000)",
+    "updated": "2026-01-24T15:24:08+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Råneälven (7000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/7000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/7000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Råneälven (7000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Råneälven (7000)",
+    "updated": "2026-01-23T20:58:51+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Altersundet (8000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/8000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/8000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Altersundet (8000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Altersundet (8000)",
+    "updated": "2026-01-23T20:46:44+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyp",
+    "title": "Svensk vattenstandard fysiskt vatten, Luleälven (9000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/9000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/9000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten, Luleälven (9000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Luleälven (9000)",
+    "updated": "2026-01-24T16:07:55+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Torneälven (1000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/1000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/1000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Torneälven (1000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Torneälven (1000)",
+    "updated": "2026-01-24T22:26:20+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Kusten (1112)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/1112",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/1112",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Kusten (1112)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Kusten (1112)",
+    "updated": "2026-01-24T22:27:30+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Keräsjoki (2000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/2000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/2000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Keräsjoki (2000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Keräsjoki (2000)",
+    "updated": "2026-01-24T22:08:27+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Sangisälven (3000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/3000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/3000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Sangisälven (3000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Sangisälven (3000)",
+    "updated": "2026-01-24T22:08:39+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Kalixälven (4000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/4000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/4000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Kalixälven (4000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Kalixälven (4000)",
+    "updated": "2026-01-24T22:13:55+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Töreälven (5000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/5000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/5000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Töreälven (5000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Töreälven (5000)",
+    "updated": "2026-01-24T22:08:31+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Vitån (6000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/6000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/6000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Vitån (6000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Vitån (6000)",
+    "updated": "2026-01-24T22:26:23+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Råneälven (7000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/7000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/7000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Råneälven (7000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Råneälven (7000)",
+    "updated": "2026-01-24T22:08:50+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Altersundet (8000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/8000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/8000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Altersundet (8000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Altersundet (8000)",
+    "updated": "2026-01-24T22:08:24+01:00"
+  },
+  {
+    "source": "v1.1_svs_hyn",
+    "title": "Svensk vattenstandard logiskt nätverk, Luleälven (9000)",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/9000",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn/9000",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk, Luleälven (9000)"
+      }
+    ],
+    "summary": "Fördefinierad datamängd Svensk vattenstandard logiskt nätverk, huvudavrinningsområde Luleälven (9000)",
+    "updated": "2026-01-24T22:24:48+01:00"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "project": "Millbygard",
+  "source": "Lantmateriet Topografiska kartor",
+  "delivery_folder": "C:\\Users\\jimmy\\Desktop\\Kartor\\29b34f2e-9bcf-4a40-b62d-bd487c94cd43",
+  "crs_working": "EPSG:3006",
+  "buffer_m": 2000.0,
+  "clip_bbox_3006": {
+    "minx": 479880.59801421396,
+    "miny": 6775712.4459969,
+    "maxx": 484059.04901181435,
+    "maxy": 6780064.58596693
+  },
+  "building_focus_buffer_m": 10,
+  "outputs": {
+    "roads": {
+      "feature_count": 447,
+      "gpkg_3006": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_vagar_2km_3006.gpkg",
+      "geojson_wgs84": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_vagar_2km.geojson"
+    },
+    "land": {
+      "feature_count": 976,
+      "gpkg_3006": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_mark_2km_3006.gpkg",
+      "geojson_wgs84": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_mark_2km.geojson"
+    },
+    "buildings": {
+      "feature_count": 469,
+      "gpkg_3006": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_byggnadsverk_2km_3006.gpkg",
+      "geojson_wgs84": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_byggnadsverk_2km.geojson"
+    },
+    "buildings_workarea": {
+      "feature_count": 1,
+      "geojson_wgs84": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\orsa_stackmora_3_12_byggnader.geojson"
+    },
+    "hydro": {
+      "feature_count": 71,
+      "gpkg_3006": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_hydrografi_2km_3006.gpkg",
+      "geojson_wgs84": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_hydrografi_2km.geojson"
+    },
+    "text": {
+      "feature_count": 22,
+      "gpkg_3006": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_text_2km_3006.gpkg",
+      "geojson_wgs84": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_text_2km.geojson"
+    },
+    "preview_svg": "C:\\Users\\jimmy\\Desktop\\Millbygård\\04_references\\topografi\\orsa_stackmora_3_12_topografi_mark_vagar_2km_preview.svg"
+  },
+  "summaries": {
+    "roads_objekttyp": {
+      "Småväg enkel standard": 115,
+      "Landsväg liten": 115,
+      "Lokalgata liten": 69,
+      "Traktorväg": 50,
+      "Gångstig": 42,
+      "Landsväg": 20,
+      "Cykelväg": 11,
+      "Småväg": 8,
+      "Huvudgata": 7,
+      "Elljusspår": 7,
+      "Låst grind eller bom": 3
+    },
+    "land_objekttyp": {
+      "Odlingsmarksgräns": 307,
+      "Öppen markgräns": 199,
+      "Öppen mark": 126,
+      "Åker": 111,
+      "Barr- och blandskog": 54,
+      "Bebyggelseområdesgräns": 50,
+      "Strandlinje, vattendragsyta": 42,
+      "Industri- och handelsbebyggelsegräns": 25,
+      "Sankmark, fast": 18,
+      "Industri- och handelsbebyggelse": 9,
+      "Vattendragsyta": 9,
+      "Låg bebyggelse": 7,
+      "Strandlinje, sjö": 7,
+      "Stängning": 6,
+      "Sjö": 3,
+      "Sankmark, våt": 3
+    },
+    "buildings_objekttyp": {
+      "Byggnad, storleksklass 1": 434,
+      "Byggnad, storleksklass 3": 11,
+      "Industri": 7,
+      "Byggnad, storleksklass 2": 7,
+      "Komplementbyggnad": 5,
+      "Skorsten": 3,
+      "Samhällsfunktion": 1,
+      "Mast": 1
+    },
+    "hydro_objekttyp": {
+      "Vattendrag": 54,
+      "Strömriktningspil, liten": 15,
+      "Dammbyggnad": 1,
+      "Dammbyggnad, punkt": 1
+    },
+    "text_text": {}
+  },
+  "notes": [
+    "This is the preferred first draft for roads and land around Millbygard.",
+    "Use these layers before the OpenStreetMap fallback.",
+    "Later refine with newer Topografi 10 or other product-specific deliveries if needed."
+  ]
+}

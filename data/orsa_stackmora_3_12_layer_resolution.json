@@ -1,0 +1,143 @@
+{
+  "project": "Millbygard",
+  "designation": "ORSA STACKMORA 3:12 (1)(2)(3)",
+  "technicalDesignation": "ORSA STACKMORA 3:12>1..3",
+  "bboxWgs84": [
+    14.663559524,
+    61.133579762,
+    14.666859266,
+    61.136740396
+  ],
+  "resolvedItems": {
+    "ortofoto": {
+      "collection": "orto-q2-2024",
+      "id": "o67775_4800_25_mr24",
+      "dataHref": "https://dl1.lantmateriet.se/bild/data/orto/se0_16m_sweref/2024_Q2/o67775_4800_25_mr24.tif"
+    },
+    "markhojd": {
+      "collection": "mhm-67_4",
+      "id": "677_48_7500",
+      "dataHref": "https://dl1.lantmateriet.se/hojd/data/grid1m/67_4/55/67775_4800_25.tif"
+    },
+    "byggnader": {
+      "collection": "byggnader",
+      "id": "2034",
+      "dataHref": "https://dl1.lantmateriet.se/byggnadsverk/byggnad_kn2034.zip"
+    },
+    "fastighet": {
+      "collection": "fastighetsindelning",
+      "id": "2034",
+      "dataHref": "https://dl1.lantmateriet.se/fastighet/fastighetsindelning_kn2034.zip"
+    }
+  },
+  "publicDownloads": {
+    "ortofoto_metadata": {
+      "ok": true,
+      "path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\01_data_raw\\ortofoto\\orsa_stackmora_3_12_ortofoto_metadata.json",
+      "bytes": 79011
+    },
+    "ortofoto_thumbnail": {
+      "ok": true,
+      "path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\01_data_raw\\ortofoto\\orsa_stackmora_3_12_ortofoto_thumbnail.jpg",
+      "bytes": 15075
+    },
+    "markhojd_metadata": {
+      "ok": true,
+      "path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\01_data_raw\\markhojd\\orsa_stackmora_3_12_markhojd_metadata.json",
+      "bytes": 4061
+    },
+    "markhojd_thumbnail": {
+      "ok": true,
+      "path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\01_data_raw\\markhojd\\orsa_stackmora_3_12_markhojd_thumbnail.jpg",
+      "bytes": 10258
+    }
+  },
+  "rawAssetProbe": {
+    "ortofoto": [
+      {
+        "mode": "none",
+        "url": "https://dl1.lantmateriet.se/bild/data/orto/se0_16m_sweref/2024_Q2/o67775_4800_25_mr24.tif",
+        "status": 401,
+        "contentType": "text/html"
+      },
+      {
+        "mode": "basic",
+        "url": "https://dl1.lantmateriet.se/bild/data/orto/se0_16m_sweref/2024_Q2/o67775_4800_25_mr24.tif",
+        "status": 206,
+        "contentType": "binary/octet-stream"
+      },
+      {
+        "mode": "bearer",
+        "url": "https://dl1.lantmateriet.se/bild/data/orto/se0_16m_sweref/2024_Q2/o67775_4800_25_mr24.tif",
+        "status": 401,
+        "contentType": "text/html"
+      }
+    ],
+    "markhojd": [
+      {
+        "mode": "none",
+        "url": "https://dl1.lantmateriet.se/hojd/data/grid1m/67_4/55/67775_4800_25.tif",
+        "status": 401,
+        "contentType": "text/html"
+      },
+      {
+        "mode": "basic",
+        "url": "https://dl1.lantmateriet.se/hojd/data/grid1m/67_4/55/67775_4800_25.tif",
+        "status": 206,
+        "contentType": "binary/octet-stream"
+      },
+      {
+        "mode": "bearer",
+        "url": "https://dl1.lantmateriet.se/hojd/data/grid1m/67_4/55/67775_4800_25.tif",
+        "status": 401,
+        "contentType": "text/html"
+      }
+    ],
+    "byggnader": [
+      {
+        "mode": "none",
+        "url": "https://dl1.lantmateriet.se/byggnadsverk/byggnad_kn2034.zip",
+        "status": 401,
+        "contentType": "text/html"
+      },
+      {
+        "mode": "basic",
+        "url": "https://dl1.lantmateriet.se/byggnadsverk/byggnad_kn2034.zip",
+        "status": 206,
+        "contentType": "binary/octet-stream"
+      },
+      {
+        "mode": "bearer",
+        "url": "https://dl1.lantmateriet.se/byggnadsverk/byggnad_kn2034.zip",
+        "status": 401,
+        "contentType": "text/html"
+      }
+    ],
+    "fastighet": [
+      {
+        "mode": "none",
+        "url": "https://dl1.lantmateriet.se/fastighet/fastighetsindelning_kn2034.zip",
+        "status": 401,
+        "contentType": "text/html"
+      },
+      {
+        "mode": "basic",
+        "url": "https://dl1.lantmateriet.se/fastighet/fastighetsindelning_kn2034.zip",
+        "status": 403,
+        "contentType": "text/html"
+      },
+      {
+        "mode": "bearer",
+        "url": "https://dl1.lantmateriet.se/fastighet/fastighetsindelning_kn2034.zip",
+        "status": 401,
+        "contentType": "text/html"
+      }
+    ]
+  },
+  "downloadSelection": {
+    "layers": [
+      "byggnader"
+    ],
+    "noDownload": false
+  }
+}

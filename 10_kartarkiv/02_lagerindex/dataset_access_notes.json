@@ -1,0 +1,14 @@
+{
+  "updated": "2026-04-13",
+  "notes": [
+    "Atom root feeds for the avblockerade Inspire download APIs returned 200.",
+    "Orsa child feeds for Byggnad, Marktacke and Ortnamn returned 200 and exposed EPSG:3006 ZIP dataset URLs.",
+    "Direct dataset ZIP download for Byggnad Orsa EPSG:3006 returned 401/403 with the current .env authentication attempts.",
+    "Conclusion: the API index is accessible, but actual dataset ZIP download still needs the correct token/scope/subscription key or a portal download path."
+  ],
+  "tested_dataset": {
+    "name": "Inspire Buildings, Orsa (2034) [EPSG:3006, GML]",
+    "url": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu/2034/dataset?srs=3006&format=application/zip",
+    "result_summary": "401/403 on direct ZIP download with current authentication attempts"
+  }
+}

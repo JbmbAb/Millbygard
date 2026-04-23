@@ -1,0 +1,164 @@
+{
+  "project": "Millbygard",
+  "note": "Order inventory copied from Geotorget on 2026-04-13. Email address intentionally omitted.",
+  "orders": [
+    {
+      "case_number": "LM2026/051785",
+      "product": "Markhöjdmodell Nedladdning, grid 50+",
+      "scope": "Land: Sverige",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 16:45",
+      "millbygard_use": "Coarse 50 m elevation support. Local Orsa extraction already created from the Kartor delivery."
+    },
+    {
+      "case_number": "LM2026/051784",
+      "product": "Laserdata Nedladdning, skog",
+      "scope": "Län: 20 Dalarnas län +1st",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 16:45",
+      "millbygard_use": "Optional detailed point cloud. Extract only the Orsa/Stackmora tile, not the full delivery."
+    },
+    {
+      "case_number": "LM2026/051783",
+      "product": "Ortnamn Nedladdning, vektor",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "Useful for labels and nearby place-name context."
+    },
+    {
+      "case_number": "LM2026/051692",
+      "product": "Kommun, Län och Rike Nedladdning",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "Administrative boundaries. Low priority for the Minecraft build."
+    },
+    {
+      "case_number": "LM2026/051691",
+      "product": "Kommun, Län och Rike Direkt",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "API/direct variant of administrative boundaries. Low priority."
+    },
+    {
+      "case_number": "LM2026/051690",
+      "product": "Topografi 10 Nedladdning, vektor",
+      "scope": "Land: Sverige",
+      "status": "Behandlas",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "Most relevant topographic vector dataset if/when delivery completes. Use for detailed roads, water, land cover and structures."
+    },
+    {
+      "case_number": "LM2026/051689",
+      "product": "Geotorget nedladdning",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "Download API/order access helper. Not a geodata layer."
+    },
+    {
+      "case_number": "LM2026/051688",
+      "product": "Referens Uppslag Adress",
+      "status": "Behandlas",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "Address lookup reference. Usually not needed for terrain/world build."
+    },
+    {
+      "case_number": "LM2026/051687",
+      "product": "Registerbeteckning Direkt",
+      "status": "Behandlas",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "Property designation lookup. Useful only if live property lookup is needed."
+    },
+    {
+      "case_number": "LM2026/051686",
+      "product": "Topografi 1M Nedladdning, vektor",
+      "scope": "Land: Sverige",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "Very generalized national context. Not useful for farm-scale placement."
+    },
+    {
+      "case_number": "LM2026/051685",
+      "product": "Topografi 250 Nedladdning, vektor",
+      "scope": "Land: Sverige",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "Regional overview context. Low priority for farm-scale placement."
+    },
+    {
+      "case_number": "LM2026/051684",
+      "product": "Topografi 50 Nedladdning, vektor",
+      "scope": "Land: Sverige",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 14:44",
+      "millbygard_use": "Broader topographic context. Less detailed than Topografi 10."
+    },
+    {
+      "case_number": "LM2026/051653",
+      "product": "Marktäcke Nedladdning, vektor",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 14:11",
+      "millbygard_use": "Potentially useful for land cover. Compare with Topografi 10 mark layer before using."
+    },
+    {
+      "case_number": "LM2026/051651",
+      "product": "Markhöjdmodell Nedladdning, grid 50+",
+      "scope": "Land: Sverige",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 14:11",
+      "millbygard_use": "Earlier duplicate of grid 50+ delivery."
+    },
+    {
+      "case_number": "LM2026/051650",
+      "product": "Ythöjdmodell Nedladdning, från flygbilder i färg",
+      "scope": "Indexrutor 1 st",
+      "status": "Mottagen lokalt / nyttjad",
+      "ordered_at": "2026-04-13 13:17",
+      "status_updated_at": "2026-04-16",
+      "millbygard_use": "Unpacked in Kartor, raw zip moved to 01_data_raw/ythojd, clipped DSM/trueortho/class/above-ground outputs created."
+    },
+    {
+      "case_number": "LM2026/051601",
+      "product": "Markhöjdmodell Nedladdning",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 13:17",
+      "millbygard_use": "Main terrain source. Local 1 m TIFF exists in data/orsa_stackmora_3_12_markhojd.tif."
+    },
+    {
+      "case_number": "LM2026/051599",
+      "product": "Topografisk webbkarta Visning, översiktlig",
+      "status": "Lyckad",
+      "ordered_at": "2026-04-13 13:17",
+      "millbygard_use": "Viewing/background service only. Useful in QGIS, not as local build data."
+    },
+    {
+      "case_number": "LM2026/051598",
+      "product": "Byggnad nedladdning, vektor",
+      "status": "Lyckad / AVSLUTAD",
+      "ordered_at": "2026-04-13 13:17",
+      "status_updated_at": "2026-04-16 10:58",
+      "millbygard_use": "Downloaded to 01_data_raw/byggnader/byggnader.zip and clipped to data/orsa_stackmora_3_12_byggnader.geojson."
+    },
+    {
+      "case_number": "LM2026/051597",
+      "product": "Fastighetsindelning nedladdning, vektor",
+      "status": "Behandlas",
+      "ordered_at": "2026-04-13 13:17",
+      "millbygard_use": "Useful support layer; local fastighet GPKG is still missing."
+    },
+    {
+      "case_number": "LM2026/051593",
+      "product": "Ortofoto Nedladdning",
+      "status": "Lyckad",
+      "ordered_at": "2026-03-07 21:21",
+      "millbygard_use": "High priority visual reference; raw highres TIFF and clipped local ortofoto TIFF are downloaded."
+    }
+  ],
+  "priority_for_millbygard": [
+    "Ortofoto Nedladdning",
+    "Byggnad nedladdning, vektor",
+    "Fastighetsindelning nedladdning, vektor",
+    "Topografi 10 Nedladdning, vektor",
+    "Ythöjdmodell Nedladdning, från flygbilder i färg",
+    "Laserdata Nedladdning, skog"
+  ]
+}

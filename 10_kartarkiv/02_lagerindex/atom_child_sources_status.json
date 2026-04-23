@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/atom+xml",
+    "bytes": 500646,
+    "entry_count": 290,
+    "millbygard_hint_count": 1
+  },
+  {
+    "url": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/atom+xml",
+    "bytes": 503163,
+    "entry_count": 290,
+    "millbygard_hint_count": 1
+  },
+  {
+    "url": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/atom+xml",
+    "bytes": 512467,
+    "entry_count": 290,
+    "millbygard_hint_count": 1
+  },
+  {
+    "url": "https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/atom+xml",
+    "bytes": 3584,
+    "entry_count": 1,
+    "millbygard_hint_count": 0
+  },
+  {
+    "url": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/atom+xml",
+    "bytes": 153560,
+    "entry_count": 123,
+    "millbygard_hint_count": 0
+  },
+  {
+    "url": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/atom+xml",
+    "bytes": 132777,
+    "entry_count": 123,
+    "millbygard_hint_count": 0
+  }
+]

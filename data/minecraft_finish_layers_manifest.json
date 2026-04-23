@@ -1,0 +1,54 @@
+{
+  "farm_center_3006": {
+    "x": 481956.5929870605,
+    "y": 6777819.770996093
+  },
+  "minecraft_center": {
+    "x": 360,
+    "y": 80,
+    "z": -160
+  },
+  "radial_lens": {
+    "inner_radius_m": 80.0,
+    "transition_radius_m": 140.0,
+    "context_radius_m": 265.0,
+    "display_radius_inner_blocks": 320,
+    "display_radius_transition_blocks": 470,
+    "display_radius_context_blocks": 595
+  },
+  "sources": {
+    "property": "data\\orsa_stackmora_3_12_workarea.geojson",
+    "split_property": "data\\orsa_stackmora_3_12_split.geojson",
+    "buildings": "data\\orsa_stackmora_3_12_byggnader.geojson",
+    "tower": "data\\orsa_stackmora_3_12_tower_site.geojson",
+    "photos": "output\\foton_geotaggar_alla.geojson",
+    "photo_directions": "output\\foton_geotaggar_senaste_80.geojson",
+    "roads": "data\\topografi\\orsa_stackmora_3_12_topografi_vagar.geojson",
+    "hydro": "data\\topografi\\orsa_stackmora_3_12_topografi_hydrografi_2km.geojson",
+    "markhojd": "data\\orsa_stackmora_3_12_markhojd.tif"
+  },
+  "detail_80m_ring": 112,
+  "transition_140m_ring": 164,
+  "context_coverage_ring": 208,
+  "master_property_boundary_blocks": 3529,
+  "split_property_boundary_blocks": 70,
+  "topografi_road_blocks": 2134,
+  "groundwater_hydro_cue_blocks": 35,
+  "official_building_footprint_blocks": 828,
+  "official_building_features": 5,
+  "height_anchor_points": 33,
+  "height_min_m": 218.72,
+  "height_max_m": 247.6,
+  "tower_marker_x": 364,
+  "tower_marker_z": 248,
+  "tower_elevation_m": 250.9,
+  "photo_points": 173,
+  "photo_direction_features": 80,
+  "photo_direction_blocks": 1964,
+  "total_unique_blocks": 9267,
+  "output_functions": [
+    "MinecraftServer\\world\\datapacks\\millbygard\\data\\millbygard\\functions\\farm4_data_overlay.mcfunction",
+    "MinecraftServer\\world\\datapacks\\millbygard\\data\\millbygard\\functions\\farm4_complete.mcfunction"
+  ],
+  "no_water_blocks": true
+}

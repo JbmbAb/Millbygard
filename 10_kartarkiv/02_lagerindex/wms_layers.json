@@ -1,0 +1,962 @@
+[
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.OrthoimageCoverage",
+    "title": "orthoimage coverage",
+    "abstract": "OrthoimageCoverage"
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_60",
+    "title": "Ref. år 1960 ortofoton, 0,5 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_75",
+    "title": "Ref. år 1975 ortofoton, 0,5 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_1993",
+    "title": "Ortofoto 1993",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_1993",
+    "title": "1993 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_1994",
+    "title": "Ortofoto 1994",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_1994",
+    "title": "1994 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_1995",
+    "title": "Ortofoto 1995",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_1995",
+    "title": "1995 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_1996",
+    "title": "Ortofoto 1996",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_1996",
+    "title": "1996 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_1997",
+    "title": "Ortofoto 1997",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_1997",
+    "title": "1997 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_1998",
+    "title": "Ortofoto 1998",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_1998",
+    "title": "1998 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_1999",
+    "title": "Ortofoto 1999",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_1999",
+    "title": "1999 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_2000",
+    "title": "Ortofoto 2000",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_2000",
+    "title": "2000 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_2001",
+    "title": "Ortofoto 2001",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_2001",
+    "title": "2001 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_2002",
+    "title": "Ortofoto 2002",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_2002",
+    "title": "2002 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_color_2002",
+    "title": "2002 ortofoton, 0,5 m, färg",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_2003",
+    "title": "Ortofoto 2003",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_2003",
+    "title": "2003 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_color_2003",
+    "title": "2003 ortofoton, 0,5 m, färg",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_ir_2003",
+    "title": "2003 ortofoton, 0,5 m, ir",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_2004",
+    "title": "Ortofoto 2004",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_2004",
+    "title": "2004 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_color_2004",
+    "title": "2004 ortofoton, 0,5 m, färg",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_ir_2004",
+    "title": "2004 ortofoton, 0,5 m, ir",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "Ortho_2005",
+    "title": "Ortofoto 2005",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_bw_2005",
+    "title": "2005 ortofoton, 1 m, sv_v",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_color_2005",
+    "title": "2005 ortofoton, 0,5 m, färg",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_ir_2005",
+    "title": "2005 ortofoton, 0,5 m, ir",
+    "abstract": null
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.MosaicElement",
+    "title": "mosaic element",
+    "abstract": "MosaicElement"
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_60_meta",
+    "title": "Ref. år 1960 flygår",
+    "abstract": "Årtalsredovisning av Lantmäteriets ortofoton för perioden runt 1960"
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Histortho_75_meta",
+    "title": "Ref. år 1975 flygår",
+    "abstract": "Årtalsredovisning av Lantmäteriets ortofoton för perioden runt 1975"
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Seamline_60",
+    "title": "Ref. år 1960 bildsömmar",
+    "abstract": "Lantmäteriets bildssömmar hist.ortofoton runt 1960"
+  },
+  {
+    "source_id": "lantmateriet_historiska_ortofoton",
+    "name": "OI.Seamline_75",
+    "title": "Ref. år 1975 bildsömmar",
+    "abstract": "Lantmäteriets bildssömmar hist.ortofoton runt 1975"
+  },
+  {
+    "source_id": "sgu_jordarter_25_100",
+    "name": "jord:SE.GOV.SGU.JORD.TACKNINGSKARTA.25K",
+    "title": "Täckningsområde med information om karttyp",
+    "abstract": null
+  },
+  {
+    "source_id": "sgu_jordarter_25_100",
+    "name": "jord:SE.GOV.SGU.JORD.GRUNDLAGER.25K",
+    "title": "Jordart, grundlager",
+    "abstract": "Jordart, grundlager"
+  },
+  {
+    "source_id": "sgu_jordarter_25_100",
+    "name": "jord:SE.GOV.SGU.JORD.LANDFORM.25K",
+    "title": "Landform",
+    "abstract": "Landform"
+  },
+  {
+    "source_id": "sgu_jordarter_25_100",
+    "name": "jord:SE.GOV.SGU.JORD.UNDERLIGGANDE.25K",
+    "title": "Jordart, underliggande lager",
+    "abstract": "Jordart, underliggande lager"
+  },
+  {
+    "source_id": "sgu_jordarter_25_100",
+    "name": "jord:SE.GOV.SGU.JORD.YTLAGER_JY1.25K",
+    "title": "Jordart, tunt eller osammanhängande ytlager",
+    "abstract": "Jordart, tunt eller osammanhängande ytlager"
+  },
+  {
+    "source_id": "sgu_jordarter_25_100",
+    "name": "jord:SE.GOV.SGU.JORD.YTLAGER_JY0.25K",
+    "title": "Jordart, tunt eller osammanhängande översta ytlager",
+    "abstract": "Jordart, tunt eller osammanhängande översta ytlager"
+  },
+  {
+    "source_id": "sgu_jordarter_25_100",
+    "name": "jord:SE.GOV.SGU.JORD.BLOCKIGHET.25K",
+    "title": "Blockighet i markytan",
+    "abstract": "Blockighet i markytan"
+  },
+  {
+    "source_id": "sgu_jordarter_25_100",
+    "name": "jord:SE.GOV.SGU.JORD.LINJER.25K",
+    "title": "Linjeobjekt",
+    "abstract": "Linjeobjekt"
+  },
+  {
+    "source_id": "sgu_jordarter_25_100",
+    "name": "jord:SE.GOV.SGU.JORD.PUNKTER.25K",
+    "title": "Punktobjekt",
+    "abstract": "Punktobjekt"
+  },
+  {
+    "source_id": "sgu_jorddjupsmodell",
+    "name": "JORDDJUPSMODELL",
+    "title": "Jorddjupsmodell",
+    "abstract": "Grupplager: Jorddjupsmodell"
+  },
+  {
+    "source_id": "sgu_jorddjupsmodell",
+    "name": "SE.GOV.SGU.MISC.JORDDJUPSMODELL.RASTER_INTERVALL",
+    "title": "Jorddjup 10x10m raster, skattat jorddjup till berg (m)",
+    "abstract": "Beräknat jorddjup i meter, redovisat i intervall"
+  },
+  {
+    "source_id": "sgu_jorddjupsmodell",
+    "name": "JORDDJUPSMODELL_UNDERLAG",
+    "title": "Utnyttjat underlag till jorddjupsmodellen",
+    "abstract": "Grupplager: Utnyttjat underlag till jorddjupsmodellen"
+  },
+  {
+    "source_id": "sgu_jorddjupsmodell",
+    "name": "SE.GOV.SGU.MISC.JORDDJUPSMODELL.JORDARTSKARTOR",
+    "title": "Jordartskartor",
+    "abstract": "Redovisning av olika typer av jordartskartor som utnyttjats i olika områden. Syftet med lagret är att genom att redovisa utnyttjat jordartsunderlag ge en indikation om var modellen kan förväntas ge säkrare respektive osäkrare resultat."
+  },
+  {
+    "source_id": "sgu_jorddjupsmodell",
+    "name": "SE.GOV.SGU.MISC.JORDDJUPSMODELL.SPRICKZONER",
+    "title": "Sprickzoner",
+    "abstract": "Observationer av sprickzoner från berggrundskartering och geofysiska undersökningar som utnyttjats i moellereringen. Förekomster av sprickzoner ger ett ökat jorddjup i modellen. Syftet med lagret är att genom att redovisa läget för utnyttjade observationer ge en indikation om var modellen kan förväntas ge säkrare respektive osäkrare resultat, samt en förklaring till zoner med ett större jorddjup relativt omgivningen."
+  },
+  {
+    "source_id": "sgu_jorddjupsmodell",
+    "name": "SE.GOV.SGU.MISC.JORDDJUPSMODELL.JORDDJUPSUPPGIFT_MINVARDE",
+    "title": "Jorddjupsuppgift, minimi-värde",
+    "abstract": "Sammanställning av de punktobservationer som använts i modelleringen. I detta lager visas de punktobservationer där djupet till berggrundsytan inte är känt, och som alltså ger ett minimi-värde för jorddjupet. Syftet med lagret är att genom att redovisa läget för utnyttjade observationer ge en indikation om var modellen kan förväntas ge säkrare respektive osäkrare resultat."
+  },
+  {
+    "source_id": "sgu_jorddjupsmodell",
+    "name": "SE.GOV.SGU.MISC.JORDDJUPSMODELL.JORDDJUPSUPPGIFT",
+    "title": "Jorddjupsuppgift",
+    "abstract": "Sammanställning av de punktobservationer som använts i modelleringen. I detta lager visas de punktobservationer där djupet till berggrundsytan är känt. Syftet med lagret är att genom att redovisa läget för utnyttjade observationer ge en indikation om var modellen kan förväntas ge säkrare respektive osäkrare resultat."
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.KARTERINGSMETOD_K1.V2",
+    "title": "Karteringsmetoder K1",
+    "abstract": "Karteringsmetoder"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.MAGASINDELOMRADEN_K1.V2",
+    "title": "Magasinsdelområden K1",
+    "abstract": "Ett grundvattenmagasin består av ett eller flera magasinsdelområden. Indelningen baseras främst på skillnader i uttagsmöjligheter"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENMAGASIN_K1.V2",
+    "title": "Grundvattenmagasin K1",
+    "abstract": "En avgränsad del av en eller flera akviferer, eller en grundvattenförande geologisk formation, med en sammanhängande mättad zon. Den omättade zonen betraktas normalt som en del av magasinet."
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.KARTERINGSMETOD_S3.V2",
+    "title": "Karteringsmetoder S3",
+    "abstract": "Karteringsmetoder"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.MAGASINDELOMRADEN_S3.V2",
+    "title": "Magasinsdelområden S3",
+    "abstract": "Ett grundvattenmagasin består av ett eller flera magasinsdelområden. Indelningen baseras främst på skillnader i uttagsmöjligheter"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.LAGGENOMSLAPPLIGALAGER_S3.V2",
+    "title": "Låggenomsläppliga lager ovan magasin S3",
+    "abstract": "Lager av låggenomsläppliga (finkorniga) sediment som påtagligt reducerar grundvattenbildningen till underliggande grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENMAGASIN_S3.V2",
+    "title": "Grundvattenmagasin S3",
+    "abstract": "En avgränsad del av en eller flera akviferer, eller en grundvattenförande geologisk formation, med en sammanhängande mättad zon. Den omättade zonen betraktas normalt som en del av magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.TILLRINNINGSOMRADEN_S3.V2",
+    "title": "Tillrinningsområden S3",
+    "abstract": "Tillrinningsområdet till ett grundvattenmagasin är det område eller de områden varifrån nederbörd eller annat vatten kan rinna mot och tillföras magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENDELARE_S3.V2",
+    "title": "Grundvattendelare S3",
+    "abstract": "Gränslinje eller zon från vilken grundvatten strömmar i skilda riktningar. Det kan röra sig om både fasta och rörliga grundvattendelare"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.YTVATTENKONTAKT_S3.V2",
+    "title": "Ytvattenkontakter S3",
+    "abstract": "Kontakter mellan ytvatten (hav, sjö eller rinnsträcka/vattendrag) och grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENSTROMNINGSRIKTNING_S3.V2",
+    "title": "Grundvattenströmningsriktningar S3",
+    "abstract": "Grundvattnets huvudsakliga strömningsriktning"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.KARTERINGSMETOD_S2.V2",
+    "title": "Karteringsmetoder S2",
+    "abstract": "Karteringsmetoder"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.MAGASINDELOMRADEN_S2.V2",
+    "title": "Magasinsdelområden S2",
+    "abstract": "Ett grundvattenmagasin består av ett eller flera magasinsdelområden. Indelningen baseras främst på skillnader i uttagsmöjligheter"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.LAGGENOMSLAPPLIGALAGER_S2.V2",
+    "title": "Låggenomsläppliga lager ovan magasin S2",
+    "abstract": "Lager av låggenomsläppliga (finkorniga) sediment som påtagligt reducerar grundvattenbildningen till underliggande grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENMAGASIN_S2.V2",
+    "title": "Grundvattenmagasin S2",
+    "abstract": "En avgränsad del av en eller flera akviferer, eller en grundvattenförande geologisk formation, med en sammanhängande mättad zon. Den omättade zonen betraktas normalt som en del av magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.TILLRINNINGSOMRADEN_S2.V2",
+    "title": "Tillrinningsområden S2",
+    "abstract": "Tillrinningsområdet till ett grundvattenmagasin är det område eller de områden varifrån nederbörd eller annat vatten kan rinna mot och tillföras magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENSTROMNINGSRIKTNING_S2.V2",
+    "title": "Grundvattenströmningsriktningar S2",
+    "abstract": "Grundvattnets huvudsakliga strömningsriktning"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.KARTERINGSMETOD_S1.V2",
+    "title": "Karteringsmetoder S1",
+    "abstract": "Karteringsmetoder"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.MAGASINDELOMRADEN_S1.V2",
+    "title": "Magasinsdelområden S1",
+    "abstract": "Ett grundvattenmagasin består av ett eller flera magasinsdelområden. Indelningen baseras främst på skillnader i uttagsmöjligheter"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.LAGGENOMSLAPPLIGALAGER_S1.V2",
+    "title": "Låggenomsläppliga lager ovan magasin S1",
+    "abstract": "Lager av låggenomsläppliga (finkorniga) sediment som påtagligt reducerar grundvattenbildningen till underliggande grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENMAGASIN_S1.V2",
+    "title": "Grundvattenmagasin S1",
+    "abstract": "En avgränsad del av en eller flera akviferer, eller en grundvattenförande geologisk formation, med en sammanhängande mättad zon. Den omättade zonen betraktas normalt som en del av magasinet."
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.TILLRINNINGSOMRADEN_S1.V2",
+    "title": "Tillrinningsområden S1",
+    "abstract": "Tillrinningsområdet till ett grundvattenmagasin är det område eller de områden varifrån nederbörd eller annat vatten kan rinna mot och tillföras magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENDELARE_S1.V2",
+    "title": "Grundvattendelare S1",
+    "abstract": "Gränslinje eller zon från vilken grundvatten strömmar i skilda riktningar. Det kan röra sig om både fasta och rörliga grundvattendelare."
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.YTVATTENKONTAKT_S1.V2",
+    "title": "Ytvattenkontakter S1",
+    "abstract": "Kontakter mellan ytvatten (hav, sjö eller rinnsträcka/vattendrag) och grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENSTROMNINGSRIKTNING_S1.V2",
+    "title": "Grundvattenströmningsriktningar S1",
+    "abstract": "Grundvattnets huvudsakliga strömningsriktning"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.KARTERINGSMETOD_J3.V2",
+    "title": "Karteringsmetoder J3",
+    "abstract": "Karteringsmetoder"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.MAGASINDELOMRADEN_J3.V2",
+    "title": "Magasinsdelområden J3",
+    "abstract": "Ett grundvattenmagasin består av ett eller flera magasinsdelområden. Indelningen baseras främst på skillnader i uttagsmöjligheter"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.LAGGENOMSLAPPLIGALAGER_J3.V2",
+    "title": "Låggenomsläppliga lager ovan magasin J3",
+    "abstract": "Lager av låggenomsläppliga (finkorniga) sediment som påtagligt reducerar grundvattenbildningen till underliggande grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENMAGASIN_J3.V2",
+    "title": "Grundvattenmagasin J3",
+    "abstract": "En avgränsad del av en eller flera akviferer, eller en grundvattenförande geologisk formation, med en sammanhängande mättad zon. Den omättade zonen betraktas normalt som en del av magasinet."
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.TILLRINNINGSOMRADEN_J3.V2",
+    "title": "Tillrinningsområden J3",
+    "abstract": "Tillrinningsområdet till ett grundvattenmagasin är det område eller de områden varifrån nederbörd eller annat vatten kan rinna mot och tillföras magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.YTVATTENKONTAKT_J3.V2",
+    "title": "Ytvattenkontakter J3",
+    "abstract": "Kontakter mellan ytvatten (hav, sjö eller rinnsträcka/vattendrag) och grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENSTROMNINGSRIKTNING_J3.V2",
+    "title": "Grundvattenströmningsriktningar J3",
+    "abstract": "Grundvattnets huvudsakliga strömningsriktning"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.KARTERINGSMETOD_J2.V2",
+    "title": "Karteringsmetoder J2",
+    "abstract": "Karteringsmetoder"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.MAGASINDELOMRADEN_J2.V2",
+    "title": "Magasinsdelområden J2",
+    "abstract": "Ett grundvattenmagasin består av ett eller flera magasinsdelområden. Indelningen baseras främst på skillnader i uttagsmöjligheter"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.LAGGENOMSLAPPLIGALAGER_J2.V2",
+    "title": "Låggenomsläppliga lager ovan magasin J2",
+    "abstract": "Lager av låggenomsläppliga (finkorniga) sediment som påtagligt reducerar grundvattenbildningen till underliggande grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENMAGASIN_J2.V2",
+    "title": "Grundvattenmagasin J2",
+    "abstract": "En avgränsad del av en eller flera akviferer, eller en grundvattenförande geologisk formation, med en sammanhängande mättad zon. Den omättade zonen betraktas normalt som en del av magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.TILLRINNINGSOMRADEN_J2.V2",
+    "title": "Tillrinningsområden J2",
+    "abstract": "Tillrinningsområdet till ett grundvattenmagasin är det område eller de områden varifrån nederbörd eller annat vatten kan rinna mot och tillföras magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENDELARE_J2.V2",
+    "title": "Grundvattendelare J2",
+    "abstract": "Gränslinje eller zon från vilken grundvatten strömmar i skilda riktningar. Det kan röra sig om både fasta och rörliga grundvattendelare."
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.YTVATTENKONTAKT_J2.V2",
+    "title": "Ytvattenkontakter J2",
+    "abstract": "Kontakter mellan ytvatten (hav, sjö eller rinnsträcka/vattendrag) och grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENSTROMNINGSRIKTNING_J2.V2",
+    "title": "Grundvattenströmningsriktningar J2",
+    "abstract": "Grundvattnets huvudsakliga strömningsriktning"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.KARTERINGSMETOD_J1.V2",
+    "title": "Karteringsmetoder J1",
+    "abstract": "Karteringsmetoder"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.MAGASINDELOMRADEN_J1.V2",
+    "title": "Magasinsdelområden J1",
+    "abstract": "Ett grundvattenmagasin består av ett eller flera magasinsdelområden. Indelningen baseras främst på skillnader i uttagsmöjligheter"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.LAGGENOMSLAPPLIGALAGER_J1.V2",
+    "title": "Låggenomsläppliga lager ovan magasin J1",
+    "abstract": "Lager av låggenomsläppliga (finkorniga) sediment som påtagligt reducerar grundvattenbildningen till underliggande grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENMAGASIN_J1.V2",
+    "title": "Grundvattenmagasin J1",
+    "abstract": "En avgränsad del av en eller flera akviferer, eller en grundvattenförande geologisk formation, med en sammanhängande mättad zon. Den omättade zonen betraktas normalt som en del av magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.TILLRINNINGSOMRADEN_J1.V2",
+    "title": "Tillrinningsområden J1",
+    "abstract": "Tillrinningsområdet till ett grundvattenmagasin är det område eller de områden varifrån nederbörd eller annat vatten kan rinna mot och tillföras magasinet"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENDELARE_J1.V2",
+    "title": "Grundvattendelare J1",
+    "abstract": "Gränslinje eller zon från vilken grundvatten strömmar i skilda riktningar. Det kan röra sig om både fasta och rörliga grundvattendelare."
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.YTVATTENKONTAKT_J1.V2",
+    "title": "Ytvattenkontakter J1",
+    "abstract": "Kontakter mellan ytvatten (hav, sjö eller rinnsträcka/vattendrag) och grundvattenmagasin"
+  },
+  {
+    "source_id": "sgu_grundvattenmagasin",
+    "name": "SE.GOV.SGU.HMAG.GRUNDVATTENSTROMNINGSRIKTNING_J1.V2",
+    "title": "Grundvattenströmningsriktningar J1",
+    "abstract": "Grundvattnets huvudsakliga strömningsriktning"
+  },
+  {
+    "source_id": "sgu_forutsattning_skred",
+    "name": "SE.GOV.SGU.FORUTSATTNING_SKRED_FINKORNING_JORDART.TACKNINGSKARTA",
+    "title": "Täckningsområde med information om karttyp",
+    "abstract": "Innehåller täckningskarta för den jordartsinformation och höjddata som analysen baserats på"
+  },
+  {
+    "source_id": "sgu_forutsattning_skred",
+    "name": "SE.GOV.SGU.FORUTSATTNING_SKRED_FINKORNING_JORDART",
+    "title": "Aktsamhetsområden - Efterarbetad lutningsanalys",
+    "abstract": "Beräknat och klassat aktsamhetsområde baserat på lutningsanalys"
+  },
+  {
+    "source_id": "sgu_forutsattning_skred",
+    "name": "SE.GOV.SGU.FORUTSATTNING_SKRED_FINKORNING_JORDART_STRANDNARA",
+    "title": "Aktsamhetsområden - Strandnära",
+    "abstract": "Aktsamhetsområden baserade på närhet till vatten, högsta kustlinjen samt fasta jordarter"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.KARTERINGSOMRADE.50K",
+    "title": "Täckningsområde med information om karttyp",
+    "abstract": "Täckningsområde med information om karttyp"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.LITOTEKTONISK_ENHET.50K",
+    "title": "Litotektonisk enhet",
+    "abstract": "Litotektonisk enhet"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.GEOLOGISK_ENHET.YTA.50K",
+    "title": "Geologisk enhet, yta",
+    "abstract": "Geologisk enhet, yta"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.GEOLOGISK_ENHET.YTA_OVERBETECKNING.50K",
+    "title": "Geologisk enhet, yta (överbeteckningar)",
+    "abstract": "Geologisk enhet, yta (överbeteckningar)"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.GEOLOGISK_ENHET.LINJE.50K",
+    "title": "Geologisk enhet, linje",
+    "abstract": "Geologisk enhet, linje"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.HALL_YTA.50K",
+    "title": "Häll, yta",
+    "abstract": "Häll, yta"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.HALL_PUNKT.50K",
+    "title": "Häll, punkt",
+    "abstract": "Häll, punkt"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.IMPAKTSTRUKTUR.50K",
+    "title": "Impaktstruktur",
+    "abstract": "Impaktstruktur"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.DEFORMATIONSZON_LOK.50K",
+    "title": "Lokal deformationszon",
+    "abstract": "Lokal deformationszon"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.DEFORMATIONSZON_REG.50K",
+    "title": "Regional deformationszon",
+    "abstract": "Regional deformationszon"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.STRUKTURELL_FORMLINJE.50K",
+    "title": "Strukturell formlinje",
+    "abstract": "Strukturell formlinje"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.VECK.50K",
+    "title": "Veck",
+    "abstract": "Veck"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.GRUNDAMNESETIKETT.50K",
+    "title": "Grundämnesetikett",
+    "abstract": "Grundämnesetikett"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.MINERALETIKETT.50K",
+    "title": "Mineraletikett",
+    "abstract": "Mineraletikett"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.BERGARTSETIKETT.50K",
+    "title": "Bergartsetikett",
+    "abstract": "Bergartsetikett"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.PLANSTRUKTUR.50K",
+    "title": "Planstruktur med stupningssiffra",
+    "abstract": "Planstruktur med stupningssiffra"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.LINJARSTRUKTUR.50K",
+    "title": "Linjärstruktur med stupningssiffra",
+    "abstract": "Linjärstruktur med stupningssiffra"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.STRUKTURSYMBOL.50K",
+    "title": "Strukturmätning utan stupningssiffra",
+    "abstract": "Strukturmätning utan stupningssiffra"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.STRUKTUR_TEXTURSYMBOL.50K",
+    "title": "Struktur-textursymbol",
+    "abstract": "Struktur-textursymbol"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.STRUKTUR_TEXTURSYMBOL_RIKTAD.50K",
+    "title": "Struktur-textursymbol, riktad",
+    "abstract": "Struktur-textursymbol, riktad"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.BERGARTSROLLSYMBOL.50K",
+    "title": "Bergartsrollsymbol",
+    "abstract": "Bergartsrollsymbol"
+  },
+  {
+    "source_id": "sgu_berggrund_50_250",
+    "name": "SE.GOV.SGU.BERG.ISOLINJE.50K",
+    "title": "Isolinje",
+    "abstract": "Isolinje, överyta"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Interimistiskt_forbud",
+    "title": "Interimistiskt_forbud",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Landskapsbildsskyddsomrade",
+    "title": "Landskapsbildsskyddsomrade",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Ovrigt_biotopskyddsomrade",
+    "title": "Ovrigt_biotopskyddsomrade",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Vattenskyddsomrade",
+    "title": "Vattenskyddsomrade",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Kulturreservat",
+    "title": "Kulturreservat",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Naturminne_punkt",
+    "title": "Naturminne_punkt",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Naturminne_polygon",
+    "title": "Naturminne_polygon",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Djur_och_vaxtskyddsomrade",
+    "title": "Djur_och_vaxtskyddsomrade",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Naturvardsomrade",
+    "title": "Naturvardsomrade",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Naturreservat_kommunalt",
+    "title": "Naturreservat_kommunalt",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Naturreservat",
+    "title": "Naturreservat",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Nationalpark",
+    "title": "Nationalpark",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Beslutsstatus",
+    "title": "Beslutsstatus",
+    "abstract": "NVR.GV_OMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_naturvardsregistret",
+    "name": "Tilltradesforbud",
+    "title": "Tilltradesforbud",
+    "abstract": "NVR.FORESKRIFTSOMRADE_YTA"
+  },
+  {
+    "source_id": "naturvardsverket_andra_skydd",
+    "name": "Riksintresse_Friluftsliv",
+    "title": "Riksintresse_Friluftsliv",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_andra_skydd",
+    "name": "Riksintresse_Naturvard",
+    "title": "Riksintresse_Naturvard",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_andra_skydd",
+    "name": "Naturvardsavtal",
+    "title": "Naturvardsavtal",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lantmateriet:lantmateriet_base_slope_inclination",
+    "title": "lantmateriet_base_slope_inclination",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:active_location_center",
+    "title": "active_location_center",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:forecast_view",
+    "title": "forecast_view",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:location",
+    "title": "location",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:location_center",
+    "title": "location_center",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:main_locations",
+    "title": "main_locations",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:main_locations_center",
+    "title": "main_locations_center",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:published_forecasts",
+    "title": "Lavinprognoser",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:published_forecasts_by_interval",
+    "title": "published_forecasts_by_interval",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:runout",
+    "title": "runout",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:slope_aspect",
+    "title": "slope_aspect",
+    "abstract": "Den klassade lutningskartan för fjällområdet som används i Lavinprognoser.se är en derivatprodukt framtagen av Naturvårdsverket grundad på terränglutningskartan från Lantmäteriet."
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:slope_inclination",
+    "title": "slope_inclination",
+    "abstract": null
+  },
+  {
+    "source_id": "naturvardsverket_geoserver",
+    "name": "lavinprognoser:unpublished_forecasts_area_interval",
+    "title": "unpublished_forecasts_area_interval",
+    "abstract": null
+  }
+]

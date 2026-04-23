@@ -1,0 +1,76 @@
+{
+  "project": "Millbygard",
+  "description": "Minimal data inventory for the standalone Millbygard Minecraft/geodata side project.",
+  "required_inputs": [
+    {
+      "name": "Current property geometry",
+      "files": [
+        {
+          "path": "data/orsa_stackmora_3_12_split.geojson",
+          "purpose": "Split parcel geometries for >1, >2, >3."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_workarea.geojson",
+          "purpose": "Merged workarea used as the clipping boundary."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_live_lookup.json",
+          "purpose": "PostGIS-derived lookup proof exported from the Miljobeslut data source."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_workarea_circle_overlay.geojson",
+          "purpose": "Coverage circle plus visible property boundary overlay for map/QGIS planning."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_scale_transition_zones.geojson",
+          "purpose": "4:1 farm detail zone, soft transition ring and 1:1 property context zone."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_tower_site.geojson",
+          "purpose": "Tower anchor point from the highest valid elevation cell inside the property workarea."
+        }
+      ]
+    },
+    {
+      "name": "Core raster and vector inputs",
+      "files": [
+        {
+          "path": "data/orsa_stackmora_3_12_ortofoto.tif",
+          "purpose": "Orthophoto for buildings, roads, yard, vegetation and surface patterns."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_markhojd.tif",
+          "purpose": "Elevation model / DEM for terrain and WorldPainter heightmap generation."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_ythojd_dsm.tif",
+          "purpose": "Clipped 0.25 m surface model / DSM from Ythojdmodell 2024 for roofs, trees and surface-height checks."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_ythojd_above_ground.tif",
+          "purpose": "DSM minus markhojd, used as first-pass above-ground height support."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_ythojd_trueortho.tif",
+          "purpose": "Clipped true orthophoto from the Ythojd delivery."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_byggnader.geojson",
+          "purpose": "Clipped Lantmateriet building polygons for the main house, barns and outbuildings."
+        },
+        {
+          "path": "output/building_measurements_20260416.csv",
+          "purpose": "Approximate building length, width and area from clipped building polygons."
+        },
+        {
+          "path": "output/building_surface_heights_20260416.csv",
+          "purpose": "First-pass roof/surface heights from ythojd above-ground raster inside building polygons."
+        },
+        {
+          "path": "data/orsa_stackmora_3_12_fastighet.gpkg",
+          "purpose": "Supporting cadastral layer for orientation and verification."
+        }
+      ]
+    }
+  ]
+}

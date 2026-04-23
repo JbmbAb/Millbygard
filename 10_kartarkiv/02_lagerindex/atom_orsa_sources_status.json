@@ -1,0 +1,29 @@
+[
+  {
+    "id": "byggnad_orsa_2034",
+    "url": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu/2034",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/atom+xml",
+    "bytes": 2370,
+    "entry_count": 2
+  },
+  {
+    "id": "marktacke_orsa_2034",
+    "url": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc/2034",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/atom+xml",
+    "bytes": 2556,
+    "entry_count": 2
+  },
+  {
+    "id": "ortnamn_orsa_2034",
+    "url": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn/2034",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/atom+xml",
+    "bytes": 2392,
+    "entry_count": 2
+  }
+]

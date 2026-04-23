@@ -1,0 +1,2227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WMS_Capabilities xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd"
+  xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd"
+  xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd"
+  xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0"
+  xmlns:gml="http://schemas.opengis.net/gml"
+  xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" version="1.3.0"
+  updateSequence="1973" xmlns="http://www.opengis.net/wms"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wms http://maps3.sgu.se:80/geoserver/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://maps3.sgu.se:80/geoserver/www/inspire/inspire_vs.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title>Berggrund 1:50 000 - 1:250 000 (visningstjänst)</Title>
+    <Abstract>
+      Berggrundskartan är en tvådimensionell modell av berggrundens överyta, som beskriver viktiga egenskaper hos identifierade geologiska enheter, deras geometri, det material som bygger upp enheterna och geologiska händelser som de genomgått. I berggrundskartan ingår även berggrundens strukturer och deras egenskaper. Berggrundskartan bygger på geologiska fältobservationer i kombination med tolkning av analysresultat och geofysiska data. Syftet med berggrundskartan är att ge underlag för analyser i samband med prospektering, översiktsplanering av byggen och anläggningar, geotermisk energiutvinning, arbete med olika frågor inom miljöområdet, forskning och utbildning. Informationen i kartan kan användas för framställning av olika tematiska produkter, t ex. kartor över näringsinnehåll, värmeledningsförmåga och lämplighet för anläggningar.
+    </Abstract>
+    <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>SGU</Keyword>
+      <Keyword>Berggrundsgeologi</Keyword>
+      <Keyword>Berggrund</Keyword>
+      <Keyword>Geologi</Keyword>
+      <Keyword>Sveriges geologiska undersökning</Keyword>
+      <Keyword>Bedrock geology</Keyword>
+      <Keyword>Bedrock</Keyword>
+      <Keyword>Geology</Keyword>
+      <Keyword>Geological Survey of Sweden</Keyword>
+    </KeywordList>
+    <OnlineResource xlink:type="simple" xlink:href="https://www.sgu.se"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>Kundservice (Customer Services)</ContactPerson>
+        <ContactOrganization>SGU - Sveriges geologiska undersökning (Geological Survey of Sweden - SGU)</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>Kundservice (Customer Services)</ContactPosition>
+      <ContactAddress>
+        <AddressType>Postal</AddressType>
+        <Address>Box 670</Address>
+        <City>Uppsala</City>
+        <StateOrProvince/>
+        <PostCode>SE-751 28</PostCode>
+        <Country>Sverige</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone>+4618179000</ContactVoiceTelephone>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>kundservice@sgu.se</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>NONE</Fees>
+    <AccessConstraints>NONE</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple"
+                xlink:href="https://resource.sgu.se/service/wms/130/berggrund-50-250-tusen"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:type="simple"
+                xlink:href="https://resource.sgu.se/service/wms/130/berggrund-50-250-tusen"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>text/html; subtype=openlayers</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>text/xml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+    </Exception>
+    <inspire_vs:ExtendedCapabilities>
+      <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+        <inspire_common:URL>
+          https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=cc2ae076-2549-4074-aa81-a182ac404dd9&amp;outputSchema=csw:IsoRecord </inspire_common:URL>
+        <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
+      </inspire_common:MetadataUrl>
+      <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
+        <inspire_common:DefaultLanguage>
+          <inspire_common:Language>swe</inspire_common:Language>
+        </inspire_common:DefaultLanguage>
+        <inspire_common:SupportedLanguage>
+          <inspire_common:Language>swe</inspire_common:Language>
+        </inspire_common:SupportedLanguage>
+      </inspire_common:SupportedLanguages>
+      <inspire_common:ResponseLanguage>
+        <inspire_common:Language>swe</inspire_common:Language>
+      </inspire_common:ResponseLanguage>
+    </inspire_vs:ExtendedCapabilities>
+    <Layer>
+      <Title>Berggrund 1:50 000 - 1:250 000</Title>
+      <Abstract>Berggrund 1:50 000 - 1:250 000</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:2400</CRS>
+      <CRS>EPSG:3006</CRS>
+      <CRS>EPSG:3007</CRS>
+      <CRS>EPSG:3008</CRS>
+      <CRS>EPSG:3009</CRS>
+      <CRS>EPSG:3010</CRS>
+      <CRS>EPSG:3011</CRS>
+      <CRS>EPSG:3012</CRS>
+      <CRS>EPSG:3013</CRS>
+      <CRS>EPSG:3014</CRS>
+      <CRS>EPSG:3015</CRS>
+      <CRS>EPSG:3016</CRS>
+      <CRS>EPSG:3017</CRS>
+      <CRS>EPSG:3018</CRS>
+      <CRS>EPSG:3021</CRS>
+      <CRS>EPSG:3034</CRS>
+      <CRS>EPSG:3857</CRS>
+      <CRS>EPSG:4258</CRS>
+      <CRS>EPSG:4326</CRS>
+      <CRS>EPSG:900913</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>8.575051254559698</westBoundLongitude>
+        <eastBoundLongitude>24.241589829761768</eastBoundLongitude>
+        <southBoundLatitude>54.78986553923965</southBoundLatitude>
+        <northBoundLatitude>66.0995258122236</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" minx="8.575051254559698" miny="54.78986553923965"
+        maxx="24.241589829761768" maxy="66.0995258122236"/>
+      <BoundingBox CRS="EPSG:2400" minx="6073241.284443002" miny="1035026.1084684106"
+        maxx="7358835.481687405" maxy="2041753.270927439"/>
+      <BoundingBox CRS="EPSG:3006" minx="6072071.559778666" miny="87151.4848603172"
+        maxx="7361808.42755039" maxy="1093384.7443924588"/>
+      <BoundingBox CRS="EPSG:3007" minx="6073948.694718839" miny="-70276.63638196752"
+        maxx="7388007.121142164" maxy="935433.9555589712"/>
+      <BoundingBox CRS="EPSG:3008" minx="6073878.331224697" miny="-166681.90457209456"
+        maxx="7375569.2646763995" maxy="839611.5029470972"/>
+      <BoundingBox CRS="EPSG:3009" minx="6074501.360322795" miny="-263013.7206279339"
+        maxx="7364754.329282103" maxy="743622.1932697668"/>
+      <BoundingBox CRS="EPSG:3010" minx="6073841.66518925" miny="-359248.9714572159"
+        maxx="7356599.125549827" maxy="647491.2141538647"/>
+      <BoundingBox CRS="EPSG:3011" minx="6074314.463530009" miny="-455363.95432725863"
+        maxx="7365989.260369674" maxy="551242.9007901454"/>
+      <BoundingBox CRS="EPSG:3012" minx="6073931.836361546" miny="-214858.42649289046"
+        maxx="7369958.909469631" maxy="791636.1093817111"/>
+      <BoundingBox CRS="EPSG:3013" minx="6074036.590141635" miny="-311144.88266768225"
+        maxx="7359955.559957504" maxy="695572.873114923"/>
+      <BoundingBox CRS="EPSG:3014" minx="6074162.743591582" miny="-407323.0046469306"
+        maxx="7361091.276023839" maxy="599380.232753647"/>
+      <BoundingBox CRS="EPSG:3015" minx="6073871.100736646" miny="-503368.74264575716"
+        maxx="7371293.047408351" maxy="503082.1500092724"/>
+      <BoundingBox CRS="EPSG:3016" minx="6073840.38696837" miny="-599257.2476388161"
+        maxx="7383117.872572359" maxy="406701.94438931986"/>
+      <BoundingBox CRS="EPSG:3017" minx="6073844.359883894" miny="-694962.7301269455"
+        maxx="7396565.360146039" maxy="310262.4320629899"/>
+      <BoundingBox CRS="EPSG:3018" minx="6074288.801429594" miny="-790458.3174545792"
+        maxx="7411634.972125336" maxy="213786.06394453277"/>
+      <BoundingBox CRS="EPSG:3021" minx="6073241.284443002" miny="1035026.1084684106"
+        maxx="7358835.481687405" maxy="2041753.270927439"/>
+      <BoundingBox CRS="EPSG:3034" minx="3100747.872962617" miny="3911275.7542383755"
+        maxx="4400688.502410798" maxy="4881325.766200052"/>
+      <BoundingBox CRS="EPSG:3857" minx="954570.3391838071" miny="7321189.642491772"
+        maxx="2698561.4358684793" maxy="9904138.340424849"/>
+      <BoundingBox CRS="EPSG:4326" minx="54.78986553923965" miny="8.575051254559698"
+        maxx="66.0995258122236" maxy="24.241589829761768"/>
+      <BoundingBox CRS="EPSG:4258" minx="54.78986554012784" miny="8.575051254559698"
+        maxx="66.09952581292157" maxy="24.241589829761768"/>
+      <BoundingBox CRS="EPSG:900913" minx="954570.3391838071" miny="7321189.642491772"
+        maxx="2698561.4358684793" maxy="9904138.340424849"/>
+      <AuthorityURL name="SGU">
+        <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+      </AuthorityURL>
+      <MetadataURL type="ISO19115:2003">
+        <Format>text/plain</Format>
+        <OnlineResource xlink:type="simple"
+          xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+        />
+      </MetadataURL>
+      <Layer queryable="1" opaque="0">
+        <Name>SE.GOV.SGU.BERG.KARTERINGSOMRADE.50K</Name>
+        <Title>Täckningsområde med information om karttyp</Title>
+        <Abstract>Täckningsområde med information om karttyp</Abstract>
+        <KeywordList>
+          <Keyword>Täckningsområde</Keyword>
+          <Keyword>Coverage</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>8.643886335600527</westBoundLongitude>
+          <eastBoundLongitude>25.486939267281066</eastBoundLongitude>
+          <southBoundLatitude>55.16493585006098</southBoundLatitude>
+          <northBoundLatitude>69.14878980362619</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="8.643886335600527" miny="55.16493585006098"
+          maxx="25.486939267281066" maxy="69.14878980362619"/>
+        <BoundingBox CRS="EPSG:3006" minx="6133122.4963" miny="246554.2268" maxx="7671121.4532"
+          maxy="920962.7794"/>
+        <BoundingBox CRS="EPSG:2400" minx="6130363.349810538" miny="1195330.0899171245"
+          maxx="7677112.895709848" maxy="1889058.1742373132"/>
+        <BoundingBox CRS="EPSG:3007" minx="6128761.441288343" miny="15975.959907841345"
+          maxx="7697751.95070679" maxy="761642.8996588888"/>
+        <BoundingBox CRS="EPSG:3008" minx="6131142.507886209" miny="-43835.16463235355"
+          maxx="7685237.003154418" maxy="666450.3068036027"/>
+        <BoundingBox CRS="EPSG:3009" minx="6135576.726990797" miny="-103547.19207683078"
+          maxx="7674191.129651862" maxy="571131.2318927571"/>
+        <BoundingBox CRS="EPSG:3010" minx="6127533.672335424" miny="-198754.75411187013"
+          maxx="7681127.201403178" maxy="511293.6770470112"/>
+        <BoundingBox CRS="EPSG:3011" minx="6121552.819100302" miny="-293877.365870083"
+          maxx="7689524.968095388" maxy="451271.3931855068"/>
+        <BoundingBox CRS="EPSG:3012" minx="6133102.824226144" miny="-73705.48637950333"
+          maxx="7679530.302654874" maxy="618805.0413385939"/>
+        <BoundingBox CRS="EPSG:3013" minx="6131297.127023176" miny="-151160.10807017738"
+          maxx="7677476.374911243" maxy="541237.4807278974"/>
+        <BoundingBox CRS="EPSG:3014" minx="6124285.74708575" miny="-246328.17025703174"
+          maxx="7685143.4558573365" maxy="481303.6815044432"/>
+        <BoundingBox CRS="EPSG:3015" minx="6119334.439519024" miny="-341399.31539894146"
+          maxx="7694271.550108497" maxy="421200.69975272246"/>
+        <BoundingBox CRS="EPSG:3016" minx="6116439.94948159" miny="-436349.17399596353"
+          maxx="7704859.078591836" maxy="360959.5970176031"/>
+        <BoundingBox CRS="EPSG:3017" minx="6115600.368294044" miny="-531152.6820731416"
+          maxx="7716904.156397108" maxy="300611.2840098405"/>
+        <BoundingBox CRS="EPSG:3018" minx="6116815.141504175" miny="-625783.9445463857"
+          maxx="7730404.569475746" maxy="240186.55328102206"/>
+        <BoundingBox CRS="EPSG:3021" minx="6130363.349810538" miny="1195330.0899171245"
+          maxx="7677112.895709848" maxy="1889058.1742373132"/>
+        <BoundingBox CRS="EPSG:3857" minx="962233.0253539853" miny="7393942.831053091"
+          maxx="2837193.1011128193" maxy="1.0797162068412358E7"/>
+        <BoundingBox CRS="EPSG:4326" minx="55.16493588376252" miny="8.643886335600527"
+          maxx="69.14878981537241" maxy="25.486939267281066"/>
+        <BoundingBox CRS="EPSG:4258" minx="55.16493585006098" miny="8.643886335600527"
+          maxx="69.14878980362619" maxy="25.486939267281066"/>
+        <BoundingBox CRS="EPSG:900913" minx="962233.0253539853" miny="7393942.831053091"
+          maxx="2837193.1011128193" maxy="1.0797162068412358E7"/>
+        <AuthorityURL name="SGU">
+          <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+        </AuthorityURL>
+        <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple"
+            xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+          />
+        </MetadataURL>
+        <Style>
+          <Name>BERG_50K_karttyp</Name>
+          <Title>Karttyp</Title>
+          <LegendURL width="243" height="156">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+              xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.KARTERINGSOMRADE.50K"
+            />
+          </LegendURL>
+        </Style>
+        <MinScaleDenominator>1.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.2E7</MaxScaleDenominator>
+      </Layer>
+
+
+      <!-- Grupplager geologisk enhet -->
+      <Layer queryable="1" opaque="0">
+        <!-- <Name>GEOLOGISK ENHET</Name> -->
+        <Title>Geologisk enhet</Title>
+        <Abstract>Grupplager: Berggrundsenheter</Abstract>
+        <KeywordList>
+          <Keyword>geologisk enhet</Keyword>
+          <Keyword>geologic unit</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>10.450380324118134</westBoundLongitude>
+          <eastBoundLongitude>20.643649390834828</eastBoundLongitude>
+          <southBoundLatitude>54.88994188530444</southBoundLatitude>
+          <northBoundLatitude>63.63605600500251</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="10.450380324118134" miny="54.88994188530444"
+          maxx="20.643649390834828" maxy="63.63605600500251"/>
+        <BoundingBox CRS="EPSG:3006" minx="6091307.0" miny="274158.71875" maxx="7056577.5"
+          maxy="780435.5"/>
+        <BoundingBox CRS="EPSG:2400" minx="6090175.681672592" miny="1222469.4061887483"
+          maxx="7061875.18998446" maxy="1740595.1039356224"/>
+        <BoundingBox CRS="EPSG:3007" minx="6088181.464682001" miny="73003.51348993326"
+          maxx="7076069.944780876" maxy="622703.2518237722"/>
+        <BoundingBox CRS="EPSG:3008" minx="6089931.936848348" miny="-1495.4594511133619"
+          maxx="7066859.765520358" maxy="526669.8038579441"/>
+        <BoundingBox CRS="EPSG:3009" minx="6093744.497799119" miny="-75931.65391156462"
+          maxx="7059401.260504201" maxy="430547.71908763505"/>
+        <BoundingBox CRS="EPSG:3010" minx="6088761.461385788" miny="-172027.5625541347"
+          maxx="7065576.3995342" maxy="356075.0017101129"/>
+        <BoundingBox CRS="EPSG:3011" minx="6085842.523373818" miny="-268047.81785166386"
+          maxx="7073500.689738241" maxy="281516.9063683986"/>
+        <BoundingBox CRS="EPSG:3012" minx="6091580.327760025" miny="-38723.34104713949"
+          maxx="7062911.615890268" maxy="478618.38699223415"/>
+        <BoundingBox CRS="EPSG:3013" minx="6090994.789152274" miny="-123987.62506448198"
+          maxx="7062270.238860193" maxy="393323.97703698697"/>
+        <BoundingBox CRS="EPSG:3014" minx="6087044.136480063" miny="-220048.59385274153"
+          maxx="7069319.845056109" maxy="318804.6849204652"/>
+        <BoundingBox CRS="EPSG:3015" minx="6085156.418184647" miny="-316022.3005652938"
+          maxx="7078119.058916406" maxy="244215.53567155957"/>
+        <BoundingBox CRS="EPSG:3016" minx="6085330.353068192" miny="-411885.11594548426"
+          maxx="7088668.922514526" maxy="169587.45923468377"/>
+        <BoundingBox CRS="EPSG:3017" minx="6087566.059257662" miny="-507612.7464927159"
+          maxx="7100970.6276611155" maxy="94951.29542891064"/>
+        <BoundingBox CRS="EPSG:3018" minx="6091865.053728673" miny="-603180.0953587678"
+          maxx="7115025.484639579" maxy="20337.86532591979"/>
+        <BoundingBox CRS="EPSG:3021" minx="6090175.681672592" miny="1222469.4061887483"
+          maxx="7061875.18998446" maxy="1740595.1039356224"/>
+        <BoundingBox CRS="EPSG:3034" minx="3114834.023803483" miny="4022218.2409168514"
+          maxx="4089544.827652256" maxy="4580743.702003852"/>
+        <BoundingBox CRS="EPSG:3857" minx="1163331.0162768757" miny="7340535.315777642"
+          maxx="2298040.5383026046" maxy="9257940.668500004"/>
+        <BoundingBox CRS="EPSG:4326" minx="54.88994192025398" miny="10.450380324118134"
+          maxx="63.63605602616519" maxy="20.643649390834824"/>
+        <BoundingBox CRS="EPSG:4258" minx="54.889941886191515" miny="10.450380324118134"
+          maxx="63.63605600575234" maxy="20.643649390834828"/>
+        <BoundingBox CRS="EPSG:900913" minx="1163331.0162768757" miny="7340535.315777642"
+          maxx="2298040.5383026046" maxy="9257940.668500004"/>
+        <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple"
+            xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+          />
+        </MetadataURL>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.LITOTEKTONISK_ENHET.50K</Name>
+          <Title>Litotektonisk enhet</Title>
+          <Abstract>Litotektonisk enhet</Abstract>
+          <KeywordList>
+            <Keyword>litotektonik</Keyword>
+            <Keyword>lithotectonic</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>8.643886335600527</westBoundLongitude>
+            <eastBoundLongitude>25.486939267281066</eastBoundLongitude>
+            <southBoundLatitude>55.16493585006098</southBoundLatitude>
+            <northBoundLatitude>69.14878980362619</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="8.643886335600527" miny="55.16493585006098"
+            maxx="25.486939267281066" maxy="69.14878980362619"/>
+          <BoundingBox CRS="EPSG:3006" minx="6133122.4963" miny="246554.2268" maxx="7671121.4532"
+            maxy="920962.7794"/>
+          <BoundingBox CRS="EPSG:2400" minx="6130363.349810538" miny="1195330.0899171245"
+            maxx="7677112.895709848" maxy="1889058.1742373132"/>
+          <BoundingBox CRS="EPSG:3007" minx="6128761.441288343" miny="15975.959907841345"
+            maxx="7697751.95070679" maxy="761642.8996588888"/>
+          <BoundingBox CRS="EPSG:3008" minx="6131142.507886209" miny="-43835.16463235355"
+            maxx="7685237.003154418" maxy="666450.3068036027"/>
+          <BoundingBox CRS="EPSG:3009" minx="6135576.726990797" miny="-103547.19207683078"
+            maxx="7674191.129651862" maxy="571131.2318927571"/>
+          <BoundingBox CRS="EPSG:3010" minx="6127533.672335424" miny="-198754.75411187013"
+            maxx="7681127.201403178" maxy="511293.6770470112"/>
+          <BoundingBox CRS="EPSG:3011" minx="6121552.819100302" miny="-293877.365870083"
+            maxx="7689524.968095388" maxy="451271.3931855068"/>
+          <BoundingBox CRS="EPSG:3012" minx="6133102.824226144" miny="-73705.48637950333"
+            maxx="7679530.302654874" maxy="618805.0413385939"/>
+          <BoundingBox CRS="EPSG:3013" minx="6131297.127023176" miny="-151160.10807017738"
+            maxx="7677476.374911243" maxy="541237.4807278974"/>
+          <BoundingBox CRS="EPSG:3014" minx="6124285.74708575" miny="-246328.17025703174"
+            maxx="7685143.4558573365" maxy="481303.6815044432"/>
+          <BoundingBox CRS="EPSG:3015" minx="6119334.439519024" miny="-341399.31539894146"
+            maxx="7694271.550108497" maxy="421200.69975272246"/>
+          <BoundingBox CRS="EPSG:3016" minx="6116439.94948159" miny="-436349.17399596353"
+            maxx="7704859.078591836" maxy="360959.5970176031"/>
+          <BoundingBox CRS="EPSG:3017" minx="6115600.368294044" miny="-531152.6820731416"
+            maxx="7716904.156397108" maxy="300611.2840098405"/>
+          <BoundingBox CRS="EPSG:3018" minx="6116815.141504175" miny="-625783.9445463857"
+            maxx="7730404.569475746" maxy="240186.55328102206"/>
+          <BoundingBox CRS="EPSG:3021" minx="6130363.349810538" miny="1195330.0899171245"
+            maxx="7677112.895709848" maxy="1889058.1742373132"/>
+          <BoundingBox CRS="EPSG:3857" minx="962233.0253539853" miny="7393942.831053091"
+            maxx="2837193.1011128193" maxy="1.0797162068412358E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.16493588376252" miny="8.643886335600527"
+            maxx="69.14878981537241" maxy="25.486939267281066"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.16493585006098" miny="8.643886335600527"
+            maxx="69.14878980362619" maxy="25.486939267281066"/>
+          <BoundingBox CRS="EPSG:900913" minx="962233.0253539853" miny="7393942.831053091"
+            maxx="2837193.1011128193" maxy="1.0797162068412358E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_litotektonik</Name>
+            <Title> Litotektonisk enhet</Title>
+            <LegendURL width="475" height="340">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.LITOTEKTONISK_ENHET.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>1.2E7</MaxScaleDenominator>
+        </Layer>
+
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.GEOLOGISK_ENHET.YTA.50K</Name>
+          <Title>Geologisk enhet, yta</Title>
+          <Abstract>Geologisk enhet, yta</Abstract>
+          <KeywordList>
+            <Keyword>geologisk enhet</Keyword>
+            <Keyword>geologic unit</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>8.643886015361026</westBoundLongitude>
+            <eastBoundLongitude>25.486939803419986</eastBoundLongitude>
+            <southBoundLatitude>55.16493547584428</southBoundLatitude>
+            <northBoundLatitude>69.14879022322576</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="8.643886015361026" miny="55.16493547584428"
+            maxx="25.486939803419986" maxy="69.14879022322576"/>
+          <BoundingBox CRS="EPSG:3006" minx="6133122.4557" miny="246554.2188" maxx="7671121.5"
+            maxy="920962.7933"/>
+          <BoundingBox CRS="EPSG:2400" minx="6130363.309055807" miny="1195330.0814407845"
+            maxx="7677112.942639997" maxy="1889058.1887538806"/>
+          <BoundingBox CRS="EPSG:3007" minx="6128761.4003954455" miny="15975.949629687704"
+            maxx="7697751.998217898" maxy="761642.9153457907"/>
+          <BoundingBox CRS="EPSG:3008" minx="6131142.467126609" miny="-43835.17377601733"
+            maxx="7685237.050331142" maxy="666450.3215995572"/>
+          <BoundingBox CRS="EPSG:3009" minx="6135576.686374551" miny="-103547.20008003205"
+            maxx="7674191.17647059" maxy="571131.2457983195"/>
+          <BoundingBox CRS="EPSG:3010" minx="6127533.631464488" miny="-198754.76299534284"
+            maxx="7681127.248423275" maxy="511293.6920869268"/>
+          <BoundingBox CRS="EPSG:3011" minx="6121552.7779854005" miny="-293877.3756345009"
+            maxx="7689525.015292938" maxy="451271.40934966604"/>
+          <BoundingBox CRS="EPSG:3012" minx="6133102.783536953" miny="-73705.49495367188"
+            maxx="7679530.349655529" maxy="618805.0556893132"/>
+          <BoundingBox CRS="EPSG:3013" minx="6131297.0862782225" miny="-151160.11651346338"
+            maxx="7677476.421833633" maxy="541237.4952018834"/>
+          <BoundingBox CRS="EPSG:3014" minx="6124285.706091511" miny="-246328.1795808599"
+            maxx="7685143.502969162" maxy="481303.69710775535"/>
+          <BoundingBox CRS="EPSG:3015" minx="6119334.398286062" miny="-341399.32560424804"
+            maxx="7694271.597385741" maxy="421200.7164751632"/>
+          <BoundingBox CRS="EPSG:3016" minx="6116439.908020186" miny="-436349.1850841957"
+            maxx="7704859.126010271" maxy="360959.61484884616"/>
+          <BoundingBox CRS="EPSG:3017" minx="6115600.326614256" miny="-531152.6940462363"
+            maxx="7716904.203932266" maxy="300611.30293943005"/>
+          <BoundingBox CRS="EPSG:3018" minx="6116815.099615894" miny="-625783.9574067452"
+            maxx="7730404.61710289" maxy="240186.57329836965"/>
+          <BoundingBox CRS="EPSG:3021" minx="6130363.309055807" miny="1195330.0814407845"
+            maxx="7677112.942639997" maxy="1889058.1887538806"/>
+          <BoundingBox CRS="EPSG:3857" minx="962232.9897050869" miny="7393942.758125142"
+            maxx="2837193.160795532" maxy="1.0797162199640376E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.164935509545806" miny="8.643886015361026"
+            maxx="69.148790234972" maxy="25.486939803419986"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.16493547584428" miny="8.643886015361026"
+            maxx="69.14879022322576" maxy="25.486939803419986"/>
+          <BoundingBox CRS="EPSG:900913" minx="962232.9897050869" miny="7393942.758125142"
+            maxx="2837193.160795532" maxy="1.0797162199640376E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_geologisk_enhet_yta</Name>
+            <Title>Geologisk enhet, yta</Title>
+            <LegendURL width="1212" height="14400">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.GEOLOGISK_ENHET.YTA.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>510000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.GEOLOGISK_ENHET.YTA_OVERBETECKNING.50K</Name>
+          <Title>Geologisk enhet, yta (överbeteckningar)</Title>
+          <Abstract>Geologisk enhet, yta (överbeteckningar)</Abstract>
+          <KeywordList>
+            <Keyword>geologisk enhet</Keyword>
+            <Keyword>geologic unit</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>8.643886015361026</westBoundLongitude>
+            <eastBoundLongitude>25.486939803419986</eastBoundLongitude>
+            <southBoundLatitude>55.16493547584428</southBoundLatitude>
+            <northBoundLatitude>69.14879022322576</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="8.643886015361026" miny="55.16493547584428"
+            maxx="25.486939803419986" maxy="69.14879022322576"/>
+          <BoundingBox CRS="EPSG:3006" minx="6133122.4557" miny="246554.2188" maxx="7671121.5"
+            maxy="920962.7933"/>
+          <BoundingBox CRS="EPSG:2400" minx="6130363.309055807" miny="1195330.0814407845"
+            maxx="7677112.942639997" maxy="1889058.1887538806"/>
+          <BoundingBox CRS="EPSG:3007" minx="6128761.4003954455" miny="15975.949629687704"
+            maxx="7697751.998217898" maxy="761642.9153457907"/>
+          <BoundingBox CRS="EPSG:3008" minx="6131142.467126609" miny="-43835.17377601733"
+            maxx="7685237.050331142" maxy="666450.3215995572"/>
+          <BoundingBox CRS="EPSG:3009" minx="6135576.686374551" miny="-103547.20008003205"
+            maxx="7674191.17647059" maxy="571131.2457983195"/>
+          <BoundingBox CRS="EPSG:3010" minx="6127533.631464488" miny="-198754.76299534284"
+            maxx="7681127.248423275" maxy="511293.6920869268"/>
+          <BoundingBox CRS="EPSG:3011" minx="6121552.7779854005" miny="-293877.3756345009"
+            maxx="7689525.015292938" maxy="451271.40934966604"/>
+          <BoundingBox CRS="EPSG:3012" minx="6133102.783536953" miny="-73705.49495367188"
+            maxx="7679530.349655529" maxy="618805.0556893132"/>
+          <BoundingBox CRS="EPSG:3013" minx="6131297.0862782225" miny="-151160.11651346338"
+            maxx="7677476.421833633" maxy="541237.4952018834"/>
+          <BoundingBox CRS="EPSG:3014" minx="6124285.706091511" miny="-246328.1795808599"
+            maxx="7685143.502969162" maxy="481303.69710775535"/>
+          <BoundingBox CRS="EPSG:3015" minx="6119334.398286062" miny="-341399.32560424804"
+            maxx="7694271.597385741" maxy="421200.7164751632"/>
+          <BoundingBox CRS="EPSG:3016" minx="6116439.908020186" miny="-436349.1850841957"
+            maxx="7704859.126010271" maxy="360959.61484884616"/>
+          <BoundingBox CRS="EPSG:3017" minx="6115600.326614256" miny="-531152.6940462363"
+            maxx="7716904.203932266" maxy="300611.30293943005"/>
+          <BoundingBox CRS="EPSG:3018" minx="6116815.099615894" miny="-625783.9574067452"
+            maxx="7730404.61710289" maxy="240186.57329836965"/>
+          <BoundingBox CRS="EPSG:3021" minx="6130363.309055807" miny="1195330.0814407845"
+            maxx="7677112.942639997" maxy="1889058.1887538806"/>
+          <BoundingBox CRS="EPSG:3857" minx="962232.9897050869" miny="7393942.758125142"
+            maxx="2837193.160795532" maxy="1.0797162199640376E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.164935509545806" miny="8.643886015361026"
+            maxx="69.148790234972" maxy="25.486939803419986"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.16493547584428" miny="8.643886015361026"
+            maxx="69.14879022322576" maxy="25.486939803419986"/>
+          <BoundingBox CRS="EPSG:900913" minx="962232.9897050869" miny="7393942.758125142"
+            maxx="2837193.160795532" maxy="1.0797162199640376E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_geologisk_enhet_yta_overb</Name>
+            <Title>Geologisk, enhet, yta överbetckning</Title>
+            <LegendURL width="435" height="80">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.GEOLOGISK_ENHET.YTA_OVERBETECKNING.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>1100000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.GEOLOGISK_ENHET.LINJE.50K</Name>
+          <Title>Geologisk enhet, linje</Title>
+          <Abstract>Geologisk enhet, linje</Abstract>
+          <KeywordList>
+            <Keyword>geologisk enhet</Keyword>
+            <Keyword>geologic unit</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.177262100118742</westBoundLongitude>
+            <eastBoundLongitude>24.78542360040637</eastBoundLongitude>
+            <southBoundLatitude>55.23628572704741</southBoundLatitude>
+            <northBoundLatitude>69.10527354340539</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.177262100118742" miny="55.23628572704741"
+            maxx="24.78542360040637" maxy="69.10527354340539"/>
+          <BoundingBox CRS="EPSG:3006" minx="6138542.0" miny="267499.4364" maxx="7666218.5"
+            maxy="893053.4784"/>
+          <BoundingBox CRS="EPSG:2400" minx="6136105.744231446" miny="1216352.3082685634"
+            maxx="7671931.542940283" maxy="1861084.0239421048"/>
+          <BoundingBox CRS="EPSG:3007" minx="6135076.089889958" miny="37133.03245169835"
+            maxx="7691474.437361525" maxy="733448.1515973534"/>
+          <BoundingBox CRS="EPSG:3008" minx="6137011.688092991" miny="-22774.389463936794"
+            maxx="7679645.269318606" maxy="638389.4716477441"/>
+          <BoundingBox CRS="EPSG:3009" minx="6140998.399359745" miny="-82593.60104041622"
+            maxx="7669286.214485795" maxy="543210.7627050821"/>
+          <BoundingBox CRS="EPSG:3010" minx="6133551.136971134" miny="-177674.8148603968"
+            maxx="7675708.516829074" maxy="483276.9272240756"/>
+          <BoundingBox CRS="EPSG:3011" minx="6128162.87128819" miny="-272675.90380335494"
+            maxx="7683594.40236328" maxy="423172.92395684763"/>
+          <BoundingBox CRS="EPSG:3012" minx="6138748.524355697" miny="-52696.94094434724"
+            maxx="7674281.859629536" maxy="590813.588425498"/>
+          <BoundingBox CRS="EPSG:3013" minx="6137017.122116959" miny="-130142.74035999319"
+            maxx="7672314.345551089" maxy="513267.05440153775"/>
+          <BoundingBox CRS="EPSG:3014" minx="6130599.880254647" miny="-225186.86533719342"
+            maxx="7679468.58805742" maxy="453244.25424040976"/>
+          <BoundingBox CRS="EPSG:3015" minx="6126239.71228989" miny="-320138.9092837777"
+            maxx="7688085.785531669" maxy="393066.8143751586"/>
+          <BoundingBox CRS="EPSG:3016" minx="6123933.770032933" miny="-414974.5471421513"
+            maxx="7698164.471407047" maxy="332765.72282465297"/>
+          <BoundingBox CRS="EPSG:3017" minx="6123680.543156115" miny="-509668.7908531729"
+            maxx="7709702.882163442" maxy="272371.83190299966"/>
+          <BoundingBox CRS="EPSG:3018" minx="6125479.865633717" miny="-604195.8533932099"
+            maxx="7722698.935077457" maxy="211915.89125175925"/>
+          <BoundingBox CRS="EPSG:3021" minx="6136105.744231446" miny="1216352.3082685634"
+            maxx="7671931.542940283" maxy="1861084.0239421048"/>
+          <BoundingBox CRS="EPSG:3857" minx="1021608.1438616262" miny="7407860.068851139"
+            maxx="2759100.7342928257" maxy="1.0783566088678187E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.23628576065417" miny="9.177262100118742"
+            maxx="69.10527355521383" maxy="24.78542360040637"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.23628572704741" miny="9.177262100118742"
+            maxx="69.10527354340539" maxy="24.78542360040637"/>
+          <BoundingBox CRS="EPSG:900913" minx="1021608.1438616262" miny="7407860.068851139"
+            maxx="2759100.7342928257" maxy="1.0783566088678187E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_geologisk_enhet_linje</Name>
+            <Title>Geologisk enhet, linje</Title>
+            <LegendURL width="1017" height="2360">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.GEOLOGISK_ENHET.LINJE.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>1100000.0</MaxScaleDenominator>
+        </Layer>
+
+        <!-- Grupplager geologisk enhet slut -->
+      </Layer>
+
+      <!-- Grupplager häll -->
+      <Layer queryable="1" opaque="0">
+        <!-- <Name>HALL</Name> -->
+        <Title>Häll</Title>
+        <Abstract>Grupplager: Häll</Abstract>
+        <KeywordList>
+          <Keyword>häll</Keyword>
+          <Keyword>outcrop</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>10.450380324118134</westBoundLongitude>
+          <eastBoundLongitude>20.643649390834828</eastBoundLongitude>
+          <southBoundLatitude>54.88994188530444</southBoundLatitude>
+          <northBoundLatitude>63.63605600500251</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="10.450380324118134" miny="54.88994188530444"
+          maxx="20.643649390834828" maxy="63.63605600500251"/>
+        <BoundingBox CRS="EPSG:3006" minx="6091307.0" miny="274158.71875" maxx="7056577.5"
+          maxy="780435.5"/>
+        <BoundingBox CRS="EPSG:2400" minx="6090175.681672592" miny="1222469.4061887483"
+          maxx="7061875.18998446" maxy="1740595.1039356224"/>
+        <BoundingBox CRS="EPSG:3007" minx="6088181.464682001" miny="73003.51348993326"
+          maxx="7076069.944780876" maxy="622703.2518237722"/>
+        <BoundingBox CRS="EPSG:3008" minx="6089931.936848348" miny="-1495.4594511133619"
+          maxx="7066859.765520358" maxy="526669.8038579441"/>
+        <BoundingBox CRS="EPSG:3009" minx="6093744.497799119" miny="-75931.65391156462"
+          maxx="7059401.260504201" maxy="430547.71908763505"/>
+        <BoundingBox CRS="EPSG:3010" minx="6088761.461385788" miny="-172027.5625541347"
+          maxx="7065576.3995342" maxy="356075.0017101129"/>
+        <BoundingBox CRS="EPSG:3011" minx="6085842.523373818" miny="-268047.81785166386"
+          maxx="7073500.689738241" maxy="281516.9063683986"/>
+        <BoundingBox CRS="EPSG:3012" minx="6091580.327760025" miny="-38723.34104713949"
+          maxx="7062911.615890268" maxy="478618.38699223415"/>
+        <BoundingBox CRS="EPSG:3013" minx="6090994.789152274" miny="-123987.62506448198"
+          maxx="7062270.238860193" maxy="393323.97703698697"/>
+        <BoundingBox CRS="EPSG:3014" minx="6087044.136480063" miny="-220048.59385274153"
+          maxx="7069319.845056109" maxy="318804.6849204652"/>
+        <BoundingBox CRS="EPSG:3015" minx="6085156.418184647" miny="-316022.3005652938"
+          maxx="7078119.058916406" maxy="244215.53567155957"/>
+        <BoundingBox CRS="EPSG:3016" minx="6085330.353068192" miny="-411885.11594548426"
+          maxx="7088668.922514526" maxy="169587.45923468377"/>
+        <BoundingBox CRS="EPSG:3017" minx="6087566.059257662" miny="-507612.7464927159"
+          maxx="7100970.6276611155" maxy="94951.29542891064"/>
+        <BoundingBox CRS="EPSG:3018" minx="6091865.053728673" miny="-603180.0953587678"
+          maxx="7115025.484639579" maxy="20337.86532591979"/>
+        <BoundingBox CRS="EPSG:3021" minx="6090175.681672592" miny="1222469.4061887483"
+          maxx="7061875.18998446" maxy="1740595.1039356224"/>
+        <BoundingBox CRS="EPSG:3034" minx="3114834.023803483" miny="4022218.2409168514"
+          maxx="4089544.827652256" maxy="4580743.702003852"/>
+        <BoundingBox CRS="EPSG:3857" minx="1163331.0162768757" miny="7340535.315777642"
+          maxx="2298040.5383026046" maxy="9257940.668500004"/>
+        <BoundingBox CRS="EPSG:4326" minx="54.88994192025398" miny="10.450380324118134"
+          maxx="63.63605602616519" maxy="20.643649390834824"/>
+        <BoundingBox CRS="EPSG:4258" minx="54.889941886191515" miny="10.450380324118134"
+          maxx="63.63605600575234" maxy="20.643649390834828"/>
+        <BoundingBox CRS="EPSG:900913" minx="1163331.0162768757" miny="7340535.315777642"
+          maxx="2298040.5383026046" maxy="9257940.668500004"/>
+        <Identifier authority="SGU">085fef79-d05b-4e00-a2ac-59cff5014fa8</Identifier>
+        <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple"
+            xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+          />
+        </MetadataURL>
+
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.HALL_YTA.50K</Name>
+          <Title>Häll, yta</Title>
+          <Abstract>Häll, yta</Abstract>
+          <KeywordList>
+            <Keyword>häll</Keyword>
+            <Keyword>outcrop</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.16975305348621</westBoundLongitude>
+            <eastBoundLongitude>25.357318888896483</eastBoundLongitude>
+            <southBoundLatitude>55.17319206964178</southBoundLatitude>
+            <northBoundLatitude>69.12285502388477</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.16975305348621" miny="55.17319206964178"
+            maxx="25.357318888896483" maxy="69.12285502388477"/>
+          <BoundingBox CRS="EPSG:3006" minx="6133593.2147" miny="267378.5598" maxx="7668116.0"
+            maxy="916163.4833"/>
+          <BoundingBox CRS="EPSG:2400" minx="6130889.6406197045" miny="1216173.9533593138"
+            maxx="7673831.608397467" maxy="1884219.2836711244"/>
+          <BoundingBox CRS="EPSG:3007" minx="6130127.885855871" miny="36919.52579019674"
+            maxx="7694508.78016997" maxy="756814.2554039394"/>
+          <BoundingBox CRS="EPSG:3008" minx="6132061.604615345" miny="-22941.671487046435"
+            maxx="7682111.441213224" maxy="661634.8005259249"/>
+          <BoundingBox CRS="EPSG:3009" minx="6136047.633753503" miny="-82714.52601040422"
+            maxx="7671184.473789517" maxy="566330.0153061225"/>
+          <BoundingBox CRS="EPSG:3010" minx="6128107.492121426" miny="-177902.63966437272"
+            maxx="7677609.895635625" maxy="506423.01642921846"/>
+          <BoundingBox CRS="EPSG:3011" minx="6122229.100746232" miny="-273010.89973925933"
+            maxx="7685497.926050475" maxy="446333.9323043168"/>
+          <BoundingBox CRS="EPSG:3012" minx="6133797.949590634" miny="-52841.060542228835"
+            maxx="7676464.034320321" maxy="613996.5374029647"/>
+          <BoundingBox CRS="EPSG:3013" minx="6131819.551082771" miny="-130317.0856016805"
+            maxx="7674214.286048407" maxy="536401.2132369191"/>
+          <BoundingBox CRS="EPSG:3014" minx="6124910.849828206" miny="-225468.23754121317"
+            maxx="7681371.161533597" maxy="476399.29003637546"/>
+          <BoundingBox CRS="EPSG:3015" minx="6120061.804702659" miny="-320527.6137144936"
+            maxx="7689990.014087661" maxy="416230.83018576825"/>
+          <BoundingBox CRS="EPSG:3016" minx="6117269.230189509" miny="-415470.9561995354"
+            maxx="7700069.3698200695" maxy="355926.8901080289"/>
+          <BoundingBox CRS="EPSG:3017" minx="6116531.286172136" miny="-510273.3427347527"
+            maxx="7711607.456874746" maxy="295518.3776636772"/>
+          <BoundingBox CRS="EPSG:3018" minx="6117847.485716476" miny="-604909.0504118854"
+            maxx="7724602.183207851" maxy="235036.0850098153"/>
+          <BoundingBox CRS="EPSG:3021" minx="6130889.6406197045" miny="1216173.9533593138"
+            maxx="7673831.608397467" maxy="1884219.2836711244"/>
+          <BoundingBox CRS="EPSG:3857" minx="1020772.24061415" miny="7395551.983004191"
+            maxx="2822763.8265946154" maxy="1.0789055889414521E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.17319210333238" miny="9.16975305348621"
+            maxx="69.12285503566805" maxy="25.35731888889648"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.17319206964178" miny="9.16975305348621"
+            maxx="69.12285502388477" maxy="25.357318888896483"/>
+          <BoundingBox CRS="EPSG:900913" minx="1020772.24061415" miny="7395551.983004191"
+            maxx="2822763.8265946154" maxy="1.0789055889414521E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_hall_yta</Name>
+            <Title>Häll, yta</Title>
+            <LegendURL width="123" height="40">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.HALL_YTA.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.HALL_PUNKT.50K</Name>
+          <Title>Häll, punkt</Title>
+          <Abstract>Häll, punkt</Abstract>
+          <KeywordList>
+            <Keyword>häll</Keyword>
+            <Keyword>outcrop</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.638696096841489</westBoundLongitude>
+            <eastBoundLongitude>24.534280713179935</eastBoundLongitude>
+            <southBoundLatitude>55.326512587516</southBoundLatitude>
+            <northBoundLatitude>69.12287841910508</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.638696096841489" miny="55.326512587516"
+            maxx="24.534280713179935" maxy="69.12287841910508"/>
+          <BoundingBox CRS="EPSG:3006" minx="6147711.0" miny="286195.5938" maxx="7668110.1085"
+            maxy="882490.7037"/>
+          <BoundingBox CRS="EPSG:2400" minx="6145396.253622065" miny="1235167.0353433478"
+            maxx="7673577.9425318" maxy="1850545.8949339555"/>
+          <BoundingBox CRS="EPSG:3007" minx="6145040.372025454" miny="55712.86196148081"
+            maxx="7692847.986111655" maxy="722469.4702775604"/>
+          <BoundingBox CRS="EPSG:3008" minx="6146581.566264988" miny="-4127.917319132917"
+            maxx="7681278.989476246" maxy="627615.727306268"/>
+          <BoundingBox CRS="EPSG:3009" minx="6150171.068427372" miny="-63889.96218487399"
+            maxx="7671178.579931974" maxy="532643.7612044818"/>
+          <BoundingBox CRS="EPSG:3010" minx="6142942.240647692" miny="-158765.64615186251"
+            maxx="7677142.959916451" maxy="472764.9526632422"/>
+          <BoundingBox CRS="EPSG:3011" minx="6137769.512481098" miny="-253565.29883840994"
+            maxx="7684569.428030092" maxy="412721.25779251975"/>
+          <BoundingBox CRS="EPSG:3012" minx="6148120.165683346" miny="-34020.698286396335"
+            maxx="7676045.096086742" maxy="580142.9856882631"/>
+          <BoundingBox CRS="EPSG:3013" minx="6146299.3818142945" miny="-111335.82143771683"
+            maxx="7673977.941286382" maxy="502726.90541768057"/>
+          <BoundingBox CRS="EPSG:3014" minx="6140099.103852394" miny="-206176.46980826522"
+            maxx="7680673.504707804" maxy="442761.7758004199"/>
+          <BoundingBox CRS="EPSG:3015" minx="6135953.089694004" miny="-300929.108443717"
+            maxx="7688830.565123489" maxy="382647.2714906186"/>
+          <BoundingBox CRS="EPSG:3016" minx="6133858.655421512" miny="-395569.3888812637"
+            maxx="7698447.732655022" maxy="322414.34086326783"/>
+          <BoundingBox CRS="EPSG:3017" minx="6133814.441780558" miny="-490072.3286058246"
+            maxx="7709523.324921977" maxy="262093.80281527736"/>
+          <BoundingBox CRS="EPSG:3018" minx="6135820.4200524455" miny="-584412.1759651278"
+            maxx="7722055.34584313" maxy="201716.37971788232"/>
+          <BoundingBox CRS="EPSG:3021" minx="6145396.253622065" miny="1235167.0353433478"
+            maxx="7673577.9425318" maxy="1850545.8949339555"/>
+          <BoundingBox CRS="EPSG:3857" minx="1072974.7414115074" miny="7425495.179061756"
+            maxx="2731143.6359704253" maxy="1.0789063197492072E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.32651262100224" miny="9.638696096841487"
+            maxx="69.12287843088833" maxy="24.534280713179935"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.326512587516" miny="9.638696096841489"
+            maxx="69.12287841910508" maxy="24.534280713179935"/>
+          <BoundingBox CRS="EPSG:900913" minx="1072974.7414115074" miny="7425495.179061756"
+            maxx="2731143.6359704253" maxy="1.0789063197492072E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_hall_punkt</Name>
+            <Title>Hall, punkt</Title>
+            <LegendURL width="131" height="60">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.HALL_PUNKT.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+
+        <!-- Grupplager häll slut -->
+      </Layer>
+
+      <!-- Grupplager geologisk struktur -->
+      <Layer queryable="1" opaque="0">
+        <!-- <Name>GEOLOGISK STRUKTUR</Name> -->
+        <Title>Geologisk struktur</Title>
+        <Abstract>Grupplager: Geologiska strukturer</Abstract>
+        <KeywordList>
+          <Keyword>geologisk struktur</Keyword>
+          <Keyword>geologic structure</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>10.450380324118134</westBoundLongitude>
+          <eastBoundLongitude>20.643649390834828</eastBoundLongitude>
+          <southBoundLatitude>54.88994188530444</southBoundLatitude>
+          <northBoundLatitude>63.63605600500251</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="10.450380324118134" miny="54.88994188530444"
+          maxx="20.643649390834828" maxy="63.63605600500251"/>
+        <BoundingBox CRS="EPSG:3006" minx="6091307.0" miny="274158.71875" maxx="7056577.5"
+          maxy="780435.5"/>
+        <BoundingBox CRS="EPSG:2400" minx="6090175.681672592" miny="1222469.4061887483"
+          maxx="7061875.18998446" maxy="1740595.1039356224"/>
+        <BoundingBox CRS="EPSG:3007" minx="6088181.464682001" miny="73003.51348993326"
+          maxx="7076069.944780876" maxy="622703.2518237722"/>
+        <BoundingBox CRS="EPSG:3008" minx="6089931.936848348" miny="-1495.4594511133619"
+          maxx="7066859.765520358" maxy="526669.8038579441"/>
+        <BoundingBox CRS="EPSG:3009" minx="6093744.497799119" miny="-75931.65391156462"
+          maxx="7059401.260504201" maxy="430547.71908763505"/>
+        <BoundingBox CRS="EPSG:3010" minx="6088761.461385788" miny="-172027.5625541347"
+          maxx="7065576.3995342" maxy="356075.0017101129"/>
+        <BoundingBox CRS="EPSG:3011" minx="6085842.523373818" miny="-268047.81785166386"
+          maxx="7073500.689738241" maxy="281516.9063683986"/>
+        <BoundingBox CRS="EPSG:3012" minx="6091580.327760025" miny="-38723.34104713949"
+          maxx="7062911.615890268" maxy="478618.38699223415"/>
+        <BoundingBox CRS="EPSG:3013" minx="6090994.789152274" miny="-123987.62506448198"
+          maxx="7062270.238860193" maxy="393323.97703698697"/>
+        <BoundingBox CRS="EPSG:3014" minx="6087044.136480063" miny="-220048.59385274153"
+          maxx="7069319.845056109" maxy="318804.6849204652"/>
+        <BoundingBox CRS="EPSG:3015" minx="6085156.418184647" miny="-316022.3005652938"
+          maxx="7078119.058916406" maxy="244215.53567155957"/>
+        <BoundingBox CRS="EPSG:3016" minx="6085330.353068192" miny="-411885.11594548426"
+          maxx="7088668.922514526" maxy="169587.45923468377"/>
+        <BoundingBox CRS="EPSG:3017" minx="6087566.059257662" miny="-507612.7464927159"
+          maxx="7100970.6276611155" maxy="94951.29542891064"/>
+        <BoundingBox CRS="EPSG:3018" minx="6091865.053728673" miny="-603180.0953587678"
+          maxx="7115025.484639579" maxy="20337.86532591979"/>
+        <BoundingBox CRS="EPSG:3021" minx="6090175.681672592" miny="1222469.4061887483"
+          maxx="7061875.18998446" maxy="1740595.1039356224"/>
+        <BoundingBox CRS="EPSG:3034" minx="3114834.023803483" miny="4022218.2409168514"
+          maxx="4089544.827652256" maxy="4580743.702003852"/>
+        <BoundingBox CRS="EPSG:3857" minx="1163331.0162768757" miny="7340535.315777642"
+          maxx="2298040.5383026046" maxy="9257940.668500004"/>
+        <BoundingBox CRS="EPSG:4326" minx="54.88994192025398" miny="10.450380324118134"
+          maxx="63.63605602616519" maxy="20.643649390834824"/>
+        <BoundingBox CRS="EPSG:4258" minx="54.889941886191515" miny="10.450380324118134"
+          maxx="63.63605600575234" maxy="20.643649390834828"/>
+        <BoundingBox CRS="EPSG:900913" minx="1163331.0162768757" miny="7340535.315777642"
+          maxx="2298040.5383026046" maxy="9257940.668500004"/>
+        <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple"
+            xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+          />
+        </MetadataURL>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.IMPAKTSTRUKTUR.50K</Name>
+          <Title>Impaktstruktur</Title>
+          <Abstract>Impaktstruktur</Abstract>
+          <KeywordList>
+            <Keyword>impaktstuktur</Keyword>
+            <Keyword>impact structure</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>14.810460656811415</westBoundLongitude>
+            <eastBoundLongitude>16.262604780009813</eastBoundLongitude>
+            <southBoundLatitude>56.3859822124911</southBoundLatitude>
+            <northBoundLatitude>57.37516937063926</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="14.810460656811415" miny="56.3859822124911"
+            maxx="16.262604780009813" maxy="57.37516937063926"/>
+          <BoundingBox CRS="EPSG:3006" minx="6249718.5" miny="488601.9688" maxx="6359150.5"
+            maxy="575937.5625"/>
+          <BoundingBox CRS="EPSG:2400" minx="6250988.194889441" miny="1438866.5233102746"
+            maxx="6361485.695599804" maxy="1527520.9701238906"/>
+          <BoundingBox CRS="EPSG:3007" minx="6255762.548603207" miny="319047.6683889859"
+            maxx="6369027.683582451" maxy="411186.8197898838"/>
+          <BoundingBox CRS="EPSG:3008" minx="6252980.745850866" miny="228833.84456303573"
+            maxx="6364365.571643741" maxy="318599.78826941"/>
+          <BoundingBox CRS="EPSG:3009" minx="6252219.387755103" miny="138597.40776310524"
+            maxx="6361695.17807123" maxy="225967.9496798719"/>
+          <BoundingBox CRS="EPSG:3010" minx="6251573.079106369" miny="45963.410939786714"
+            maxx="6362941.517469289" maxy="135716.0237811178"/>
+          <BoundingBox CRS="EPSG:3011" minx="6252946.961097159" miny="-46642.97435429663"
+            maxx="6366178.2945836885" maxy="45468.19076223808"/>
+          <BoundingBox CRS="EPSG:3012" minx="6252347.566085148" miny="183716.83413385056"
+            maxx="6362781.5194247365" maxy="272287.92434877704"/>
+          <BoundingBox CRS="EPSG:3013" minx="6251643.71362321" miny="92278.49654238377"
+            maxx="6362069.606910562" maxy="180843.0912040361"/>
+          <BoundingBox CRS="EPSG:3014" minx="6252007.47398514" miny="-344.7739936342696"
+            maxx="6364311.021557325" maxy="90589.97928382839"/>
+          <BoundingBox CRS="EPSG:3015" minx="6254391.676257838" miny="-92928.09344258418"
+            maxx="6368543.575298868" maxy="353.8961635286687"/>
+          <BoundingBox CRS="EPSG:3016" minx="6258797.697753488" miny="-185446.61334366753"
+            maxx="6374769.429298064" maxy="-89839.2126692197"/>
+          <BoundingBox CRS="EPSG:3017" minx="6265228.075707887" miny="-277875.15413892095"
+            maxx="6382991.744630083" maxy="-179963.20430744777"/>
+          <BoundingBox CRS="EPSG:3018" minx="6273686.494315839" miny="-370188.07856857486"
+            maxx="6393214.663339515" maxy="-269991.61929527833"/>
+          <BoundingBox CRS="EPSG:3021" minx="6250988.194889441" miny="1438866.5233102746"
+            maxx="6361485.695599804" maxy="1527520.9701238906"/>
+          <BoundingBox CRS="EPSG:3857" minx="1648692.9387300587" miny="7635640.67740051"
+            maxx="1810344.8830829493" maxy="7837189.802109687"/>
+          <BoundingBox CRS="EPSG:4326" minx="56.38598224451" miny="14.810460656811415"
+            maxx="57.37516940120964" maxy="16.262604780009813"/>
+          <BoundingBox CRS="EPSG:4258" minx="56.3859822124911" miny="14.810460656811415"
+            maxx="57.37516937063926" maxy="16.262604780009813"/>
+          <BoundingBox CRS="EPSG:900913" minx="1648692.9387300587" miny="7635640.67740051"
+            maxx="1810344.8830829493" maxy="7837189.802109687"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_impaktstruktur</Name>
+            <Title>Impaktstruktur</Title>
+            <LegendURL width="133" height="40">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.IMPAKTSTRUKTUR.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <!-- Lokal deformationszon -->
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.DEFORMATIONSZON_LOK.50K</Name>
+          <Title>Lokal deformationszon</Title>
+          <Abstract>Lokal deformationszon</Abstract>
+          <KeywordList>
+            <Keyword>deformationszon</Keyword>
+            <Keyword>deformation zone</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.024342117342938</westBoundLongitude>
+            <eastBoundLongitude>25.355838415459992</eastBoundLongitude>
+            <southBoundLatitude>55.1345463180619</southBoundLatitude>
+            <northBoundLatitude>69.14858173302468</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.024342117342938" miny="55.1345463180619"
+            maxx="25.355838415459992" maxy="69.14858173302468"/>
+          <BoundingBox CRS="EPSG:3006" minx="6129212.4267" miny="261820.9601" maxx="7671014.0"
+            maxy="915608.9605"/>
+          <BoundingBox CRS="EPSG:2400" minx="6126515.947221465" miny="1210561.8645231633"
+            maxx="7676804.2934854" maxy="1883702.9351271796"/>
+          <BoundingBox CRS="EPSG:3007" minx="6125513.11451286" miny="31227.47688106954"
+            maxx="7697381.189785084" maxy="756448.652605719"/>
+          <BoundingBox CRS="EPSG:3008" minx="6127562.329390101" miny="-28569.081811433163"
+            maxx="7684997.995868599" maxy="661174.3427008027"/>
+          <BoundingBox CRS="EPSG:3009" minx="6131665.092737095" miny="-88274.349639856"
+            maxx="7674083.633453382" maxy="565775.2706082434"/>
+          <BoundingBox CRS="EPSG:3010" minx="6123741.689158228" miny="-183559.38583672477"
+            maxx="7680645.500969704" maxy="505939.73681892216"/>
+          <BoundingBox CRS="EPSG:3011" minx="6117881.046313647" miny="-278763.4726909912"
+            maxx="7688668.64605941" maxy="445922.2169440441"/>
+          <BoundingBox CRS="EPSG:3012" minx="6129356.8814081" miny="-58435.04601093175"
+            maxx="7679357.083251896" maxy="613488.8691694394"/>
+          <BoundingBox CRS="EPSG:3013" minx="6127445.2522984" miny="-135925.50991241663"
+            maxx="7677181.832894987" maxy="535882.1878597469"/>
+          <BoundingBox CRS="EPSG:3014" minx="6120553.795210142" miny="-231173.0317672019"
+            maxx="7684474.492640495" maxy="475951.7809906447"/>
+          <BoundingBox CRS="EPSG:3015" minx="6115723.002003187" miny="-326327.7000015682"
+            maxx="7693227.781791382" maxy="415854.930011545"/>
+          <BoundingBox CRS="EPSG:3016" minx="6112949.686367948" miny="-421365.28595731035"
+            maxx="7703440.190994573" maxy="355622.6785791944"/>
+          <BoundingBox CRS="EPSG:3017" minx="6112232.013572558" miny="-516260.88759719883"
+            maxx="7715109.909785857" maxy="295285.92253278825"/>
+          <BoundingBox CRS="EPSG:3018" minx="6113569.508176572" miny="-610988.792817671"
+            maxx="7728234.804117991" maxy="234875.44259287437"/>
+          <BoundingBox CRS="EPSG:3021" minx="6126515.947221465" miny="1210561.8645231633"
+            maxx="7676804.2934854" maxy="1883702.9351271796"/>
+          <BoundingBox CRS="EPSG:3857" minx="1004585.1692469075" miny="7388022.725631855"
+            maxx="2822599.021045531" maxy="1.0797096995507604E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.134546351803664" miny="9.02434211734294"
+            maxx="69.1485817447712" maxy="25.355838415459992"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.1345463180619" miny="9.024342117342938"
+            maxx="69.14858173302468" maxy="25.355838415459992"/>
+          <BoundingBox CRS="EPSG:900913" minx="1004585.1692469075" miny="7388022.725631855"
+            maxx="2822599.021045531" maxy="1.0797096995507604E7"/>
+          <Style>
+            <Name>BERG_50K_deformationszon_linje_lok</Name>
+            <Title>Lokal deformationszon, linje</Title>
+            <LegendURL width="478" height="1032">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/SE.GOV.SGU.BERG.DEFORMATIONSZON_LOK.50K/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.DEFORMATIONSZON_LOK.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>260000.0</MaxScaleDenominator>
+        </Layer>
+        <!-- Deformationszon regional -->
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.DEFORMATIONSZON_REG.50K</Name>
+          <Title>Regional deformationszon</Title>
+          <Abstract>Regional deformationszon</Abstract>
+          <KeywordList>
+            <Keyword>deformationszon</Keyword>
+            <Keyword>deformation zone</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>14.34627692270333</westBoundLongitude>
+            <eastBoundLongitude>24.108598288424243</eastBoundLongitude>
+            <southBoundLatitude>59.979410894356086</southBoundLatitude>
+            <northBoundLatitude>68.63925916747738</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="14.34627692270333" miny="59.979410894356086"
+            maxx="24.108598288424243" maxy="68.63925916747738"/>
+          <BoundingBox CRS="EPSG:3006" minx="6668024.8652" miny="473427.3438" maxx="7614279.9531"
+            maxy="873172.1424"/>
+          <BoundingBox CRS="EPSG:2400" minx="6665778.80997837" miny="1428694.3134810566"
+            maxx="7617264.9068807615" maxy="1840519.359635843"/>
+          <BoundingBox CRS="EPSG:3007" minx="6673270.138755244" miny="245391.99136472103"
+            maxx="7638534.427005503" maxy="689953.4490173354"/>
+          <BoundingBox CRS="EPSG:3008" minx="6671035.538345879" miny="184413.01508191443"
+            maxx="7627182.721825427" maxy="606717.0540678857"/>
+          <BoundingBox CRS="EPSG:3009" minx="6670693.142456984" miny="123416.71048419364"
+            maxx="7617326.883853543" maxy="523321.4709883954"/>
+          <BoundingBox CRS="EPSG:3010" minx="6663163.475804075" miny="40102.48687138075"
+            maxx="7618718.606733055" maxy="462134.30153067334"/>
+          <BoundingBox CRS="EPSG:3011" minx="6657536.243614217" miny="-43173.71746078326"
+            maxx="7621597.313868648" maxy="400790.11085996754"/>
+          <BoundingBox CRS="EPSG:3012" minx="6670627.836906681" miny="153915.10917046235"
+            maxx="7622067.722702494" maxy="565037.2822243783"/>
+          <BoundingBox CRS="EPSG:3013" minx="6666690.359855602" miny="81756.65015221389"
+            maxx="7617836.855220645" maxy="492749.4644733312"/>
+          <BoundingBox CRS="EPSG:3014" minx="6660112.190419054" miny="-1542.1736043275741"
+            maxx="7619972.107598344" maxy="431479.8826205657"/>
+          <BoundingBox CRS="EPSG:3015" minx="6655435.41479666" miny="-84788.5197711612"
+            maxx="7623594.168261257" maxy="370068.87899673573"/>
+          <BoundingBox CRS="EPSG:3016" minx="6652658.429127776" miny="-167953.3261868871"
+            maxx="7628702.524160211" maxy="308547.56070517213"/>
+          <BoundingBox CRS="EPSG:3017" minx="6651780.275227438" miny="-251007.25537722046"
+            maxx="7635296.4401759915" maxy="246946.90435100874"/>
+          <BoundingBox CRS="EPSG:3018" minx="6652800.649187993" miny="-333920.59728717676"
+            maxx="7643374.947444181" maxy="185297.79204615825"/>
+          <BoundingBox CRS="EPSG:3021" minx="6665778.80997837" miny="1428694.3134810566"
+            maxx="7617264.9068807615" maxy="1840519.359635843"/>
+          <BoundingBox CRS="EPSG:3857" minx="1597020.2418146264" miny="8395155.384048626"
+            maxx="2683756.8852069746" maxy="1.0639638281901479E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="59.97941092083747" miny="14.34627692270333"
+            maxx="68.6392591799601" maxy="24.108598288424247"/>
+          <BoundingBox CRS="EPSG:4258" minx="59.979410894356086" miny="14.34627692270333"
+            maxx="68.63925916747738" maxy="24.108598288424243"/>
+          <BoundingBox CRS="EPSG:900913" minx="1597020.2418146264" miny="8395155.384048626"
+            maxx="2683756.8852069746" maxy="1.0639638281901479E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_deformationszon_linje_reg</Name>
+            <Title>Regional deformationszon, linje</Title>
+            <LegendURL width="478" height="1032">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/SE.GOV.SGU.BERG.DEFORMATIONSZON_REG.50K/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.DEFORMATIONSZON_REG.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>260000.0</MaxScaleDenominator>
+        </Layer>
+
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.STRUKTURELL_FORMLINJE.50K</Name>
+          <Title>Strukturell formlinje</Title>
+          <Abstract>Strukturell formlinje</Abstract>
+          <KeywordList>
+            <Keyword>strukturell formlinje</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.409427572911564</westBoundLongitude>
+            <eastBoundLongitude>25.438035414303126</eastBoundLongitude>
+            <southBoundLatitude>56.12390825372743</southBoundLatitude>
+            <northBoundLatitude>69.12076361568558</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.409427572911564" miny="56.12390825372743"
+            maxx="25.438035414303126" maxy="69.12076361568558"/>
+          <BoundingBox CRS="EPSG:3006" minx="6240438.5" miny="276974.7813" maxx="7667843.9537"
+            maxy="919521.3288"/>
+          <BoundingBox CRS="EPSG:2400" minx="6237679.797226915" miny="1227022.4002805697"
+            maxx="7673433.0630082805" maxy="1887573.5487000176"/>
+          <BoundingBox CRS="EPSG:3007" minx="6237265.189913914" miny="46516.68905247627"
+            maxx="7694401.648065454" maxy="755517.9388301084"/>
+          <BoundingBox CRS="EPSG:3008" minx="6239087.861563786" miny="-13340.604250638076"
+            maxx="7681921.633087403" maxy="662671.8720569375"/>
+          <BoundingBox CRS="EPSG:3009" minx="6242935.674269709" miny="-73114.46448579436"
+            maxx="7670912.3186274525" maxy="569689.2044817928"/>
+          <BoundingBox CRS="EPSG:3010" minx="6234806.1598760355" miny="-165979.38934561476"
+            maxx="7677102.592803273" maxy="509772.624398758"/>
+          <BoundingBox CRS="EPSG:3011" minx="6228711.843318919" miny="-258760.62066223327"
+            maxx="7684755.3424943" maxy="449672.2618557839"/>
+          <BoundingBox CRS="EPSG:3012" minx="6240758.512166003" miny="-43239.881360708794"
+            maxx="7676233.0104084695" maxy="616195.9862357315"/>
+          <BoundingBox CRS="EPSG:3013" minx="6238616.24580542" miny="-119555.82325383049"
+            maxx="7673824.576271696" maxy="539755.8236172567"/>
+          <BoundingBox CRS="EPSG:3014" minx="6231504.854823059" miny="-212382.03881335305"
+            maxx="7680746.232360557" maxy="479743.4704825088"/>
+          <BoundingBox CRS="EPSG:3015" minx="6226426.711928177" miny="-305111.9528562818"
+            maxx="7689129.753500751" maxy="419562.88709112967"/>
+          <BoundingBox CRS="EPSG:3016" minx="6223378.808173687" miny="-397719.96092257346"
+            maxx="7698973.709667215" maxy="359245.1423369069"/>
+          <BoundingBox CRS="EPSG:3017" minx="6222359.330961922" miny="-490179.83370537066"
+            maxx="7710276.3758254545" maxy="298821.1546014167"/>
+          <BoundingBox CRS="EPSG:3018" minx="6223367.672898953" miny="-582464.5883786215"
+            maxx="7723035.710226751" maxy="238321.72461712244"/>
+          <BoundingBox CRS="EPSG:3021" minx="6237679.797226915" miny="1227022.4002805697"
+            maxx="7673433.0630082805" maxy="1887573.5487000176"/>
+          <BoundingBox CRS="EPSG:3857" minx="1047452.6860727026" miny="7583121.938291982"
+            maxx="2831749.149101484" maxy="1.0788402617780143E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="56.1239082861179" miny="9.409427572911564"
+            maxx="69.12076362747185" maxy="25.438035414303126"/>
+          <BoundingBox CRS="EPSG:4258" minx="56.12390825372743" miny="9.409427572911564"
+            maxx="69.12076361568558" maxy="25.438035414303126"/>
+          <BoundingBox CRS="EPSG:900913" minx="1047452.6860727026" miny="7583121.938291982"
+            maxx="2831749.149101484" maxy="1.0788402617780143E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_strukturell_formlinje</Name>
+            <Title>Strukturell formlinje</Title>
+            <LegendURL width="237" height="100">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.STRUKTURELL_FORMLINJE.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>1100000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.VECK.50K</Name>
+          <Title>Veck</Title>
+          <Abstract>Veck</Abstract>
+          <KeywordList>
+            <Keyword>veck</Keyword>
+            <Keyword>fold</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>10.68551877518784</westBoundLongitude>
+            <eastBoundLongitude>25.035520761871954</eastBoundLongitude>
+            <southBoundLatitude>57.3334599463052</southBoundLatitude>
+            <northBoundLatitude>68.51287618589835</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="10.68551877518784" miny="57.3334599463052"
+            maxx="25.035520761871954" maxy="68.51287618589835"/>
+          <BoundingBox CRS="EPSG:3006" minx="6375499.5" miny="323327.6563" maxx="7600128.883"
+            maxy="914174.2141"/>
+          <BoundingBox CRS="EPSG:2400" minx="6372785.444582328" miny="1274998.0422669975"
+            maxx="7605075.791357583" maxy="1881336.3336745792"/>
+          <BoundingBox CRS="EPSG:3007" minx="6374216.964030016" miny="96118.42665425307"
+            maxx="7626383.090350085" maxy="744197.1089952542"/>
+          <BoundingBox CRS="EPSG:3008" minx="6375140.517755489" miny="34658.79767251402"
+            maxx="7614023.961218142" maxy="654342.4359549063"/>
+          <BoundingBox CRS="EPSG:3009" minx="6378050.7202881165" miny="-26743.04091636662"
+            maxx="7603170.151060426" maxy="564339.9500800321"/>
+          <BoundingBox CRS="EPSG:3010" minx="6369893.553778362" miny="-116625.49908814614"
+            maxx="7608224.42683923" maxy="502772.9621785071"/>
+          <BoundingBox CRS="EPSG:3011" minx="6363734.085829363" miny="-206430.3262439103"
+            maxx="7614774.546809076" maxy="441029.2327997738"/>
+          <BoundingBox CRS="EPSG:3012" minx="6376347.219546732" miny="3948.7264303340344"
+            maxx="7608408.787231656" maxy="609357.9444366202"/>
+          <BoundingBox CRS="EPSG:3013" minx="6373722.188872688" miny="-71692.31871718576"
+            maxx="7605510.260751239" maxy="533580.5043994804"/>
+          <BoundingBox CRS="EPSG:3014" minx="6366564.327587733" miny="-161539.27718112356"
+            maxx="7611312.557421889" maxy="471921.22927000443"/>
+          <BoundingBox CRS="EPSG:3015" minx="6361402.466455302" miny="-251295.293922676"
+            maxx="7618610.275042005" maxy="410100.88781448686"/>
+          <BoundingBox CRS="EPSG:3016" minx="6358233.961905685" miny="-340933.4255055298"
+            maxx="7627402.393812959" maxy="348150.7587959332"/>
+          <BoundingBox CRS="EPSG:3017" minx="6357057.184002817" miny="-430426.2004306206"
+            maxx="7637687.648353751" maxy="286101.9637390147"/>
+          <BoundingBox CRS="EPSG:3018" minx="6357871.5259912945" miny="-519745.50056312117"
+            maxx="7649464.507433437" maxy="223985.50366752886"/>
+          <BoundingBox CRS="EPSG:3021" minx="6372785.444582328" miny="1274998.0422669975"
+            maxx="7605075.791357583" maxy="1881336.3336745792"/>
+          <BoundingBox CRS="EPSG:3857" minx="1189506.5089158742" miny="7828582.631265819"
+            maxx="2786941.4229560154" maxy="1.0601121304055642E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="57.33345997693801" miny="10.685518775187838"
+            maxx="68.51287619856643" maxy="25.035520761871954"/>
+          <BoundingBox CRS="EPSG:4258" minx="57.3334599463052" miny="10.68551877518784"
+            maxx="68.51287618589835" maxy="25.035520761871954"/>
+          <BoundingBox CRS="EPSG:900913" minx="1189506.5089158742" miny="7828582.631265819"
+            maxx="2786941.4229560154" maxy="1.0601121304055642E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_geologisk_struktur_veck</Name>
+            <Title>Veck</Title>
+            <LegendURL width="266" height="200">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.VECK.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>1.1E7</MaxScaleDenominator>
+        </Layer>
+
+        <!-- Grupplager geologisk struktur slut -->
+      </Layer>
+
+      <!-- Grupplager punktsymbol -->
+      <Layer queryable="1" opaque="0">
+        <!-- <Name>PUNKTSYMBOL</Name> -->
+        <Title>Punktsymbol</Title>
+        <Abstract>Grupplager: Punktsymbol</Abstract>
+        <KeywordList>
+          <Keyword>punktsymbol</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>10.450380324118134</westBoundLongitude>
+          <eastBoundLongitude>20.643649390834828</eastBoundLongitude>
+          <southBoundLatitude>54.88994188530444</southBoundLatitude>
+          <northBoundLatitude>63.63605600500251</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="10.450380324118134" miny="54.88994188530444"
+          maxx="20.643649390834828" maxy="63.63605600500251"/>
+        <BoundingBox CRS="EPSG:3006" minx="6091307.0" miny="274158.71875" maxx="7056577.5"
+          maxy="780435.5"/>
+        <BoundingBox CRS="EPSG:2400" minx="6090175.681672592" miny="1222469.4061887483"
+          maxx="7061875.18998446" maxy="1740595.1039356224"/>
+        <BoundingBox CRS="EPSG:3007" minx="6088181.464682001" miny="73003.51348993326"
+          maxx="7076069.944780876" maxy="622703.2518237722"/>
+        <BoundingBox CRS="EPSG:3008" minx="6089931.936848348" miny="-1495.4594511133619"
+          maxx="7066859.765520358" maxy="526669.8038579441"/>
+        <BoundingBox CRS="EPSG:3009" minx="6093744.497799119" miny="-75931.65391156462"
+          maxx="7059401.260504201" maxy="430547.71908763505"/>
+        <BoundingBox CRS="EPSG:3010" minx="6088761.461385788" miny="-172027.5625541347"
+          maxx="7065576.3995342" maxy="356075.0017101129"/>
+        <BoundingBox CRS="EPSG:3011" minx="6085842.523373818" miny="-268047.81785166386"
+          maxx="7073500.689738241" maxy="281516.9063683986"/>
+        <BoundingBox CRS="EPSG:3012" minx="6091580.327760025" miny="-38723.34104713949"
+          maxx="7062911.615890268" maxy="478618.38699223415"/>
+        <BoundingBox CRS="EPSG:3013" minx="6090994.789152274" miny="-123987.62506448198"
+          maxx="7062270.238860193" maxy="393323.97703698697"/>
+        <BoundingBox CRS="EPSG:3014" minx="6087044.136480063" miny="-220048.59385274153"
+          maxx="7069319.845056109" maxy="318804.6849204652"/>
+        <BoundingBox CRS="EPSG:3015" minx="6085156.418184647" miny="-316022.3005652938"
+          maxx="7078119.058916406" maxy="244215.53567155957"/>
+        <BoundingBox CRS="EPSG:3016" minx="6085330.353068192" miny="-411885.11594548426"
+          maxx="7088668.922514526" maxy="169587.45923468377"/>
+        <BoundingBox CRS="EPSG:3017" minx="6087566.059257662" miny="-507612.7464927159"
+          maxx="7100970.6276611155" maxy="94951.29542891064"/>
+        <BoundingBox CRS="EPSG:3018" minx="6091865.053728673" miny="-603180.0953587678"
+          maxx="7115025.484639579" maxy="20337.86532591979"/>
+        <BoundingBox CRS="EPSG:3021" minx="6090175.681672592" miny="1222469.4061887483"
+          maxx="7061875.18998446" maxy="1740595.1039356224"/>
+        <BoundingBox CRS="EPSG:3034" minx="3114834.023803483" miny="4022218.2409168514"
+          maxx="4089544.827652256" maxy="4580743.702003852"/>
+        <BoundingBox CRS="EPSG:3857" minx="1163331.0162768757" miny="7340535.315777642"
+          maxx="2298040.5383026046" maxy="9257940.668500004"/>
+        <BoundingBox CRS="EPSG:4326" minx="54.88994192025398" miny="10.450380324118134"
+          maxx="63.63605602616519" maxy="20.643649390834824"/>
+        <BoundingBox CRS="EPSG:4258" minx="54.889941886191515" miny="10.450380324118134"
+          maxx="63.63605600575234" maxy="20.643649390834828"/>
+        <BoundingBox CRS="EPSG:900913" minx="1163331.0162768757" miny="7340535.315777642"
+          maxx="2298040.5383026046" maxy="9257940.668500004"/>
+        <Identifier authority="SGU">085fef79-d05b-4e00-a2ac-59cff5014fa8</Identifier>
+        <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple"
+            xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+          />
+        </MetadataURL>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.GRUNDAMNESETIKETT.50K</Name>
+          <Title>Grundämnesetikett</Title>
+          <Abstract>Grundämnesetikett</Abstract>
+          <KeywordList>
+            <Keyword>grundämne</Keyword>
+            <Keyword>element label</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>11.12316203395786</westBoundLongitude>
+            <eastBoundLongitude>24.913628779850747</eastBoundLongitude>
+            <southBoundLatitude>57.14532593057404</southBoundLatitude>
+            <northBoundLatitude>69.05642099057052</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="11.12316203395786" miny="57.14532593057404"
+            maxx="24.913628779850747" maxy="69.05642099057052"/>
+          <BoundingBox CRS="EPSG:3006" minx="6352921.0" miny="345128.4846" maxx="7660708.0"
+            maxy="899197.8164"/>
+          <BoundingBox CRS="EPSG:2400" minx="6350387.506252122" miny="1296543.0635397725"
+            maxx="7665396.6950470805" maxy="1867155.9192689233"/>
+          <BoundingBox CRS="EPSG:3007" minx="6352620.447549258" miny="114939.27512650797"
+            maxx="7686262.920423573" maxy="730199.1244917457"/>
+          <BoundingBox CRS="EPSG:3008" minx="6353045.483745262" miny="54978.66931330225"
+            maxx="7674281.565374891" maxy="639849.0076640316"/>
+          <BoundingBox CRS="EPSG:3009" minx="6355463.185274111" miny="-4933.488795518235"
+            maxx="7663773.509403762" maxy="549357.5594237696"/>
+          <BoundingBox CRS="EPSG:3010" minx="6347660.21706491" miny="-95309.97269080265"
+            maxx="7668294.616067318" maxy="489283.6694708329"/>
+          <BoundingBox CRS="EPSG:3011" minx="6341860.381502394" miny="-185616.1505916993"
+            maxx="7674280.2988313595" maxy="429036.81237129733"/>
+          <BoundingBox CRS="EPSG:3012" minx="6354005.197233673" miny="25014.62127091216"
+            maxx="7668843.256519847" maxy="594619.2463338868"/>
+          <BoundingBox CRS="EPSG:3013" minx="6351311.079388436" miny="-50128.883880272624"
+            maxx="7665850.939437256" maxy="519344.1753168088"/>
+          <BoundingBox CRS="EPSG:3014" minx="6344510.121735591" miny="-140473.49007510714"
+            maxx="7671104.440649134" maxy="459179.9171867309"/>
+          <BoundingBox CRS="EPSG:3015" minx="6339710.648841626" miny="-230734.64476649265"
+            maxx="7677822.060148505" maxy="398858.2381445278"/>
+          <BoundingBox CRS="EPSG:3016" minx="6336910.14091282" miny="-320885.753555392"
+            maxx="7686002.687058705" maxy="338410.1660764258"/>
+          <BoundingBox CRS="EPSG:3017" minx="6336107.121829033" miny="-410899.7175978393"
+            maxx="7695644.937359948" maxy="277866.5889230572"/>
+          <BoundingBox CRS="EPSG:3018" minx="6337301.167537538" miny="-500748.8135097809"
+            maxx="7706747.135770515" maxy="217258.28800338076"/>
+          <BoundingBox CRS="EPSG:3021" minx="6350387.506252122" miny="1296543.0635397725"
+            maxx="7665396.6950470805" maxy="1867155.9192689233"/>
+          <BoundingBox CRS="EPSG:3857" minx="1238224.7336312616" miny="7789880.228151519"
+            maxx="2773372.469585631" maxy="1.0768335057435896E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="57.14532596148712" miny="11.12316203395786"
+            maxx="69.05642100244896" maxy="24.913628779850747"/>
+          <BoundingBox CRS="EPSG:4258" minx="57.14532593057404" miny="11.12316203395786"
+            maxx="69.05642099057052" maxy="24.913628779850747"/>
+          <BoundingBox CRS="EPSG:900913" minx="1238224.7336312616" miny="7789880.228151519"
+            maxx="2773372.469585631" maxy="1.0768335057435896E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_grundamnesetikett</Name>
+            <Title>Grundamnesetikett</Title>
+            <LegendURL width="222" height="280">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.GRUNDAMNESETIKETT.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.MINERALETIKETT.50K</Name>
+          <Title>Mineraletikett</Title>
+          <Abstract>Mineraletikett</Abstract>
+          <KeywordList>
+            <Keyword>mineral</Keyword>
+            <Keyword>mineral label</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.248247690050027</westBoundLongitude>
+            <eastBoundLongitude>24.93544352685302</eastBoundLongitude>
+            <southBoundLatitude>55.75261834481389</southBoundLatitude>
+            <northBoundLatitude>68.9408820897602</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.248247690050027" miny="55.75261834481389"
+            maxx="24.93544352685302" maxy="68.9408820897602"/>
+          <BoundingBox CRS="EPSG:3006" minx="6197184.0" miny="268625.7288" maxx="7647853.0"
+            maxy="902190.9731"/>
+          <BoundingBox CRS="EPSG:2400" minx="6194634.03180583" miny="1218161.825238243"
+            maxx="7653541.786825861" maxy="1869979.9509682818"/>
+          <BoundingBox CRS="EPSG:3007" minx="6193698.073048459" miny="39155.383376922895"
+            maxx="7673547.9004365085" maxy="740049.8673801342"/>
+          <BoundingBox CRS="EPSG:3008" minx="6195662.689260107" miny="-21199.21435120373"
+            maxx="7661490.572607331" maxy="646264.8210243103"/>
+          <BoundingBox CRS="EPSG:3009" minx="6199663.865546219" miny="-81466.85794317734"
+            maxx="7650913.365346139" maxy="552351.9138655462"/>
+          <BoundingBox CRS="EPSG:3010" minx="6191957.595009282" miny="-175277.15382628824"
+            maxx="7657306.538284858" maxy="491960.9391877973"/>
+          <BoundingBox CRS="EPSG:3011" minx="6186296.447878262" miny="-269004.08180943434"
+            maxx="7665172.701863543" maxy="431396.2654256378"/>
+          <BoundingBox CRS="EPSG:3012" minx="6197408.583530697" miny="-51345.82905381103"
+            maxx="7656016.838416195" maxy="599322.7645946704"/>
+          <BoundingBox CRS="EPSG:3013" minx="6195554.822956551" miny="-128380.89440723235"
+            maxx="7653925.759496811" maxy="522180.0824077627"/>
+          <BoundingBox CRS="EPSG:3014" minx="6188871.628434707" miny="-222152.57831202273"
+            maxx="7661055.568729212" maxy="461698.36643883906"/>
+          <BoundingBox CRS="EPSG:3015" minx="6184231.655697981" miny="-315828.54601047"
+            maxx="7669657.772012433" maxy="401058.5263641781"/>
+          <BoundingBox CRS="EPSG:3016" minx="6181632.037146429" miny="-409383.6974545227"
+            maxx="7679730.973592204" maxy="340291.64592250634"/>
+          <BoundingBox CRS="EPSG:3017" minx="6181071.1611729935" miny="-502792.28531402594"
+            maxx="7691273.490677886" maxy="279428.665423992"/>
+          <BoundingBox CRS="EPSG:3018" minx="6182548.679599087" miny="-596027.7831352408"
+            maxx="7704283.330923191" maxy="218500.41578857313"/>
+          <BoundingBox CRS="EPSG:3021" minx="6194634.03180583" miny="1218161.825238243"
+            maxx="7653541.786825861" maxy="1869979.9509682818"/>
+          <BoundingBox CRS="EPSG:3857" minx="1029510.2235864371" miny="7509325.768332446"
+            maxx="2775800.8761137086" maxy="1.073244743174684E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.752618377721284" miny="9.248247690050027"
+            maxx="68.94088210180483" maxy="24.93544352685302"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.75261834481389" miny="9.248247690050027"
+            maxx="68.9408820897602" maxy="24.93544352685302"/>
+          <BoundingBox CRS="EPSG:900913" minx="1029510.2235864371" miny="7509325.768332446"
+            maxx="2775800.8761137086" maxy="1.073244743174684E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_mineraletikett</Name>
+            <Title>gdwbmod.dbo.mineraletikett_vy_ext</Title>
+            <LegendURL width="167" height="1280">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.MINERALETIKETT.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.BERGARTSETIKETT.50K</Name>
+          <Title>Bergartsetikett</Title>
+          <Abstract>Bergartsetikett</Abstract>
+          <KeywordList>
+            <Keyword>bergart</Keyword>
+            <Keyword>lithology</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.215918555660387</westBoundLongitude>
+            <eastBoundLongitude>25.060369754057778</eastBoundLongitude>
+            <southBoundLatitude>55.51616754785705</southBoundLatitude>
+            <northBoundLatitude>69.11242439684227</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.215918555660387" miny="55.51616754785705"
+            maxx="25.060369754057778" maxy="69.11242439684227"/>
+          <BoundingBox CRS="EPSG:3006" minx="6170888.5" miny="269124.2793" maxx="7666973.5"
+            maxy="904184.7752"/>
+          <BoundingBox CRS="EPSG:2400" minx="6168318.750140441" miny="1218354.1446393854"
+            maxx="7672665.535586542" maxy="1872225.44374472"/>
+          <BoundingBox CRS="EPSG:3007" minx="6167454.910628554" miny="38718.84569787301"
+            maxx="7692776.846511967" maxy="743193.4062989128"/>
+          <BoundingBox CRS="EPSG:3008" minx="6169384.807790099" miny="-21168.335658513563"
+            maxx="7680674.026072809" maxy="648832.9080565785"/>
+          <BoundingBox CRS="EPSG:3009" minx="6173357.843137256" miny="-80968.10794317734"
+            maxx="7670041.516606644" maxy="554346.5138055224"/>
+          <BoundingBox CRS="EPSG:3010" minx="6165636.1834338335" miny="-175348.86059389007"
+            maxx="7676424.070869779" maxy="494421.80854725896"/>
+          <BoundingBox CRS="EPSG:3011" minx="6159966.359592237" miny="-269647.9432251244"
+            maxx="7684269.7719823895" maxy="434321.20626625867"/>
+          <BoundingBox CRS="EPSG:3012" minx="6171115.807318329" miny="-51081.06695017818"
+            maxx="7675173.860344212" maxy="601603.8836824368"/>
+          <BoundingBox CRS="EPSG:3013" minx="6169240.259483316" miny="-128167.18257941073"
+            maxx="7673049.82846341" maxy="524408.086323592"/>
+          <BoundingBox CRS="EPSG:3014" minx="6162545.046294997" miny="-222510.12819292786"
+            maxx="7680164.104144237" maxy="464391.55080012407"/>
+          <BoundingBox CRS="EPSG:3015" minx="6157899.714865956" miny="-316759.231041587"
+            maxx="7688740.90073724" maxy="404214.65724314866"/>
+          <BoundingBox CRS="EPSG:3016" minx="6155301.320241321" miny="-410889.73904392344"
+            maxx="7698778.756236302" maxy="343908.42648755957"/>
+          <BoundingBox CRS="EPSG:3017" minx="6154748.210183482" miny="-504876.24714957585"
+            maxx="7710275.911774632" maxy="283503.737446551"/>
+          <BoundingBox CRS="EPSG:3018" minx="6156240.032528474" miny="-598692.5636516744"
+            maxx="7723230.289477005" maxy="223031.36007133505"/>
+          <BoundingBox CRS="EPSG:3021" minx="6168318.750140441" miny="1218354.1446393854"
+            maxx="7672665.535586542" maxy="1872225.44374472"/>
+          <BoundingBox CRS="EPSG:3857" minx="1025911.3608083944" miny="7462695.113454119"
+            maxx="2789707.6001128675" maxy="1.0785798403329223E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.516167581087615" miny="9.215918555660387"
+            maxx="69.11242440864046" maxy="25.060369754057774"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.51616754785705" miny="9.215918555660387"
+            maxx="69.11242439684227" maxy="25.060369754057778"/>
+          <BoundingBox CRS="EPSG:900913" minx="1025911.3608083944" miny="7462695.113454119"
+            maxx="2789707.6001128675" maxy="1.0785798403329223E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_bergartsetikett</Name>
+            <Title>Bergartsetikett</Title>
+            <LegendURL width="375" height="1240">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.BERGARTSETIKETT.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.PLANSTRUKTUR.50K</Name>
+          <Title>Planstruktur med stupningssiffra</Title>
+          <Abstract>Planstruktur med stupningssiffra</Abstract>
+          <KeywordList>
+            <Keyword>planstruktur</Keyword>
+            <Keyword>stupning</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>8.991497550742935</westBoundLongitude>
+            <eastBoundLongitude>25.45555419111247</eastBoundLongitude>
+            <southBoundLatitude>55.29433983093646</southBoundLatitude>
+            <northBoundLatitude>69.12116966155823</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="8.991497550742935" miny="55.29433983093646"
+            maxx="25.45555419111247" maxy="69.12116966155823"/>
+          <BoundingBox CRS="EPSG:3006" minx="6147549.0" miny="260202.0313" maxx="7667953.5"
+            maxy="920221.4212"/>
+          <BoundingBox CRS="EPSG:2400" minx="6144796.186916752" miny="1209154.5910015989"
+            maxx="7673763.529418129" maxy="1888275.0835303352"/>
+          <BoundingBox CRS="EPSG:3007" minx="6143757.975082429" miny="29760.36530624736"
+            maxx="7694545.676728322" maxy="760273.9855858597"/>
+          <BoundingBox CRS="EPSG:3008" minx="6145858.902155585" miny="-30112.780965744198"
+            maxx="7682048.451370825" maxy="665395.6427112431"/>
+          <BoundingBox CRS="EPSG:3009" minx="6150009.003601441" miny="-89893.92627050824"
+            maxx="7671021.908763506" maxy="570389.5770308124"/>
+          <BoundingBox CRS="EPSG:3010" minx="6141966.0205033915" miny="-184783.63791451283"
+            maxx="7677623.169083902" maxy="510475.06949199765"/>
+          <BoundingBox CRS="EPSG:3011" minx="6135981.704945293" miny="-279590.8614096192"
+            maxx="7685687.334728604" maxy="450376.4150113661"/>
+          <BoundingBox CRS="EPSG:3012" minx="6147677.670332815" miny="-60016.77362722345"
+            maxx="7676351.216544041" maxy="617907.0247196166"/>
+          <BoundingBox CRS="EPSG:3013" minx="6145729.885090853" miny="-137347.60032149107"
+            maxx="7674139.601289161" maxy="540457.2778658464"/>
+          <BoundingBox CRS="EPSG:3014" minx="6138716.802202753" miny="-232199.06080809893"
+            maxx="7681472.467390109" maxy="480446.81511663715"/>
+          <BoundingBox CRS="EPSG:3015" minx="6133760.285522206" miny="-326955.9985848595"
+            maxx="7690267.592109051" maxy="420267.7580098602"/>
+          <BoundingBox CRS="EPSG:3016" minx="6130857.120321825" miny="-421593.92520303687"
+            maxx="7700523.469929834" maxy="359951.1774334557"/>
+          <BoundingBox CRS="EPSG:3017" minx="6130005.4176712325" miny="-516087.6808705741"
+            maxx="7712238.295305456" maxy="299527.99338150234"/>
+          <BoundingBox CRS="EPSG:3018" minx="6131204.622577687" miny="-610411.2990162513"
+            maxx="7725409.940041888" maxy="239029.00780882724"/>
+          <BoundingBox CRS="EPSG:3021" minx="6144796.186916752" miny="1209154.5910015989"
+            maxx="7673763.529418129" maxy="1888275.0835303352"/>
+          <BoundingBox CRS="EPSG:3857" minx="1000928.9288176693" miny="7419202.31854425"
+            maxx="2833699.330415222" maxy="1.0788529445256002E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.294339864465755" miny="8.991497550742933"
+            maxx="69.12116967334393" maxy="25.45555419111247"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.29433983093646" miny="8.991497550742935"
+            maxx="69.12116966155823" maxy="25.45555419111247"/>
+          <BoundingBox CRS="EPSG:900913" minx="1000928.9288176693" miny="7419202.31854425"
+            maxx="2833699.330415222" maxy="1.0788529445256002E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_planstruktur</Name>
+            <Title>Planstruktur</Title>
+            <LegendURL width="523" height="2716">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.PLANSTRUKTUR.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.LINJARSTRUKTUR.50K</Name>
+          <Title>Linjärstruktur med stupningssiffra</Title>
+          <Abstract>Linjärstruktur med stupningssiffra</Abstract>
+          <KeywordList>
+            <Keyword>linjärstruktur</Keyword>
+            <Keyword>stupning</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>8.991497550742935</westBoundLongitude>
+            <eastBoundLongitude>25.45555419111247</eastBoundLongitude>
+            <southBoundLatitude>55.29433983093646</southBoundLatitude>
+            <northBoundLatitude>69.12116966155823</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="8.991497550742935" miny="55.29433983093646"
+            maxx="25.45555419111247" maxy="69.12116966155823"/>
+          <BoundingBox CRS="EPSG:3006" minx="6147549.0" miny="260202.0313" maxx="7667953.5"
+            maxy="920221.4212"/>
+          <BoundingBox CRS="EPSG:2400" minx="6144796.186916752" miny="1209154.5910015989"
+            maxx="7673763.529418129" maxy="1888275.0835303352"/>
+          <BoundingBox CRS="EPSG:3007" minx="6143757.975082429" miny="29760.36530624736"
+            maxx="7694545.676728322" maxy="760273.9855858597"/>
+          <BoundingBox CRS="EPSG:3008" minx="6145858.902155585" miny="-30112.780965744198"
+            maxx="7682048.451370825" maxy="665395.6427112431"/>
+          <BoundingBox CRS="EPSG:3009" minx="6150009.003601441" miny="-89893.92627050824"
+            maxx="7671021.908763506" maxy="570389.5770308124"/>
+          <BoundingBox CRS="EPSG:3010" minx="6141966.0205033915" miny="-184783.63791451283"
+            maxx="7677623.169083902" maxy="510475.06949199765"/>
+          <BoundingBox CRS="EPSG:3011" minx="6135981.704945293" miny="-279590.8614096192"
+            maxx="7685687.334728604" maxy="450376.4150113661"/>
+          <BoundingBox CRS="EPSG:3012" minx="6147677.670332815" miny="-60016.77362722345"
+            maxx="7676351.216544041" maxy="617907.0247196166"/>
+          <BoundingBox CRS="EPSG:3013" minx="6145729.885090853" miny="-137347.60032149107"
+            maxx="7674139.601289161" maxy="540457.2778658464"/>
+          <BoundingBox CRS="EPSG:3014" minx="6138716.802202753" miny="-232199.06080809893"
+            maxx="7681472.467390109" maxy="480446.81511663715"/>
+          <BoundingBox CRS="EPSG:3015" minx="6133760.285522206" miny="-326955.9985848595"
+            maxx="7690267.592109051" maxy="420267.7580098602"/>
+          <BoundingBox CRS="EPSG:3016" minx="6130857.120321825" miny="-421593.92520303687"
+            maxx="7700523.469929834" maxy="359951.1774334557"/>
+          <BoundingBox CRS="EPSG:3017" minx="6130005.4176712325" miny="-516087.6808705741"
+            maxx="7712238.295305456" maxy="299527.99338150234"/>
+          <BoundingBox CRS="EPSG:3018" minx="6131204.622577687" miny="-610411.2990162513"
+            maxx="7725409.940041888" maxy="239029.00780882724"/>
+          <BoundingBox CRS="EPSG:3021" minx="6144796.186916752" miny="1209154.5910015989"
+            maxx="7673763.529418129" maxy="1888275.0835303352"/>
+          <BoundingBox CRS="EPSG:3857" minx="1000928.9288176693" miny="7419202.31854425"
+            maxx="2833699.330415222" maxy="1.0788529445256002E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.294339864465755" miny="8.991497550742933"
+            maxx="69.12116967334393" maxy="25.45555419111247"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.29433983093646" miny="8.991497550742935"
+            maxx="69.12116966155823" maxy="25.45555419111247"/>
+          <BoundingBox CRS="EPSG:900913" minx="1000928.9288176693" miny="7419202.31854425"
+            maxx="2833699.330415222" maxy="1.0788529445256002E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_linjarstruktur</Name>
+            <Title>Linjärsturktur</Title>
+            <LegendURL width="278" height="100">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.LINJARSTRUKTUR.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.STRUKTURSYMBOL.50K</Name>
+          <Title>Strukturmätning utan stupningssiffra</Title>
+          <Abstract>Strukturmätning utan stupningssiffra</Abstract>
+          <KeywordList>
+            <Keyword>struktur</Keyword>
+            <Keyword>structure</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>8.991497550742935</westBoundLongitude>
+            <eastBoundLongitude>25.45555419111247</eastBoundLongitude>
+            <southBoundLatitude>55.29433983093646</southBoundLatitude>
+            <northBoundLatitude>69.12116966155823</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="8.991497550742935" miny="55.29433983093646"
+            maxx="25.45555419111247" maxy="69.12116966155823"/>
+          <BoundingBox CRS="EPSG:3006" minx="6147549.0" miny="260202.0313" maxx="7667953.5"
+            maxy="920221.4212"/>
+          <BoundingBox CRS="EPSG:2400" minx="6144796.186916752" miny="1209154.5910015989"
+            maxx="7673763.529418129" maxy="1888275.0835303352"/>
+          <BoundingBox CRS="EPSG:3007" minx="6143757.975082429" miny="29760.36530624736"
+            maxx="7694545.676728322" maxy="760273.9855858597"/>
+          <BoundingBox CRS="EPSG:3008" minx="6145858.902155585" miny="-30112.780965744198"
+            maxx="7682048.451370825" maxy="665395.6427112431"/>
+          <BoundingBox CRS="EPSG:3009" minx="6150009.003601441" miny="-89893.92627050824"
+            maxx="7671021.908763506" maxy="570389.5770308124"/>
+          <BoundingBox CRS="EPSG:3010" minx="6141966.0205033915" miny="-184783.63791451283"
+            maxx="7677623.169083902" maxy="510475.06949199765"/>
+          <BoundingBox CRS="EPSG:3011" minx="6135981.704945293" miny="-279590.8614096192"
+            maxx="7685687.334728604" maxy="450376.4150113661"/>
+          <BoundingBox CRS="EPSG:3012" minx="6147677.670332815" miny="-60016.77362722345"
+            maxx="7676351.216544041" maxy="617907.0247196166"/>
+          <BoundingBox CRS="EPSG:3013" minx="6145729.885090853" miny="-137347.60032149107"
+            maxx="7674139.601289161" maxy="540457.2778658464"/>
+          <BoundingBox CRS="EPSG:3014" minx="6138716.802202753" miny="-232199.06080809893"
+            maxx="7681472.467390109" maxy="480446.81511663715"/>
+          <BoundingBox CRS="EPSG:3015" minx="6133760.285522206" miny="-326955.9985848595"
+            maxx="7690267.592109051" maxy="420267.7580098602"/>
+          <BoundingBox CRS="EPSG:3016" minx="6130857.120321825" miny="-421593.92520303687"
+            maxx="7700523.469929834" maxy="359951.1774334557"/>
+          <BoundingBox CRS="EPSG:3017" minx="6130005.4176712325" miny="-516087.6808705741"
+            maxx="7712238.295305456" maxy="299527.99338150234"/>
+          <BoundingBox CRS="EPSG:3018" minx="6131204.622577687" miny="-610411.2990162513"
+            maxx="7725409.940041888" maxy="239029.00780882724"/>
+          <BoundingBox CRS="EPSG:3021" minx="6144796.186916752" miny="1209154.5910015989"
+            maxx="7673763.529418129" maxy="1888275.0835303352"/>
+          <BoundingBox CRS="EPSG:3857" minx="1000928.9288176693" miny="7419202.31854425"
+            maxx="2833699.330415222" maxy="1.0788529445256002E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.294339864465755" miny="8.991497550742933"
+            maxx="69.12116967334393" maxy="25.45555419111247"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.29433983093646" miny="8.991497550742935"
+            maxx="69.12116966155823" maxy="25.45555419111247"/>
+          <BoundingBox CRS="EPSG:900913" minx="1000928.9288176693" miny="7419202.31854425"
+            maxx="2833699.330415222" maxy="1.0788529445256002E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_strukturmatning_ustup</Name>
+            <Title>Strukturmätningssymbol utan stupningssiffra</Title>
+            <LegendURL width="523" height="1358">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.STRUKTURSYMBOL.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.STRUKTUR_TEXTURSYMBOL.50K</Name>
+          <Title>Struktur-textursymbol</Title>
+          <Abstract>Struktur-textursymbol</Abstract>
+          <KeywordList>
+            <Keyword>struktur</Keyword>
+            <Keyword>textur</Keyword>
+            <Keyword>structure</Keyword>
+            <Keyword>texture</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.754445641189504</westBoundLongitude>
+            <eastBoundLongitude>24.696509005658076</eastBoundLongitude>
+            <southBoundLatitude>55.97658716391471</southBoundLatitude>
+            <northBoundLatitude>68.38599657397644</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.754445641189504" miny="55.97658716391471"
+            maxx="24.696509005658076" maxy="68.38599657397644"/>
+          <BoundingBox CRS="EPSG:3006" minx="6222267.5" miny="283807.125" maxx="7585920.5"
+            maxy="902179.9156"/>
+          <BoundingBox CRS="EPSG:2400" minx="6219714.449716685" miny="1233646.2156093752"
+            maxx="7591378.349017109" maxy="1869155.7383912117"/>
+          <BoundingBox CRS="EPSG:3007" minx="6219411.808437575" miny="57336.68103367851"
+            maxx="7611579.044109728" maxy="738942.443445065"/>
+          <BoundingBox CRS="EPSG:3008" minx="6221069.775655418" miny="-4509.895123816968"
+            maxx="7599511.624257126" maxy="645706.7508766903"/>
+          <BoundingBox CRS="EPSG:3009" minx="6224757.402961185" miny="-66279.3867547019"
+            maxx="7588956.082432974" maxy="552340.8519407763"/>
+          <BoundingBox CRS="EPSG:3010" minx="6217024.975766247" miny="-159538.05211015797"
+            maxx="7594973.434124766" maxy="490437.8835757858"/>
+          <BoundingBox CRS="EPSG:3011" minx="6211331.266978919" miny="-252715.86557279812"
+            maxx="7602494.801337605" maxy="428365.06737903313"/>
+          <BoundingBox CRS="EPSG:3012" minx="6222659.77263187" miny="-35406.2114139488"
+            maxx="7594044.772555529" maxy="599038.471300133"/>
+          <BoundingBox CRS="EPSG:3013" minx="6220636.088150757" miny="-112917.27667900478"
+            maxx="7591776.702728387" maxy="521412.5576055252"/>
+          <BoundingBox CRS="EPSG:3014" minx="6213923.52404737" miny="-206138.6212230599"
+            maxx="7598546.172815641" maxy="459420.7445181965"/>
+          <BoundingBox CRS="EPSG:3015" minx="6209247.814070836" miny="-299266.63606490014"
+            maxx="7606819.187932077" maxy="397274.7673126919"/>
+          <BoundingBox CRS="EPSG:3016" minx="6206606.13912983" miny="-392275.98162268463"
+            maxx="7616594.633318943" maxy="335005.9069321096"/>
+          <BoundingBox CRS="EPSG:3017" minx="6205996.901346893" miny="-485140.6985475387"
+            maxx="7627871.145766977" maxy="272645.2925677984"/>
+          <BoundingBox CRS="EPSG:3018" minx="6207419.731683458" miny="-577834.0778272065"
+            maxx="7640647.0908647645" maxy="210223.9392501328"/>
+          <BoundingBox CRS="EPSG:3021" minx="6219714.449716685" miny="1233646.2156093752"
+            maxx="7591378.349017109" maxy="1869155.7383912117"/>
+          <BoundingBox CRS="EPSG:3857" minx="1085859.921747882" miny="7553756.240228862"
+            maxx="2749202.806881352" maxy="1.0562669464006573E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.976587196511666" miny="9.754445641189502"
+            maxx="68.38599658683162" maxy="24.696509005658076"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.97658716391471" miny="9.754445641189504"
+            maxx="68.38599657397644" maxy="24.696509005658076"/>
+          <BoundingBox CRS="EPSG:900913" minx="1085859.921747882" miny="7553756.240228862"
+            maxx="2749202.806881352" maxy="1.0562669464006573E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_struktur_textursymbol</Name>
+            <Title>Struktur- textursymbol</Title>
+            <LegendURL width="245" height="400">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.STRUKTUR_TEXTURSYMBOL.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.STRUKTUR_TEXTURSYMBOL_RIKTAD.50K</Name>
+          <Title>Struktur-textursymbol, riktad</Title>
+          <Abstract>Struktur-textursymbol, riktad</Abstract>
+          <KeywordList>
+            <Keyword>struktur</Keyword>
+            <Keyword>textur</Keyword>
+            <Keyword>structure</Keyword>
+            <Keyword>texture</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.2272167858921</westBoundLongitude>
+            <eastBoundLongitude>25.234698369142073</eastBoundLongitude>
+            <southBoundLatitude>55.36453473423734</southBoundLatitude>
+            <northBoundLatitude>68.93025038742228</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.2272167858921" miny="55.36453473423734"
+            maxx="25.234698369142073" maxy="68.93025038742228"/>
+          <BoundingBox CRS="EPSG:3006" minx="6154893.0" miny="267660.0889" maxx="7646641.0"
+            maxy="914749.4194"/>
+          <BoundingBox CRS="EPSG:2400" minx="6152202.635373632" miny="1216702.9313582256"
+            maxx="7652341.863000682" maxy="1882522.53228745"/>
+          <BoundingBox CRS="EPSG:3007" minx="6151414.882577258" miny="38250.19415552607"
+            maxx="7672951.74177198" maxy="754472.7969390977"/>
+          <BoundingBox CRS="EPSG:3008" minx="6153361.847552119" miny="-22135.0446670932"
+            maxx="7660585.591488494" maxy="659757.6197036082"/>
+          <BoundingBox CRS="EPSG:3009" minx="6157355.942376952" miny="-82432.88425370154"
+            maxx="7649700.880352142" maxy="564915.3855542218"/>
+          <BoundingBox CRS="EPSG:3010" minx="6149423.075238923" miny="-177160.5925612232"
+            maxx="7656117.580358964" maxy="504483.98230660136"/>
+          <BoundingBox CRS="EPSG:3011" minx="6143546.702639307" miny="-271807.22460424894"
+            maxx="7664007.920818837" maxy="443872.5796070411"/>
+          <BoundingBox CRS="EPSG:3012" minx="6155102.875136519" miny="-52296.81340425412"
+            maxx="7654957.936722157" maxy="612350.8300576475"/>
+          <BoundingBox CRS="EPSG:3013" minx="6153132.159944643" miny="-129805.37571156374"
+            maxx="7652724.956794975" maxy="534724.1270806732"/>
+          <BoundingBox CRS="EPSG:3014" minx="6146228.093742674" miny="-224495.5475015118"
+            maxx="7659878.618024164" maxy="474198.830588284"/>
+          <BoundingBox CRS="EPSG:3015" minx="6141378.470511312" miny="-319092.57514160307"
+            maxx="7668505.32308868" maxy="413509.12552808336"/>
+          <BoundingBox CRS="EPSG:3016" minx="6138580.16726153" miny="-413571.91250839154"
+            maxx="7678603.676496096" maxy="352686.14136058773"/>
+          <BoundingBox CRS="EPSG:3017" minx="6137831.37636619" miny="-507908.35458440124"
+            maxx="7690171.996070492" maxy="291760.8566379586"/>
+          <BoundingBox CRS="EPSG:3018" minx="6139131.613430854" miny="-602075.902633632"
+            maxx="7703208.290358044" maxy="230764.13307532066"/>
+          <BoundingBox CRS="EPSG:3021" minx="6152202.635373632" miny="1216702.9313582256"
+            maxx="7652341.863000682" maxy="1882522.53228745"/>
+          <BoundingBox CRS="EPSG:3857" minx="1027169.0740446546" miny="7432938.745702007"
+            maxx="2809113.772774748" maxy="1.0729154561053228E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.364534767672566" miny="9.2272167858921"
+            maxx="68.93025039948226" maxy="25.23469836914207"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.36453473423734" miny="9.2272167858921"
+            maxx="68.93025038742228" maxy="25.234698369142073"/>
+          <BoundingBox CRS="EPSG:900913" minx="1027169.0740446546" miny="7432938.745702007"
+            maxx="2809113.772774748" maxy="1.0729154561053228E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_struktur_textursymbol_riktad</Name>
+            <Title>Struktur- textursymbol, riktad</Title>
+            <LegendURL width="305" height="612">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.STRUKTUR_TEXTURSYMBOL_RIKTAD.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>SE.GOV.SGU.BERG.BERGARTSROLLSYMBOL.50K</Name>
+          <Title>Bergartsrollsymbol</Title>
+          <Abstract>Bergartsrollsymbol</Abstract>
+          <KeywordList>
+            <Keyword>bergartsroll</Keyword>
+            <Keyword>role</Keyword>
+          </KeywordList>
+          <CRS>EPSG:3006</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>9.173946442469985</westBoundLongitude>
+            <eastBoundLongitude>25.352318803081427</eastBoundLongitude>
+            <southBoundLatitude>55.457784333530846</southBoundLatitude>
+            <northBoundLatitude>69.12926102052441</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="9.173946442469985" miny="55.457784333530846"
+            maxx="25.352318803081427" maxy="69.12926102052441"/>
+          <BoundingBox CRS="EPSG:3006" minx="6165441.9771" miny="267614.9845" maxx="7668830.0"
+            maxy="915836.8122"/>
+          <BoundingBox CRS="EPSG:2400" minx="6162737.398763143" miny="1216780.4670798187"
+            maxx="7674542.861324011" maxy="1883902.0167862915"/>
+          <BoundingBox CRS="EPSG:3007" minx="6161949.550299036" miny="37120.72545685673"
+            maxx="7695207.133650459" maxy="755103.3804861951"/>
+          <BoundingBox CRS="EPSG:3008" minx="6163907.0773228435" miny="-22722.764933381375"
+            maxx="7682817.955748497" maxy="660617.4777823682"/>
+          <BoundingBox CRS="EPSG:3009" minx="6167909.140756303" miny="-82478.00670268107"
+            maxx="7671898.759503802" maxy="566003.2134853943"/>
+          <BoundingBox CRS="EPSG:3010" minx="6159941.287870749" miny="-176977.38091275486"
+            maxx="7678318.447184032" maxy="506113.98548832384"/>
+          <BoundingBox CRS="EPSG:3011" minx="6154027.417505789" miny="-271395.0305551656"
+            maxx="7686200.368350579" maxy="446042.7936926096"/>
+          <BoundingBox CRS="EPSG:3012" minx="6165652.41432667" miny="-52613.3356400246"
+            maxx="7677174.4830682855" maxy="613324.8267247074"/>
+          <BoundingBox CRS="EPSG:3013" minx="6163668.180877287" miny="-129736.40316668805"
+            maxx="7674925.751494866" maxy="536083.2814935644"/>
+          <BoundingBox CRS="EPSG:3014" minx="6156727.870297779" miny="-224197.93465155858"
+            maxx="7682076.705418788" maxy="476099.19030692644"/>
+          <BoundingBox CRS="EPSG:3015" minx="6151839.499306356" miny="-318565.6021056557"
+            maxx="7690689.260704084" maxy="415948.682116012"/>
+          <BoundingBox CRS="EPSG:3016" minx="6148999.95103961" miny="-412814.7176544524"
+            maxx="7700761.941970692" maxy="355662.80956237385"/>
+          <BoundingBox CRS="EPSG:3017" minx="6148207.409205469" miny="-506919.9369913569"
+            maxx="7712292.975576435" maxy="295272.47701671836"/>
+          <BoundingBox CRS="EPSG:3018" minx="6149461.366105226" miny="-600855.1252895581"
+            maxx="7725280.267420601" maxy="234808.47339905004"/>
+          <BoundingBox CRS="EPSG:3021" minx="6162737.398763143" miny="1216780.4670798187"
+            maxx="7674542.861324011" maxy="1883902.0167862915"/>
+          <BoundingBox CRS="EPSG:3857" minx="1021239.0465405216" miny="7451224.472673628"
+            maxx="2822207.2195877596" maxy="1.079105725370091E7"/>
+          <BoundingBox CRS="EPSG:4326" minx="55.45778436684046" miny="9.173946442469985"
+            maxx="69.12926103229856" maxy="25.352318803081427"/>
+          <BoundingBox CRS="EPSG:4258" minx="55.457784333530846" miny="9.173946442469985"
+            maxx="69.12926102052441" maxy="25.352318803081427"/>
+          <BoundingBox CRS="EPSG:900913" minx="1021239.0465405216" miny="7451224.472673628"
+            maxx="2822207.2195877596" maxy="1.079105725370091E7"/>
+          <AuthorityURL name="SGU">
+            <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+          </AuthorityURL>
+          <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/plain</Format>
+            <OnlineResource xlink:type="simple"
+              xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+            />
+          </MetadataURL>
+          <Style>
+            <Name>BERG_50K_bergartsrollsymbol</Name>
+            <Title>Bergartsrollsymbol</Title>
+            <LegendURL width="383" height="1480">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.BERGARTSROLLSYMBOL.50K"
+              />
+            </LegendURL>
+          </Style>
+          <MinScaleDenominator>1.0</MinScaleDenominator>
+          <MaxScaleDenominator>110000.0</MaxScaleDenominator>
+        </Layer>
+        <!-- Grupplager punktsymbol slut -->
+      </Layer>
+
+      <Layer queryable="1" opaque="0">
+        <Name>SE.GOV.SGU.BERG.ISOLINJE.50K</Name>
+        <Title>Isolinje</Title>
+        <Abstract>Isolinje, överyta</Abstract>
+        <KeywordList>
+          <Keyword>överyta</Keyword>
+          <Keyword>isoline</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>12.39134356748683</westBoundLongitude>
+          <eastBoundLongitude>15.810146254769837</eastBoundLongitude>
+          <southBoundLatitude>55.32863167051576</southBoundLatitude>
+          <northBoundLatitude>59.29495465625453</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="12.39134356748683" miny="55.32863167051576"
+          maxx="15.810146254769837" maxy="59.29495465625453"/>
+        <BoundingBox CRS="EPSG:3006" minx="6133863.6686" miny="351321.0938" maxx="6572897.0"
+          maxy="546148.75"/>
+        <BoundingBox CRS="EPSG:2400" minx="6135446.482640606" miny="1300170.8204510727"
+          maxx="6576974.479112241" maxy="1500284.3706399805"/>
+        <BoundingBox CRS="EPSG:3007" minx="6134011.970654731" miny="172316.93108626024"
+          maxx="6581455.100081691" maxy="386421.3839957628"/>
+        <BoundingBox CRS="EPSG:3008" minx="6134139.986699233" miny="86778.91726238072"
+          maxx="6577528.63211948" maxy="291311.42843186157"/>
+        <BoundingBox CRS="EPSG:3009" minx="6136318.195878353" miny="1261.5984393756953"
+          maxx="6575527.210884355" maxy="196167.21688675473"/>
+        <BoundingBox CRS="EPSG:3010" minx="6136348.574147685" miny="-93893.50595407345"
+          maxx="6579838.868732726" maxy="110687.63292395469"/>
+        <BoundingBox CRS="EPSG:3011" minx="6138428.564549844" miny="-188989.3390057591"
+          maxx="6586078.357156304" maxy="25220.93422109772"/>
+        <BoundingBox CRS="EPSG:3012" minx="6134972.759950897" miny="44015.91931016116"
+          maxx="6576287.356792336" maxy="243742.15867232502"/>
+        <BoundingBox CRS="EPSG:3013" minx="6136077.21585867" miny="-46321.90158401264"
+          maxx="6577442.182892466" maxy="153427.56528265722"/>
+        <BoundingBox CRS="EPSG:3014" minx="6137132.314723448" miny="-141450.29783874523"
+          maxx="6582717.500799592" maxy="67950.9211296366"/>
+        <BoundingBox CRS="EPSG:3015" minx="6140237.533439439" miny="-236507.66563154873"
+          maxx="6589921.760972475" maxy="-17498.817214099952"/>
+        <BoundingBox CRS="EPSG:3016" minx="6145394.880447837" miny="-331470.1668013784"
+          maxx="6599057.72516693" maxy="-102893.52040733636"/>
+        <BoundingBox CRS="EPSG:3017" minx="6152607.680313913" miny="-426313.4190959402"
+          maxx="6610128.85355545" maxy="-188204.85447291814"/>
+        <BoundingBox CRS="EPSG:3018" minx="6161880.559123571" miny="-521012.3609016546"
+          maxx="6623139.275955235" maxy="-273404.1765271951"/>
+        <BoundingBox CRS="EPSG:3021" minx="6135446.482640606" miny="1300170.8204510727"
+          maxx="6576974.479112241" maxy="1500284.3706399805"/>
+        <BoundingBox CRS="EPSG:3857" minx="1379398.056177139" miny="7425909.842357534"
+          maxx="1759977.4304481596" maxy="8244412.862030079"/>
+        <BoundingBox CRS="EPSG:4326" minx="55.328631703999164" miny="12.39134356748683"
+          maxx="59.29495468384138" maxy="15.810146254769839"/>
+        <BoundingBox CRS="EPSG:4258" minx="55.32863167051576" miny="12.39134356748683"
+          maxx="59.29495465625453" maxy="15.810146254769837"/>
+        <BoundingBox CRS="EPSG:900913" minx="1379398.056177139" miny="7425909.842357534"
+          maxx="1759977.4304481596" maxy="8244412.862030079"/>
+        <AuthorityURL name="SGU">
+          <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+        </AuthorityURL>
+        <Identifier authority="SGU">e3596819-fe03-4932-b400-809eb6a2529e</Identifier>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple"
+            xlink:href="https://www.geodata.se/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=5e0f2b85-84d6-4d0c-af76-656c6f6d2a46&amp;outputSchema=csw:IsoRecord"
+          />
+        </MetadataURL>
+        <Style>
+          <Name>BERG_50K_isolinje</Name>
+          <Title>Isolinje</Title>
+          <LegendURL width="70" height="40">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+              xlink:href="https://maps3.sgu.se/geoserver/berg/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.BERG.ISOLINJE.50K"
+            />
+          </LegendURL>
+        </Style>
+        <MinScaleDenominator>1.0</MinScaleDenominator>
+        <MaxScaleDenominator>510000.0</MaxScaleDenominator>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

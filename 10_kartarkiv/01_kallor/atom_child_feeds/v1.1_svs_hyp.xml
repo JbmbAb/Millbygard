@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="sv">
+    <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp</id>
+    <title>Svensk vattenstandard fysiskt vatten</title>
+    <subtitle>Fördefinierade datamängder för Svensk vattenstandard fysiskt vatten</subtitle>
+    <updated>2026-01-26T21:06:49+01:00</updated>
+    <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp" rel="self" type="application/atom+xml" hreflang="sv" title="Detta dokument"/>
+    <rights>Produkten omfattas av upphovsrätt. Avtal för användning krävs, avgifter för användning tas ut. Användningen förutsätter ändamålsprövning.</rights>
+    <author>
+        <name>Geodatasupport</name>
+        <email>geodatasupport@lm.se</email>
+    </author>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/1000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Torneälven (1000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Torneälven (1000)</summary>
+        <updated>2026-01-24T16:05:12+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.1000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/1000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Torneälven (1000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.026390730415418 65.81673092881856 25.259521765953558 65.81673092881856 25.259521765953558 69.33629855347142 18.026390730415418 69.33629855347142 18.026390730415418 65.81673092881856</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/1112</id>
+        <title>Svensk vattenstandard fysiskt vatten, Kusten (1112)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Kusten (1112)</summary>
+        <updated>2026-01-26T21:06:49+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.1112</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/1112" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Kusten (1112)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>10.593502464831301 55.137095682826214 24.177785901744063 55.137095682826214 24.177785901744063 66.04544312060852 10.593502464831301 66.04544312060852 10.593502464831301 55.137095682826214</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/2000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Keräsjoki (2000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Keräsjoki (2000)</summary>
+        <updated>2026-01-23T20:47:48+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.2000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/2000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Keräsjoki (2000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>23.392727061779944 65.80119033086767 24.00027914070261 65.80119033086767 24.00027914070261 66.27306133913707 23.392727061779944 66.27306133913707 23.392727061779944 65.80119033086767</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/3000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Sangisälven (3000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Sangisälven (3000)</summary>
+        <updated>2026-01-23T20:51:45+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.3000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/3000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Sangisälven (3000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>22.91394900058143 65.81967941808036 23.624399366270747 65.81967941808036 23.624399366270747 66.63381405975977 22.91394900058143 66.63381405975977 22.91394900058143 65.81967941808036</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/4000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Kalixälven (4000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Kalixälven (4000)</summary>
+        <updated>2026-01-23T22:49:50+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.4000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/4000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Kalixälven (4000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.893634551418245 65.80991126311548 23.40858619503797 65.80991126311548 23.40858619503797 68.1500856459189 17.893634551418245 68.1500856459189 17.893634551418245 65.80991126311548</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/5000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Töreälven (5000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Töreälven (5000)</summary>
+        <updated>2026-01-23T20:49:09+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.5000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/5000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Töreälven (5000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>21.977686122434655 65.90573743890735 22.744648769757696 65.90573743890735 22.744648769757696 66.40429263090708 21.977686122434655 66.40429263090708 21.977686122434655 65.90573743890735</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/6000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Vitån (6000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Vitån (6000)</summary>
+        <updated>2026-01-24T15:24:08+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.6000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/6000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Vitån (6000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>21.803922324973865 65.8337299119158 22.575150391297182 65.8337299119158 22.575150391297182 66.48122711053158 21.803922324973865 66.48122711053158 21.803922324973865 65.8337299119158</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/7000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Råneälven (7000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Råneälven (7000)</summary>
+        <updated>2026-01-23T20:58:51+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.7000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/7000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Råneälven (7000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>20.177786686914324 65.82359497272138 22.342252053249467 65.82359497272138 22.342252053249467 67.11194750960193 20.177786686914324 67.11194750960193 20.177786686914324 65.82359497272138</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/8000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Altersundet (8000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Altersundet (8000)</summary>
+        <updated>2026-01-23T20:46:44+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.8000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/8000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Altersundet (8000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>21.688339163639522 65.68611433375882 22.259250764288794 65.68611433375882 22.259250764288794 66.0189142020542 21.688339163639522 66.0189142020542 21.688339163639522 65.68611433375882</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/9000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Luleälven (9000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Luleälven (9000)</summary>
+        <updated>2026-01-24T16:07:55+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.9000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/9000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Luleälven (9000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.031572905454137 65.57144393043725 22.076766693849393 65.57144393043725 22.076766693849393 68.25672584014266 16.031572905454137 68.25672584014266 16.031572905454137 65.57144393043725</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/10000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Alån (10000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Alån (10000)</summary>
+        <updated>2026-01-23T20:33:40+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.10000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/10000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Alån (10000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>21.034632608695485 65.43876413998726 21.88553572737614 65.43876413998726 21.88553572737614 65.97096784343839 21.034632608695485 65.97096784343839 21.034632608695485 65.43876413998726</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/11000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Rosån (11000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Rosån (11000)</summary>
+        <updated>2026-01-23T20:31:06+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.11000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/11000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Rosån (11000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>21.32644167269618 65.41263867027104 21.825871198168734 65.41263867027104 21.825871198168734 65.67163733463164 21.32644167269618 65.67163733463164 21.32644167269618 65.41263867027104</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/12000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Alterälven (12000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Alterälven (12000)</summary>
+        <updated>2026-01-23T20:32:24+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.12000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/12000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Alterälven (12000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>20.907913936114248 65.40142681837534 21.522086232749793 65.40142681837534 21.522086232749793 65.95532922913192 20.907913936114248 65.95532922913192 20.907913936114248 65.40142681837534</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/13000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Piteälven (13000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Piteälven (13000)</summary>
+        <updated>2026-01-23T21:08:46+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.13000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/13000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Piteälven (13000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.042229524511804 65.22664405024207 21.445016198323465 65.22664405024207 21.445016198323465 67.19643865356969 16.042229524511804 67.19643865356969 16.042229524511804 65.22664405024207</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/16000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Jävreån (16000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Jävreån (16000)</summary>
+        <updated>2026-01-23T20:30:11+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.16000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/16000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Jävreån (16000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>21.02490200321757 65.10901812435492 21.518085857933006 65.10901812435492 21.518085857933006 65.25544037545833 21.02490200321757 65.25544037545833 21.02490200321757 65.10901812435492</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/17000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Åbyälven (17000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Åbyälven (17000)</summary>
+        <updated>2026-01-23T20:37:29+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.17000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/17000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Åbyälven (17000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>19.10986470248059 65.01388689415457 21.387747987484236 65.01388689415457 21.387747987484236 65.84089146610242 19.10986470248059 65.84089146610242 19.10986470248059 65.01388689415457</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/18000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Byskeälven (18000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Byskeälven (18000)</summary>
+        <updated>2026-01-23T20:45:39+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.18000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/18000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Byskeälven (18000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.217403663611748 64.94093189918064 21.238928978939107 64.94093189918064 21.238928978939107 65.97276534516104 18.217403663611748 65.97276534516104 18.217403663611748 64.94093189918064</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/19000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Kågeälven (19000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Kågeälven (19000)</summary>
+        <updated>2026-01-23T20:35:26+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.19000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/19000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Kågeälven (19000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>19.85603737597588 64.81159701403898 21.01721505997449 64.81159701403898 21.01721505997449 65.2774835859425 19.85603737597588 65.2774835859425 19.85603737597588 64.81159701403898</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/20000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Skellefteälven (20000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Skellefteälven (20000)</summary>
+        <updated>2026-01-24T16:33:03+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.20000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/20000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Skellefteälven (20000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.521386139919832 64.5981095160769 21.16489880053421 64.5981095160769 21.16489880053421 66.90933616209239 15.521386139919832 66.90933616209239 15.521386139919832 64.5981095160769</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/21000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Bureälven (21000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Bureälven (21000)</summary>
+        <updated>2026-01-24T16:10:22+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.21000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/21000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Bureälven (21000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>19.95157745714823 64.4047945107504 21.216552656503712 64.4047945107504 21.216552656503712 64.77404131338554 19.95157745714823 64.77404131338554 19.95157745714823 64.4047945107504</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/22000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Mångbyån (22000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Mångbyån (22000)</summary>
+        <updated>2026-01-23T20:25:19+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.22000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/22000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Mångbyån (22000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>21.05490093379114 64.31623931183441 21.480354835726352 64.31623931183441 21.480354835726352 64.51018703049881 21.05490093379114 64.51018703049881 21.05490093379114 64.31623931183441</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/23000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Kålabodaån (23000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Kålabodaån (23000)</summary>
+        <updated>2026-01-23T22:17:25+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.23000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/23000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Kålabodaån (23000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>20.551174326759043 64.18545419911597 21.160348869013013 64.18545419911597 21.160348869013013 64.48926435671939 20.551174326759043 64.48926435671939 20.551174326759043 64.18545419911597</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/24000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Rickleån (24000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Rickleån (24000)</summary>
+        <updated>2026-01-23T20:32:56+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.24000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/24000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Rickleån (24000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>19.40805138729725 64.08206300683135 20.949327721407236 64.08206300683135 20.949327721407236 64.90997487371786 19.40805138729725 64.90997487371786 19.40805138729725 64.08206300683135</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/25000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Dalkarlsån (25000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Dalkarlsån (25000)</summary>
+        <updated>2026-01-23T20:26:43+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.25000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/25000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Dalkarlsån (25000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>20.356807841593298 64.0140671775276 20.901894216038823 64.0140671775276 20.901894216038823 64.28447988546088 20.356807841593298 64.28447988546088 20.356807841593298 64.0140671775276</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/26000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Sävarån (26000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Sävarån (26000)</summary>
+        <updated>2026-01-23T22:21:08+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.26000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/26000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Sävarån (26000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>19.397089438774362 63.801100314133514 20.66582185116374 63.801100314133514 20.66582185116374 64.72166352065392 19.397089438774362 64.72166352065392 19.397089438774362 63.801100314133514</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/27000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Tavelån (27000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Tavelån (27000)</summary>
+        <updated>2026-01-23T20:29:15+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.27000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/27000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Tavelån (27000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>19.953574658240765 63.752584985575176 20.453629994393715 63.752584985575176 20.453629994393715 64.19562377556484 19.953574658240765 64.19562377556484 19.953574658240765 63.752584985575176</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/28000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Umeälven (28000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Umeälven (28000)</summary>
+        <updated>2026-01-24T17:09:46+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.28000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/28000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Umeälven (28000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.38183518828483 63.74661216061323 20.361459570708334 63.74661216061323 20.361459570708334 66.56540784250728 14.38183518828483 66.56540784250728 14.38183518828483 63.74661216061323</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/29000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Hörnån (29000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Hörnån (29000)</summary>
+        <updated>2026-01-23T20:27:57+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.29000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/29000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Hörnån (29000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>19.176506860860773 63.610626086402355 19.953159128641076 63.610626086402355 19.953159128641076 64.0935366549601 19.176506860860773 64.0935366549601 19.176506860860773 63.610626086402355</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/30000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Öreälven (30000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Öreälven (30000)</summary>
+        <updated>2026-01-23T20:28:52+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.30000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/30000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Öreälven (30000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.37493249298928 63.50978840047115 19.733389956722583 63.50978840047115 19.733389956722583 64.77301910563983 17.37493249298928 64.77301910563983 17.37493249298928 63.50978840047115</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/31000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Leduån (31000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Leduån (31000)</summary>
+        <updated>2026-01-23T20:21:48+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.31000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/31000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Leduån (31000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.939443486917614 63.55375317830182 19.513271586328553 63.55375317830182 19.513271586328553 63.921767110500085 18.939443486917614 63.921767110500085 18.939443486917614 63.55375317830182</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/32000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Lögdeälven (32000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Lögdeälven (32000)</summary>
+        <updated>2026-01-23T22:08:56+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.32000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/32000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Lögdeälven (32000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.441311247807494 63.536393950255345 19.445202835751843 63.536393950255345 19.445202835751843 64.60077820343993 17.441311247807494 64.60077820343993 17.441311247807494 63.536393950255345</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/33000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Husån (33000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Husån (33000)</summary>
+        <updated>2026-01-23T20:23:09+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.33000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/33000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Husån (33000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.55035115083383 63.32850145308614 19.21154617894084 63.32850145308614 19.21154617894084 63.81898799971496 18.55035115083383 63.81898799971496 18.55035115083383 63.32850145308614</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/34000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Gideälven (34000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Gideälven (34000)</summary>
+        <updated>2026-01-23T22:16:24+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.34000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/34000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Gideälven (34000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.26576411476704 63.33099272227394 19.129237824651746 63.33099272227394 19.129237824651746 64.60016624865709 17.26576411476704 64.60016624865709 17.26576411476704 63.33099272227394</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/35000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Idbyån (35000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Idbyån (35000)</summary>
+        <updated>2026-01-23T20:19:40+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.35000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/35000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Idbyån (35000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.520724045286922 63.282987532616104 18.996056723783692 63.282987532616104 18.996056723783692 63.51042986864911 18.520724045286922 63.51042986864911 18.520724045286922 63.282987532616104</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/36000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Moälven (36000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Moälven (36000)</summary>
+        <updated>2026-01-24T16:37:52+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.36000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/36000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Moälven (36000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.224626778737917 63.2142092927767 18.729618142330875 63.2142092927767 18.729618142330875 63.91592410817491 17.224626778737917 63.91592410817491 17.224626778737917 63.2142092927767</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/37000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Nätraån (37000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Nätraån (37000)</summary>
+        <updated>2026-01-23T20:24:25+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.37000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/37000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Nätraån (37000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.274501613264142 63.135480705359264 18.58186524113353 63.135480705359264 18.58186524113353 63.51029890615075 17.274501613264142 63.51029890615075 17.274501613264142 63.135480705359264</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/38000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Ångermanälven (38000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Ångermanälven (38000)</summary>
+        <updated>2026-01-24T17:51:18+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.38000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/38000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Ångermanälven (38000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>13.189009895124805 62.87955347611032 18.015096387560433 62.87955347611032 18.015096387560433 65.41048164164579 13.189009895124805 65.41048164164579 13.189009895124805 62.87955347611032</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/39000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Gådeån (39000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Gådeån (39000)</summary>
+        <updated>2026-01-23T20:20:55+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.39000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/39000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Gådeån (39000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.438133246243083 62.575319970261766 17.9099467368442 62.575319970261766 17.9099467368442 62.83288986079604 17.438133246243083 62.83288986079604 17.438133246243083 62.575319970261766</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/40000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Indalsälven (40000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Indalsälven (40000)</summary>
+        <updated>2026-01-24T18:16:23+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.40000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/40000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Indalsälven (40000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>11.925378094850428 62.4893898737756 17.524807349295266 62.4893898737756 17.524807349295266 64.38987848538771 11.925378094850428 64.38987848538771 11.925378094850428 62.4893898737756</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/41000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Selångersån (41000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Selångersån (41000)</summary>
+        <updated>2026-01-23T20:18:47+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.41000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/41000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Selångersån (41000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.633127228379763 62.3395422917625 17.31520897676227 62.3395422917625 17.31520897676227 62.62643492354836 16.633127228379763 62.62643492354836 16.633127228379763 62.3395422917625</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/42000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Ljungan (42000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Ljungan (42000)</summary>
+        <updated>2026-01-23T20:08:32+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.42000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/42000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Ljungan (42000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.45408479334863 62.07172736146867 17.437322245669275 62.07172736146867 17.437322245669275 63.15882032129807 12.45408479334863 63.15882032129807 12.45408479334863 62.07172736146867</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/43000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Gnarpsån (43000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Gnarpsån (43000)</summary>
+        <updated>2026-01-23T20:16:14+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.43000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/43000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Gnarpsån (43000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.82367368295262 62.00990612961496 17.430671943222592 62.00990612961496 17.430671943222592 62.147300641851025 16.82367368295262 62.147300641851025 16.82367368295262 62.00990612961496</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/44000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Harmångersån (44000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Harmångersån (44000)</summary>
+        <updated>2026-01-23T20:21:31+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.44000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/44000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Harmångersån (44000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.1164880486336 61.86141926019194 17.341106887808756 61.86141926019194 17.341106887808756 62.302875756445985 16.1164880486336 62.302875756445985 16.1164880486336 61.86141926019194</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/45000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Delångersån (45000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Delångersån (45000)</summary>
+        <updated>2026-01-23T21:52:00+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.45000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/45000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Delångersån (45000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.720925748843387 61.60719076184832 17.24568779860327 61.60719076184832 17.24568779860327 62.37409053866667 15.720925748843387 62.37409053866667 15.720925748843387 61.60719076184832</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/46000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Nianån (46000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Nianån (46000)</summary>
+        <updated>2026-01-23T20:15:13+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.46000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/46000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Nianån (46000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.473151279335706 61.55637167056567 17.070258104446296 61.55637167056567 17.070258104446296 61.66346370538423 16.473151279335706 61.66346370538423 16.473151279335706 61.55637167056567</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/47000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Norralaån (47000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Norralaån (47000)</summary>
+        <updated>2026-01-24T17:50:28+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.47000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/47000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Norralaån (47000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.508152776887894 61.302978899900694 17.08762090629962 61.302978899900694 17.08762090629962 61.519007245948586 16.508152776887894 61.519007245948586 16.508152776887894 61.302978899900694</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/48000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Ljusnan (48000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Ljusnan (48000)</summary>
+        <updated>2026-01-23T22:35:39+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.48000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/48000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Ljusnan (48000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.054306963163295 61.07261058927525 17.120944232070602 61.07261058927525 17.120944232070602 62.831681864816424 12.054306963163295 62.831681864816424 12.054306963163295 61.07261058927525</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/49000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Skärjån (49000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Skärjån (49000)</summary>
+        <updated>2026-01-23T20:17:30+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.49000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/49000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Skärjån (49000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.43717066965584 60.98925446549667 17.161676938901334 60.98925446549667 17.161676938901334 61.18963828562639 16.43717066965584 61.18963828562639 16.43717066965584 60.98925446549667</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/50000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Hamrångeån (50000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Hamrångeån (50000)</summary>
+        <updated>2026-01-23T20:11:20+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.50000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/50000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Hamrångeån (50000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.333080449046843 60.82536124723456 17.221524415749094 60.82536124723456 17.221524415749094 61.13864487775228 16.333080449046843 61.13864487775228 16.333080449046843 60.82536124723456</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/51000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Testeboån (51000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Testeboån (51000)</summary>
+        <updated>2026-01-23T20:14:16+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.51000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/51000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Testeboån (51000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.882628590737713 60.68470144357789 17.179442909174796 60.68470144357789 17.179442909174796 61.20152387781448 15.882628590737713 61.20152387781448 15.882628590737713 60.68470144357789</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/52000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Gavleån (52000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Gavleån (52000)</summary>
+        <updated>2026-01-23T20:18:33+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.52000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/52000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Gavleån (52000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.852459478356085 60.35780650444433 17.181375897349827 60.35780650444433 17.181375897349827 61.01709338334977 15.852459478356085 61.01709338334977 15.852459478356085 60.35780650444433</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/53000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Dalälven (53000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Dalälven (53000)</summary>
+        <updated>2026-01-24T19:07:58+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.53000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/53000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Dalälven (53000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>11.887953432819794 59.998340619509115 17.51094224610379 59.998340619509115 17.51094224610379 62.2910198094115 11.887953432819794 62.2910198094115 11.887953432819794 59.998340619509115</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/54000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Tämnarån (54000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Tämnarån (54000)</summary>
+        <updated>2026-01-23T21:47:38+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.54000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/54000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Tämnarån (54000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.832756307613437 59.98459067530554 17.651695433025743 59.98459067530554 17.651695433025743 60.57752808675928 16.832756307613437 60.57752808675928 16.832756307613437 59.98459067530554</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/55000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Forsmarksån (55000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Forsmarksån (55000)</summary>
+        <updated>2026-01-23T20:09:48+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.55000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/55000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Forsmarksån (55000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.704620396182683 60.23850972127612 18.2433502055429 60.23850972127612 18.2433502055429 60.44805733119606 17.704620396182683 60.44805733119606 17.704620396182683 60.23850972127612</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/56000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Olandsån (56000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Olandsån (56000)</summary>
+        <updated>2026-01-23T20:12:35+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.56000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/56000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Olandsån (56000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.81818713365768 59.856378812318916 18.393653200849023 59.856378812318916 18.393653200849023 60.33319340158072 17.81818713365768 60.33319340158072 17.81818713365768 59.856378812318916</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/57000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Skeboån (57000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Skeboån (57000)</summary>
+        <updated>2026-01-23T20:11:04+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.57000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/57000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Skeboån (57000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.234570767474327 59.84932555372055 18.68733412049151 59.84932555372055 18.68733412049151 60.17531737607057 18.234570767474327 60.17531737607057 18.234570767474327 59.84932555372055</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/58000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Broströmmen (58000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Broströmmen (58000)</summary>
+        <updated>2026-01-23T21:45:13+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.58000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/58000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Broströmmen (58000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.31364932114372 59.76709533710734 18.826125236363907 59.76709533710734 18.826125236363907 59.91310297504096 18.31364932114372 59.91310297504096 18.31364932114372 59.76709533710734</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/59000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Norrtäljeån (59000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Norrtäljeån (59000)</summary>
+        <updated>2026-01-23T20:09:34+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.59000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/59000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Norrtäljeån (59000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.168072888489316 59.592492314954235 18.72447532011691 59.592492314954235 18.72447532011691 59.88123851477797 18.168072888489316 59.88123851477797 18.168072888489316 59.592492314954235</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/60000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Åkersström (60000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Åkersström (60000)</summary>
+        <updated>2026-01-23T20:04:58+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.60000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/60000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Åkersström (60000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.020335807064754 59.46452782388837 18.39605179073981 59.46452782388837 18.39605179073981 59.77184106900127 18.020335807064754 59.77184106900127 18.020335807064754 59.46452782388837</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/61000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Norrström (61000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Norrström (61000)</summary>
+        <updated>2026-01-23T22:05:17+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.61000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/61000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Norrström (61000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.416998691386581 58.80510736213678 18.259393224874174 58.80510736213678 18.259393224874174 60.43561614010107 14.416998691386581 60.43561614010107 14.416998691386581 58.80510736213678</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/62000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Tyresån (62000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Tyresån (62000)</summary>
+        <updated>2026-01-23T20:01:47+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.62000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/62000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Tyresån (62000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.89225250360467 59.136434859914175 18.31033551551857 59.136434859914175 18.31033551551857 59.3020502120399 17.89225250360467 59.3020502120399 17.89225250360467 59.136434859914175</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/63000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Trosaån (63000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Trosaån (63000)</summary>
+        <updated>2026-01-23T20:07:47+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.63000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/63000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Trosaån (63000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.933096237796587 58.89167909851114 17.587647330580054 58.89167909851114 17.587647330580054 59.21256772696421 16.933096237796587 59.21256772696421 16.933096237796587 58.89167909851114</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/64000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Svärtaån (64000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Svärtaån (64000)</summary>
+        <updated>2026-01-23T20:03:53+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.64000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/64000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Svärtaån (64000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.90014023109597 58.75342736697883 17.374897828462107 58.75342736697883 17.374897828462107 59.015348580201234 16.90014023109597 59.015348580201234 16.90014023109597 58.75342736697883</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/65000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Nyköpingsån (65000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Nyköpingsån (65000)</summary>
+        <updated>2026-01-23T23:00:37+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.65000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/65000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Nyköpingsån (65000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.935249016401047 58.709065057788344 17.17667466916362 58.709065057788344 17.17667466916362 59.24917268208716 14.935249016401047 59.24917268208716 14.935249016401047 58.709065057788344</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/66000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Kilaån (66000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Kilaån (66000)</summary>
+        <updated>2026-01-23T20:06:13+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.66000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/66000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Kilaån (66000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.11844199066442 58.667804740953834 17.02554372888702 58.667804740953834 17.02554372888702 58.84016441244346 16.11844199066442 58.84016441244346 16.11844199066442 58.667804740953834</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/67000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Motalaström (67000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Motalaström (67000)</summary>
+        <updated>2026-01-23T21:45:20+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.67000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/67000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Motalaström (67000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>13.87630185658194 57.55064905510721 16.3435928715703 57.55064905510721 16.3435928715703 59.01383535724145 13.87630185658194 59.01383535724145 13.87630185658194 57.55064905510721</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/68000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Söderköpingsån (68000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Söderköpingsån (68000)</summary>
+        <updated>2026-01-23T20:08:50+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.68000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/68000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Söderköpingsån (68000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.892482503241439 58.186967258508574 16.576137224527724 58.186967258508574 16.576137224527724 58.543943931628256 15.892482503241439 58.543943931628256 15.892482503241439 58.186967258508574</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/69000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Vindån (69000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Vindån (69000)</summary>
+        <updated>2026-01-23T20:02:47+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.69000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/69000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Vindån (69000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>16.217134308961583 58.022159306359654 16.659430459121925 58.022159306359654 16.659430459121925 58.25664835117498 16.217134308961583 58.25664835117498 16.217134308961583 58.022159306359654</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/70000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Storån (70000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Storån (70000)</summary>
+        <updated>2026-01-23T19:50:30+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.70000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/70000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Storån (70000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.817904145713213 57.98863952248352 16.52795235295567 57.98863952248352 16.52795235295567 58.26032867295943 15.817904145713213 58.26032867295943 15.817904145713213 57.98863952248352</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/71000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Botorpsströmmen (71000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Botorpsströmmen (71000)</summary>
+        <updated>2026-01-23T19:56:57+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.71000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/71000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Botorpsströmmen (71000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.85128881033636 57.57585818005319 16.611226899007644 57.57585818005319 16.611226899007644 58.101781231886015 15.85128881033636 58.101781231886015 15.85128881033636 57.57585818005319</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/72000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Marströmmen (72000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Marströmmen (72000)</summary>
+        <updated>2026-01-23T19:49:03+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.72000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/72000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Marströmmen (72000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.922460596623583 57.40434661774818 16.54986494725124 57.40434661774818 16.54986494725124 57.665678610794686 15.922460596623583 57.665678610794686 15.922460596623583 57.40434661774818</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/73000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Virån (73000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Virån (73000)</summary>
+        <updated>2026-01-23T19:52:14+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.73000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/73000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Virån (73000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.867144497167239 57.29950127822879 16.54987511540274 57.29950127822879 16.54987511540274 57.60351196549167 15.867144497167239 57.60351196549167 15.867144497167239 57.29950127822879</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/74000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Emån (74000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Emån (74000)</summary>
+        <updated>2026-01-23T21:24:09+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.74000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/74000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Emån (74000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.615991129553748 57.093476452568126 16.502833901854117 57.093476452568126 16.502833901854117 57.79643358351219 14.615991129553748 57.79643358351219 14.615991129553748 57.093476452568126</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/75000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Alsterån (75000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Alsterån (75000)</summary>
+        <updated>2026-01-23T20:00:47+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.75000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/75000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Alsterån (75000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.20509010080588 56.89395605563985 16.445225099633166 56.89395605563985 16.445225099633166 57.21110559761764 15.20509010080588 57.21110559761764 15.20509010080588 56.89395605563985</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/76000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Snärjebäcken (76000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Snärjebäcken (76000)</summary>
+        <updated>2026-01-23T19:44:42+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.76000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/76000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Snärjebäcken (76000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.736685545247495 56.77958129884893 16.408114222633934 56.77958129884893 16.408114222633934 56.958492757203075 15.736685545247495 56.958492757203075 15.736685545247495 56.77958129884893</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/77000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Ljungbyån (77000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Ljungbyån (77000)</summary>
+        <updated>2026-01-23T19:54:28+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.77000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/77000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Ljungbyån (77000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.435119829432404 56.591373076881204 16.2436084832247 56.591373076881204 16.2436084832247 56.948983096613965 15.435119829432404 56.948983096613965 15.435119829432404 56.591373076881204</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/78000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Hagbyån (78000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Hagbyån (78000)</summary>
+        <updated>2026-01-23T19:47:25+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.78000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/78000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Hagbyån (78000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.52632684863489 56.479999529653995 16.200540829956186 56.479999529653995 16.200540829956186 56.83083637861998 15.52632684863489 56.83083637861998 15.52632684863489 56.479999529653995</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/79000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Bruatorpsån (79000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Bruatorpsån (79000)</summary>
+        <updated>2026-01-23T19:45:56+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.79000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/79000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Bruatorpsån (79000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.671070481045623 56.311495934422496 16.129745125682316 56.311495934422496 16.129745125682316 56.56106648524434 15.671070481045623 56.56106648524434 15.671070481045623 56.311495934422496</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/80000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Lyckebyån (80000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Lyckebyån (80000)</summary>
+        <updated>2026-01-23T19:38:33+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.80000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/80000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Lyckebyån (80000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.30093704217991 56.18792651411286 15.84920329263035 56.18792651411286 15.84920329263035 56.910309899927995 15.30093704217991 56.910309899927995 15.30093704217991 56.18792651411286</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/81000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Nättrabyån (81000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Nättrabyån (81000)</summary>
+        <updated>2026-01-23T19:34:45+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.81000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/81000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Nättrabyån (81000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.250530078123798 56.18852778651327 15.570775794871357 56.18852778651327 15.570775794871357 56.624981912100985 15.250530078123798 56.624981912100985 15.250530078123798 56.18852778651327</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/82000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Ronnebyån (82000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Ronnebyån (82000)</summary>
+        <updated>2026-01-23T19:43:41+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.82000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/82000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Ronnebyån (82000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.97267402939956 56.17457082996517 15.429088432415204 56.17457082996517 15.429088432415204 56.94998757302768 14.97267402939956 56.94998757302768 14.97267402939956 56.17457082996517</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/83000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Vierydsån (83000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Vierydsån (83000)</summary>
+        <updated>2026-01-23T19:31:19+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.83000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/83000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Vierydsån (83000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.072653007854433 56.16828834823985 15.255112246854912 56.16828834823985 15.255112246854912 56.46762258023333 15.072653007854433 56.46762258023333 15.072653007854433 56.16828834823985</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/84000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Bräkneån (84000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Bräkneån (84000)</summary>
+        <updated>2026-01-23T19:36:05+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.84000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/84000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Bräkneån (84000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.874071286297863 56.164197804940244 15.157589688181233 56.164197804940244 15.157589688181233 56.77454006993241 14.874071286297863 56.77454006993241 14.874071286297863 56.164197804940244</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/85000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Mieån (85000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Mieån (85000)</summary>
+        <updated>2026-01-23T19:32:28+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.85000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/85000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Mieån (85000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.683987686827793 56.16901791300949 14.941894341804948 56.16901791300949 14.941894341804948 56.53750827186155 14.683987686827793 56.53750827186155 14.683987686827793 56.16901791300949</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/86000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Mörrumsån (86000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Mörrumsån (86000)</summary>
+        <updated>2026-01-23T21:14:25+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.86000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/86000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Mörrumsån (86000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.330337518218359 56.153469835544804 15.321592674723219 56.153469835544804 15.321592674723219 57.30239035904467 14.330337518218359 57.30239035904467 14.330337518218359 56.153469835544804</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/87000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Skräbeån (87000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Skräbeån (87000)</summary>
+        <updated>2026-01-23T19:41:10+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.87000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/87000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Skräbeån (87000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.222852738671493 56.03327554174276 14.65038695914668 56.03327554174276 14.65038695914668 56.548342162820745 14.222852738671493 56.548342162820745 14.222852738671493 56.03327554174276</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/88000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Helge å (88000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Helge å (88000)</summary>
+        <updated>2026-01-23T21:19:41+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.88000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/88000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Helge å (88000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>13.422501046745218 55.79969480948156 14.524326316364553 55.79969480948156 14.524326316364553 57.01837693099525 13.422501046745218 57.01837693099525 13.422501046745218 55.79969480948156</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/89000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Nybroån (89000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Nybroån (89000)</summary>
+        <updated>2026-01-23T19:33:17+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.89000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/89000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Nybroån (89000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>13.724926295839014 55.42715330596149 14.125380088367688 55.42715330596149 14.125380088367688 55.6752389317678 13.724926295839014 55.6752389317678 13.724926295839014 55.42715330596149</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/90000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Sege å (90000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Sege å (90000)</summary>
+        <updated>2026-01-23T19:21:41+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.90000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/90000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Sege å (90000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>13.019106561287579 55.45967321802609 13.400730075084093 55.45967321802609 13.400730075084093 55.65070158711672 13.019106561287579 55.65070158711672 13.019106561287579 55.45967321802609</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/91000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Höje å (91000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Höje å (91000)</summary>
+        <updated>2026-01-23T19:20:29+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.91000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/91000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Höje å (91000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>13.033173198817908 55.49359133128698 13.561989265950766 55.49359133128698 13.561989265950766 55.76668618722463 13.033173198817908 55.76668618722463 13.033173198817908 55.49359133128698</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/92000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Kävlingeån (92000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Kävlingeån (92000)</summary>
+        <updated>2026-01-23T19:25:41+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.92000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/92000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Kävlingeån (92000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.981057303664311 55.5013941123366 14.033054214867448 55.5013941123366 14.033054214867448 55.868788033379964 12.981057303664311 55.868788033379964 12.981057303664311 55.5013941123366</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/93000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Saxån (93000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Saxån (93000)</summary>
+        <updated>2026-01-23T19:22:29+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.93000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/93000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Saxån (93000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.880856483857603 55.79808235156199 13.389215396728048 55.79808235156199 13.389215396728048 55.97362085247442 12.880856483857603 55.97362085247442 12.880856483857603 55.79808235156199</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/94000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Råån (94000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Råån (94000)</summary>
+        <updated>2026-01-23T19:18:13+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.94000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/94000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Råån (94000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.714351837283562 55.88801745249122 13.076074726288084 55.88801745249122 13.076074726288084 56.06622720911069 12.714351837283562 56.06622720911069 12.714351837283562 55.88801745249122</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/95000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Vege å (95000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Vege å (95000)</summary>
+        <updated>2026-01-23T19:23:30+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.95000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/95000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Vege å (95000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.66356333019178 55.947970440778064 13.255553301985854 55.947970440778064 13.255553301985854 56.237630118093826 12.66356333019178 56.237630118093826 12.66356333019178 55.947970440778064</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/96000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Rönne å (96000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Rönne å (96000)</summary>
+        <updated>2026-01-23T19:30:31+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.96000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/96000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Rönne å (96000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.78214806530389 55.803387785609175 13.90910560163686 55.803387785609175 13.90910560163686 56.40096482904055 12.78214806530389 56.40096482904055 12.78214806530389 55.803387785609175</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/97000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Stensån (97000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Stensån (97000)</summary>
+        <updated>2026-01-23T19:19:31+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.97000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/97000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Stensån (97000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.783079265407316 56.30423281684829 13.450117192889895 56.30423281684829 13.450117192889895 56.45816763659202 12.783079265407316 56.45816763659202 12.783079265407316 56.30423281684829</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/98000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Lagan (98000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Lagan (98000)</summary>
+        <updated>2026-01-23T19:43:16+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.98000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/98000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Lagan (98000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.92928417639384 56.32483341324416 14.752722961283139 56.32483341324416 14.752722961283139 57.68852403750744 12.92928417639384 57.68852403750744 12.92928417639384 56.32483341324416</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/99000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Genevadån (99000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Genevadån (99000)</summary>
+        <updated>2026-01-23T22:46:09+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.99000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/99000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Genevadån (99000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.923936159278202 56.54293407076377 13.28142818136961 56.54293407076377 13.28142818136961 56.705708176330205 12.923936159278202 56.705708176330205 12.923936159278202 56.54293407076377</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/100000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Fylleån (100000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Fylleån (100000)</summary>
+        <updated>2026-01-23T19:14:56+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.100000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/100000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Fylleån (100000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.872988445484804 56.59349318851575 13.446532921198859 56.59349318851575 13.446532921198859 56.92218612297617 12.872988445484804 56.92218612297617 12.872988445484804 56.59349318851575</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/101000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Nissan (101000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Nissan (101000)</summary>
+        <updated>2026-01-23T21:07:35+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.101000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/101000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Nissan (101000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.83229012570713 56.65631911500442 14.015411815781569 56.65631911500442 14.015411815781569 57.82057496906614 12.83229012570713 57.82057496906614 12.83229012570713 56.65631911500442</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/102000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Suseån (102000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Suseån (102000)</summary>
+        <updated>2026-01-23T19:15:57+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.102000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/102000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Suseån (102000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.554600168020697 56.73254794625264 13.026515498035097 56.73254794625264 13.026515498035097 57.058039994802556 12.554600168020697 57.058039994802556 12.554600168020697 56.73254794625264</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/103000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Ätran (103000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Ätran (103000)</summary>
+        <updated>2026-01-23T19:27:22+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.103000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/103000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Ätran (103000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.472581547786847 56.88517234930709 13.771293352312028 56.88517234930709 13.771293352312028 58.09728760881258 12.472581547786847 58.09728760881258 12.472581547786847 56.88517234930709</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/104000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Himleån (104000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Himleån (104000)</summary>
+        <updated>2026-01-23T19:11:37+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.104000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/104000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Himleån (104000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.22353108103904 57.083731945612094 12.655664979373482 57.083731945612094 12.655664979373482 57.22789770132295 12.22353108103904 57.22789770132295 12.22353108103904 57.083731945612094</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/105000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Viskan (105000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Viskan (105000)</summary>
+        <updated>2026-01-23T22:45:36+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.105000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/105000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Viskan (105000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.182297301704164 57.16426456924521 13.420424100252179 57.16426456924521 13.420424100252179 57.92135901804311 12.182297301704164 57.92135901804311 12.182297301704164 57.16426456924521</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/106000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Rolfsån (106000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Rolfsån (106000)</summary>
+        <updated>2026-01-23T19:17:30+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.106000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/106000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Rolfsån (106000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.073957996486723 57.4102482890695 12.920642120090696 57.4102482890695 12.920642120090696 57.87470898285711 12.073957996486723 57.87470898285711 12.073957996486723 57.4102482890695</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/107000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Kungsbackaån (107000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Kungsbackaån (107000)</summary>
+        <updated>2026-01-23T19:14:17+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.107000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/107000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Kungsbackaån (107000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>11.999095152719507 57.46295812832039 12.441459353450465 57.46295812832039 12.441459353450465 57.691512424509675 11.999095152719507 57.691512424509675 11.999095152719507 57.46295812832039</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/108000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Göta älv (108000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Göta älv (108000)</summary>
+        <updated>2026-01-24T19:45:28+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.108000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/108000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Göta älv (108000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>11.118989352756435 57.58034919551613 14.87408053269081 57.58034919551613 14.87408053269081 62.5378558482336 11.118989352756435 62.5378558482336 11.118989352756435 57.58034919551613</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/109000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Bäveån (109000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Bäveån (109000)</summary>
+        <updated>2026-01-23T19:12:49+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.109000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/109000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Bäveån (109000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>11.857503986429808 58.21023091114142 12.242753410864825 58.21023091114142 12.242753410864825 58.49498631311763 11.857503986429808 58.49498631311763 11.857503986429808 58.21023091114142</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/110000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Örekilsälven (110000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Örekilsälven (110000)</summary>
+        <updated>2026-01-23T19:13:08+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.110000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/110000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Örekilsälven (110000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>11.574360177865755 58.39855020240171 12.219144277439973 58.39855020240171 12.219144277439973 59.03502304587297 11.574360177865755 59.03502304587297 11.574360177865755 58.39855020240171</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/111000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Strömsån (111000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Strömsån (111000)</summary>
+        <updated>2026-01-23T19:09:06+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.111000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/111000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Strömsån (111000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>11.169636328302337 58.78980137474361 11.501531370155604 58.78980137474361 11.501531370155604 59.088826779593 11.169636328302337 59.088826779593 11.169636328302337 58.78980137474361</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/112000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Enningdalsälven (112000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Enningdalsälven (112000)</summary>
+        <updated>2026-01-23T19:10:46+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.112000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/112000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Enningdalsälven (112000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>11.41193155532675 58.53720066063635 11.789806870180485 58.53720066063635 11.789806870180485 59.0889241811288 11.41193155532675 59.0889241811288 11.41193155532675 58.53720066063635</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/113000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Glomma (113000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Glomma (113000)</summary>
+        <updated>2026-01-23T19:08:30+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.113000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/113000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Glomma (113000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>7.241065152227794 59.10728070054322 12.688962237653634 59.10728070054322 12.688962237653634 62.9013204742614 7.241065152227794 62.9013204742614 7.241065152227794 59.10728070054322</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/114000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Nea (114000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Nea (114000)</summary>
+        <updated>2026-01-23T19:03:53+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.114000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/114000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Nea (114000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>10.193881014880146 62.778255011092675 12.480711188575706 62.778255011092675 12.480711188575706 63.44454657572749 10.193881014880146 63.44454657572749 10.193881014880146 62.778255011092675</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/114115</id>
+        <title>Svensk vattenstandard fysiskt vatten, Mellan Nea och Vefsna (114115)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Mellan Nea och Vefsna (114115)</summary>
+        <updated>2026-01-24T19:11:49+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.114115</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/114115" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Mellan Nea och Vefsna (114115)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>10.846147584689993 63.18698260343197 14.143342348711354 63.18698260343197 14.143342348711354 65.24270727478083 10.846147584689993 65.24270727478083 10.846147584689993 63.18698260343197</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/115000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Vefsna (115000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Vefsna (115000)</summary>
+        <updated>2026-01-23T19:06:21+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.115000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/115000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Vefsna (115000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>12.966801295463029 65.11229515044424 15.665288985663636 65.11229515044424 15.665288985663636 65.88127602759752 12.966801295463029 65.88127602759752 12.966801295463029 65.11229515044424</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/115116</id>
+        <title>Svensk vattenstandard fysiskt vatten, Mellan Vefsna och Rana (115116)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Mellan Vefsna och Rana (115116)</summary>
+        <updated>2026-01-23T22:38:28+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.115116</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/115116" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Mellan Vefsna och Rana (115116)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>13.603713931837143 65.59116068406391 14.762462855781301 65.59116068406391 14.762462855781301 66.2023629733316 13.603713931837143 66.2023629733316 13.603713931837143 65.59116068406391</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/116000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Rana (116000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Rana (116000)</summary>
+        <updated>2026-01-23T22:52:52+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.116000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/116000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Rana (116000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>13.609534502341608 66.06925990797741 15.714928025973796 66.06925990797741 15.714928025973796 66.86720731896901 13.609534502341608 66.86720731896901 13.609534502341608 66.06925990797741</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/117000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Gothemån (117000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Gothemån (117000)</summary>
+        <updated>2026-01-23T19:07:57+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.117000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/117000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Gothemån (117000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.30907126299194 57.32798585564031 18.770006377844826 57.32798585564031 18.770006377844826 57.7021888530393 18.30907126299194 57.7021888530393 18.30907126299194 57.32798585564031</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/118000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Snoderån (118000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Snoderån (118000)</summary>
+        <updated>2026-01-23T19:07:03+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.118000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/118000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Snoderån (118000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>18.149508747954222 57.19005301208848 18.49060222273812 57.19005301208848 18.49060222273812 57.37733686463378 18.149508747954222 57.37733686463378 18.149508747954222 57.19005301208848</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/118118</id>
+        <title>Svensk vattenstandard fysiskt vatten, Gotlands Kustområde (118118)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Gotlands Kustområde (118118)</summary>
+        <updated>2026-01-26T19:19:58+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.118118</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/118118" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Gotlands Kustområde (118118)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>15.801002712636617 55.958993591125946 19.726165633126946 55.958993591125946 19.726165633126946 58.597778415889636 15.801002712636617 58.597778415889636 15.801002712636617 55.958993591125946</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/163171</id>
+        <title>Svensk vattenstandard fysiskt vatten, Saltdalsvassdraget_Hellemovassdraget (163171)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Saltdalsvassdraget_Hellemovassdraget (163171)</summary>
+        <updated>2026-01-24T19:15:10+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.163171</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/163171" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Saltdalsvassdraget_Hellemovassdraget (163171)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>14.965987357441659 66.55126882367036 16.673762828795542 66.55126882367036 16.673762828795542 67.8457894396823 14.965987357441659 67.8457894396823 14.965987357441659 66.55126882367036</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/173204</id>
+        <title>Svensk vattenstandard fysiskt vatten, Norr om Luleälven (173204)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Norr om Luleälven (173204)</summary>
+        <updated>2026-01-23T22:48:34+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.173204</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/173204" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Norr om Luleälven (173204)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>17.19329251924848 67.92049715815075 20.583311631799415 67.92049715815075 20.583311631799415 69.28501539852519 17.19329251924848 69.28501539852519 17.19329251924848 67.92049715815075</georss:polygon>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/301000</id>
+        <title>Svensk vattenstandard fysiskt vatten, Haldenvassdraget (301000)</title>
+        <summary>Fördefinierad datamängd Svensk vattenstandard fysiskt vatten, huvudavrinningsområde Haldenvassdraget (301000)</summary>
+        <updated>2026-01-24T19:13:56+01:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5d8cd4ea-2bba-403e-8efc-a29e94a66785</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.HY.301000</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp/301000" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten, Haldenvassdraget (301000)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>11.293176449664818 59.048959763816015 11.855530402862497 59.048959763816015 11.855530402862497 60.067247996669934 11.293176449664818 60.067247996669934 11.293176449664818 59.048959763816015</georss:polygon>
+    </entry>
+</feed>

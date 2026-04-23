@@ -1,0 +1,58 @@
+[11:00:37] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[11:00:43] [ServerMain/INFO]: Loaded 1174 recipes
+[11:00:43] [ServerMain/INFO]: Loaded 1271 advancements
+[11:00:43] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[11:00:43] [Server thread/INFO]: Loading properties
+[11:00:44] [Server thread/INFO]: This server is running Paper version git-Paper-496 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 7ac24a1 on ver/1.20.4)
+[11:00:45] [Server thread/INFO]: Using 4 threads for Netty based IO
+[11:00:45] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[11:00:45] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[11:00:45] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[11:00:46] [Server thread/INFO]: Default game type: SURVIVAL
+[11:00:46] [Server thread/INFO]: Generating keypair
+[11:00:46] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:00:46] [Server thread/INFO]: Using default channel type
+[11:00:46] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[11:00:46] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[11:00:47] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[11:00:51] [Server thread/WARN]: Legacy plugin RaspberryJuice v1.12.1 does not specify an api-version.
+[11:00:52] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b132-5a72b6a)
+[11:00:53] [Server thread/INFO]: [floodgate] Tog 1 255ms för att starta Floodgate
+[11:00:53] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.8.1
+[11:00:53] [Server thread/INFO]: [ViaVersion] ViaVersion 5.8.1 is now loaded. Registering protocol transformers and injecting...
+[11:00:54] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[11:00:54] [Via-Mappingloader-1/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[11:00:55] [Server thread/INFO]: [RaspberryJuice] Loading server plugin RaspberryJuice v1.12.1
+[11:00:55] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.5-SNAPSHOT
+[11:00:55] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[11:00:55] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[11:00:55] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[11:00:55] [Server thread/INFO]: Preparing level "world"
+[11:00:56] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[11:00:57] [Server thread/INFO]: Time elapsed: 352 ms
+[11:00:57] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[11:00:57] [Server thread/INFO]: Time elapsed: 75 ms
+[11:00:57] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[11:00:57] [Server thread/INFO]: Time elapsed: 48 ms
+[11:00:57] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b132-5a72b6a)
+[11:00:58] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.8.1
+[11:00:58] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
+[11:00:58] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1*
+[11:00:58] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[11:00:58] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[11:00:58] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[11:00:58] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[11:00:58] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.5-SNAPSHOT
+[11:01:01] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[11:01:01] [Server thread/INFO]: [Geyser-Spigot] 
+[11:01:01] [Server thread/INFO]: [Geyser-Spigot] Laddar Geyser version 2.9.5-b1113 (git-master-3e91129)
+[11:01:01] [Server thread/INFO]: [Geyser-Spigot] 
+[11:01:01] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[11:01:08] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[11:01:08] [Server thread/INFO]: [Geyser-Spigot] Klar (6,79s)! Kör /geyser help för hjälp!
+[11:01:08] [Server thread/INFO]: Running delayed init tasks
+[11:01:08] [Server thread/INFO]: Done (25.082s)! For help, type "help"
+[11:01:08] [Server thread/INFO]: Timings Reset
+[11:01:08] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.

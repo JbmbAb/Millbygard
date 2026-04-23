@@ -1,0 +1,59 @@
+{
+  "function": "millbygard:ortofoto_surface",
+  "source": "data\\orsa_stackmora_3_12_ortofoto.tif",
+  "preview": "04_references\\orsa_stackmora_3_12_ortofoto_blocks_preview.png",
+  "ground_y": 64,
+  "scale": "1 block = 1 meter",
+  "origin": {
+    "lon": 14.664872233,
+    "lat": 61.133579762,
+    "epsg3006_east": 481950.5550165065,
+    "epsg3006_north": 6777712.4459969
+  },
+  "minecraft_area": {
+    "x": [
+      -71,
+      108
+    ],
+    "z": [
+      -352,
+      1
+    ],
+    "width_blocks": 180,
+    "depth_blocks": 354,
+    "total_blocks": 29989
+  },
+  "generated_functions": [
+    "ortofoto_surface",
+    "ortofoto_surface_00_blue_concrete_00",
+    "ortofoto_surface_01_coarse_dirt_00",
+    "ortofoto_surface_02_deepslate_tiles_00",
+    "ortofoto_surface_03_grass_block_00",
+    "ortofoto_surface_04_gravel_00",
+    "ortofoto_surface_05_gray_concrete_00",
+    "ortofoto_surface_06_light_gray_concrete_00",
+    "ortofoto_surface_07_moss_block_00",
+    "ortofoto_surface_07_moss_block_01",
+    "ortofoto_surface_08_red_terracotta_00",
+    "ortofoto_surface_09_smooth_stone_00",
+    "ortofoto_surface_10_spruce_leaves_persistent_true_00"
+  ],
+  "palette_counts": {
+    "dark_forest": 7247,
+    "dark_roof": 1539,
+    "field": 25,
+    "forest": 9804,
+    "grass": 1529,
+    "gravel": 5426,
+    "light_roof": 623,
+    "red_roof": 669,
+    "road_dark": 1464,
+    "road_light": 1436,
+    "water": 227
+  },
+  "notes": [
+    "Run /reload, then /function millbygard:ortofoto_surface in Minecraft.",
+    "This is a flat visual surface layer from ortofoto; terrain height and building volumes are separate steps.",
+    "Water-colored cells use blue_concrete instead of real water to avoid fluid spread."
+  ]
+}

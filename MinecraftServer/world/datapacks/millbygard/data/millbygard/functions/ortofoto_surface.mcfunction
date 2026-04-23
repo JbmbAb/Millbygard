@@ -1,0 +1,16 @@
+# Generated from Lantmateriet ortofoto.
+# Source: data/orsa_stackmora_3_12_ortofoto.tif
+# Origin WGS84: lon 14.664872233, lat 61.133579762
+# Minecraft mapping: x=east meters, z=-north meters, y=64
+function millbygard:ortofoto_surface_00_blue_concrete_00
+function millbygard:ortofoto_surface_01_coarse_dirt_00
+function millbygard:ortofoto_surface_02_deepslate_tiles_00
+function millbygard:ortofoto_surface_03_grass_block_00
+function millbygard:ortofoto_surface_04_gravel_00
+function millbygard:ortofoto_surface_05_gray_concrete_00
+function millbygard:ortofoto_surface_06_light_gray_concrete_00
+function millbygard:ortofoto_surface_07_moss_block_00
+function millbygard:ortofoto_surface_07_moss_block_01
+function millbygard:ortofoto_surface_08_red_terracotta_00
+function millbygard:ortofoto_surface_09_smooth_stone_00
+function millbygard:ortofoto_surface_10_spruce_leaves_persistent_true_00

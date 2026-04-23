@@ -1,0 +1,92 @@
+[
+  {
+    "source": "byggnad_orsa_2034",
+    "title": "Inspire Buildings, Orsa (2034) [EPSG:3006, GML]",
+    "id": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu/2034/dataset?srs=3006&format=application/zip",
+    "updated": "2024-10-11T06:00:49+02:00",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu/2034/dataset?srs=3006&format=application/zip",
+        "rel": "alternate",
+        "type": "application/zip",
+        "title": "inspire-bu_2034.3006.gml.zip",
+        "hreflang": "sv"
+      }
+    ]
+  },
+  {
+    "source": "byggnad_orsa_2034",
+    "title": "Inspire Buildings, Orsa (2034) [EPSG:4258, GML]",
+    "id": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu/2034/dataset?srs=4258&format=application/zip",
+    "updated": "2024-10-11T05:56:44+02:00",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu/2034/dataset?srs=4258&format=application/zip",
+        "rel": "alternate",
+        "type": "application/zip",
+        "title": "inspire-bu_2034.4258.gml.zip",
+        "hreflang": "sv"
+      }
+    ]
+  },
+  {
+    "source": "marktacke_orsa_2034",
+    "title": "Inspire Land Cover, Orsa (2034) [EPSG:3006, GML]",
+    "id": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc/2034/dataset?srs=3006&format=application/zip",
+    "updated": "2025-09-10T20:29:01+02:00",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc/2034/dataset?srs=3006&format=application/zip",
+        "rel": "alternate",
+        "type": "application/zip",
+        "title": "inspire-lc_2034.3006.gml.zip",
+        "hreflang": "sv"
+      }
+    ]
+  },
+  {
+    "source": "marktacke_orsa_2034",
+    "title": "Inspire Land Cover, Orsa (2034) [EPSG:4258, GML]",
+    "id": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc/2034/dataset?srs=4258&format=application/zip",
+    "updated": "2025-09-10T23:02:18+02:00",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc/2034/dataset?srs=4258&format=application/zip",
+        "rel": "alternate",
+        "type": "application/zip",
+        "title": "inspire-lc_2034.4258.gml.zip",
+        "hreflang": "sv"
+      }
+    ]
+  },
+  {
+    "source": "ortnamn_orsa_2034",
+    "title": "Inspire Geographical Names, Orsa (2034) [EPSG:3006, GML]",
+    "id": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn/2034/dataset?srs=3006&format=application/zip",
+    "updated": "2025-09-09T21:49:03+02:00",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn/2034/dataset?srs=3006&format=application/zip",
+        "rel": "alternate",
+        "type": "application/zip",
+        "title": "inspire-gn_2034.3006.gml.zip",
+        "hreflang": "sv"
+      }
+    ]
+  },
+  {
+    "source": "ortnamn_orsa_2034",
+    "title": "Inspire Geographical Names, Orsa (2034) [EPSG:4258, GML]",
+    "id": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn/2034/dataset?srs=4258&format=application/zip",
+    "updated": "2025-09-09T23:05:56+02:00",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn/2034/dataset?srs=4258&format=application/zip",
+        "rel": "alternate",
+        "type": "application/zip",
+        "title": "inspire-gn_2034.4258.gml.zip",
+        "hreflang": "sv"
+      }
+    ]
+  }
+]

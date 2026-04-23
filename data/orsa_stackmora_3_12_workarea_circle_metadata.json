@@ -1,0 +1,28 @@
+{
+  "source": "data\\orsa_stackmora_3_12_workarea.geojson",
+  "output_geojson": "data\\orsa_stackmora_3_12_workarea_circle.geojson",
+  "output_overlay_geojson": "data\\orsa_stackmora_3_12_workarea_circle_overlay.geojson",
+  "crs_processing": "EPSG:3006",
+  "crs_output": "EPSG:4326",
+  "center_wgs84": {
+    "lon": 14.664708606302012,
+    "lat": 61.13516007929078
+  },
+  "center_3006": {
+    "x": 481942.6445111815,
+    "y": 6777888.5159819145
+  },
+  "radius_without_margin_m": 176.247597764132,
+  "margin_m": 10.0,
+  "radius_m": 186.247597764132,
+  "diameter_m": 372.495195528264,
+  "property_area_sqm": 29076.40120035797,
+  "circle_area_sqm": 108974.8770573549,
+  "circle_covers_workarea": true,
+  "bounds_3006": {
+    "minx": 481880.59801421396,
+    "miny": 6777712.4459969,
+    "maxx": 482059.04901181435,
+    "maxy": 6778064.58596693
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "function": "millbygard:ortofoto_nearzone_500",
+  "source": "01_data_raw\\ortofoto\\orsa_stackmora_3_12_ortofoto_highres.tif",
+  "preview": "04_references\\orsa_stackmora_3_12_ortofoto_nearzone_500_blocks_preview.png",
+  "ground_y": 64,
+  "scale": "1 block = 1 meter",
+  "origin": {
+    "lon": 14.664872233,
+    "lat": 61.133579762,
+    "epsg3006_east": 481950.5550165065,
+    "epsg3006_north": 6777712.4459969
+  },
+  "minecraft_area": {
+    "x": [
+      -250,
+      249
+    ],
+    "z": [
+      -287,
+      212
+    ],
+    "width_blocks": 500,
+    "depth_blocks": 500,
+    "total_blocks": 250000
+  },
+  "generated_functions": [
+    "ortofoto_nearzone_500",
+    "ortofoto_nearzone_500_00_blue_concrete_00",
+    "ortofoto_nearzone_500_01_coarse_dirt_00",
+    "ortofoto_nearzone_500_02_deepslate_tiles_00",
+    "ortofoto_nearzone_500_03_grass_block_00",
+    "ortofoto_nearzone_500_03_grass_block_01",
+    "ortofoto_nearzone_500_04_gravel_00",
+    "ortofoto_nearzone_500_04_gravel_01",
+    "ortofoto_nearzone_500_04_gravel_02",
+    "ortofoto_nearzone_500_04_gravel_03",
+    "ortofoto_nearzone_500_04_gravel_04",
+    "ortofoto_nearzone_500_04_gravel_05",
+    "ortofoto_nearzone_500_05_gray_concrete_00",
+    "ortofoto_nearzone_500_06_light_gray_concrete_00",
+    "ortofoto_nearzone_500_06_light_gray_concrete_01",
+    "ortofoto_nearzone_500_07_moss_block_00",
+    "ortofoto_nearzone_500_07_moss_block_01",
+    "ortofoto_nearzone_500_07_moss_block_02",
+    "ortofoto_nearzone_500_07_moss_block_03",
+    "ortofoto_nearzone_500_07_moss_block_04",
+    "ortofoto_nearzone_500_07_moss_block_05",
+    "ortofoto_nearzone_500_07_moss_block_06",
+    "ortofoto_nearzone_500_07_moss_block_07",
+    "ortofoto_nearzone_500_08_podzol_00",
+    "ortofoto_nearzone_500_09_red_terracotta_00",
+    "ortofoto_nearzone_500_10_rooted_dirt_00",
+    "ortofoto_nearzone_500_11_smooth_stone_00",
+    "ortofoto_nearzone_500_11_smooth_stone_01",
+    "ortofoto_nearzone_500_11_smooth_stone_02",
+    "ortofoto_nearzone_500_11_smooth_stone_03",
+    "ortofoto_nearzone_500_11_smooth_stone_04",
+    "ortofoto_nearzone_500_11_smooth_stone_05",
+    "ortofoto_nearzone_500_12_spruce_leaves_persistent_true_00",
+    "ortofoto_nearzone_500_12_spruce_leaves_persistent_true_01",
+    "ortofoto_nearzone_500_12_spruce_leaves_persistent_true_02",
+    "ortofoto_nearzone_500_12_spruce_leaves_persistent_true_03",
+    "ortofoto_nearzone_500_12_spruce_leaves_persistent_true_04",
+    "ortofoto_nearzone_500_12_spruce_leaves_persistent_true_05",
+    "ortofoto_nearzone_500_12_spruce_leaves_persistent_true_06"
+  ],
+  "palette_counts": {
+    "dark_forest": 54955,
+    "dark_roof": 7925,
+    "dry_field": 1,
+    "field": 534,
+    "forest": 61312,
+    "grass": 15390,
+    "gravel": 44586,
+    "light_roof": 13513,
+    "red_roof": 3097,
+    "road_dark": 6914,
+    "road_light": 40329,
+    "shadow": 9,
+    "water": 1435
+  },
+  "notes": [
+    "Run /reload, then /function millbygard:ortofoto_nearzone_500 in Minecraft.",
+    "This is a flat visual surface layer from ortofoto; terrain height and building volumes are separate steps.",
+    "Water-colored cells use blue_concrete instead of real water to avoid fluid spread.",
+    "This is the stable 500 m x 500 m 1:1 nearzone around Millbygard origin.",
+    "Use this before attempting a full 2 km x 2 km 1:1 build."
+  ]
+}

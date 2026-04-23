@@ -1,0 +1,164 @@
+[
+  {
+    "source_id": "lm_admin_indelning_inspire_atom",
+    "id": "https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au",
+    "title": "Inspire Administrative Units",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Administrative Units"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_belagenhetsadress_inspire_atom",
+    "id": "https://api.lantmateriet.se/belagenhetsadress/atom/v1.2/inspire/ad",
+    "title": "Inspire Addresses",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/belagenhetsadress/atom/v1.2/inspire/ad",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Addresses"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_byggnad_inspire_atom",
+    "id": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu",
+    "title": "Inspire Buildings",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/byggnad/atom/v1.1/inspire/bu",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Buildings"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_hydrografi_atom",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/inspire/hyp",
+    "title": "Inspire Hydrography Physical Waters",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/inspire/hyp",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Hydrography Physical Waters"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_hydrografi_atom",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/inspire/hyn",
+    "title": "Inspire Hydrography Network",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/inspire/hyn",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Hydrography Network"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_hydrografi_atom",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp",
+    "title": "Svensk vattenstandard fysiskt vatten",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard fysiskt vatten"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_hydrografi_atom",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn",
+    "title": "Svensk vattenstandard logiskt nätverk",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Svensk vattenstandard logiskt nätverk"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_hydrografi_atom",
+    "id": "https://api.lantmateriet.se/hydrografi/atom/v1.1/history/history.csv.zip",
+    "title": "Historikfil",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/history/history.csv.zip",
+        "rel": "alternate",
+        "type": "application/zip",
+        "title": "history.csv.zip"
+      },
+      {
+        "href": "https://api.lantmateriet.se/hydrografi/atom/v1.1/history/history.gpkg",
+        "rel": "alternate",
+        "type": "application/geopackage+sqlite3",
+        "title": "history.gpkg"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_marktacke_inspire_atom",
+    "id": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc",
+    "title": "Inspire Land Cover",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Land Cover"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_ortnamn_inspire_atom",
+    "id": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn",
+    "title": "Inspire Geographical Names",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Geographical Names"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_tyngdkraft_atom",
+    "id": "https://api.lantmateriet.se/tyngdkraft/atom/v1/inspire/ge_gp",
+    "title": "Inspire Geology Geophysics",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/tyngdkraft/atom/v1/inspire/ge_gp",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Inspire Geology Geophysics"
+      }
+    ]
+  },
+  {
+    "source_id": "lm_tyngdkraft_atom",
+    "id": "https://api.lantmateriet.se/tyngdkraft/atom/v1/text/ge_gp",
+    "title": "Tyngdkraftspunkter i textformat",
+    "links": [
+      {
+        "href": "https://api.lantmateriet.se/tyngdkraft/atom/v1/text/ge_gp",
+        "rel": "alternate",
+        "type": "application/atom+xml",
+        "title": "Tyngdkraftspunkter i textformat"
+      }
+    ]
+  }
+]

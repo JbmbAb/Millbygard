@@ -1,0 +1,57 @@
+{
+  "project": "Millbygard",
+  "namespace": "millbygard",
+  "datapack_dir": "MinecraftServer/world/datapacks/millbygard",
+  "functions_dir": "MinecraftServer/world/datapacks/millbygard/data/millbygard/functions",
+  "requires_command_blocks": true,
+  "control_panel": {
+    "function": "millbygard:control_panel",
+    "tower_function": "millbygard:tower",
+    "operator_menu_function": "millbygard:launch",
+    "status_function": "millbygard:status",
+    "manifest_function": "millbygard:manifest",
+    "chat_fallback": true,
+    "buttons": [
+      {
+        "id": "ortofoto",
+        "label": "ORTO",
+        "function": "millbygard:button_ortofoto",
+        "description": "Builds the flat 1:1 ortofoto surface.",
+        "command_block": [16, 120, -179],
+        "button": [16, 121, -179]
+      },
+      {
+        "id": "ortofoto_nearzone_500",
+        "label": "500M",
+        "function": "millbygard:button_500m",
+        "description": "Builds the stable 500 m x 500 m 1:1 nearzone from highres ortofoto.",
+        "command_block": [20, 120, -179],
+        "button": [20, 121, -179]
+      },
+      {
+        "id": "signs",
+        "label": "SKYLT",
+        "function": "millbygard:button_signs",
+        "description": "Adds Millbygard text-display signs.",
+        "command_block": [24, 120, -179],
+        "button": [24, 121, -179]
+      },
+      {
+        "id": "visual_start",
+        "label": "START",
+        "function": "millbygard:button_start",
+        "description": "Runs ortofoto surface, property boundaries, and signs together.",
+        "command_block": [16, 120, -173],
+        "button": [16, 121, -173]
+      },
+      {
+        "id": "topografi_2km",
+        "label": "TOPO",
+        "function": "millbygard:button_topo",
+        "description": "Builds the coarse 2 km topography overview.",
+        "command_block": [24, 120, -173],
+        "button": [24, 121, -173]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+# Generated ortofoto surface.
+setblock 30 64 -156 minecraft:coarse_dirt
+setblock 29 64 -155 minecraft:coarse_dirt
+setblock 30 64 -155 minecraft:coarse_dirt
+setblock 32 64 -155 minecraft:coarse_dirt
+setblock -42 64 -126 minecraft:coarse_dirt
+setblock -45 64 -125 minecraft:coarse_dirt
+setblock -42 64 -125 minecraft:coarse_dirt
+setblock -35 64 -125 minecraft:coarse_dirt
+setblock -35 64 -120 minecraft:coarse_dirt
+setblock -34 64 -117 minecraft:coarse_dirt
+setblock -37 64 -105 minecraft:coarse_dirt
+setblock 20 64 -99 minecraft:coarse_dirt
+setblock 21 64 -99 minecraft:coarse_dirt
+setblock 18 64 -98 minecraft:coarse_dirt
+setblock 19 64 -98 minecraft:coarse_dirt
+setblock 18 64 -97 minecraft:coarse_dirt
+setblock 20 64 -97 minecraft:coarse_dirt
+setblock 21 64 -97 minecraft:coarse_dirt
+setblock 18 64 -96 minecraft:coarse_dirt
+setblock 19 64 -96 minecraft:coarse_dirt
+setblock 20 64 -96 minecraft:coarse_dirt
+setblock 19 64 -95 minecraft:coarse_dirt
+setblock 20 64 -95 minecraft:coarse_dirt
+setblock 10 64 -89 minecraft:coarse_dirt
+setblock 14 64 -89 minecraft:coarse_dirt

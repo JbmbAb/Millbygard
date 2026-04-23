@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+node_modules/
+output/
+exports/
+01_data_raw/
+02_qgis/
+03_heightmap/
+04_references/
+05_buildings/
+06_schematics/
+07_exports/
+08_prompts/
+09_notes/

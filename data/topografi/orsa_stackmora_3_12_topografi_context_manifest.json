@@ -1,0 +1,44 @@
+{
+  "project": "Millbygard",
+  "source": "Lantmateriet Topografiska kartor",
+  "delivery_folder": "C:\\Users\\jimmy\\Desktop\\Kartor\\29b34f2e-9bcf-4a40-b62d-bd487c94cd43",
+  "crs_working": "EPSG:3006",
+  "buffer_m": 500.0,
+  "clip_bbox_3006": {
+    "minx": 481380.59801421396,
+    "miny": 6777212.4459969,
+    "maxx": 482559.04901181435,
+    "maxy": 6778564.58596693
+  },
+  "outputs": {
+    "roads": {
+      "feature_count": 27,
+      "gpkg_3006": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_vagar_3006.gpkg",
+      "geojson_wgs84": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_vagar.geojson"
+    },
+    "land": {
+      "feature_count": 38,
+      "gpkg_3006": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_mark_3006.gpkg",
+      "geojson_wgs84": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\topografi\\orsa_stackmora_3_12_topografi_mark.geojson"
+    },
+    "preview_svg": "C:\\Users\\jimmy\\Desktop\\Millbygård\\04_references\\topografi\\orsa_stackmora_3_12_topografi_mark_vagar_preview.svg"
+  },
+  "summaries": {
+    "roads_objekttyp": {
+      "Småväg enkel standard": 10,
+      "Landsväg liten": 10,
+      "Traktorväg": 6,
+      "Landsväg": 1
+    },
+    "land_objekttyp": {
+      "Åker": 19,
+      "Öppen mark": 12,
+      "Barr- och blandskog": 7
+    }
+  },
+  "notes": [
+    "This is the preferred first draft for roads and land around Millbygard.",
+    "Use these layers before the OpenStreetMap fallback.",
+    "Later refine with newer Topografi 10 or other product-specific deliveries if needed."
+  ]
+}

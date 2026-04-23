@@ -1,0 +1,7 @@
+[     450ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[     452ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://apimanager-ver.lantmateriet.se/devportal/site/public/locales/sv.json:0
+[     913ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://apimanager-ver.lantmateriet.se/devportal/site/public/locales/sv.json:0
+[    1179ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    1293ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    1294ms] [LOG] Error: Error: No partial token found,redirecting to Anonymous View @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/ProtectedApp.0db7ca223f595471b77c.bundle.js:0
+[    1426ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33

@@ -1,0 +1,2026 @@
+﻿<?xml version='1.0' encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengeospatial.net/wms/1.1.1/WMS_MS_Capabilities.dtd" [
+
+<!ELEMENT VendorSpecificCapabilities (inspire_vs:ExtendedCapabilities)>
+
+<!-- Scenario 1: Mandatory MetadataUrl element pointing to an INSPIRE Compliant ISO metadata document plus language parameters -->
+<!-- Scenario 2: Mandatory (where appropriate) metadata elements not mapped to standard capabilities, plus mandatory language parameters, plus OPTIONAL MetadataUrl pointing to an INSPIRE Compliant ISO metadata document -->
+<!ELEMENT inspire_vs:ExtendedCapabilities ((
+	inspire_common:MetadataUrl,
+	inspire_common:SupportedLanguages,
+	inspire_common:ResponseLanguage
+) | (
+	inspire_common:ResourceLocator+,
+	inspire_common:ResourceType,
+	inspire_common:TemporalReference+,
+	inspire_common:Conformity+,
+	inspire_common:MetadataPointOfContact+,
+	inspire_common:MetadataDate,
+	inspire_common:SpatialDataServiceType,
+	inspire_common:MandatoryKeyword+,
+	inspire_common:Keyword*,
+	inspire_common:SupportedLanguages,
+	inspire_common:ResponseLanguage,
+	inspire_common:MetadataUrl?
+))>
+<!ATTLIST inspire_vs:ExtendedCapabilities xmlns:inspire_vs CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/inspire_vs/1.0'>
+
+<!ELEMENT inspire_common:MetadataUrl (inspire_common:URL, inspire_common:MediaType*)>
+<!ATTLIST inspire_common:MetadataUrl xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'	xmlns:xsi CDATA #FIXED 'http://www.w3.org/2001/XMLSchemainstance' xsi:type CDATA #FIXED 'inspire_common:resourceLocatorType'>
+
+<!ELEMENT inspire_common:URL (#PCDATA)>
+<!ATTLIST inspire_common:URL xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- inspire_common:MediaType content:
+text/plain
+text/html
+text/xml
+application/xml
+application/json
+application/pdf
+application/rdf+xml
+application/json
+application/soap+xml
+application/vnd.eu.europa.ec.inspire.resource+xml
+application/vnd.google-earth.kml+xml
+application/vnd.google-earth.kml
+application/vnd.google-earth.kmx
+application/vnd.msword
+application/vnd.ms-excel
+application/vnd.ms-powerpoint
+application/vnd.oasis.opendocument.text
+application/vnd.oasis.opendocument.spreadsheet
+application/vnd.oasis.opendocument.presentation
+application/vnd.oasis.opendocument.graphics
+application/gml+xml
+application/vnd.ogc.wms_xml
+application/vnd.ogc.csw_xml
+application/vnd.ogc.csw.capabilities.response_xml
+application/vnd.ogc.csw.GetRecordByIdResponse_xml
+application/vnd.ogc.csw.GetRecordsResponse_xml
+application/vnd.ogc.wfs_xml
+application/vnd.ogc.se_xml
+application/vnd.iso.19139+xml
+-->
+<!ELEMENT inspire_common:MediaType (#PCDATA)>
+<!ATTLIST inspire_common:MediaType xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:SupportedLanguages (inspire_common:DefaultLanguage, inspire_common:SupportedLanguage*)>
+<!ATTLIST inspire_common:SupportedLanguages xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:DefaultLanguage (inspire_common:Language)>
+<!ATTLIST inspire_common:DefaultLanguage xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:SupportedLanguage (inspire_common:Language)>
+<!ATTLIST inspire_common:SupportedLanguage xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:ResponseLanguage (inspire_common:Language)>
+<!ATTLIST inspire_common:ResponseLanguage xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- inspire_common:Language:
+bul
+cze
+dan
+dut
+eng
+est
+fin
+fre
+ger
+gre
+hun
+gle
+ita
+lav
+lit
+mlt
+pol
+por
+rum
+slo
+slv
+spa
+swe
+-->
+<!ELEMENT inspire_common:Language (#PCDATA)>
+<!ATTLIST inspire_common:Language xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:ResourceLocator (inspire_common:URL, inspire_common:MediaType*)>
+<!ATTLIST inspire_common:ResourceLocator xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- inspire_common:ResourceType content:
+service
+-->
+<!ELEMENT inspire_common:ResourceType (#PCDATA)>
+<!ATTLIST inspire_common:ResourceType xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:TemporalReference (inspire_common:DateOfCreation?, inspire_common:DateOfLastRevision?, inspire_common:DateOfPublication*, inspire_common:TemporalExtent*)>
+<!ATTLIST inspire_common:TemporalReference xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- YEAR MONTH DAY-TIME-FRACTIONAL SECONDS-TIME ZONE -->
+<!ELEMENT inspire_common:DateOfCreation (#PCDATA)>
+<!ATTLIST inspire_common:DateOfCreation xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- YEAR MONTH DAY-TIME-FRACTIONAL SECONDS-TIME ZONE -->
+<!ELEMENT inspire_common:DateOfLastRevision (#PCDATA)>
+<!ATTLIST inspire_common:DateOfLastRevision xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- YEAR MONTH DAY-TIME-FRACTIONAL SECONDS-TIME ZONE -->
+<!ELEMENT inspire_common:DateOfPublication (#PCDATA)>
+<!ATTLIST inspire_common:DateOfPublication xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:TemporalExtent (inspire_common:IndividualDate | inspire_common:IntervalOfDates)>
+<!ATTLIST inspire_common:TemporalExtent xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- YEAR MONTH DAY-TIME-FRACTIONAL SECONDS-TIME ZONE -->
+<!ELEMENT inspire_common:IndividualDate (#PCDATA)>
+<!ATTLIST inspire_common:IndividualDate xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:IntervalOfDates (inspire_common:StartingDate, inspire_common:EndDate)>
+<!ATTLIST inspire_common:IntervalOfDates xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- YEAR MONTH DAY-TIME-FRACTIONAL SECONDS-TIME ZONE -->
+<!ELEMENT inspire_common:StartingDate (#PCDATA)>
+<!ATTLIST inspire_common:StartingDate xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- YEAR MONTH DAY-TIME-FRACTIONAL SECONDS-TIME ZONE -->
+<!ELEMENT inspire_common:EndDate (#PCDATA)>
+<!ATTLIST inspire_common:EndDate xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:Conformity (inspire_common:Specification, inspire_common:Degree)>
+<!ATTLIST inspire_common:Conformity xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:Specification (inspire_common:Title, (inspire_common:DateOfPublication | inspire_common:DateOfCreation | inspire_common:DateOfLastRevision), inspire_common:URI*, inspire_common:ResourceLocator*)>
+<!ATTLIST inspire_common:Specification xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:Title (#PCDATA)>
+<!ATTLIST inspire_common:Title xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:URI (#PCDATA)>
+<!ATTLIST inspire_common:URI xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- inspire_common:Degree content:
+conformant
+notConformant
+notEvaluated
+-->
+<!ELEMENT inspire_common:Degree (#PCDATA)>
+<!ATTLIST inspire_common:Degree xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:MetadataPointOfContact (inspire_common:OrganisationName, inspire_common:EmailAddress)>
+<!ATTLIST inspire_common:MetadataPointOfContact xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:OrganisationName (#PCDATA)>
+<!ATTLIST inspire_common:OrganisationName xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:EmailAddress (#PCDATA)>
+<!ATTLIST inspire_common:EmailAddress xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- YEAR MONTH DAY-TIME-FRACTIONAL SECONDS-TIME ZONE -->
+<!ELEMENT inspire_common:MetadataDate (#PCDATA)>
+<!ATTLIST inspire_common:MetadataDate xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- inspire_common:SpatialDataServiceType content:
+discovery
+view
+download
+transformation
+invoke
+other
+-->
+<!ELEMENT inspire_common:SpatialDataServiceType (#PCDATA)>
+<!ATTLIST inspire_common:SpatialDataServiceType xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:MandatoryKeyword (inspire_common:KeywordValue)>
+<!ATTLIST inspire_common:MandatoryKeyword xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!-- inspire_common:KeywordValue content for
+inspire_common:MandatoryKeywords:
+chainDefinitionService
+comEncodingService
+comGeographicCompressionService
+comGeographicFormatConversionService
+comMessagingService
+comRemoteFileAndExecutableManagement
+comService
+comTransferService
+humanCatalogueViewer
+humanChainDefinitionEditor
+humanFeatureGeneralizationEditor
+humanGeographicDataStructureViewer
+humanGeographicFeatureEditor
+humanGeographicSpreadsheetViewer
+humanGeographicSymbolEditor
+humanGeographicViewer
+humanInteractionService
+humanServiceEditor
+humanWorkflowEnactmentManager
+infoCatalogueService
+infoCoverageAccessService
+infoFeatureAccessService
+infoFeatureTypeService
+infoGazetteerService
+infoManagementService
+infoMapAccessService
+infoOrderHandlingService
+infoProductAccessService
+infoRegistryService
+infoSensorDescriptionService
+infoStandingOrderService
+metadataGeographicAnnotationService
+metadataProcessingService
+metadataStatisticalCalculationService
+spatialCoordinateConversionService
+spatialCoordinateTransformationService
+spatialCoverageVectorConversionService
+spatialDimensionMeasurementService
+spatialFeatureGeneralizationService
+spatialFeatureManipulationService
+spatialFeatureMatchingService
+spatialImageCoordinateConversionService
+spatialImageGeometryModelConversionService
+spatialOrthorectificationService
+spatialPositioningService
+spatialProcessingService
+spatialProximityAnalysisService
+spatialRectificationService
+spatialRouteDeterminationService
+spatialSamplingService
+spatialSensorGeometryModelAdjustmentService
+spatialSubsettingService
+spatialTilingChangeService
+subscriptionService
+taskManagementService
+temporalProcessingService
+temporalProximityAnalysisService
+temporalReferenceSystemTransformationService
+temporalSamplingService
+temporalSubsettingService
+thematicChangeDetectionService
+thematicClassificationService
+thematicFeatureGeneralizationService
+thematicGeocodingService
+thematicGeographicInformationExtractionService
+thematicGeoparsingService
+thematicGoparameterCalculationService
+thematicImageManipulationService
+thematicImageProcessingService
+thematicImageSynthesisService
+thematicImageUnderstandingService
+thematicMultibandImageManipulationService
+thematicObjectDetectionService
+thematicProcessingService
+thematicReducedResolutionGenerationService
+thematicSpatialCountingService
+thematicSubsettingService
+workflowEnactmentService
+-->
+<!ELEMENT inspire_common:KeywordValue (#PCDATA)>
+<!ATTLIST inspire_common:KeywordValue xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+<!ELEMENT inspire_common:Keyword (inspire_common:OriginatingControlledVocabulary?, inspire_common:KeywordValue)>
+<!ATTLIST inspire_common:Keyword xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'	xmlns:xsi CDATA #FIXED 'http://www.w3.org/2001/XMLSchemainstance' xsi:type (inspire_common:inspireTheme_bul | inspire_common:inspireTheme_cze | inspire_common:inspireTheme_dan | inspire_common:inspireTheme_dut | inspire_common:inspireTheme_eng | inspire_common:inspireTheme_est | inspire_common:inspireTheme_fin | inspire_common:inspireTheme_fre |	inspire_common:inspireTheme_ger | inspire_common:inspireTheme_gre | inspire_common:inspireTheme_hun | inspire_common:inspireTheme_gle | inspire_common:inspireTheme_ita | inspire_common:inspireTheme_lav |	inspire_common:inspireTheme_lit | inspire_common:inspireTheme_mlt | inspire_common:inspireTheme_pol | inspire_common:inspireTheme_por | inspire_common:inspireTheme_rum | inspire_common:inspireTheme_slo | inspire_common:inspireTheme_slv | inspire_common:inspireTheme_spa | inspire_common:inspireTheme_swe) #IMPLIED>
+
+<!--
+inspire_common:Title content's : GEMET - INSPIRE themes =>
+inspire_common:DateOfPublication content's : 2008-06-01
+-->
+<!ELEMENT inspire_common:OriginatingControlledVocabulary (inspire_common:Title, (inspire_common:DateOfPublication | inspire_common:DateOfCreation | inspire_common:DateOfLastRevision), inspire_common:URI*, inspire_common:ResourceLocator*)>
+<!ATTLIST inspire_common:OriginatingControlledVocabulary xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.0'>
+
+]>  <!-- end of DOCTYPE declaration -->
+ 
+<WMT_MS_Capabilities version="1.1.1">
+<Service>
+  <Name>WMS</Name>
+  <Title>Visningstjänst historiska ortofoton</Title>
+  <Abstract>Visningtjänst för tillhandahållande av Lantmäteriets historiska ortofoton
+            från perioden 1960, 1975 och 1993-2005.</Abstract>
+  <KeywordList>
+	<Keyword>infoMapAccessService</Keyword>
+	<Keyword>WMS</Keyword>      
+    <Keyword>LANTMäTERIET</Keyword>
+  </KeywordList>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1"/>
+  <ContactInformation>
+    <ContactPersonPrimary>
+      <ContactPerson>Geodatasupport</ContactPerson>
+      <ContactOrganization>Lantmäteriet</ContactOrganization>
+    </ContactPersonPrimary>
+    <ContactPosition>pointOfContact</ContactPosition>
+    <ContactAddress>
+        <AddressType>postal</AddressType>
+        <Address>Geodatasupport, Lantmäteriet</Address>
+        <City>Gävle</City>
+        <StateOrProvince/>
+        <PostCode>801 82</PostCode>
+        <Country>Sweden</Country>
+    </ContactAddress>
+    <ContactVoiceTelephone>026-633600</ContactVoiceTelephone>
+    <ContactElectronicMailAddress>geodatasupport@lm.se</ContactElectronicMailAddress>
+  </ContactInformation>
+</Service>
+ 
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <Format>application/vnd.ogc.wms_xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1"/></Get>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <GetMap>
+      <Format>image/png</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/png; mode=8bit</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1"/></Get>
+        </HTTP>
+      </DCPType>
+    </GetMap>
+    <GetLegendGraphic>
+      <Format>image/png</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/png; mode=8bit</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1"/></Get>
+        </HTTP>
+      </DCPType>
+    </GetLegendGraphic>
+    </Request>
+  <Exception>
+    <Format>application/vnd.ogc.se_xml</Format>
+  </Exception>
+  
+  <VendorSpecificCapabilities>
+    <inspire_vs:ExtendedCapabilities xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0">
+	  <inspire_common:MetadataUrl xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="inspire_common:resourceLocatorType">
+		<inspire_common:URL xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">http://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;ELEMENTSETNAME=full&amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=e04a0e7c-2c86-4931-a6f5-bab4091c8745&amp;outputSchema=csw:IsoRecord</inspire_common:URL>
+		<inspire_common:MediaType xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">application/xml</inspire_common:MediaType>
+	  </inspire_common:MetadataUrl>
+	  <inspire_common:SupportedLanguages xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
+		<inspire_common:DefaultLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
+		  <inspire_common:Language xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">swe</inspire_common:Language>
+		</inspire_common:DefaultLanguage>
+	  </inspire_common:SupportedLanguages>
+	  <inspire_common:ResponseLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
+		<inspire_common:Language xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">swe</inspire_common:Language>
+	  </inspire_common:ResponseLanguage>
+	</inspire_vs:ExtendedCapabilities>
+  </VendorSpecificCapabilities>
+   
+<Layer>
+    <Title>Visningstjänst historiska-ortofoton</Title>
+    <Abstract>Visningtjänst för tillhandahållande av Lantmäteriets historiska ortofoton
+            från perioden 1960, 1975 och 1993-2005.</Abstract>
+  <KeywordList>
+    <Keyword>infoMapAccessService</Keyword>
+    <Keyword>Orthoimagery</Keyword>
+  </KeywordList>
+  <SRS>epsg:3006</SRS>
+  <SRS>epsg:3007</SRS>
+  <SRS>epsg:3008</SRS>
+  <SRS>epsg:3009</SRS>
+  <SRS>epsg:3010</SRS>
+  <SRS>epsg:3011</SRS>
+  <SRS>epsg:3012</SRS>
+  <SRS>epsg:3013</SRS>
+  <SRS>epsg:3014</SRS>
+  <SRS>epsg:3015</SRS>
+  <SRS>epsg:3016</SRS>
+  <SRS>epsg:3017</SRS>
+  <SRS>epsg:3018</SRS>
+  <SRS>epsg:3021</SRS>
+  <SRS>epsg:3034</SRS>
+  <SRS>epsg:3035</SRS>
+  <SRS>epsg:3044</SRS>
+  <SRS>epsg:3045</SRS>
+  <SRS>epsg:3046</SRS>
+  <SRS>epsg:3047</SRS>
+  <SRS>epsg:3857</SRS>
+  <SRS>epsg:4258</SRS>
+  <SRS>epsg:4326</SRS>
+  <SRS>epsg:4619</SRS>
+  <SRS>epsg:25832</SRS>
+  <SRS>epsg:25833</SRS>
+  <SRS>epsg:25834</SRS>
+  <SRS>epsg:25835</SRS>
+  <SRS>epsg:32632</SRS>
+  <SRS>epsg:32633</SRS>
+  <SRS>epsg:32634</SRS>
+  <SRS>epsg:32635</SRS>
+  <SRS>epsg:900913</SRS>
+  <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+  <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+  <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+  <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+  <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+  <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+  <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+  <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+  <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+  <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+  <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+  <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+  <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+  <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+  <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+  <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+  <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+  <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+  <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+  <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+  <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+  <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+  <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+  <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+  <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+  <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+  <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+  <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+  <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+  <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+  <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+  <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+  <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+  <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+  <Layer queryable="0" opaque="0" cascaded="0">
+    <Name>OI.OrthoimageCoverage</Name>
+    <Title>orthoimage coverage</Title>
+    <Abstract>OrthoimageCoverage</Abstract>
+    <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+    <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+    <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+    <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+    <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+    <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+    <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+    <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+    <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+    <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+    <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+    <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+    <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+    <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+    <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+    <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+    <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+    <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+    <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+    <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+    <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+    <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+    <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+    <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+    <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+    <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+    <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+    <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+    <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+    <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+    <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+    <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+    <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+    <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+    <MetadataURL type="TC211">
+      <Format>application/xml</Format>
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+    </MetadataURL>
+    <Style>
+      <Name>OI.OrthoimageCoverage.Default</Name>
+      <Title>Orthoimage Coverage Default Style</Title>
+      <Abstract>Orthoimage coverages are rendered as opaque raster data. When coverages 
+                overlap in a same layer, the coverage the acquisition time of which is the latest is 
+                placed on top.</Abstract>
+      <LegendURL width="407" height="81">
+        <Format>image/png</Format>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.OrthoimageCoverage&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+      </LegendURL>
+    </Style>
+    <Layer>
+      <Name>OI.Histortho_60</Name>
+      <Title>Ref. år 1960 ortofoton, 0,5 m, sv_v</Title>
+      <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+      <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+      <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+      <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+      <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+      <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+      <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+      <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+      <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+      <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+      <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+      <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+      <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+      <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+      <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+      <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+      <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <MetadataURL type="TC211">
+        <Format>application/xml</Format>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+      </MetadataURL>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_60&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+    </Layer>
+    <Layer>
+      <Name>OI.Histortho_75</Name>
+      <Title>Ref. år 1975 ortofoton, 0,5 m, sv_v</Title>
+      <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+      <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+      <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+      <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+      <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+      <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+      <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+      <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+      <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+      <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+      <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+      <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+      <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+      <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+      <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+      <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+      <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <MetadataURL type="TC211">
+        <Format>application/xml</Format>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+      </MetadataURL>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_75&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+    </Layer>
+    <Layer>
+      <Name>Ortho_1993</Name>
+      <Title>Ortofoto 1993</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_1993&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_1993</Name>
+        <Title>1993 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_1993&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_1994</Name>
+      <Title>Ortofoto 1994</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_1994&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_1994</Name>
+        <Title>1994 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_1994&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_1995</Name>
+      <Title>Ortofoto 1995</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_1995&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_1995</Name>
+        <Title>1995 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_1995&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_1996</Name>
+      <Title>Ortofoto 1996</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_1996&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_1996</Name>
+        <Title>1996 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_1996&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_1997</Name>
+      <Title>Ortofoto 1997</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_1997&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_1997</Name>
+        <Title>1997 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_1997&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_1998</Name>
+      <Title>Ortofoto 1998</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_1998&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_1998</Name>
+        <Title>1998 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_1998&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_1999</Name>
+      <Title>Ortofoto 1999</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_1999&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_1999</Name>
+        <Title>1999 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_1999&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_2000</Name>
+      <Title>Ortofoto 2000</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_2000&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_2000</Name>
+        <Title>2000 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_2000&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_2001</Name>
+      <Title>Ortofoto 2001</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_2001&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_2001</Name>
+        <Title>2001 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_2001&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_2002</Name>
+      <Title>Ortofoto 2002</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_2002&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_2002</Name>
+        <Title>2002 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_2002&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer>
+        <Name>OI.Histortho_color_2002</Name>
+        <Title>2002 ortofoton, 0,5 m, färg</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_color_2002&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_2003</Name>
+      <Title>Ortofoto 2003</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_2003&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_2003</Name>
+        <Title>2003 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_2003&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer>
+        <Name>OI.Histortho_color_2003</Name>
+        <Title>2003 ortofoton, 0,5 m, färg</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_color_2003&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer>
+        <Name>OI.Histortho_ir_2003</Name>
+        <Title>2003 ortofoton, 0,5 m, ir</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_ir_2003&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_2004</Name>
+      <Title>Ortofoto 2004</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_2004&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_2004</Name>
+        <Title>2004 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_2004&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer>
+        <Name>OI.Histortho_color_2004</Name>
+        <Title>2004 ortofoton, 0,5 m, färg</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_color_2004&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer>
+        <Name>OI.Histortho_ir_2004</Name>
+        <Title>2004 ortofoton, 0,5 m, ir</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_ir_2004&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Ortho_2005</Name>
+      <Title>Ortofoto 2005</Title>
+      <Style>
+        <Name>OI.OrthoimageCoverage.Default</Name>
+        <Title>OI.OrthoimageCoverage.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=Ortho_2005&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <Layer>
+        <Name>OI.Histortho_bw_2005</Name>
+        <Title>2005 ortofoton, 1 m, sv_v</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_bw_2005&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer>
+        <Name>OI.Histortho_color_2005</Name>
+        <Title>2005 ortofoton, 0,5 m, färg</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_color_2005&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer>
+        <Name>OI.Histortho_ir_2005</Name>
+        <Title>2005 ortofoton, 0,5 m, ir</Title>
+        <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+        <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+        <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+        <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+        <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+        <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+        <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+        <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+        <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+        <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+        <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+        <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+        <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+        <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+        <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+        <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+        <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+        <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+        <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+        <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+        <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+        <MetadataURL type="TC211">
+          <Format>application/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+        </MetadataURL>
+        <Style>
+          <Name>OI.OrthoimageCoverage.Default</Name>
+          <Title>OI.OrthoimageCoverage.Default</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_ir_2005&amp;STYLE=OI.OrthoimageCoverage.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Layer>
+  <Layer>
+    <Name>OI.MosaicElement</Name>
+    <Title>mosaic element</Title>
+    <Abstract>MosaicElement</Abstract>
+        <Style>
+          <Name>historiska-ortofoton</Name>
+          <Title>historiska-ortofoton</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.MosaicElement&amp;STYLE=historiska-ortofoton&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>OI.MosaicElement.Default</Name>
+          <Title>Mosaic element Default Style</Title>
+          <Abstract>Mosaic elements are outlined using solid magenta (#ff00ff) lines with a width of 1 
+                    pixel. No fill is rendered.
+                    Attribute phenomenonTime is carried by the geometry as a text label in Arial 10 
+                    magenta (#ff00ff).</Abstract>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.MosaicElement&amp;STYLE=OI.MosaicElement.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+        </Style>
+    <Layer>
+      <Name>OI.Histortho_60_meta</Name>
+      <Title>Ref. år 1960 flygår</Title>
+      <Abstract>Årtalsredovisning av Lantmäteriets ortofoton för perioden runt 1960</Abstract>
+      <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+      <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+      <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+      <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+      <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+      <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+      <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+      <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+      <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+      <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+      <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+      <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+      <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+      <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+      <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+      <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+      <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <MetadataURL type="TC211">
+        <Format>application/xml</Format>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+      </MetadataURL>
+       <Style>
+         <Name>historiska-ortofoton</Name>
+         <Title>historiska-ortofoton</Title>
+         <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_60_meta&amp;STYLE=historiska-ortofoton&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+         </LegendURL>
+      </Style>
+      <Style>
+        <Name>OI.MosaicElement.Default</Name>
+        <Title>OI.MosaicElement.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_75_meta&amp;STYLE=OI.MosaicElement.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+    </Layer>
+    <Layer>
+      <Name>OI.Histortho_75_meta</Name>
+      <Title>Ref. år 1975 flygår</Title>
+      <Abstract>Årtalsredovisning av Lantmäteriets ortofoton för perioden runt 1975</Abstract>
+      <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+      <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+      <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+      <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+      <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+      <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+      <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+      <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+      <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+      <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+      <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+      <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+      <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+      <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+      <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+      <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+      <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <MetadataURL type="TC211">
+        <Format>application/xml</Format>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+      </MetadataURL>
+       <Style>
+          <Name>historiska-ortofoton</Name>
+          <Title>historiska-ortofoton</Title>
+          <LegendURL width="407" height="81">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_75_meta&amp;STYLE=historiska-ortofoton&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+          </LegendURL>
+       </Style>
+      <Style>
+        <Name>OI.MosaicElement.Default</Name>
+        <Title>OI.MosaicElement.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Histortho_75_meta&amp;STYLE=OI.MosaicElement.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+    </Layer>
+    <Layer>
+      <Name>OI.Seamline_60</Name>
+      <Title>Ref. år 1960 bildsömmar</Title>
+      <Abstract>Lantmäteriets bildssömmar hist.ortofoton runt 1960</Abstract>
+      <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+      <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+      <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+      <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+      <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+      <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+      <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+      <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+      <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+      <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+      <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+      <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+      <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+      <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+      <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+      <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+      <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <MetadataURL type="TC211">
+        <Format>application/xml</Format>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+      </MetadataURL>
+            <Style>
+              <Name>historiska-ortofoton</Name>
+              <Title>historiska-ortofoton</Title>
+              <LegendURL width="407" height="81">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Seamline_60&amp;STYLE=historiska-ortofoton&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+              </LegendURL>
+            </Style>
+      <Style>
+        <Name>OI.MosaicElement.Default</Name>
+        <Title>OI.MosaicElement.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Seamline_60&amp;STYLE=OI.MosaicElement.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <ScaleHint min="0" max="74.8354272644456" />
+    </Layer>
+    <Layer>
+      <Name>OI.Seamline_75</Name>
+      <Title>Ref. år 1975 bildsömmar</Title>
+      <Abstract>Lantmäteriets bildssömmar hist.ortofoton runt 1975</Abstract>
+      <LatLonBoundingBox minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:3006" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3007" minx="-46750" miny="5.99383e+06" maxx="846584" maxy="8.03074e+06" />
+      <BoundingBox SRS="epsg:3008" minx="-98504.1" miny="5.99707e+06" maxx="748458" maxy="8.01632e+06" />
+      <BoundingBox SRS="epsg:3009" minx="-150120" miny="6.0024e+06" maxx="650200" maxy="8.0032e+06" />
+      <BoundingBox SRS="epsg:3010" minx="-248207" miny="5.99283e+06" maxx="598427" maxy="8.01132e+06" />
+      <BoundingBox SRS="epsg:3011" minx="-346207" miny="5.98535e+06" maxx="546404" maxy="8.02073e+06" />
+      <BoundingBox SRS="epsg:3012" minx="-124331" miny="5.99948e+06" maxx="699344" maxy="8.0096e+06" />
+      <BoundingBox SRS="epsg:3013" minx="-199173" miny="5.99735e+06" maxx="624346" maxy="8.0071e+06" />
+      <BoundingBox SRS="epsg:3014" minx="-297219" miny="5.98883e+06" maxx="572445" maxy="8.01587e+06" />
+      <BoundingBox SRS="epsg:3015" minx="-395168" miny="5.9824e+06" maxx="520309" maxy="8.02592e+06" />
+      <BoundingBox SRS="epsg:3016" minx="-492996" miny="5.97806e+06" maxx="467968" maxy="8.03725e+06" />
+      <BoundingBox SRS="epsg:3017" minx="-590681" miny="5.97581e+06" maxx="415452" maxy="8.04986e+06" />
+      <BoundingBox SRS="epsg:3018" minx="-688198" miny="5.97565e+06" maxx="362789" maxy="8.06374e+06" />
+      <BoundingBox SRS="epsg:3021" minx="1.14721e+06" miny="5.99636e+06" maxx="1.97247e+06" maxy="8.00678e+06" />
+      <BoundingBox SRS="epsg:3034" minx="3.86568e+06" miny="3.02169e+06" maxx="4.79804e+06" maxy="5.05668e+06" />
+      <BoundingBox SRS="epsg:3035" minx="4.19142e+06" miny="3.43939e+06" maxx="5.14555e+06" maxy="5.47634e+06" />
+      <BoundingBox SRS="epsg:3044" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:3045" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:3046" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:3047" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:3857" minx="703448" miny="7.15239e+06" maxx="3.26007e+06" maxy="1.1789e+07" />
+      <BoundingBox SRS="epsg:4258" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4326" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:4619" minx="6.31918" miny="53.9061" maxx="29.2857" maxy="72.0992" />
+      <BoundingBox SRS="epsg:25832" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:25833" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:25834" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:25835" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:32632" minx="407094" miny="5.9912e+06" maxx="1.39199e+06" maxy="8.06021e+06" />
+      <BoundingBox SRS="epsg:32633" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <BoundingBox SRS="epsg:32634" minx="-191581" miny="5.97429e+06" maxx="791613" maxy="8.04018e+06" />
+      <BoundingBox SRS="epsg:32635" minx="-580651" miny="5.98198e+06" maxx="580652" maxy="8.10075e+06" />
+      <BoundingBox SRS="epsg:900913" minx="200000" miny="6e+06" maxx="1e+06" maxy="8e+06" />
+      <MetadataURL type="TC211">
+        <Format>application/xml</Format>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.geodata.se/geonetwork/srv/en/csw?REQUEST=GetRecordById&amp;amp;SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;ELEMENTSETNAME=full&amp;amp;OUTPUTSCHEMA=https://www.geodata.se/geodataportalen/srv/swe/csw?request=GetRecordById&amp;amp;service=CSW&amp;amp;version=2.0.2&amp;amp;elementSetName=full&amp;amp;id=c4c38adc-1e35-4054-a2f5-d6e77a95bd3c&amp;amp;outputSchema=csw:IsoRecord" />
+      </MetadataURL>
+            <Style>
+              <Name>historiska-ortofoton</Name>
+              <Title>historiska-ortofoton</Title>
+              <LegendURL width="407" height="81">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Seamline_75&amp;STYLE=historiska-ortofoton&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+              </LegendURL>
+            </Style>
+      <Style>
+        <Name>OI.MosaicElement.Default</Name>
+        <Title>OI.MosaicElement.Default</Title>
+        <LegendURL width="407" height="81">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.lantmateriet.se/historiska-ortofoton/wms/v1?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetLegendGraphic&amp;LAYER=OI.Seamline_75&amp;STYLE=OI.MosaicElement.Default&amp;LANGUAGE=swe&amp;FORMAT=image/png&amp;SLD_VERSION=1.1.0" />
+        </LegendURL>
+      </Style>
+      <ScaleHint min="0" max="74.8354272644456" />
+    </Layer>
+  </Layer>
+</Layer>
+</Capability>
+</WMT_MS_Capabilities>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WMS_Capabilities version="1.3.0"
+  xmlns="http://www.opengis.net/wms"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:esri_wms="http://www.esri.com/wms"
+  xsi:schemaLocation="http://www.opengis.net/wms http://schemas.opengis.net/wms/1.3.0/capabilities_1_3_0.xsd http://www.esri.com/wms https://geodata.naturvardsverket.se/andra_skydd/wms?version=1.3.0%26service=WMS%26request=GetSchemaExtension">
+  <Service>
+    <Name><![CDATA[WMS]]></Name>
+    <Title>WMS</Title>
+    <Abstract>WMS</Abstract>
+    <KeywordList><Keyword><![CDATA[]]></Keyword></KeywordList>
+    <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodata.naturvardsverket.se/andra_skydd/wms?"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson><![CDATA[]]></ContactPerson>
+        <ContactOrganization><![CDATA[]]></ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition><![CDATA[]]></ContactPosition>
+      <ContactAddress>
+        <AddressType><![CDATA[]]></AddressType>
+        <Address><![CDATA[]]></Address>
+        <City><![CDATA[]]></City>
+        <StateOrProvince><![CDATA[]]></StateOrProvince>
+        <PostCode><![CDATA[]]></PostCode>
+        <Country><![CDATA[]]></Country>
+      </ContactAddress>
+      <ContactVoiceTelephone><![CDATA[]]></ContactVoiceTelephone>
+      <ContactFacsimileTelephone><![CDATA[]]></ContactFacsimileTelephone>
+      <ContactElectronicMailAddress><![CDATA[]]></ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees><![CDATA[]]></Fees>
+    <AccessConstraints><![CDATA[]]></AccessConstraints>
+    <MaxWidth>3840</MaxWidth>
+    <MaxHeight>2160</MaxHeight>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP><Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodata.naturvardsverket.se/andra_skydd/wms?"/></Get></HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/bmp</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/tiff</Format>
+        <Format>image/png</Format>
+        <Format>image/png8</Format>
+        <Format>image/png24</Format>
+        <Format>image/png32</Format>
+        <Format>image/gif</Format>
+        <Format>image/svg+xml</Format>
+        <DCPType>
+          <HTTP><Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodata.naturvardsverket.se/andra_skydd/wms?"/></Get></HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>application/vnd.esri.wms_raw_xml</Format>
+        <Format>application/vnd.esri.wms_featureinfo_xml</Format>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <Format>application/geo+json</Format>
+        <Format>text/xml</Format>
+        <Format>text/html</Format>
+        <Format>text/plain</Format>
+        <DCPType>
+          <HTTP><Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodata.naturvardsverket.se/andra_skydd/wms?"/></Get></HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+      <esri_wms:GetStyles>
+        <Format>application/vnd.ogc.sld+xml</Format>
+        <DCPType>
+          <HTTP><Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodata.naturvardsverket.se/andra_skydd/wms?"/></Get></HTTP>
+        </DCPType>
+      </esri_wms:GetStyles>
+    </Request>
+    <Exception>
+      <Format>application/vnd.ogc.se_xml</Format>
+      <Format>application/vnd.ogc.se_inimage</Format>
+      <Format>application/vnd.ogc.se_blank</Format>
+      <Format>text/xml</Format>
+      <Format>XML</Format>
+    </Exception>
+    <Layer>
+      <Title><![CDATA[Layers]]></Title>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:3006</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:4619</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3034</CRS>
+<CRS>EPSG:3044</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3047</CRS>
+<CRS>EPSG:3857</CRS>
+ <!-- alias 3857 -->
+<CRS>EPSG:102100</CRS>
+<CRS>EPSG:3007</CRS>
+<CRS>EPSG:3008</CRS>
+<CRS>EPSG:3012</CRS>
+<CRS>EPSG:3009</CRS>
+<CRS>EPSG:3013</CRS>
+<CRS>EPSG:3010</CRS>
+<CRS>EPSG:3014</CRS>
+<CRS>EPSG:3011</CRS>
+<CRS>EPSG:3015</CRS>
+<CRS>EPSG:3016</CRS>
+<CRS>EPSG:3017</CRS>
+<CRS>EPSG:3018</CRS>
+<EX_GeographicBoundingBox><westBoundLongitude>7.148259</westBoundLongitude><eastBoundLongitude>27.547452</eastBoundLongitude><southBoundLatitude>53.906101</southBoundLatitude><northBoundLatitude>69.409282</northBoundLatitude></EX_GeographicBoundingBox>
+<BoundingBox CRS="CRS:84" minx="7.148259" miny="53.906101" maxx="27.547452" maxy="69.409282"/>
+<BoundingBox CRS="EPSG:4326" minx="53.906101" miny="7.148259" maxx="69.409282" maxy="27.547452"/>
+<BoundingBox CRS="EPSG:3006" minx="6000000.000000" miny="190000.000000" maxx="7700000.000000" maxy="1000000.000000"/>
+<BoundingBox CRS="EPSG:4258" minx="53.906101" miny="7.148259" maxx="69.409282" maxy="27.547452"/>
+<BoundingBox CRS="EPSG:4619" minx="53.906101" miny="7.148259" maxx="69.409282" maxy="27.547452"/>
+<BoundingBox CRS="EPSG:3035" minx="3438682.864420" miny="4206810.869332" maxx="5181397.800450" maxy="5145545.819682"/>
+<BoundingBox CRS="EPSG:3034" minx="3021012.588068" miny="3883945.245067" maxx="4746490.987517" maxy="4798042.632753"/>
+<BoundingBox CRS="EPSG:3044" minx="5990352.677699" miny="426727.787557" maxx="7760722.193698" maxy="1391992.501999"/>
+<BoundingBox CRS="EPSG:3045" minx="6000000.000000" miny="190000.000000" maxx="7700000.000000" maxy="1000000.000000"/>
+<BoundingBox CRS="EPSG:3046" minx="5974286.780395" miny="-201593.042864" maxx="7741980.877935" maxy="762045.652295"/>
+<BoundingBox CRS="EPSG:3047" minx="5981976.425930" miny="-590635.212268" maxx="7807021.654944" maxy="521945.634737"/>
+<BoundingBox CRS="EPSG:3857" minx="795740.576415" miny="7152392.935954" maxx="3066568.309803" maxy="10879120.258812"/>
+<BoundingBox CRS="EPSG:102100" minx="795740.576415" miny="7152392.935954" maxx="3066568.309803" maxy="10879120.258812"/>
+<BoundingBox CRS="EPSG:3007" minx="5993408.188781" miny="-41910.273672" maxx="7730542.731935" maxy="846584.209711"/>
+<BoundingBox CRS="EPSG:3008" minx="5996861.701838" miny="-101081.862460" maxx="7716082.614541" maxy="748457.509538"/>
+<BoundingBox CRS="EPSG:3012" minx="5999370.394801" miny="-130621.053923" maxx="7709399.423800" maxy="699343.688280"/>
+<BoundingBox CRS="EPSG:3009" minx="6002400.960384" miny="-160124.049620" maxx="7703081.232493" maxy="650200.080032"/>
+<BoundingBox CRS="EPSG:3013" minx="5997351.452464" miny="-209180.177020" maxx="7707064.157153" maxy="620629.241488"/>
+<BoundingBox CRS="EPSG:3010" minx="5992827.393740" miny="-258216.922504" maxx="7711409.462584" maxy="590997.595616"/>
+<BoundingBox CRS="EPSG:3014" minx="5988827.950781" miny="-307231.540726" maxx="7716116.952212" maxy="561309.083823"/>
+<BoundingBox CRS="EPSG:3011" minx="5985352.384648" miny="-356221.249335" maxx="7721186.410370" maxy="531567.632896"/>
+<BoundingBox CRS="EPSG:3015" minx="5982400.051556" miny="-405183.224466" maxx="7726617.601657" maxy="501777.155895"/>
+<BoundingBox CRS="EPSG:3016" minx="5978062.988469" miny="-503012.444069" maxx="7738564.139169" maxy="442064.712789"/>
+<BoundingBox CRS="EPSG:3017" minx="5975813.533831" miny="-600695.605719" maxx="7751954.259553" maxy="382202.819687"/>
+<BoundingBox CRS="EPSG:3018" minx="5975650.009860" miny="-698208.159151" maxx="7766785.292948" maxy="322222.382552"/>
+      <Layer queryable="1">
+        <Name>Riksintresse_Friluftsliv</Name>
+        <Title><![CDATA[Riksintresse_Friluftsliv]]></Title>
+        <Abstract><![CDATA[]]></Abstract>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:3006</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:4619</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3034</CRS>
+<CRS>EPSG:3044</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3047</CRS>
+<CRS>EPSG:3857</CRS>
+ <!-- alias 3857 -->
+<CRS>EPSG:102100</CRS>
+<CRS>EPSG:3007</CRS>
+<CRS>EPSG:3008</CRS>
+<CRS>EPSG:3012</CRS>
+<CRS>EPSG:3009</CRS>
+<CRS>EPSG:3013</CRS>
+<CRS>EPSG:3010</CRS>
+<CRS>EPSG:3014</CRS>
+<CRS>EPSG:3011</CRS>
+<CRS>EPSG:3015</CRS>
+<CRS>EPSG:3016</CRS>
+<CRS>EPSG:3017</CRS>
+<CRS>EPSG:3018</CRS>
+<EX_GeographicBoundingBox><westBoundLongitude>7.148259</westBoundLongitude><eastBoundLongitude>27.547452</eastBoundLongitude><southBoundLatitude>53.906101</southBoundLatitude><northBoundLatitude>69.409282</northBoundLatitude></EX_GeographicBoundingBox>
+<BoundingBox CRS="CRS:84" minx="7.148259" miny="53.906101" maxx="27.547452" maxy="69.409282"/>
+<BoundingBox CRS="EPSG:4326" minx="53.906101" miny="7.148259" maxx="69.409282" maxy="27.547452"/>
+<BoundingBox CRS="EPSG:3006" minx="6000000.000000" miny="190000.000000" maxx="7700000.000000" maxy="1000000.000000"/>
+<BoundingBox CRS="EPSG:4258" minx="53.906101" miny="7.148259" maxx="69.409282" maxy="27.547452"/>
+<BoundingBox CRS="EPSG:4619" minx="53.906101" miny="7.148259" maxx="69.409282" maxy="27.547452"/>
+<BoundingBox CRS="EPSG:3035" minx="3438682.864420" miny="4206810.869332" maxx="5181397.800450" maxy="5145545.819682"/>
+<BoundingBox CRS="EPSG:3034" minx="3021012.588068" miny="3883945.245067" maxx="4746490.987517" maxy="4798042.632753"/>
+<BoundingBox CRS="EPSG:3044" minx="5990352.677699" miny="426727.787557" maxx="7760722.193698" maxy="1391992.501999"/>
+<BoundingBox CRS="EPSG:3045" minx="6000000.000000" miny="190000.000000" maxx="7700000.000000" maxy="1000000.000000"/>
+<BoundingBox CRS="EPSG:3046" minx="5974286.780395" miny="-201593.042864" maxx="7741980.877935" maxy="762045.652295"/>
+<BoundingBox CRS="EPSG:3047" minx="5981976.425930" miny="-590635.212268" maxx="7807021.654944" maxy="521945.634737"/>
+<BoundingBox CRS="EPSG:3857" minx="795740.576415" miny="7152392.935954" maxx="3066568.309803" maxy="10879120.258812"/>
+<BoundingBox CRS="EPSG:102100" minx="795740.576415" miny="7152392.935954" maxx="3066568.309803" maxy="10879120.258812"/>
+<BoundingBox CRS="EPSG:3007" minx="5993408.188781" miny="-41910.273672" maxx="7730542.731935" maxy="846584.209711"/>
+<BoundingBox CRS="EPSG:3008" minx="5996861.701838" miny="-101081.862460" maxx="7716082.614541" maxy="748457.509538"/>
+<BoundingBox CRS="EPSG:3012" minx="5999370.394801" miny="-130621.053923" maxx="7709399.423800" maxy="699343.688280"/>
+<BoundingBox CRS="EPSG:3009" minx="6002400.960384" miny="-160124.049620" maxx="7703081.232493" maxy="650200.080032"/>
+<BoundingBox CRS="EPSG:3013" minx="5997351.452464" miny="-209180.177020" maxx="7707064.157153" maxy="620629.241488"/>
+<BoundingBox CRS="EPSG:3010" minx="5992827.393740" miny="-258216.922504" maxx="7711409.462584" maxy="590997.595616"/>
+<BoundingBox CRS="EPSG:3014" minx="5988827.950781" miny="-307231.540726" maxx="7716116.952212" maxy="561309.083823"/>
+<BoundingBox CRS="EPSG:3011" minx="5985352.384648" miny="-356221.249335" maxx="7721186.410370" maxy="531567.632896"/>
+<BoundingBox CRS="EPSG:3015" minx="5982400.051556" miny="-405183.224466" maxx="7726617.601657" maxy="501777.155895"/>
+<BoundingBox CRS="EPSG:3016" minx="5978062.988469" miny="-503012.444069" maxx="7738564.139169" maxy="442064.712789"/>
+<BoundingBox CRS="EPSG:3017" minx="5975813.533831" miny="-600695.605719" maxx="7751954.259553" maxy="382202.819687"/>
+<BoundingBox CRS="EPSG:3018" minx="5975650.009860" miny="-698208.159151" maxx="7766785.292948" maxy="322222.382552"/>
+        <Style>
+          <Name>default</Name>
+          <Title><![CDATA[Riksintresse_Friluftsliv]]></Title>
+          <LegendURL width="18" height="18">
+            <Format>image/png</Format>
+            <OnlineResource xlink:href="https://geodata.naturvardsverket.se/andra_skydd/wms?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Riksintresse_Friluftsliv" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>Riksintresse_Naturvard</Name>
+        <Title><![CDATA[Riksintresse_Naturvard]]></Title>
+        <Abstract><![CDATA[]]></Abstract>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:3006</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:4619</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3034</CRS>
+<CRS>EPSG:3044</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3047</CRS>
+<CRS>EPSG:3857</CRS>
+ <!-- alias 3857 -->
+<CRS>EPSG:102100</CRS>
+<CRS>EPSG:3007</CRS>
+<CRS>EPSG:3008</CRS>
+<CRS>EPSG:3012</CRS>
+<CRS>EPSG:3009</CRS>
+<CRS>EPSG:3013</CRS>
+<CRS>EPSG:3010</CRS>
+<CRS>EPSG:3014</CRS>
+<CRS>EPSG:3011</CRS>
+<CRS>EPSG:3015</CRS>
+<CRS>EPSG:3016</CRS>
+<CRS>EPSG:3017</CRS>
+<CRS>EPSG:3018</CRS>
+<EX_GeographicBoundingBox><westBoundLongitude>7.148259</westBoundLongitude><eastBoundLongitude>27.547452</eastBoundLongitude><southBoundLatitude>53.906101</southBoundLatitude><northBoundLatitude>69.409282</northBoundLatitude></EX_GeographicBoundingBox>
+<BoundingBox CRS="CRS:84" minx="7.148259" miny="53.906101" maxx="27.547452" maxy="69.409282"/>
+<BoundingBox CRS="EPSG:4326" minx="53.906101" miny="7.148259" maxx="69.409282" maxy="27.547452"/>
+<BoundingBox CRS="EPSG:3006" minx="6000000.000000" miny="190000.000000" maxx="7700000.000000" maxy="1000000.000000"/>
+<BoundingBox CRS="EPSG:4258" minx="53.906101" miny="7.148259" maxx="69.409282" maxy="27.547452"/>
+<BoundingBox CRS="EPSG:4619" minx="53.906101" miny="7.148259" maxx="69.409282" maxy="27.547452"/>
+<BoundingBox CRS="EPSG:3035" minx="3438682.864420" miny="4206810.869332" maxx="5181397.800450" maxy="5145545.819682"/>
+<BoundingBox CRS="EPSG:3034" minx="3021012.588068" miny="3883945.245067" maxx="4746490.987517" maxy="4798042.632753"/>
+<BoundingBox CRS="EPSG:3044" minx="5990352.677699" miny="426727.787557" maxx="7760722.193698" maxy="1391992.501999"/>
+<BoundingBox CRS="EPSG:3045" minx="6000000.000000" miny="190000.000000" maxx="7700000.000000" maxy="1000000.000000"/>
+<BoundingBox CRS="EPSG:3046" minx="5974286.780395" miny="-201593.042864" maxx="7741980.877935" maxy="762045.652295"/>
+<BoundingBox CRS="EPSG:3047" minx="5981976.425930" miny="-590635.212268" maxx="7807021.654944" maxy="521945.634737"/>
+<BoundingBox CRS="EPSG:3857" minx="795740.576415" miny="7152392.935954" maxx="3066568.309803" maxy="10879120.258812"/>
+<BoundingBox CRS="EPSG:102100" minx="795740.576415" miny="7152392.935954" maxx="3066568.309803" maxy="10879120.258812"/>
+<BoundingBox CRS="EPSG:3007" minx="5993408.188781" miny="-41910.273672" maxx="7730542.731935" maxy="846584.209711"/>
+<BoundingBox CRS="EPSG:3008" minx="5996861.701838" miny="-101081.862460" maxx="7716082.614541" maxy="748457.509538"/>
+<BoundingBox CRS="EPSG:3012" minx="5999370.394801" miny="-130621.053923" maxx="7709399.423800" maxy="699343.688280"/>
+<BoundingBox CRS="EPSG:3009" minx="6002400.960384" miny="-160124.049620" maxx="7703081.232493" maxy="650200.080032"/>
+<BoundingBox CRS="EPSG:3013" minx="5997351.452464" miny="-209180.177020" maxx="7707064.157153" maxy="620629.241488"/>
+<BoundingBox CRS="EPSG:3010" minx="5992827.393740" miny="-258216.922504" maxx="7711409.462584" maxy="590997.595616"/>
+<BoundingBox CRS="EPSG:3014" minx="5988827.950781" miny="-307231.540726" maxx="7716116.952212" maxy="561309.083823"/>
+<BoundingBox CRS="EPSG:3011" minx="5985352.384648" miny="-356221.249335" maxx="7721186.410370" maxy="531567.632896"/>
+<BoundingBox CRS="EPSG:3015" minx="5982400.051556" miny="-405183.224466" maxx="7726617.601657" maxy="501777.155895"/>
+<BoundingBox CRS="EPSG:3016" minx="5978062.988469" miny="-503012.444069" maxx="7738564.139169" maxy="442064.712789"/>
+<BoundingBox CRS="EPSG:3017" minx="5975813.533831" miny="-600695.605719" maxx="7751954.259553" maxy="382202.819687"/>
+<BoundingBox CRS="EPSG:3018" minx="5975650.009860" miny="-698208.159151" maxx="7766785.292948" maxy="322222.382552"/>
+        <Style>
+          <Name>default</Name>
+          <Title><![CDATA[Riksintresse_Naturvard]]></Title>
+          <LegendURL width="18" height="18">
+            <Format>image/png</Format>
+            <OnlineResource xlink:href="https://geodata.naturvardsverket.se/andra_skydd/wms?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Riksintresse_Naturvard" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>Naturvardsavtal</Name>
+        <Title><![CDATA[Naturvardsavtal]]></Title>
+        <Abstract><![CDATA[]]></Abstract>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:3006</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:4619</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3034</CRS>
+<CRS>EPSG:3044</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3047</CRS>
+<CRS>EPSG:3857</CRS>
+ <!-- alias 3857 -->
+<CRS>EPSG:102100</CRS>
+<CRS>EPSG:3007</CRS>
+<CRS>EPSG:3008</CRS>
+<CRS>EPSG:3012</CRS>
+<CRS>EPSG:3009</CRS>
+<CRS>EPSG:3013</CRS>
+<CRS>EPSG:3010</CRS>
+<CRS>EPSG:3014</CRS>
+<CRS>EPSG:3011</CRS>
+<CRS>EPSG:3015</CRS>
+<CRS>EPSG:3016</CRS>
+<CRS>EPSG:3017</CRS>
+<CRS>EPSG:3018</CRS>
+<EX_GeographicBoundingBox><westBoundLongitude>9.832365</westBoundLongitude><eastBoundLongitude>22.553011</eastBoundLongitude><southBoundLatitude>55.420249</southBoundLatitude><northBoundLatitude>67.779624</northBoundLatitude></EX_GeographicBoundingBox>
+<BoundingBox CRS="CRS:84" minx="9.832365" miny="55.420249" maxx="22.553011" maxy="67.779624"/>
+<BoundingBox CRS="EPSG:4326" minx="55.420249" miny="9.832365" maxx="67.779624" maxy="22.553011"/>
+<BoundingBox CRS="EPSG:3006" minx="6153233.997000" miny="281364.285000" maxx="7518294.628000" maxy="820478.080300"/>
+<BoundingBox CRS="EPSG:4258" minx="55.420249" miny="9.832365" maxx="67.779624" maxy="22.553011"/>
+<BoundingBox CRS="EPSG:4619" minx="55.420249" miny="9.832365" maxx="67.779624" maxy="22.553011"/>
+<BoundingBox CRS="EPSG:3035" minx="3597879.043450" miny="4313828.528935" maxx="4991550.759200" maxy="4956283.761668"/>
+<BoundingBox CRS="EPSG:3034" minx="3175141.231506" miny="3992779.615991" maxx="4554030.186993" maxy="4615591.062266"/>
+<BoundingBox CRS="EPSG:3044" minx="6150725.890667" miny="535249.388342" maxx="7561700.921740" maxy="1198845.917406"/>
+<BoundingBox CRS="EPSG:3045" minx="6153233.997000" miny="281364.285000" maxx="7518294.628000" maxy="820478.080300"/>
+<BoundingBox CRS="EPSG:3046" minx="6141955.192165" miny="-96954.153773" maxx="7551788.918492" maxy="566025.223085"/>
+<BoundingBox CRS="EPSG:3047" minx="6163453.781412" miny="-472825.644546" maxx="7609825.810469" maxy="311057.537235"/>
+<BoundingBox CRS="EPSG:3857" minx="1094533.811611" miny="7443858.710183" maxx="2510589.668332" maxy="10381819.053379"/>
+<BoundingBox CRS="EPSG:102100" minx="1094533.811611" miny="7443858.710183" maxx="2510589.668332" maxy="10381819.053379"/>
+<BoundingBox CRS="EPSG:3007" minx="6150348.969664" miny="58180.453926" maxx="7539933.879941" maxy="660121.899196"/>
+<BoundingBox CRS="EPSG:3008" minx="6151999.071065" miny="-5309.334500" maxx="7529847.679478" maxy="565415.651766"/>
+<BoundingBox CRS="EPSG:3012" minx="6153591.668503" miny="-37027.705693" maxx="7525382.647438" maxy="518022.352125"/>
+<BoundingBox CRS="EPSG:3009" minx="6155696.275510" miny="-68723.204282" maxx="7521303.149260" maxy="470606.322829"/>
+<BoundingBox CRS="EPSG:3013" minx="6152491.904575" miny="-116110.459011" maxx="7524146.414838" maxy="438883.288133"/>
+<BoundingBox CRS="EPSG:3010" minx="6149800.749433" miny="-163481.310879" maxx="7527374.211962" maxy="407124.909652"/>
+<BoundingBox CRS="EPSG:3014" minx="6147622.379651" miny="-210832.781725" maxx="7530986.460310" maxy="375335.113927"/>
+<BoundingBox CRS="EPSG:3011" minx="6145956.446115" miny="-258161.865959" maxx="7534983.068363" maxy="343517.817024"/>
+<BoundingBox CRS="EPSG:3015" minx="6144802.681416" miny="-305465.526387" maxx="7539363.932851" maxy="311676.925802"/>
+<BoundingBox CRS="EPSG:3016" minx="6144030.999086" miny="-399984.243941" maxx="7549277.955604" maxy="247939.949525"/>
+<BoundingBox CRS="EPSG:3017" minx="6145306.836366" miny="-494363.845638" maxx="7560727.442908" maxy="184155.304792"/>
+<BoundingBox CRS="EPSG:3018" minx="6148631.013621" miny="-588578.468268" maxx="7573711.076257" maxy="120354.046853"/>
+        <Style>
+          <Name>default</Name>
+          <Title><![CDATA[Naturvardsavtal]]></Title>
+          <LegendURL width="18" height="18">
+            <Format>image/png</Format>
+            <OnlineResource xlink:href="https://geodata.naturvardsverket.se/andra_skydd/wms?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Naturvardsavtal" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" />
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

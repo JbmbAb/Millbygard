@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="sv">
+    <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/</id>
+    <title>Hydrografi Nedladdning</title>
+    <subtitle>Nedladdningstjänst för hydrografi med fördefinierade datamängder</subtitle>
+    <updated>2026-01-26T23:27:06+01:00</updated>
+    <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/" rel="self" type="application/atom+xml" hreflang="sv" title="Detta dokument"/>
+    <rights/>
+    <author/>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/inspire/hyp</id>
+        <title>Inspire Hydrography Physical Waters</title>
+        <updated>2026-01-26T20:28:10+01:00</updated>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/inspire/hyp" rel="alternate" type="application/atom+xml" hreflang="sv" title="Inspire Hydrography Physical Waters"/>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/inspire/hyn</id>
+        <title>Inspire Hydrography Network</title>
+        <updated>2026-01-26T23:27:06+01:00</updated>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/inspire/hyn" rel="alternate" type="application/atom+xml" hreflang="sv" title="Inspire Hydrography Network"/>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp</id>
+        <title>Svensk vattenstandard fysiskt vatten</title>
+        <updated>2026-01-26T21:06:49+01:00</updated>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyp" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard fysiskt vatten"/>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn</id>
+        <title>Svensk vattenstandard logiskt nätverk</title>
+        <updated>2026-01-24T22:27:33+01:00</updated>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/svs/hyn" rel="alternate" type="application/atom+xml" hreflang="sv" title="Svensk vattenstandard logiskt nätverk"/>
+    </entry>
+    <entry>
+        <id>https://api.lantmateriet.se/hydrografi/atom/v1.1/history/history.csv.zip</id>
+        <title>Historikfil</title>
+        <updated>2026-01-20T12:57:25+01:00</updated>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/history/history.csv.zip" rel="alternate" type="application/zip" hreflang="sv" title="history.csv.zip" length="4954707"/>
+        <link href="https://api.lantmateriet.se/hydrografi/atom/v1.1/history/history.gpkg" rel="alternate" type="application/geopackage+sqlite3" hreflang="sv" title="history.gpkg" length="20156416"/>
+    </entry>
+</feed>

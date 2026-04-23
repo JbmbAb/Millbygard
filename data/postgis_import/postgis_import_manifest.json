@@ -1,0 +1,58 @@
+{
+  "bbox": [
+    14.663559524,
+    61.133579762,
+    14.666859266,
+    61.136740396
+  ],
+  "layers": [
+    {
+      "schema": "core",
+      "table": "property_unit",
+      "featureCount": 3,
+      "path": "C:\\Users\\jimmy\\Desktop\\MIOLLB~1\\data\\postgis_import\\core_property_unit.geojson"
+    },
+    {
+      "schema": "stage",
+      "table": "property_unit_raw",
+      "featureCount": 3,
+      "path": "C:\\Users\\jimmy\\Desktop\\MIOLLB~1\\data\\postgis_import\\stage_property_unit_raw.geojson"
+    },
+    {
+      "schema": "env",
+      "table": "sgu_ground_layer",
+      "featureCount": 1,
+      "path": "C:\\Users\\jimmy\\Desktop\\MIOLLB~1\\data\\postgis_import\\env_sgu_ground_layer.geojson"
+    },
+    {
+      "schema": "env",
+      "table": "sgu_groundwater_body",
+      "featureCount": 4,
+      "path": "C:\\Users\\jimmy\\Desktop\\MIOLLB~1\\data\\postgis_import\\env_sgu_groundwater_body.geojson"
+    },
+    {
+      "schema": "env",
+      "table": "sgu_groundwater_magazine",
+      "featureCount": 1,
+      "path": "C:\\Users\\jimmy\\Desktop\\MIOLLB~1\\data\\postgis_import\\env_sgu_groundwater_magazine.geojson"
+    },
+    {
+      "schema": "env",
+      "table": "sgu_groundwater_magazine_part",
+      "featureCount": 1,
+      "path": "C:\\Users\\jimmy\\Desktop\\MIOLLB~1\\data\\postgis_import\\env_sgu_groundwater_magazine_part.geojson"
+    },
+    {
+      "schema": "env",
+      "table": "sgu_permeability",
+      "featureCount": 2,
+      "path": "C:\\Users\\jimmy\\Desktop\\MIOLLB~1\\data\\postgis_import\\env_sgu_permeability.geojson"
+    },
+    {
+      "schema": "hydro",
+      "table": "water_catchment",
+      "featureCount": 1,
+      "path": "C:\\Users\\jimmy\\Desktop\\MIOLLB~1\\data\\postgis_import\\hydro_water_catchment.geojson"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="sv">
+    <id>https://api.lantmateriet.se/administrativindelning/atom/v1.1/</id>
+    <title>Administrativ Indelning Nedladdning, Inspire</title>
+    <subtitle>Nedladdningstjänst för administrativ indelning med fördefinierade datamängder</subtitle>
+    <updated>2025-09-09T08:12:29+02:00</updated>
+    <link href="https://api.lantmateriet.se/administrativindelning/atom/v1.1/" rel="self" type="application/atom+xml" hreflang="sv" title="Detta dokument"/>
+    <rights/>
+    <author/>
+    <entry>
+        <id>https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au</id>
+        <title>Inspire Administrative Units</title>
+        <updated>2025-09-09T08:12:29+02:00</updated>
+        <link href="https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au" rel="alternate" type="application/atom+xml" hreflang="sv" title="Inspire Administrative Units"/>
+    </entry>
+</feed>

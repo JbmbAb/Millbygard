@@ -1,0 +1,74 @@
+{
+  "raw_zip": "01_data_raw/ythojd/orsa_stackmora_3_12_ythojd_677_48_7500_2024.zip",
+  "kartor_extract_dir": "C:\\Users\\jimmy\\Desktop\\MiljoBeslut_Produktdata\\Kartor\\Ythojd_677_48_7500_2024",
+  "source_tile": {
+    "bildoverlapp": "60",
+    "block": "24Q215_NV",
+    "datumFran": "2024-05-16",
+    "datumTill": "2024-05-16",
+    "farg": "RGBI",
+    "flygfotoar": 2024,
+    "kameratyp": "UCEM3",
+    "produktionsmetodVersion": 4,
+    "ruta": "677_48_7500",
+    "upplosningFlygbild": 0.15,
+    "upplosningYtmodell": 0.25,
+    "bildId": [
+      "24q215ss15_5~2024-05-16_091020_4755",
+      "24q215ss15_5~2024-05-16_091029_4756",
+      "24q215ss15_5~2024-05-16_091037_4757",
+      "24q215ss15_5~2024-05-16_091046_4758",
+      "24q215ss15_5~2024-05-16_091054_4759",
+      "24q215ss15_6~2024-05-16_094727_5010",
+      "24q215ss15_6~2024-05-16_094734_5011",
+      "24q215ss15_6~2024-05-16_094742_5012",
+      "24q215ss15_6~2024-05-16_094750_5013",
+      "24q215ss15_6~2024-05-16_094758_5014"
+    ]
+  },
+  "outputs": {
+    "dsm": {
+      "path": "data/orsa_stackmora_3_12_ythojd_dsm.tif",
+      "source": "C:/Users/jimmy/Desktop/MiljoBeslut_Produktdata/Kartor/Ythojd_677_48_7500_2024/67_4/677_48_7500_2024_dsm.tif",
+      "width": 715,
+      "height": 1410
+    },
+    "trueortho": {
+      "path": "data/orsa_stackmora_3_12_ythojd_trueortho.tif",
+      "source": "C:/Users/jimmy/Desktop/MiljoBeslut_Produktdata/Kartor/Ythojd_677_48_7500_2024/67_4/677_48_7500_2024_trueortho.tif",
+      "width": 715,
+      "height": 1410
+    },
+    "class": {
+      "path": "data/orsa_stackmora_3_12_ythojd_class.tif",
+      "source": "C:/Users/jimmy/Desktop/MiljoBeslut_Produktdata/Kartor/Ythojd_677_48_7500_2024/67_4/677_48_7500_2024_class.tif",
+      "width": 715,
+      "height": 1410
+    },
+    "missing_areas": {
+      "path": "data/orsa_stackmora_3_12_ythojd_missing_areas.tif",
+      "source": "C:/Users/jimmy/Desktop/MiljoBeslut_Produktdata/Kartor/Ythojd_677_48_7500_2024/67_4/saknade_ytor/677_48_7500_2024.tif",
+      "width": 90,
+      "height": 177
+    },
+    "above_ground": {
+      "path": "data/orsa_stackmora_3_12_ythojd_above_ground.tif",
+      "min_m": -5.36474609375,
+      "max_m": 21.619277954101562,
+      "mean_m": 1.6880635023117065
+    }
+  },
+  "dsm_stats": {
+    "path": "data/orsa_stackmora_3_12_ythojd_dsm.tif",
+    "crs": "EPSG:3006",
+    "resolution": [
+      0.25,
+      0.25
+    ],
+    "width": 715,
+    "height": 1410,
+    "min": 217.06576538085938,
+    "max": 270.75244140625
+  },
+  "above_ground_note": "DSM minus resampled markhojd. Use as first-pass support for tree/building surface heights, not as ground terrain."
+}

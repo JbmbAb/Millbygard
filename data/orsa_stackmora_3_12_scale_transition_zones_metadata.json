@@ -1,0 +1,29 @@
+{
+  "output_geojson": "data\\orsa_stackmora_3_12_scale_transition_zones.geojson",
+  "center_source": "data\\orsa_stackmora_3_12_byggnader.geojson",
+  "center_wgs84": {
+    "lon": 14.66497413475348,
+    "lat": 61.134543557706145
+  },
+  "center_3006": {
+    "x": 481956.5929870605,
+    "y": 6777819.770996093
+  },
+  "inner_radius_m": 80.0,
+  "transition_radius_m": 140.0,
+  "context_radius_m": 255.78890334021386,
+  "max_property_distance_from_center_m": 245.78890334021386,
+  "detail_scale": 4.0,
+  "outer_scale": 1.0,
+  "scale_function": "if d <= inner_radius_m: scale = 4.0; elif d >= transition_radius_m: scale = 1.0; else: t = (d - inner_radius_m) / (transition_radius_m - inner_radius_m); s = t*t*(3 - 2*t); scale = 4.0 + (1.0 - 4.0) * s",
+  "area_sqm": {
+    "detail_4to1": 20105.96869063695,
+    "transition": 41468.56042442008,
+    "context_1to1": 143971.18604390576
+  },
+  "notes": [
+    "Fastighetsgransen ar inte ersatt av cirklarna; den finns som separat overlay-feature.",
+    "Anvand zonerna som design-/exportunderlag tills Minecraft-transformen byggs.",
+    "Nya fastighetsfoton kan anvandas for att justera center och radier innan terrang exporteras slutligt."
+  ]
+}

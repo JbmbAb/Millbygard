@@ -1,0 +1,26 @@
+[     872ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://apimanager.lantmateriet.se/devportal/site/public/locales/sv.json:0
+[    1163ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    1536ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://apimanager.lantmateriet.se/devportal/site/public/locales/sv.json:0
+[    1785ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    1885ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    1886ms] [LOG] Error: Error: No partial token found,redirecting to Anonymous View @ https://apimanager.lantmateriet.se/devportal/site/public/dist/ProtectedApp.0db7ca223f595471b77c.bundle.js:0
+[    2099ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2100ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2101ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2211ms] [WARNING] Deprecation Notice:  stacked has been deprecated, but will still work in version 3.x. Please use string option: standard | vertical | simple. More info: https://github.com/gregnb/mui-datatables/tree/master/docs/v2_to_v3_guide.md @ https://apimanager.lantmateriet.se/devportal/site/public/dist/vendors~Apis~ApplicationDetails.3bde8786e7eb56d94b79.bundle.js:0
+[    2258ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2259ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2261ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2263ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2266ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2267ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2267ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2268ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2269ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    2269ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[   71009ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[   71011ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://apimanager.lantmateriet.se/devportal/site/public/locales/sv.json:0
+[   71607ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[   71609ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://apimanager.lantmateriet.se/devportal/site/public/locales/sv.json:0
+[   71744ms] [LOG] User not found. Token refreshing failed. @ https://apimanager.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[   71978ms] [WARNING] Deprecation Notice:  stacked has been deprecated, but will still work in version 3.x. Please use string option: standard | vertical | simple. More info: https://github.com/gregnb/mui-datatables/tree/master/docs/v2_to_v3_guide.md @ https://apimanager.lantmateriet.se/devportal/site/public/dist/vendors~Apis~ApplicationDetails.3bde8786e7eb56d94b79.bundle.js:0

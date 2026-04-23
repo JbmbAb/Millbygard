@@ -1,0 +1,244 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - banner [ref=e6]:
+        - generic [ref=e7]:
+          - link [ref=e338] [cursor=pointer]:
+            - /url: /devportal/
+            - img [ref=e339]
+          - navigation [ref=e340]:
+            - link [ref=e341] [cursor=pointer]:
+              - /url: /devportal/apis
+              - generic [ref=e14]:
+                - img [ref=e16]
+                - generic [ref=e23]: APIs
+            - link [ref=e342] [cursor=pointer]:
+              - /url: /devportal/applications
+              - generic [ref=e25]:
+                - img [ref=e27]
+                - generic [ref=e39]: Applications
+          - combobox [ref=e42]:
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - combobox [ref=e343] [cursor=pointer]
+                - img
+              - generic [ref=e47]:
+                - img [ref=e49]
+                - textbox [ref=e344]:
+                  - /placeholder: Search APIs
+          - button [ref=e345] [cursor=pointer]:
+            - img [ref=e54]
+          - button [ref=e346] [cursor=pointer]:
+            - generic [ref=e59]:
+              - generic [ref=e60]: person
+              - text: LMKE/bruc0004
+      - main [ref=e61]:
+        - generic [ref=e62]:
+          - iframe [ref=e63]:
+            
+          - navigation [ref=e347]:
+            - link [ref=e348] [cursor=pointer]:
+              - /url: /devportal/applications
+              - img [ref=e66]
+            - link [ref=e349] [cursor=pointer]:
+              - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/overview
+              - img [ref=e79]
+              - paragraph [ref=e86]: Overview
+            - link [ref=e350] [cursor=pointer]:
+              - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/productionkeys/oauth
+              - img [ref=e89]
+              - paragraph [ref=e97]: Production Keys
+            - link [ref=e351] [cursor=pointer]:
+              - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/productionkeys/oauth
+              - img [ref=e100]
+              - paragraph [ref=e102]: OAuth2 Tokens
+            - link [ref=e352] [cursor=pointer]:
+              - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/subscriptions
+              - img [ref=e105]
+              - paragraph [ref=e111]: Subscriptions
+          - generic [ref=e112]:
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - link [ref=e353] [cursor=pointer]:
+                  - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/overview
+                  - heading [level=4] [ref=e354]: Millbygård
+                - generic [ref=e120]: 13 Subscriptions
+              - link [ref=e355] [cursor=pointer]:
+                - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/edit/fromView
+                - button [ref=e356]:
+                  - generic [ref=e125]:
+                    - generic [ref=e126]: edit
+                    - generic [ref=e127]: Edit
+              - button [ref=e357] [cursor=pointer]:
+                - generic [ref=e131]:
+                  - generic [ref=e132]: delete
+                  - generic [ref=e133]: Delete
+            - generic [ref=e168]:
+              - heading [level=5] [ref=e358]: Production OAuth2 Keys
+              - tabpanel [ref=e172]:
+                - generic [ref=e173]:
+                  - generic [ref=e174]:
+                    - heading [level=6] [ref=e359]: Key and Secret
+                    - button [ref=e360] [cursor=pointer]:
+                      - generic [ref=e179]:
+                        - img [ref=e181]
+                        - text: Remove Keys
+                  - generic [ref=e185]:
+                    - generic [ref=e186]:
+                      - generic [ref=e188]:
+                        - generic: Consumer Key
+                        - generic [ref=e189]:
+                          - textbox [ref=e361]: Cz9k9ILRC5F3OU5aAyKi6VkHExoa
+                          - button [ref=e362] [cursor=pointer]:
+                            - generic [ref=e194]: file_copy
+                          - group
+                      - paragraph [ref=e196]: Consumer Key of the application
+                    - generic [ref=e197]:
+                      - generic [ref=e199]:
+                        - generic: Consumer Secret
+                        - generic [ref=e200]:
+                          - textbox [ref=e363]: Qnx4NyC5F8NgWbWglUBGJoW_EEEa
+                          - generic [ref=e202]:
+                            - button [ref=e203] [cursor=pointer]:
+                              - generic [ref=e205]: visibility
+                            - button [ref=e364] [cursor=pointer]:
+                              - generic [ref=e208]: file_copy
+                          - group
+                      - paragraph [ref=e210]: Consumer Secret of the application
+                    - generic [ref=e212]:
+                      - button [ref=e365] [cursor=pointer]:
+                        - generic [ref=e214]: Generate Access Token
+                      - button [ref=e366] [cursor=pointer]:
+                        - generic [ref=e216]: CURL to Generate Access Token
+                  - heading [level=6] [ref=e367]: Key Configurations
+                  - generic [ref=e218]:
+                    - table [ref=e220]:
+                      - rowgroup [ref=e221]:
+                        - row [ref=e368]:
+                          - cell [ref=e369]: Token Endpoint
+                          - cell [ref=e370]:
+                            - text: https://apimanager.lantmateriet.se/oauth2/token
+                            - button [ref=e371] [cursor=pointer]:
+                              - generic [ref=e227]: file_copy
+                        - row [ref=e372]:
+                          - cell [ref=e373]: Revoke Endpoint
+                          - cell [ref=e374]:
+                            - text: https://apimanager.lantmateriet.se/oauth2/revoke
+                            - button [ref=e375] [cursor=pointer]:
+                              - generic [ref=e233]: file_copy
+                        - row [ref=e376]:
+                          - cell [ref=e377]: Grant Types
+                          - cell [ref=e378]:
+                            - generic [ref=e237]:
+                              - generic [ref=e238] [cursor=pointer]:
+                                - generic [ref=e240]:
+                                  - checkbox [ref=e379]
+                                  - img [ref=e242]
+                                - generic [ref=e244]: Refresh Token
+                              - generic [ref=e245] [cursor=pointer]:
+                                - generic [ref=e247]:
+                                  - checkbox [checked] [ref=e380]
+                                  - img [ref=e249]
+                                - generic [ref=e251]: Password
+                              - generic [ref=e252] [cursor=pointer]:
+                                - generic [ref=e254]:
+                                  - checkbox [checked] [ref=e381]
+                                  - img [ref=e256]
+                                - generic [ref=e258]: Client Credentials
+                              - generic [ref=e259] [cursor=pointer]:
+                                - generic [ref=e261]:
+                                  - checkbox [ref=e382]
+                                  - img [ref=e263]
+                                - generic [ref=e265]: Code
+                            - paragraph [ref=e266]: The application can use the following grant types to generate Access Tokens. Based on the application requirement,you can enable or disable grant types for this application.
+                        - row [ref=e383]:
+                          - cell [ref=e384]: Callback URL
+                          - cell [ref=e385]:
+                            - generic [ref=e271]:
+                              - generic: Callback URL
+                              - generic [ref=e272]:
+                                - textbox [disabled] [ref=e386]:
+                                  - /placeholder: http://url-to-webapp
+                                - group
+                              - paragraph [ref=e274]: Callback URL is a redirection URI in the client application which is used by the authorization server to send the client's user-agent (usually web browser) back after granting access.
+                        - row [ref=e387]:
+                          - cell [ref=e388]: Application Access Token Expiry Time
+                          - cell [ref=e389]:
+                            - generic [ref=e279]:
+                              - generic: Application Access Token Expiry Time
+                              - generic [ref=e280]:
+                                - textbox [ref=e390]: "3600"
+                                - group
+                              - paragraph [ref=e282]: Type Application Access Token Expiry Time
+                        - row [ref=e391]:
+                          - cell [ref=e392]: User Access Token Expiry Time
+                          - cell [ref=e393]:
+                            - generic [ref=e287]:
+                              - generic: User Access Token Expiry Time
+                              - generic [ref=e288]:
+                                - textbox [ref=e394]: "3600"
+                                - group
+                              - paragraph [ref=e290]: Type User Access Token Expiry Time
+                        - row [ref=e395]:
+                          - cell [ref=e396]: Refresh Token Expiry Time
+                          - cell [ref=e397]:
+                            - generic [ref=e295]:
+                              - generic: Refresh Token Expiry Time
+                              - generic [ref=e296]:
+                                - textbox [ref=e398]: "86400"
+                                - group
+                              - paragraph [ref=e298]: Type Refresh Token Expiry Time
+                        - row [ref=e399]:
+                          - cell [ref=e400]: Id Token Expiry Time
+                          - cell [ref=e401]:
+                            - generic [ref=e303]:
+                              - generic: Id Token Expiry Time
+                              - generic [ref=e304]:
+                                - textbox [ref=e402]: "3600"
+                                - group
+                              - paragraph [ref=e306]: Type ID Token Expiry Time
+                        - row [ref=e403]:
+                          - cell [ref=e404]: Enable PKCE
+                          - cell [ref=e309]:
+                            - generic [ref=e312] [cursor=pointer]:
+                              - checkbox [ref=e313]
+                              - img [ref=e314]
+                        - row [ref=e405]:
+                          - cell [ref=e406]: Support PKCE Plain text
+                          - cell [ref=e318]:
+                            - generic [ref=e321] [cursor=pointer]:
+                              - checkbox [ref=e322]
+                              - img [ref=e323]
+                        - row [ref=e407]:
+                          - cell [ref=e408]: Public client
+                          - cell [ref=e327]:
+                            - generic [ref=e330] [cursor=pointer]:
+                              - checkbox [ref=e331]
+                              - img [ref=e332]
+                    - button [ref=e409] [cursor=pointer]:
+                      - generic [ref=e337]: Update
+    - contentinfo [ref=e163]:
+      - paragraph [ref=e164]:
+        - link [ref=e410] [cursor=pointer]:
+          - /url: https://apimanager.lantmateriet.se/docs/
+          - text: Hjälp
+        - text: "|"
+        - link [ref=e411] [cursor=pointer]:
+          - /url: https://lantmateriet.se
+          - text: Lantmäteriet
+  - dialog "Generate Access Token" [ref=e414]:
+    - heading "Generate Access Token" [level=2] [ref=e416]
+    - paragraph [ref=e418]:
+      - generic [ref=e432]:
+        - alert [ref=e433]:
+          - generic [ref=e434]:
+            - heading "Please Copy the Access Token" [level=3] [ref=e435]
+            - paragraph [ref=e436]: If the token type is JWT or API Key, please copy this generated token value as it will be displayed only for the current browser session. ( The token will not be visible in the UI after the page is refreshed. )
+        - generic [ref=e437]:
+          - generic [ref=e438]: Access Token
+          - textbox "Access Token" [ref=e441]: eyJ4NXQiOiJPVEk1TjJRMVltWmlOekkxT0RjMVlUVTJNREZsT0RVNU9EUTRPVE15WVdRMFkyVXpOamN5T1EiLCJraWQiOiJNVE5tTkRNeVpHSmxOakJrTXpoallqTm1ZMlV5Tm1Ka1lUQTROR0ZoTmpNMU1ETmpabVJoTjJGbVkySTJOVGc0TmpKbVl6ZGxZamhqWkRFeFpURTVOd19SUzI1NiIsInR5cCI6ImF0K2p3dCIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJicnVjMDAwNCIsImF1dCI6IkFQUExJQ0FUSU9OIiwiYXVkIjoiQ3o5azlJTFJDNUYzT1U1YUF5S2k2VmtIRXhvYSIsIm5iZiI6MTc3NjA1NDc5MiwiYXpwIjoiQ3o5azlJTFJDNUYzT1U1YUF5S2k2VmtIRXhvYSIsInNjb3BlIjoiZGVmYXVsdCIsImlzcyI6Imh0dHBzOlwvXC9hcGltYW5hZ2VyLmxhbnRtYXRlcmlldC5zZSIsImV4cCI6MTc3NjA1ODM5MiwiaWF0IjoxNzc2MDU0NzkyLCJqdGkiOiIwZjAzY2UwOC1mNjFjLTQ1N2QtYjc1Yi03ZGEzM2FiZmUzZTEiLCJjbGllbnRfaWQiOiJDejlrOUlMUkM1RjNPVTVhQXlLaTZWa0hFeG9hIn0.k7DXStsXFvk-6REAee7-sN3igKyzkWz41i_Wbp5zMmGHe4zFBvetOhSesHEchAU-i12S6olWX1QJurA252ls1iBZMSap-3cTnZPJwqqGAXgzykLnk7juOkcgQJPf0z0fNmaiRuYum13mX_z-V8UflyjDv6yUZkRgoCBPb8SihujRabrLRcPWNSOyM04TvMRW59Pcqu4LyV63vTYgw38A6lVOewhic6zoMojNVI2GQon9inG7pafDeFP0nEUJp-wWCiZvYhpG-AKJpk4dMuRV5C_3_jVbChjEss5Jkrdf3plmAe-hELoCVe7RniWIyEAlWll6OBgCMZRfXQZaqrhpRg
+          - button "Copy to clipboard" [ref=e442] [cursor=pointer]:
+            - img [ref=e444]
+        - paragraph [ref=e446]: Above token has a validity period of 3600 seconds and the token has (default) scopes.
+    - button "Close" [ref=e427] [cursor=pointer]:
+      - generic [ref=e428]: Close

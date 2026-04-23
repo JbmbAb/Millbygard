@@ -1,0 +1,93 @@
+[
+  {
+    "id": "lm_admin_indelning_inspire_atom",
+    "name": "Administrativ indelning Inspire Nedladdning",
+    "type": "ATOM",
+    "url": "https://api.lantmateriet.se/administrativindelning/atom/v1.1/",
+    "note": "Avblockerad oppen data enligt API-portalen.",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/xml",
+    "bytes": 1109,
+    "feed_path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\10_kartarkiv\\01_kallor\\lm_admin_indelning_inspire_atom_feed.xml",
+    "entry_count": 1
+  },
+  {
+    "id": "lm_belagenhetsadress_inspire_atom",
+    "name": "Belagenhetsadress Inspire Nedladdning",
+    "type": "ATOM",
+    "url": "https://api.lantmateriet.se/belagenhetsadress/atom/v1.2",
+    "note": "Avblockerad oppen data enligt API-portalen.",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/xml",
+    "bytes": 1057,
+    "feed_path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\10_kartarkiv\\01_kallor\\lm_belagenhetsadress_inspire_atom_feed.xml",
+    "entry_count": 1
+  },
+  {
+    "id": "lm_byggnad_inspire_atom",
+    "name": "Byggnad Inspire Nedladdning",
+    "type": "ATOM",
+    "url": "https://api.lantmateriet.se/byggnad/atom/v1.1",
+    "note": "Kan vara snabbare vag till byggnadsdata an Geotorget-order for Byggnad nedladdning, vektor.",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/xml",
+    "bytes": 995,
+    "feed_path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\10_kartarkiv\\01_kallor\\lm_byggnad_inspire_atom_feed.xml",
+    "entry_count": 1
+  },
+  {
+    "id": "lm_hydrografi_atom",
+    "name": "Hydrografi Nedladdning",
+    "type": "ATOM",
+    "url": "https://api.lantmateriet.se/hydrografi/atom/v1.1/",
+    "note": "Avblockerad oppen data enligt API-portalen.",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/xml",
+    "bytes": 2814,
+    "feed_path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\10_kartarkiv\\01_kallor\\lm_hydrografi_atom_feed.xml",
+    "entry_count": 5
+  },
+  {
+    "id": "lm_marktacke_inspire_atom",
+    "name": "Marktacke Inspire Nedladdning",
+    "type": "ATOM",
+    "url": "https://api.lantmateriet.se/marktacke/atom/v1.1",
+    "note": "Avblockerad oppen data enligt API-portalen.",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/xml",
+    "bytes": 1011,
+    "feed_path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\10_kartarkiv\\01_kallor\\lm_marktacke_inspire_atom_feed.xml",
+    "entry_count": 1
+  },
+  {
+    "id": "lm_ortnamn_inspire_atom",
+    "name": "Ortnamn Inspire Nedladdning",
+    "type": "ATOM",
+    "url": "https://api.lantmateriet.se/ortnamn/atom/v1",
+    "note": "Avblockerad oppen data enligt API-portalen.",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/xml",
+    "bytes": 1005,
+    "feed_path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\10_kartarkiv\\01_kallor\\lm_ortnamn_inspire_atom_feed.xml",
+    "entry_count": 1
+  },
+  {
+    "id": "lm_tyngdkraft_atom",
+    "name": "Tyngdkraft Nedladdning",
+    "type": "ATOM",
+    "url": "https://api.lantmateriet.se/tyngdkraft-nedladdning/atom/v1",
+    "note": "Avblockerad oppen data enligt API-portalen, lag prioritet for Minecraft.",
+    "ok": true,
+    "status": 200,
+    "content_type": "application/xml",
+    "bytes": 1407,
+    "feed_path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\10_kartarkiv\\01_kallor\\lm_tyngdkraft_atom_feed.xml",
+    "entry_count": 2
+  }
+]

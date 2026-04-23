@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="sv">
+    <id>https://api.lantmateriet.se/marktacke/atom/v1.1/</id>
+    <title>Marktäcke Nedladdning, Inspire</title>
+    <subtitle>Nedladdningstjänst för marktäcke med fördefinierade datamängder</subtitle>
+    <updated>2025-09-10T23:18:05+02:00</updated>
+    <link href="https://api.lantmateriet.se/marktacke/atom/v1.1/" rel="self" type="application/atom+xml" hreflang="sv" title="Detta dokument"/>
+    <rights/>
+    <author/>
+    <entry>
+        <id>https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc</id>
+        <title>Inspire Land Cover</title>
+        <updated>2025-09-10T23:18:05+02:00</updated>
+        <link href="https://api.lantmateriet.se/marktacke/atom/v1.1/inspire/lc" rel="alternate" type="application/atom+xml" hreflang="sv" title="Inspire Land Cover"/>
+    </entry>
+</feed>

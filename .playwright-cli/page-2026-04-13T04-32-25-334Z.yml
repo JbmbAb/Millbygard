@@ -1,0 +1,232 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - banner [ref=e6]:
+        - generic [ref=e7]:
+          - link "Go to home page" [ref=e8] [cursor=pointer]:
+            - /url: /devportal/
+            - img "[object Object]" [ref=e9]
+          - navigation "primary navigation" [ref=e12]:
+            - link "APIs" [ref=e13] [cursor=pointer]:
+              - /url: /devportal/apis
+              - generic [ref=e14]:
+                - img [ref=e16]
+                - generic [ref=e23]: APIs
+            - link "Applications" [ref=e24] [cursor=pointer]:
+              - /url: /devportal/applications
+              - generic [ref=e25]:
+                - img [ref=e27]
+                - generic [ref=e39]: Applications
+          - combobox [ref=e42]:
+            - generic [ref=e43]:
+              - generic: Environment
+              - generic [ref=e44]:
+                - combobox "Environment" [ref=e45] [cursor=pointer]:
+                  - option "All" [selected]
+                  - option "Production"
+                  - option "Prototyped"
+                - img
+              - generic [ref=e47]:
+                - img [ref=e49]
+                - textbox "Search APIs" [ref=e51]
+            - listbox
+          - button "Search Options" [ref=e52] [cursor=pointer]:
+            - img [ref=e54]
+          - button "user menu" [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]:
+              - generic [ref=e60]: person
+              - text: LMKE/bruc0004
+      - main [ref=e61]:
+        - generic [ref=e62]:
+          - iframe [ref=e63]:
+            
+          - navigation "Secondary Navigation" [ref=e64]:
+            - link "All applications" [ref=e65] [cursor=pointer]:
+              - /url: /devportal/applications
+              - img [ref=e66]
+            - link "Overview" [ref=e78] [cursor=pointer]:
+              - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/overview
+              - img [ref=e79]
+              - paragraph [ref=e86]: Overview
+            - link "Production Keys" [active] [ref=e88] [cursor=pointer]:
+              - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/productionkeys/oauth
+              - img [ref=e89]
+              - paragraph [ref=e97]: Production Keys
+            - link "OAuth2 Tokens" [ref=e99] [cursor=pointer]:
+              - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/productionkeys/oauth
+              - img [ref=e100]
+              - paragraph [ref=e102]: OAuth2 Tokens
+            - link "Subscriptions" [ref=e104] [cursor=pointer]:
+              - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/subscriptions
+              - img [ref=e105]
+              - paragraph [ref=e111]: Subscriptions
+          - generic [ref=e112]:
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - link "Millbygård" [ref=e117] [cursor=pointer]:
+                  - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/overview
+                  - heading "Millbygård" [level=4] [ref=e118]
+                - generic [ref=e120]: 13 Subscriptions
+              - link "[object Object]" [ref=e123] [cursor=pointer]:
+                - /url: /devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/edit/fromView
+                - button "[object Object]" [ref=e124]:
+                  - generic [ref=e125]:
+                    - generic [ref=e126]: edit
+                    - generic [ref=e127]: Edit
+              - button "[object Object]" [ref=e130] [cursor=pointer]:
+                - generic [ref=e131]:
+                  - generic [ref=e132]: delete
+                  - generic [ref=e133]: Delete
+            - generic [ref=e168]:
+              - heading "Production OAuth2 Keys" [level=5] [ref=e170]
+              - tabpanel [ref=e172]:
+                - generic [ref=e173]:
+                  - generic [ref=e174]:
+                    - heading "Key and Secret" [level=6] [ref=e175]
+                    - button "Remove Keys" [ref=e178] [cursor=pointer]:
+                      - generic [ref=e179]:
+                        - img [ref=e181]
+                        - text: Remove Keys
+                  - generic [ref=e185]:
+                    - generic [ref=e186]:
+                      - generic [ref=e188]:
+                        - generic: Consumer Key
+                        - generic [ref=e189]:
+                          - textbox "Consumer Key" [ref=e190]: Cz9k9ILRC5F3OU5aAyKi6VkHExoa
+                          - button "Copy to clipboard" [ref=e192] [cursor=pointer]:
+                            - generic [ref=e194]: file_copy
+                          - group
+                      - paragraph [ref=e196]: Consumer Key of the application
+                    - generic [ref=e197]:
+                      - generic [ref=e199]:
+                        - generic: Consumer Secret
+                        - generic [ref=e200]:
+                          - textbox "Consumer Secret" [ref=e201]: Qnx4NyC5F8NgWbWglUBGJoW_EEEa
+                          - generic [ref=e202]:
+                            - button [ref=e203] [cursor=pointer]:
+                              - generic [ref=e205]: visibility
+                            - button "Copy to clipboard" [ref=e206] [cursor=pointer]:
+                              - generic [ref=e208]: file_copy
+                          - group
+                      - paragraph [ref=e210]: Consumer Secret of the application
+                    - generic [ref=e212]:
+                      - button "Generate Access Token" [ref=e213] [cursor=pointer]:
+                        - generic [ref=e214]: Generate Access Token
+                      - button "CURL to Generate Access Token" [ref=e215] [cursor=pointer]:
+                        - generic [ref=e216]: CURL to Generate Access Token
+                  - heading "Key Configurations" [level=6] [ref=e217]
+                  - generic [ref=e218]:
+                    - table [ref=e220]:
+                      - rowgroup [ref=e221]:
+                        - row "Token Endpoint https://apimanager.lantmateriet.se/oauth2/token Copy to clipboard" [ref=e222]:
+                          - cell "Token Endpoint" [ref=e223]
+                          - cell "https://apimanager.lantmateriet.se/oauth2/token Copy to clipboard" [ref=e224]:
+                            - text: https://apimanager.lantmateriet.se/oauth2/token
+                            - button "Copy to clipboard" [ref=e225] [cursor=pointer]:
+                              - generic [ref=e227]: file_copy
+                        - row "Revoke Endpoint https://apimanager.lantmateriet.se/oauth2/revoke Copy to clipboard" [ref=e228]:
+                          - cell "Revoke Endpoint" [ref=e229]
+                          - cell "https://apimanager.lantmateriet.se/oauth2/revoke Copy to clipboard" [ref=e230]:
+                            - text: https://apimanager.lantmateriet.se/oauth2/revoke
+                            - button "Copy to clipboard" [ref=e231] [cursor=pointer]:
+                              - generic [ref=e233]: file_copy
+                        - row "Grant Types Refresh Token Password Client Credentials Code The application can use the following grant types to generate Access Tokens. Based on the application requirement,you can enable or disable grant types for this application." [ref=e234]:
+                          - cell "Grant Types" [ref=e235]
+                          - cell "Refresh Token Password Client Credentials Code The application can use the following grant types to generate Access Tokens. Based on the application requirement,you can enable or disable grant types for this application." [ref=e236]:
+                            - generic [ref=e237]:
+                              - generic [ref=e238] [cursor=pointer]:
+                                - generic [ref=e240]:
+                                  - checkbox "Refresh Token" [ref=e241]
+                                  - img [ref=e242]
+                                - generic [ref=e244]: Refresh Token
+                              - generic [ref=e245] [cursor=pointer]:
+                                - generic [ref=e247]:
+                                  - checkbox "Password" [checked] [ref=e248]
+                                  - img [ref=e249]
+                                - generic [ref=e251]: Password
+                              - generic [ref=e252] [cursor=pointer]:
+                                - generic [ref=e254]:
+                                  - checkbox "Client Credentials" [checked] [ref=e255]
+                                  - img [ref=e256]
+                                - generic [ref=e258]: Client Credentials
+                              - generic [ref=e259] [cursor=pointer]:
+                                - generic [ref=e261]:
+                                  - checkbox "Code" [ref=e262]
+                                  - img [ref=e263]
+                                - generic [ref=e265]: Code
+                            - paragraph [ref=e266]: The application can use the following grant types to generate Access Tokens. Based on the application requirement,you can enable or disable grant types for this application.
+                        - row "Callback URL Callback URL Callback URL is a redirection URI in the client application which is used by the authorization server to send the client's user-agent (usually web browser) back after granting access." [ref=e267]:
+                          - cell "Callback URL" [ref=e268]
+                          - cell "Callback URL Callback URL is a redirection URI in the client application which is used by the authorization server to send the client's user-agent (usually web browser) back after granting access." [ref=e269]:
+                            - generic [ref=e271]:
+                              - generic: Callback URL
+                              - generic [ref=e272]:
+                                - textbox "Callback URL" [disabled] [ref=e273]:
+                                  - /placeholder: http://url-to-webapp
+                                - group
+                              - paragraph [ref=e274]: Callback URL is a redirection URI in the client application which is used by the authorization server to send the client's user-agent (usually web browser) back after granting access.
+                        - row "Application Access Token Expiry Time Application Access Token Expiry Time 3600 Type Application Access Token Expiry Time" [ref=e275]:
+                          - cell "Application Access Token Expiry Time" [ref=e276]
+                          - cell "Application Access Token Expiry Time 3600 Type Application Access Token Expiry Time" [ref=e277]:
+                            - generic [ref=e279]:
+                              - generic: Application Access Token Expiry Time
+                              - generic [ref=e280]:
+                                - textbox "Application Access Token Expiry Time" [ref=e281]: "3600"
+                                - group
+                              - paragraph [ref=e282]: Type Application Access Token Expiry Time
+                        - row "User Access Token Expiry Time User Access Token Expiry Time 3600 Type User Access Token Expiry Time" [ref=e283]:
+                          - cell "User Access Token Expiry Time" [ref=e284]
+                          - cell "User Access Token Expiry Time 3600 Type User Access Token Expiry Time" [ref=e285]:
+                            - generic [ref=e287]:
+                              - generic: User Access Token Expiry Time
+                              - generic [ref=e288]:
+                                - textbox "User Access Token Expiry Time" [ref=e289]: "3600"
+                                - group
+                              - paragraph [ref=e290]: Type User Access Token Expiry Time
+                        - row "Refresh Token Expiry Time Refresh Token Expiry Time 86400 Type Refresh Token Expiry Time" [ref=e291]:
+                          - cell "Refresh Token Expiry Time" [ref=e292]
+                          - cell "Refresh Token Expiry Time 86400 Type Refresh Token Expiry Time" [ref=e293]:
+                            - generic [ref=e295]:
+                              - generic: Refresh Token Expiry Time
+                              - generic [ref=e296]:
+                                - textbox "Refresh Token Expiry Time" [ref=e297]: "86400"
+                                - group
+                              - paragraph [ref=e298]: Type Refresh Token Expiry Time
+                        - row "Id Token Expiry Time Id Token Expiry Time 3600 Type ID Token Expiry Time" [ref=e299]:
+                          - cell "Id Token Expiry Time" [ref=e300]
+                          - cell "Id Token Expiry Time 3600 Type ID Token Expiry Time" [ref=e301]:
+                            - generic [ref=e303]:
+                              - generic: Id Token Expiry Time
+                              - generic [ref=e304]:
+                                - textbox "Id Token Expiry Time" [ref=e305]: "3600"
+                                - group
+                              - paragraph [ref=e306]: Type ID Token Expiry Time
+                        - row "Enable PKCE" [ref=e307]:
+                          - cell "Enable PKCE" [ref=e308]
+                          - cell [ref=e309]:
+                            - generic [ref=e312] [cursor=pointer]:
+                              - checkbox [ref=e313]
+                              - img [ref=e314]
+                        - row "Support PKCE Plain text" [ref=e316]:
+                          - cell "Support PKCE Plain text" [ref=e317]
+                          - cell [ref=e318]:
+                            - generic [ref=e321] [cursor=pointer]:
+                              - checkbox [ref=e322]
+                              - img [ref=e323]
+                        - row "Public client" [ref=e325]:
+                          - cell "Public client" [ref=e326]
+                          - cell [ref=e327]:
+                            - generic [ref=e330] [cursor=pointer]:
+                              - checkbox [ref=e331]
+                              - img [ref=e332]
+                    - button "Update" [ref=e336] [cursor=pointer]:
+                      - generic [ref=e337]: Update
+    - contentinfo [ref=e163]:
+      - paragraph [ref=e164]:
+        - link "Hjälp" [ref=e165] [cursor=pointer]:
+          - /url: https://apimanager.lantmateriet.se/docs/
+        - text: "|"
+        - link "Lantmäteriet" [ref=e166] [cursor=pointer]:
+          - /url: https://lantmateriet.se
+  - tooltip "Production Keys":
+    - generic: Production Keys

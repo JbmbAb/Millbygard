@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?><WMS_Capabilities xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" version="1.3.0" updateSequence="3077" xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wms https://nvgis.naturvardsverket.se/geoserver/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 https://inspire.ec.europa.eu/schemas/inspire_vs/1.0/inspire_vs.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title>Naturvårdsverket lavinprognoser WMS-tjänst</Title>
+    <Abstract>Naturvårdsverket lavinprognoser WMS-tjänst</Abstract>
+    <KeywordList/>
+    <OnlineResource xlink:type="simple" xlink:href="http://www.naturvardsverket.se/"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson/>
+        <ContactOrganization>Naturvårdsverket</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition/>
+      <ContactAddress>
+        <AddressType/>
+        <Address/>
+        <City>Stockholm</City>
+        <StateOrProvince/>
+        <PostCode>12030</PostCode>
+        <Country>Sweden</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>lavinprognoser@naturvardsverket.se</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>none</Fees>
+    <AccessConstraints>none</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/json;type=utfgrid</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>image/vnd.jpeg-png</Format>
+        <Format>image/vnd.jpeg-png8</Format>
+        <Format>text/html; subtype=mapml</Format>
+        <Format>text/html; subtype=openlayers</Format>
+        <Format>text/html; subtype=openlayers2</Format>
+        <Format>text/html; subtype=openlayers3</Format>
+        <Format>text/mapml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/mapml</Format>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>text/xml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+      <Format>JSON</Format>
+    </Exception>
+    <Layer>
+      <Title>Naturvårdsverket lavinprognoser WMS-tjänst</Title>
+      <Abstract>Naturvårdsverket lavinprognoser WMS-tjänst</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:3006</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>-180.00000000000003</westBoundLongitude>
+        <eastBoundLongitude>180.00000000000003</eastBoundLongitude>
+        <southBoundLatitude>-90.0</southBoundLatitude>
+        <northBoundLatitude>90.0</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" minx="-180.00000000000003" miny="-90.0" maxx="180.00000000000003" maxy="90.0"/>
+      <Layer queryable="0">
+        <Name>lantmateriet:lantmateriet_base_slope_inclination</Name>
+        <Title>lantmateriet_base_slope_inclination</Title>
+        <Abstract/>
+        <KeywordList/>
+        <CRS>EPSG:4619</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-27.134899999999995</westBoundLongitude>
+          <eastBoundLongitude>57.5025</eastBoundLongitude>
+          <southBoundLatitude>39.785300038875775</southBoundLatitude>
+          <northBoundLatitude>76.58060000344477</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-27.134899999999995" miny="39.785300038875775" maxx="57.5025" maxy="76.58060000344477"/>
+        <BoundingBox CRS="EPSG:4619" minx="39.78529999999999" miny="-27.134899999999995" maxx="76.5806" maxy="57.5025"/>
+        <Style>
+          <Name>default-style-lantmateriet:lantmateriet_base_slope_inclination</Name>
+          <Title>lantmateriet:lantmateriet_base_slope_inclination style</Title>
+          <Abstract>Default style for lantmateriet:lantmateriet_base_slope_inclination layer</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lantmateriet%3Alantmateriet_base_slope_inclination"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:active_location_center</Name>
+        <Title>active_location_center</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>active_location_center</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3857</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-180.00000000000003</westBoundLongitude>
+          <eastBoundLongitude>180.00000000000003</eastBoundLongitude>
+          <southBoundLatitude>-85.06</southBoundLatitude>
+          <northBoundLatitude>85.06</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-180.00000000000003" miny="-85.06" maxx="180.00000000000003" maxy="85.06"/>
+        <BoundingBox CRS="EPSG:3857" minx="-2.0037508342789244E7" miny="-2.00489661040146E7" maxx="2.0037508342789244E7" maxy="2.0048966104014594E7"/>
+        <Style>
+          <Name>point</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a purple square</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aactive_location_center"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:forecast_view</Name>
+        <Title>forecast_view</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>forecast_view</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>6.9801578540519795</westBoundLongitude>
+          <eastBoundLongitude>29.57126135432266</eastBoundLongitude>
+          <southBoundLatitude>54.62630042631889</southBoundLatitude>
+          <northBoundLatitude>69.31441093622382</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="6.9801578540519795" miny="54.62630042631889" maxx="29.57126135432266" maxy="69.31441093622382"/>
+        <BoundingBox CRS="EPSG:3006" minx="6091282.433471196" miny="181896.32913603852" maxx="7689478.305598114" maxy="1086312.9422175875"/>
+        <Style>
+          <Name>lavinprognoser:forecast_view_default</Name>
+          <Title>lavinprognoser:forecast_view_default</Title>
+          <LegendURL width="158" height="3480">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aforecast_view"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>lavinprognoser:forecast_view_3857</Name>
+          <Title>lavinprognoser:forecast_view_3857</Title>
+          <LegendURL width="158" height="3480">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aforecast_view&amp;style=forecast_view_3857"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:location</Name>
+        <Title>location</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>location</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>11.28935981092115</westBoundLongitude>
+          <eastBoundLongitude>19.858241015188252</eastBoundLongitude>
+          <southBoundLatitude>62.81956570565412</southBoundLatitude>
+          <northBoundLatitude>68.53324053479093</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="11.28935981092115" miny="62.81956570565412" maxx="19.858241015188252" maxy="68.53324053479093"/>
+        <BoundingBox CRS="EPSG:3006" minx="6971515.04464803" miny="348262.757587397" maxx="7602428.15035217" maxy="698851.093325858"/>
+        <Style>
+          <Name>lavinprognoser:location</Name>
+          <Title>Location Polygon</Title>
+          <Abstract>Risk-neutral Style</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Alocation"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>polygon</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a transparent red interior with a red outline</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Alocation&amp;style=polygon"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:location_center</Name>
+        <Title>location_center</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>location_center</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-147.04476127682398</westBoundLongitude>
+          <eastBoundLongitude>167.63251914291607</eastBoundLongitude>
+          <southBoundLatitude>-90.0</southBoundLatitude>
+          <northBoundLatitude>90.0</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="-147.04476127682398" miny="-90.0" maxx="167.63251914291607" maxy="90.0"/>
+        <BoundingBox CRS="EPSG:3006" minx="-2.00489661040146E7" miny="-2.0037508342789244E7" maxx="2.0048966104014594E7" maxy="2.0037508342789244E7"/>
+        <Style>
+          <Name>point</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a purple square</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Alocation_center"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:main_locations</Name>
+        <Title>main_locations</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>main_locations</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>6.9801578540519795</westBoundLongitude>
+          <eastBoundLongitude>29.57126135432266</eastBoundLongitude>
+          <southBoundLatitude>54.62630042631889</southBoundLatitude>
+          <northBoundLatitude>69.31441093622382</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="6.9801578540519795" miny="54.62630042631889" maxx="29.57126135432266" maxy="69.31441093622382"/>
+        <BoundingBox CRS="EPSG:3006" minx="6091282.433471196" miny="181896.32913603852" maxx="7689478.305598114" maxy="1086312.9422175875"/>
+        <Style>
+          <Name>polygon</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a transparent red interior with a red outline</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Amain_locations"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:main_locations_center</Name>
+        <Title>main_locations_center</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>main_locations_center</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>6.9801578540519795</westBoundLongitude>
+          <eastBoundLongitude>29.57126135432266</eastBoundLongitude>
+          <southBoundLatitude>54.62630042631889</southBoundLatitude>
+          <northBoundLatitude>69.31441093622382</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="6.9801578540519795" miny="54.62630042631889" maxx="29.57126135432266" maxy="69.31441093622382"/>
+        <BoundingBox CRS="EPSG:3006" minx="6091282.433471196" miny="181896.32913603852" maxx="7689478.305598114" maxy="1086312.9422175875"/>
+        <Style>
+          <Name>generic</Name>
+          <Title>Generic</Title>
+          <Abstract>Generic style</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Amain_locations_center"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:published_forecasts</Name>
+        <Title>Lavinprognoser</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>published_forecasts</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>11.28935981092115</westBoundLongitude>
+          <eastBoundLongitude>19.858241015188252</eastBoundLongitude>
+          <southBoundLatitude>62.81956570565412</southBoundLatitude>
+          <northBoundLatitude>68.53324053479093</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="11.28935981092115" miny="62.81956570565412" maxx="19.858241015188252" maxy="68.53324053479093"/>
+        <BoundingBox CRS="EPSG:3006" minx="6971515.04464803" miny="348262.757587397" maxx="7602428.15035217" maxy="698851.093325858"/>
+        <Style>
+          <Name>lavinprognoser:forecast</Name>
+          <Title>Style based on risk color</Title>
+          <Abstract>Style based on risk color</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Apublished_forecasts"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>polygon</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a transparent red interior with a red outline</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Apublished_forecasts&amp;style=polygon"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:published_forecasts_by_interval</Name>
+        <Title>published_forecasts_by_interval</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>published_forecasts_by_interval</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>11.295428723493378</westBoundLongitude>
+          <eastBoundLongitude>19.839417787568962</eastBoundLongitude>
+          <southBoundLatitude>62.490404162590025</southBoundLatitude>
+          <northBoundLatitude>68.49057852892737</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="11.295428723493378" miny="62.490404162590025" maxx="19.839417787568962" maxy="68.49057852892737"/>
+        <BoundingBox CRS="EPSG:3006" minx="6934734.4230321" miny="348224.94097021" maxx="7597669.14735727" maxy="698451.948841732"/>
+        <Style>
+          <Name>polygon</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a transparent red interior with a red outline</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Apublished_forecasts_by_interval"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:runout</Name>
+        <Title>runout</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>new_utlopp3</Keyword>
+          <Keyword>WCS</Keyword>
+          <Keyword>GeoTIFF</Keyword>
+        </KeywordList>
+        <CRS>EPSG:25833</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>11.163925927830244</westBoundLongitude>
+          <eastBoundLongitude>21.398382317456317</eastBoundLongitude>
+          <southBoundLatitude>60.89283657563681</southBoundLatitude>
+          <northBoundLatitude>69.15794190988223</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="11.163925927830244" miny="60.89283657563681" maxx="21.398382317456317" maxy="69.15794190988223"/>
+        <BoundingBox CRS="EPSG:25833" minx="347500.0" miny="6760000.0" maxx="755000.0" maxy="7672500.0"/>
+        <Style>
+          <Name>raster</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style for rasters</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Arunout"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:slope_aspect</Name>
+        <Title>slope_aspect</Title>
+        <Abstract>Den klassade lutningskartan för fjällområdet som används i Lavinprognoser.se är en derivatprodukt framtagen av Naturvårdsverket grundad på terränglutningskartan från Lantmäteriet.</Abstract>
+        <KeywordList>
+          <Keyword>riktning_2201</Keyword>
+          <Keyword>WCS</Keyword>
+          <Keyword>GeoTIFF</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>11.16391021276209</westBoundLongitude>
+          <eastBoundLongitude>23.444134275830578</eastBoundLongitude>
+          <southBoundLatitude>60.29569573380033</southBoundLatitude>
+          <northBoundLatitude>69.16109509435906</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="11.16391021276209" miny="60.29569573380033" maxx="23.444134275830578" maxy="69.16109509435906"/>
+        <BoundingBox CRS="EPSG:3006" minx="6700000.0" miny="347500.0" maxx="7672510.0" maxy="837510.0"/>
+        <Style>
+          <Name>lavinprognoser:slope_aspect_raw</Name>
+          <Title>Slutningsriktning</Title>
+          <Abstract>Karta over slutningsriktning</Abstract>
+          <LegendURL width="73" height="183">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aslope_aspect"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>lavinprognoser:slope_aspect_color</Name>
+          <Title>Slutningsriktning</Title>
+          <Abstract>Karta over slutningsriktning</Abstract>
+          <LegendURL width="73" height="183">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aslope_aspect&amp;style=slope_aspect_color"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>lavinprognoser:slope_aspect</Name>
+          <Title>Slutningsriktning</Title>
+          <Abstract>Karta over slutningsriktning</Abstract>
+          <LegendURL width="73" height="183">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aslope_aspect&amp;style=slope_aspect"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>lavinprognoser:slope_aspect_hex</Name>
+          <Title>Slutningsriktning</Title>
+          <Abstract>Karta over slutningsriktning</Abstract>
+          <LegendURL width="73" height="183">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aslope_aspect&amp;style=slope_aspect_hex"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:slope_inclination</Name>
+        <Title>slope_inclination</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>lutning</Keyword>
+          <Keyword>WCS</Keyword>
+          <Keyword>GeoTIFF</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>11.16391021276209</westBoundLongitude>
+          <eastBoundLongitude>23.444134275830578</eastBoundLongitude>
+          <southBoundLatitude>60.29569573380033</southBoundLatitude>
+          <northBoundLatitude>69.16109509435906</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="11.16391021276209" miny="60.29569573380033" maxx="23.444134275830578" maxy="69.16109509435906"/>
+        <BoundingBox CRS="EPSG:3006" minx="6700000.0" miny="347500.0" maxx="7672510.0" maxy="837510.0"/>
+        <Style>
+          <Name>lavinprognoser:slope_inclination</Name>
+          <Title>Lutningskarta</Title>
+          <Abstract>Karta over brant terrang</Abstract>
+          <LegendURL width="134" height="160">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aslope_inclination"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>raster</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style for rasters</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aslope_inclination&amp;style=raster"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>lavinprognoser:unpublished_forecasts_area_interval</Name>
+        <Title>unpublished_forecasts_area_interval</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>unpublished_forecasts_area_interval</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>10.511247156296408</westBoundLongitude>
+          <eastBoundLongitude>10.511256115293092</eastBoundLongitude>
+          <southBoundLatitude>-9.0193758094E-6</southBoundLatitude>
+          <northBoundLatitude>0.0</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="10.511247156296408" miny="-9.0193758094E-6" maxx="10.511256115293092" maxy="0.0"/>
+        <BoundingBox CRS="EPSG:3006" minx="-1.0" miny="-1.0" maxx="0.0" maxy="0.0"/>
+        <Style>
+          <Name>point</Name>
+          <Title>A boring default style</Title>
+          <Abstract>A sample style that just prints out a purple square</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://nvgis.naturvardsverket.se/geoserver/ows?service=WMS&amp;version=1.3.0&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=lavinprognoser%3Aunpublished_forecasts_area_interval"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

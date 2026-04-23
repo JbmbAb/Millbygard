@@ -1,0 +1,55 @@
+{
+  "origin_3006": {
+    "east": 481950.5550165065,
+    "north": 6777712.4459969
+  },
+  "cell_count": 29080,
+  "min_elevation_m": 217.91,
+  "max_elevation_m": 250.9,
+  "height_range_m": 32.99,
+  "minecraft_y": {
+    "base_fill_y": 40,
+    "surface_base_y": 70,
+    "min_surface_y": 70,
+    "max_surface_y": 103,
+    "vertical_scale": "1 block = 1 meter relative height"
+  },
+  "minecraft_area": {
+    "min_x": -69,
+    "max_x": 108,
+    "min_z": -351,
+    "max_z": -1
+  },
+  "source_markhojd": "data\\orsa_stackmora_3_12_markhojd.tif",
+  "source_ythojd_above_ground": "data\\orsa_stackmora_3_12_ythojd_above_ground.tif",
+  "source_ortofoto": "data\\orsa_stackmora_3_12_ortofoto.tif",
+  "source_buildings": "data\\orsa_stackmora_3_12_byggnader.geojson",
+  "terrain_function": "millbygard:full_property_terrain",
+  "building_function": "millbygard:full_property_buildings",
+  "boundary_function": "millbygard:full_property_boundary",
+  "complete_function": "millbygard:full_property_complete",
+  "generated_function_count": 197,
+  "scheduled_stage_count": 98,
+  "scheduled_stage_spacing": "20 ticks / about 1 second",
+  "surface_block_counts": {
+    "minecraft:gray_concrete": 1194,
+    "minecraft:podzol": 8232,
+    "minecraft:grass_block": 2576,
+    "minecraft:deepslate_tiles": 1102,
+    "minecraft:moss_block": 8653,
+    "minecraft:gravel": 4342,
+    "minecraft:smooth_stone": 1536,
+    "minecraft:light_gray_concrete": 731,
+    "minecraft:coarse_dirt": 55,
+    "minecraft:red_terracotta": 659
+  },
+  "building_surface_features": 7,
+  "building_surface_block_columns": 4225,
+  "boundary_surface_blocks": 1119,
+  "notes": [
+    "All valid 1 m markhojd cells inside the property are used.",
+    "Vertical terrain differences are preserved at 1 block per meter relative to min elevation.",
+    "Ythojd is used selectively as building roof/surface height support, not as full 0.25 m terrain.",
+    "No real water blocks are generated."
+  ]
+}

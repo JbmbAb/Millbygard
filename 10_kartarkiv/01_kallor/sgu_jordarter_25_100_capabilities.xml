@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WMS_Capabilities xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd"
+    xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd"
+    xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd"
+    xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0"
+    xmlns:gml="http://schemas.opengis.net/gml"
+    xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" version="1.3.0"
+    updateSequence="904" xmlns="http://www.opengis.net/wms"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/wms http://www.w3.org/1999/xlink 
+    http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 
+    http://maps3.sgu.se:80/geoserver/www/inspire/inspire_vs.xsd">
+    <Service>
+        <Name>WMS</Name>
+        <Title>Jordarter 1:25 000-1:100 000 (visningstjänst)</Title>
+        <Abstract>Jordartskartan visar jordarternas utbredning i eller nära markytan samt
+            förekomsten av block i markytan. Jordarterna indelas efter bildningsätt och
+            kornstorlekssammansättning. Ytliga jordlager med en mäktighet som understiger en halv
+            till en meter samt jordlager på djupet redovisas i vissa fall. Även vissa landformer,
+            såsom t ex moränbacklandskap, moränryggar och flygsanddyner redovisas. Kartläggningen
+            har skett med olika metoder, skiftande geografiskt underlag samt för presentationsskalor
+            från 1:25 000 till 1:100 000. Detta gör att det finns stora skillnader i kvalitet inom
+            produkten, både vad gäller lägesnoggrannhet och jordarternas indelning. De skillnader i
+            karteringsmetod som tillämpats vid kartläggningen redovisas genom att informationen har
+            märkts som olika karttyper.</Abstract>
+        <KeywordList>
+            <Keyword>WMS</Keyword>
+            <Keyword>SGU</Keyword>
+            <Keyword>Geologi</Keyword>
+            <Keyword>Sveriges geologiska undersökning</Keyword>
+        </KeywordList>
+        <OnlineResource xlink:type="simple" xlink:href="https://www.sgu.se"/>
+        <ContactInformation>
+            <ContactPersonPrimary>
+                <ContactPerson>Kundservice (Customer Services)</ContactPerson>
+                <ContactOrganization>SGU - Sveriges geologiska undersökning (Geological Survey of
+                    Sweden - SGU)</ContactOrganization>
+            </ContactPersonPrimary>
+            <ContactPosition>Kundservice (Customer Services)</ContactPosition>
+            <ContactAddress>
+                <AddressType>Postal</AddressType>
+                <Address>Box 670</Address>
+                <City>Uppsala</City>
+                <StateOrProvince/>
+                <PostCode>SE-751 28</PostCode>
+                <Country>Sweden</Country>
+            </ContactAddress>
+            <ContactVoiceTelephone>+4618179000</ContactVoiceTelephone>
+            <ContactFacsimileTelephone/>
+            <ContactElectronicMailAddress>kundservice@sgu.se</ContactElectronicMailAddress>
+        </ContactInformation>
+        <Fees>NONE</Fees>
+        <AccessConstraints>NONE</AccessConstraints>
+    </Service>
+    <Capability>
+        <Request>
+            <GetCapabilities>
+                <Format>text/xml</Format>
+                <DCPType>
+                    <HTTP>
+                        <Get>
+                            <OnlineResource xlink:type="simple"
+                                xlink:href="https://resource.sgu.se/service/wms/130/jordarter-25-100-tusen"
+                            />
+                        </Get>
+                        <Post>
+                            <OnlineResource xlink:type="simple"
+                                xlink:href="https://resource.sgu.se/service/wms/130/jordarter-25-100-tusen"
+                            />
+                        </Post>
+                    </HTTP>
+                </DCPType>
+            </GetCapabilities>
+            <GetMap>
+                <Format>image/png</Format>
+				<Format>image/gif</Format>
+				<Format>image/jpeg</Format>
+				<Format>image/png; mode=8bit</Format>
+				<Format>image/svg+xml</Format>
+				<Format>text/html; subtype=openlayers</Format>
+                <DCPType>
+                    <HTTP>
+                        <Get>
+                            <OnlineResource xlink:type="simple"
+                                xlink:href="https://maps3.sgu.se/geoserver/jord/ows?SERVICE=WMS&amp;"
+                            />
+                        </Get>
+                    </HTTP>
+                </DCPType>
+            </GetMap>
+            <GetFeatureInfo>
+                <Format>text/plain</Format>
+                <Format>application/vnd.ogc.gml</Format>
+                <Format>text/xml</Format>
+                <Format>application/vnd.ogc.gml/3.1.1</Format>
+                <Format>text/xml; subtype=gml/3.1.1</Format>
+                <Format>text/html</Format>
+                <Format>application/json</Format>
+                <DCPType>
+                    <HTTP>
+                        <Get>
+                            <OnlineResource xlink:type="simple"
+                                xlink:href="https://maps3.sgu.se/geoserver/jord/ows?SERVICE=WMS&amp;"
+                            />
+                        </Get>
+                    </HTTP>
+                </DCPType>
+            </GetFeatureInfo>
+        </Request>
+        <Exception>
+            <Format>XML</Format>
+            <Format>INIMAGE</Format>
+            <Format>BLANK</Format>
+        </Exception>
+        <inspire_vs:ExtendedCapabilities>
+            <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+                <inspire_common:URL>
+                    https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=44f4ee1d-1d96-4be9-8b91-1512bf200b4d&amp;outputSchema=csw:IsoRecord </inspire_common:URL>
+                <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
+            </inspire_common:MetadataUrl>
+            <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
+                <inspire_common:DefaultLanguage>
+                    <inspire_common:Language>eng</inspire_common:Language>
+                </inspire_common:DefaultLanguage>
+                <inspire_common:SupportedLanguage>
+                    <inspire_common:Language>eng</inspire_common:Language>
+                </inspire_common:SupportedLanguage>
+            </inspire_common:SupportedLanguages>
+            <inspire_common:ResponseLanguage>
+                <inspire_common:Language>eng</inspire_common:Language>
+            </inspire_common:ResponseLanguage>
+        </inspire_vs:ExtendedCapabilities>
+        <Layer>
+            <Title>Jordarter 1:25 000-1:100 000</Title>
+            <Abstract>Jordarter 1:25 000-1:100 000</Abstract>
+            <CRS>EPSG:2400</CRS>
+            <CRS>EPSG:3006</CRS>
+            <CRS>EPSG:3007</CRS>
+            <CRS>EPSG:3008</CRS>
+            <CRS>EPSG:3009</CRS>
+            <CRS>EPSG:3010</CRS>
+            <CRS>EPSG:3011</CRS>
+            <CRS>EPSG:3012</CRS>
+            <CRS>EPSG:3013</CRS>
+            <CRS>EPSG:3014</CRS>
+            <CRS>EPSG:3015</CRS>
+            <CRS>EPSG:3016</CRS>
+            <CRS>EPSG:3017</CRS>
+            <CRS>EPSG:3018</CRS>
+            <CRS>EPSG:3021</CRS>
+            <CRS>EPSG:4258</CRS>
+            <CRS>EPSG:4326</CRS>
+            <CRS>EPSG:900913</CRS>
+            <CRS>CRS:84</CRS>
+            <EX_GeographicBoundingBox>
+                <westBoundLongitude>6.106581468184982</westBoundLongitude>
+                <eastBoundLongitude>26.325793902811263</eastBoundLongitude>
+                <southBoundLatitude>54.843979616740405</southBoundLatitude>
+                <northBoundLatitude>69.40488673138529</northBoundLatitude>
+            </EX_GeographicBoundingBox>
+            <BoundingBox CRS="CRS:84" minx="6.106581468184982" miny="54.78986553923965" maxx="26.325793902811263" maxy="69.40488673138529"/>
+            <BoundingBox CRS="EPSG:2400" minx="6073152.753843551" miny="876827.1193046197" maxx="7737289.791874906" maxy="2175198.687871433"/>
+            <BoundingBox CRS="EPSG:3006" minx="6072086.442513727" miny="-71092.0217762976" maxx="7740611.076549347" maxy="1226661.8893262586"/>
+            <BoundingBox CRS="EPSG:3007" minx="6074160.382091306" miny="-228888.04845191457" maxx="7768341.103545782" maxy="1068250.0188898607"/>
+            <BoundingBox CRS="EPSG:3008" minx="6074033.798194386" miny="-325160.1955406727" maxx="7755307.989465134" maxy="972703.1125081511"/>
+            <BoundingBox CRS="EPSG:3009" minx="6074516.249013332" miny="-421320.54999629606" maxx="7743708.559973335" maxy="876952.6703944162"/>
+            <BoundingBox CRS="EPSG:3010" minx="6073874.7551524285" miny="-517344.95436452806" maxx="7737222.121498226" maxy="781025.3002533094"/>
+            <BoundingBox CRS="EPSG:3011" minx="6074991.683758588" miny="-613208.4314624487" maxx="7747929.205625197" maxy="684946.5599859376"/>
+            <BoundingBox CRS="EPSG:3012" minx="6074741.56746198" miny="-373255.8391243419" maxx="7749328.910953372" maxy="924851.6441530847"/>
+            <BoundingBox CRS="EPSG:3013" minx="6073937.492185544" miny="-469351.28615218867" maxx="7738447.215015075" maxy="829009.4810289345"/>
+            <BoundingBox CRS="EPSG:3014" minx="6074328.027151033" miny="-565298.4057745205" maxx="7742396.128322648" maxy="733003.2911227184"/>
+            <BoundingBox CRS="EPSG:3015" minx="6074158.416430963" miny="-661071.7579949249" maxx="7753821.08018858" maxy="636858.1608985618"/>
+            <BoundingBox CRS="EPSG:3016" minx="6074040.0004350785" miny="-756644.8703998473" maxx="7766680.017594002" maxy="540598.3399681299"/>
+            <BoundingBox CRS="EPSG:3017" minx="6073943.050715867" miny="-851990.0944268059" maxx="7780970.300966062" maxy="444247.38139765646"/>
+            <BoundingBox CRS="EPSG:3018" minx="6073877.475298405" miny="-947078.4598317803" maxx="7796688.899025104" maxy="347828.2809359343"/>
+            <BoundingBox CRS="EPSG:3021" minx="6073152.753843551" miny="876827.1193046197" maxx="7737289.791874906" maxy="2175198.687871433"/>
+            <BoundingBox CRS="EPSG:4326" minx="54.78986553923965" miny="6.106581468184982" maxx="69.40488673138529" maxy="26.325793902811263"/>
+            <BoundingBox CRS="EPSG:4258" minx="54.78986554012784" miny="6.106581468184982" maxx="69.40488673200568" maxy="26.325793902811263"/>
+            <BoundingBox CRS="EPSG:900913" minx="679781.539525993" miny="7321189.642491772" maxx="2930573.971989616" maxy="1.0877729242670711E7"/>
+            <Layer queryable="1">
+                <Name>jord:SE.GOV.SGU.JORD.TACKNINGSKARTA.25K</Name>
+                <Title>Täckningsområde med information om karttyp</Title>
+                <Abstract/>
+                <KeywordList>
+                    <Keyword>features</Keyword>
+                    <Keyword>Täckningsområde med information om karttyp</Keyword>
+                </KeywordList>
+                <CRS>EPSG:3006</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>9.341659030246085</westBoundLongitude>
+                    <eastBoundLongitude>24.81688396128465</eastBoundLongitude>
+                    <southBoundLatitude>55.05939448199533</southBoundLatitude>
+                    <northBoundLatitude>67.62468591670194</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="CRS:84" minx="9.341659030246085" miny="55.05939448199533" maxx="24.81688396128465" maxy="67.62468591670194"/>
+                <BoundingBox CRS="EPSG:3006" minx="6121288.0" miny="258907.734375" maxx="7501100.5" maxy="920844.3125"/>
+                <BoundingBox CRS="EPSG:2400" minx="6118532.106555439" miny="1207554.871692094" maxx="7506839.424813292" maxy="1886711.340658172"/>
+                <BoundingBox CRS="EPSG:3007" minx="6117472.922241979" miny="36585.49147438607" maxx="7527613.361213032" maxy="762037.1608521319"/>
+                <BoundingBox CRS="EPSG:3008" minx="6119577.437836402" miny="-27344.737511875428" maxx="7515079.962674715" maxy="666587.5781560903"/>
+                <BoundingBox CRS="EPSG:3009" minx="6123737.494997999" miny="-91188.74112144858" maxx="7504102.140856342" maxy="571012.7175870348"/>
+                <BoundingBox CRS="EPSG:3010" minx="6115710.077449583" miny="-186645.96738353837" maxx="7510716.171877416" maxy="507031.8970400412"/>
+                <BoundingBox CRS="EPSG:3011" minx="6109747.677276859" miny="-282022.0270992207" maxx="7518877.18818252" maxy="442877.4768608652"/>
+                <BoundingBox CRS="EPSG:3012" minx="6121400.384284974" miny="-59279.46903550235" maxx="7509396.531792528" maxy="618814.2797776203"/>
+                <BoundingBox CRS="EPSG:3013" minx="6119465.359007231" miny="-138926.02978865046" maxx="7507215.741479931" maxy="539045.9832217122"/>
+                <BoundingBox CRS="EPSG:3014" minx="6112471.029058164" miny="-234345.62076556036" maxx="7514603.351248751" maxy="474974.4074913207"/>
+                <BoundingBox CRS="EPSG:3015" minx="6107539.569917438" miny="-329672.18961069" maxx="7523537.579858712" maxy="410745.0538564395"/>
+                <BoundingBox CRS="EPSG:3016" minx="6104667.7043097345" miny="-424881.60084511514" maxx="7534017.555122518" maxy="346389.4654790159"/>
+                <BoundingBox CRS="EPSG:3017" minx="6103853.517861138" miny="-519949.0395349326" maxx="7546042.199921027" maxy="281939.01019246527"/>
+                <BoundingBox CRS="EPSG:3018" minx="6105096.467058445" miny="-614848.874014673" maxx="7559610.206517317" maxy="217424.92311347474"/>
+                <BoundingBox CRS="EPSG:3021" minx="6118532.106555439" miny="1207554.871692094" maxx="7506839.424813292" maxy="1886711.340658172"/>
+                <BoundingBox CRS="EPSG:4326" minx="55.05939451672136" miny="9.341659030246085" maxx="67.62468593136353" maxy="24.81688396128465"/>
+                <BoundingBox CRS="EPSG:4258" minx="55.059394482880485" miny="9.341659030246085" maxx="67.62468591736521" maxy="24.81688396128465"/>
+                <BoundingBox CRS="EPSG:900913" minx="1039908.72641138" miny="7373401.920995342" maxx="2762602.885645965" maxy="1.033636126554953E7"/>
+                <Style>
+                    <Name>JORD_25K_Tackning</Name>
+                    <Title>Karttyp</Title>
+                    <Abstract>A sample style that just draws out a solid gray interior with a black
+                        1px outline</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:type="simple"
+                            xlink:href="https://maps3.sgu.se/geoserver/jord/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.JORD.TACKNINGSKARTA.25K"
+                        />
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>jord:SE.GOV.SGU.JORD.GRUNDLAGER.25K</Name>
+                <Title>Jordart, grundlager</Title>
+                <Abstract> Jordart, grundlager </Abstract>
+                <KeywordList>
+                    <Keyword>features</Keyword>
+                    <Keyword>Jordart</Keyword>
+                </KeywordList>
+                <CRS>EPSG:3006</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>12.239995162684043</westBoundLongitude>
+                    <eastBoundLongitude>20.499443205093687</eastBoundLongitude>
+                    <southBoundLatitude>56.290471515034184</southBoundLatitude>
+                    <northBoundLatitude>64.68298364249802</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="CRS:84" minx="9.341659030246085" miny="55.05939448199533" maxx="24.81688396128465" maxy="67.62468591670194"/>
+                <BoundingBox CRS="EPSG:3006" minx="6121288.0" miny="258907.734375" maxx="7501100.5" maxy="920844.3125"/>
+                <BoundingBox CRS="EPSG:2400" minx="6118532.106555439" miny="1207554.871692094" maxx="7506839.424813292" maxy="1886711.340658172"/>
+                <BoundingBox CRS="EPSG:3007" minx="6117472.922241979" miny="36585.49147438607" maxx="7527613.361213032" maxy="762037.1608521319"/>
+                <BoundingBox CRS="EPSG:3008" minx="6119577.437836402" miny="-27344.737511875428" maxx="7515079.962674715" maxy="666587.5781560903"/>
+                <BoundingBox CRS="EPSG:3009" minx="6123737.494997999" miny="-91188.74112144858" maxx="7504102.140856342" maxy="571012.7175870348"/>
+                <BoundingBox CRS="EPSG:3010" minx="6115710.077449583" miny="-186645.96738353837" maxx="7510716.171877416" maxy="507031.8970400412"/>
+                <BoundingBox CRS="EPSG:3011" minx="6109747.677276859" miny="-282022.0270992207" maxx="7518877.18818252" maxy="442877.4768608652"/>
+                <BoundingBox CRS="EPSG:3012" minx="6121400.384284974" miny="-59279.46903550235" maxx="7509396.531792528" maxy="618814.2797776203"/>
+                <BoundingBox CRS="EPSG:3013" minx="6119465.359007231" miny="-138926.02978865046" maxx="7507215.741479931" maxy="539045.9832217122"/>
+                <BoundingBox CRS="EPSG:3014" minx="6112471.029058164" miny="-234345.62076556036" maxx="7514603.351248751" maxy="474974.4074913207"/>
+                <BoundingBox CRS="EPSG:3015" minx="6107539.569917438" miny="-329672.18961069" maxx="7523537.579858712" maxy="410745.0538564395"/>
+                <BoundingBox CRS="EPSG:3016" minx="6104667.7043097345" miny="-424881.60084511514" maxx="7534017.555122518" maxy="346389.4654790159"/>
+                <BoundingBox CRS="EPSG:3017" minx="6103853.517861138" miny="-519949.0395349326" maxx="7546042.199921027" maxy="281939.01019246527"/>
+                <BoundingBox CRS="EPSG:3018" minx="6105096.467058445" miny="-614848.874014673" maxx="7559610.206517317" maxy="217424.92311347474"/>
+                <BoundingBox CRS="EPSG:3021" minx="6118532.106555439" miny="1207554.871692094" maxx="7506839.424813292" maxy="1886711.340658172"/>
+                <BoundingBox CRS="EPSG:4326" minx="55.05939451672136" miny="9.341659030246085" maxx="67.62468593136353" maxy="24.81688396128465"/>
+                <BoundingBox CRS="EPSG:4258" minx="55.059394482880485" miny="9.341659030246085" maxx="67.62468591736521" maxy="24.81688396128465"/>
+                <BoundingBox CRS="EPSG:900913" minx="1039908.72641138" miny="7373401.920995342" maxx="2762602.885645965" maxy="1.033636126554953E7"/>
+                <MetadataURL type="ISO19115:2003">
+                    <Format>text/plain</Format>
+                    <OnlineResource xlink:type="simple"
+                        xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=2410c2e5-2a0e-4a47-9273-b7b77517420a&amp;outputSchema=csw:IsoRecord"
+                    />
+                </MetadataURL>
+                <Style>
+                    <Name>JORD_25K_Grundlager</Name>
+                    <Title>Jordart, grundlager</Title>
+                    <Abstract>A sample style that just draws out a solid gray interior with a black
+                        1px outline</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:type="simple"
+                            xlink:href="https://maps3.sgu.se/geoserver/jord/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.JORD.GRUNDLAGER.25K"
+                        />
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>jord:SE.GOV.SGU.JORD.LANDFORM.25K</Name>
+                <Title>Landform</Title>
+                <Abstract>Landform</Abstract>
+                <KeywordList>
+                    <Keyword>Landform</Keyword>
+                    <Keyword>features</Keyword>
+                </KeywordList>
+                <CRS>EPSG:3006</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>10.601895293946</westBoundLongitude>
+                    <eastBoundLongitude>24.78627351708482</eastBoundLongitude>
+                    <southBoundLatitude>55.94876567172128</southBoundLatitude>
+                    <northBoundLatitude>67.62501206563314</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="CRS:84" minx="10.601895293946" miny="55.945183007117386" maxx="24.78627351708482" maxy="67.62501206563314"/>
+                <BoundingBox CRS="EPSG:3006" minx="6220407.0" miny="312828.53125" maxx="7501100.5" maxy="919508.0625"/>
+                <BoundingBox CRS="EPSG:2400" minx="6217651.40745705" miny="1262663.735894971" maxx="7506136.781876496" maxy="1885375.1161586237"/>
+                <BoundingBox CRS="EPSG:3007" minx="6218814.352832917" miny="90439.34214055349" maxx="7527548.330669776" maxy="756382.3638000948"/>
+                <BoundingBox CRS="EPSG:3008" minx="6219840.580516128" miny="26566.476352040263" maxx="7515047.48840952" maxy="663096.4789776064"/>
+                <BoundingBox CRS="EPSG:3009" minx="6222896.158463385" miny="-37246.36729691876" maxx="7504102.140856342" maxy="569675.9328731493"/>
+                <BoundingBox CRS="EPSG:3010" minx="6214788.760641207" miny="-130535.94528396567" maxx="7509408.6884607" maxy="505696.3171421849"/>
+                <BoundingBox CRS="EPSG:3011" minx="6208721.756779678" miny="-223752.40726170107" maxx="7516260.596939889" maxy="441543.75143198395"/>
+                <BoundingBox CRS="EPSG:3012" minx="6221114.615011241" miny="-5349.393741884764" maxx="7509380.305206379" maxy="616401.4274917138"/>
+                <BoundingBox CRS="EPSG:3013" minx="6218587.13413303" miny="-83898.75453246932" maxx="7506562.210802335" maxy="537709.7196684894"/>
+                <BoundingBox CRS="EPSG:3014" minx="6211500.466626876" miny="-177154.86306310998" maxx="7512641.508856481" maxy="473639.6738508874"/>
+                <BoundingBox CRS="EPSG:3015" minx="6206452.211422276" miny="-270325.44912545756" maxx="7520265.867048701" maxy="409412.4980019923"/>
+                <BoundingBox CRS="EPSG:3016" minx="6203439.316564597" miny="-363385.34589495306" maxx="7529434.554246854" maxy="345059.7307818276"/>
+                <BoundingBox CRS="EPSG:3017" minx="6202459.954118673" miny="-456308.8069626766" maxx="7540146.650370491" maxy="280612.7364346396"/>
+                <BoundingBox CRS="EPSG:3018" minx="6203513.528861372" miny="-549069.3765975642" maxx="7552401.023952831" maxy="216102.74740288878"/>
+                <BoundingBox CRS="EPSG:3021" minx="6217651.40745705" miny="1262663.735894971" maxx="7506136.781876496" maxy="1885375.1161586237"/>
+                <BoundingBox CRS="EPSG:4326" minx="55.945183040632784" miny="10.601895293946" maxx="67.62501208029423" maxy="24.786273517084815"/>
+                <BoundingBox CRS="EPSG:4258" minx="55.945183007992064" miny="10.601895293946" maxx="67.6250120662964" maxy="24.78627351708482"/>
+                <BoundingBox CRS="EPSG:900913" minx="1180197.5855656723" miny="7547510.880208606" maxx="2759195.3465846837" maxy="1.0336456641579147E7"/>
+                <MetadataURL type="ISO19115:2003">
+                    <Format>text/plain</Format>
+                    <OnlineResource xlink:type="simple"
+                        xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=2410c2e5-2a0e-4a47-9273-b7b77517420a&amp;outputSchema=csw:IsoRecord"
+                    />
+                </MetadataURL>
+                <Style>
+                    <Name>JORD_25K_Landform</Name>
+                    <Title>jkar_abcdg_lf_vy</Title>
+                    <Abstract>A sample style that just draws out a solid gray interior with a black
+                        1px outline</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:type="simple"
+                            xlink:href="https://maps3.sgu.se/geoserver/jord/SE.GOV.SGU.JORD.LANDFORM.25K/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.JORD.LANDFORM.25K"
+                        />
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>jord:SE.GOV.SGU.JORD.UNDERLIGGANDE.25K</Name>
+                <Title>Jordart, underliggande lager</Title>
+                <Abstract>Jordart, underliggande lager</Abstract>
+                <KeywordList>
+                    <Keyword>Jordart</Keyword>
+                    <Keyword>features</Keyword>
+                </KeywordList>
+                <CRS>EPSG:3006</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>9.809620404673609</westBoundLongitude>
+                    <eastBoundLongitude>24.656623098617303</eastBoundLongitude>
+                    <southBoundLatitude>55.176291942433785</southBoundLatitude>
+                    <northBoundLatitude>67.56147627339914</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="CRS:84" minx="9.809620404673609" miny="55.176291942433785" maxx="24.656623098617303" maxy="67.56147627339914"/>
+                <BoundingBox CRS="EPSG:3006" minx="6133828.0" miny="278356.1875" maxx="7493991.0" maxy="914966.9375"/>
+                <BoundingBox CRS="EPSG:2400" minx="6131138.263911101" miny="1227161.5018394636" maxx="7499472.757509123" maxy="1880741.409879685"/>
+                <BoundingBox CRS="EPSG:3007" minx="6130834.934956434" miny="56352.74566910745" maxx="7520212.789555838" maxy="755605.3169950199"/>
+                <BoundingBox CRS="EPSG:3008" minx="6132532.771583133" miny="-7728.140349247842" maxx="7507821.922385609" maxy="660431.681161422"/>
+                <BoundingBox CRS="EPSG:3009" minx="6136282.513005202" miny="-71732.50550220086" maxx="7496989.795918367" maxy="565132.9906962785"/>
+                <BoundingBox CRS="EPSG:3010" minx="6128367.90243684" miny="-166911.06380816194" maxx="7503131.440811101" maxy="500985.167968392"/>
+                <BoundingBox CRS="EPSG:3011" minx="6122514.902179823" miny="-262012.45461069327" maxx="7510822.920745587" maxy="436667.0657812117"/>
+                <BoundingBox CRS="EPSG:3012" minx="6134151.033058033" miny="-39741.83809367413" maxx="7502210.947337758" maxy="612796.4312106312"/>
+                <BoundingBox CRS="EPSG:3013" minx="6132067.214479256" miny="-119329.95411343151" maxx="7499866.851524953" maxy="533082.3411274655"/>
+                <BoundingBox CRS="EPSG:3014" minx="6125183.972083832" miny="-214472.88859176193" maxx="7506783.491392303" maxy="468845.4224470515"/>
+                <BoundingBox CRS="EPSG:3015" minx="6120360.254750524" miny="-309526.75594163034" maxx="7515249.635529483" maxy="404454.0457743592"/>
+                <BoundingBox CRS="EPSG:3016" minx="6117592.894466285" miny="-404467.3551575976" maxx="7525264.49014095" maxy="339939.74777777074"/>
+                <BoundingBox CRS="EPSG:3017" minx="6116880.068261279" miny="-499269.8367397337" maxx="7536827.067017207" maxy="275333.89287039184"/>
+                <BoundingBox CRS="EPSG:3018" minx="6118221.30592191" miny="-593908.5665510307" maxx="7549936.158904419" maxy="210667.71626425502"/>
+                <BoundingBox CRS="EPSG:3021" minx="6131138.263911101" miny="1227161.5018394636" maxx="7499472.757509123" maxy="1880741.409879685"/>
+                <BoundingBox CRS="EPSG:4326" minx="55.176291977004084" miny="9.80962040467361" maxx="67.56147628815863" maxy="24.656623098617306"/>
+                <BoundingBox CRS="EPSG:4258" minx="55.17629194331761" miny="9.809620404673609" maxx="67.56147627406386" maxy="24.656623098617303"/>
+                <BoundingBox CRS="EPSG:900913" minx="1092001.9483235725" miny="7396156.239984148" maxx="2744762.7280197456" maxy="1.0317901659659816E7"/>
+                <MetadataURL type="ISO19115:2003">
+                    <Format>text/plain</Format>
+                    <OnlineResource xlink:type="simple"
+                        xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=2410c2e5-2a0e-4a47-9273-b7b77517420a&amp;outputSchema=csw:IsoRecord"
+                    />
+                </MetadataURL>
+                <Style>
+                    <Name>JORD_25K_Underliggande</Name>
+                    <Title>jkar_abcdg_jd3_vy</Title>
+                    <Abstract>A sample style that just draws out a solid gray interior with a black
+                        1px outline</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:type="simple"
+                            xlink:href="https://maps3.sgu.se/geoserver/jord/SE.GOV.SGU.JORD.UNDERLIGGANDE.25K/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.JORD.UNDERLIGGANDE.25K"
+                        />
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>jord:SE.GOV.SGU.JORD.YTLAGER_JY1.25K</Name>
+                <Title>Jordart, tunt eller osammanhängande ytlager</Title>
+                <Abstract>Jordart, tunt eller osammanhängande ytlager</Abstract>
+                <KeywordList>
+                    <Keyword>Jordart</Keyword>
+                    <Keyword>features</Keyword>
+                </KeywordList>
+                <CRS>EPSG:3006</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>9.582256896287126</westBoundLongitude>
+                    <eastBoundLongitude>24.781221291217964</eastBoundLongitude>
+                    <southBoundLatitude>55.174179823072826</southBoundLatitude>
+                    <northBoundLatitude>67.62115349538307</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="CRS:84" minx="9.582256896287126" miny="55.174179823072826" maxx="24.781221291217964" maxy="67.62115349538307"/>
+                <BoundingBox CRS="EPSG:3006" minx="6134005.5" miny="269179.1875" maxx="7500665.0" maxy="919356.8125"/>
+                <BoundingBox CRS="EPSG:2400" minx="6131264.835633096" miny="1217980.552826681" maxx="7506269.826063218" maxy="1885218.191743598"/>
+                <BoundingBox CRS="EPSG:3007" minx="6130617.198403292" miny="46864.566644483784" maxx="7527105.155820295" maxy="759995.6337742637"/>
+                <BoundingBox CRS="EPSG:3008" minx="6132512.565106512" miny="-17064.914515769604" maxx="7514607.960451028" maxy="664823.2122580695"/>
+                <BoundingBox CRS="EPSG:3009" minx="6136460.084033613" miny="-80913.17777110846" maxx="7503666.4665866345" maxy="569524.6223489395"/>
+                <BoundingBox CRS="EPSG:3010" minx="6128450.666845926" miny="-176091.63671966514" maxx="7510031.336408844" maxy="505534.5869861559"/>
+                <BoundingBox CRS="EPSG:3011" minx="6122503.125504367" miny="-271190.6601248851" maxx="7517943.062125112" maxy="441371.7037979191"/>
+                <BoundingBox CRS="EPSG:3012" minx="6134229.676364401" miny="-49001.14868777554" maxx="7508942.678422719" maxy="617188.1499435571"/>
+                <BoundingBox CRS="EPSG:3013" minx="6132197.3451304985" miny="-128510.85783857253" maxx="7506655.504412087" maxy="537553.1866261763"/>
+                <BoundingBox CRS="EPSG:3014" minx="6125219.43662896" miny="-223652.56388298032" maxx="7513793.885003927" maxy="473472.7721519739"/>
+                <BoundingBox CRS="EPSG:3015" minx="6120301.28773629" miny="-318702.9133556406" maxx="7522478.768470643" maxy="409235.33007847046"/>
+                <BoundingBox CRS="EPSG:3016" minx="6117439.668290427" miny="-413637.6526375618" maxx="7532709.311602308" maxy="344872.3993787784"/>
+                <BoundingBox CRS="EPSG:3017" minx="6116632.693012238" miny="-508431.8664584587" maxx="7544484.469736001" maxy="280415.3446545128"/>
+                <BoundingBox CRS="EPSG:3018" minx="6117879.8294821475" miny="-603059.8416428103" maxx="7557802.971683318" maxy="215895.39877653855"/>
+                <BoundingBox CRS="EPSG:3021" minx="6131264.835633096" miny="1217980.552826681" maxx="7506269.826063218" maxy="1885218.191743598"/>
+                <BoundingBox CRS="EPSG:4326" minx="55.174179857645974" miny="9.582256896287126" maxx="67.62115351005012" maxy="24.78122129121796"/>
+                <BoundingBox CRS="EPSG:4258" minx="55.174179823956685" miny="9.582256896287126" maxx="67.62115349604642" maxy="24.781221291217967"/>
+                <BoundingBox CRS="EPSG:900913" minx="1066691.958345017" miny="7395744.520406752" maxx="2758632.935373813" maxy="1.0335328360844133E7"/>
+                <MetadataURL type="ISO19115:2003">
+                    <Format>text/plain</Format>
+                    <OnlineResource xlink:type="simple"
+                        xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=2410c2e5-2a0e-4a47-9273-b7b77517420a&amp;outputSchema=csw:IsoRecord"
+                    />
+                </MetadataURL>
+                <Style>
+                    <Name>JORD_25K_Ytlager_jy1</Name>
+                    <Title>jkar_abcdg_jy1_vy</Title>
+                    <Abstract>A sample style that just draws out a solid gray interior with a black
+                        1px outline</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:type="simple"
+                            xlink:href="https://maps3.sgu.se/geoserver/jord/SE.GOV.SGU.JORD.YTLAGER_JY1.25K/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.JORD.YTLAGER_JY1.25K"
+                        />
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>jord:SE.GOV.SGU.JORD.YTLAGER_JY0.25K</Name>
+                <Title>Jordart, tunt eller osammanhängande översta ytlager</Title>
+                <Abstract>Jordart, tunt eller osammanhängande översta ytlager</Abstract>
+                <KeywordList>
+                    <Keyword>Jordart</Keyword>
+                    <Keyword>features</Keyword>
+                </KeywordList>
+                <CRS>EPSG:3006</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>12.234980533529805</westBoundLongitude>
+                    <eastBoundLongitude>23.864446849590486</eastBoundLongitude>
+                    <southBoundLatitude>57.80030542186817</southBoundLatitude>
+                    <northBoundLatitude>66.30671060855356</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="CRS:84" minx="12.418361123529202" miny="57.83192195988569" maxx="23.51679648562451" maxy="66.30717589391269"/>
+                <BoundingBox CRS="EPSG:3006" minx="6428433.0" miny="384175.0" maxx="7354337.0" maxy="884473.6875"/>
+                <BoundingBox CRS="EPSG:2400" minx="6426067.297983107" miny="1336508.6636555113" maxx="7358379.906266497" maxy="1848437.3812559578"/>
+                <BoundingBox CRS="EPSG:3007" minx="6429800.479984393" miny="168781.43235806486" maxx="7378981.992772917" maxy="712091.7639309188"/>
+                <BoundingBox CRS="EPSG:3008" minx="6429417.942872267" miny="101443.78345525806" maxx="7367318.726603508" maxy="623431.4038525044"/>
+                <BoundingBox CRS="EPSG:3009" minx="6431005.402160864" miny="34128.65146058425" maxx="7357279.911964785" maxy="534627.5385154061"/>
+                <BoundingBox CRS="EPSG:3010" minx="6423452.2029556725" miny="-54569.54992638022" maxx="7360864.940869023" maxy="467139.1949851039"/>
+                <BoundingBox CRS="EPSG:3011" minx="6417879.186793089" miny="-143206.1671886358" maxx="7366063.952527502" maxy="399503.8787455217"/>
+                <BoundingBox CRS="EPSG:3012" minx="6429965.397847034" miny="67781.45043894986" maxx="7362096.243588548" maxy="579045.6599833362"/>
+                <BoundingBox CRS="EPSG:3013" minx="6426981.076370431" miny="-10226.467516631528" maxx="7358870.672720119" maxy="500903.72471895936"/>
+                <BoundingBox CRS="EPSG:3014" minx="6420418.360706476" miny="-98897.24042893355" maxx="7363262.705439921" maxy="433337.9238679221"/>
+                <BoundingBox CRS="EPSG:3015" minx="6415834.376567183" miny="-187492.9382964687" maxx="7369268.664896088" maxy="365641.0134211633"/>
+                <BoundingBox CRS="EPSG:3016" minx="6413226.922305104" miny="-275986.32408669003" maxx="7376888.3970478745" maxy="297844.5790790599"/>
+                <BoundingBox CRS="EPSG:3017" minx="6412594.7404052885" miny="-364349.72509640834" maxx="7386121.678213732" maxy="229980.0406119789"/>
+                <BoundingBox CRS="EPSG:3018" minx="6413937.525416107" miny="-452554.91843319417" maxx="7396968.19499171" maxy="162078.70367443777"/>
+                <BoundingBox CRS="EPSG:3021" minx="6426067.297983107" miny="1336508.6636555113" maxx="7358379.906266497" maxy="1848437.3812559578"/>
+                <BoundingBox CRS="EPSG:4326" minx="57.831921990614426" miny="12.418361123529204" maxx="66.30872186929065" maxy="23.51679648562451"/>
+                <BoundingBox CRS="EPSG:4258" minx="57.831921960735265" miny="12.418361123529202" maxx="66.30872185324245" maxy="23.51679648562451"/>
+                <BoundingBox CRS="EPSG:900913" minx="1382405.6367582555" miny="7932092.163039375" maxx="2617877.809868766" maxy="9961855.641820334"/>
+                <MetadataURL type="ISO19115:2003">
+                    <Format>text/plain</Format>
+                    <OnlineResource xlink:type="simple"
+                        xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=2410c2e5-2a0e-4a47-9273-b7b77517420a&amp;outputSchema=csw:IsoRecord"
+                    />
+                </MetadataURL>
+                <Style>
+                    <Name>JORD_25K_Ytlager_jy0</Name>
+                    <Title>jkar_abcdg_jy0_vy</Title>
+                    <Abstract>A sample style that just draws out a solid gray interior with a black
+                        1px outline</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:type="simple"
+                            xlink:href="https://maps3.sgu.se/geoserver/jord/SE.GOV.SGU.JORD.YTLAGER_JY0.25K/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.JORD.YTLAGER_JY0.25K"
+                        />
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>jord:SE.GOV.SGU.JORD.BLOCKIGHET.25K</Name>
+                <Title>Blockighet i markytan</Title>
+                <Abstract>Blockighet i markytan</Abstract>
+                <KeywordList>
+                    <Keyword>Blockighet</Keyword>
+                    <Keyword>features</Keyword>
+                </KeywordList>
+                <CRS>EPSG:3006</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>9.57150550183441</westBoundLongitude>
+                    <eastBoundLongitude>24.689978710428793</eastBoundLongitude>
+                    <southBoundLatitude>55.314834370755264</southBoundLatitude>
+                    <northBoundLatitude>67.60615801062615</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="CRS:84" minx="9.57150550183441" miny="55.314834370755264" maxx="24.689978710428793" maxy="67.60615801062615"/>
+                <BoundingBox CRS="EPSG:3006" minx="6149409.5" miny="268572.59375" maxx="7499002.5" maxy="915636.5"/>
+                <BoundingBox CRS="EPSG:2400" minx="6146709.648725153" miny="1217552.3281543623" maxx="7504614.35220059" maxy="1881476.2715841178"/>
+                <BoundingBox CRS="EPSG:3007" minx="6145977.1462198645" miny="46339.210495688225" maxx="7525260.432761218" maxy="755599.7832953134"/>
+                <BoundingBox CRS="EPSG:3008" minx="6147899.477200852" miny="-17631.12730122474" maxx="7512853.717537501" maxy="660764.6756110376"/>
+                <BoundingBox CRS="EPSG:3009" minx="6151870.24809924" miny="-81520.01425570226" maxx="7502003.301320528" maxy="565802.8211284514"/>
+                <BoundingBox CRS="EPSG:3010" minx="6143924.197985244" miny="-176365.94150111667" maxx="7508382.687113471" maxy="501775.83208181034"/>
+                <BoundingBox CRS="EPSG:3011" minx="6138036.040735971" miny="-271131.3517446023" maxx="7516309.764793404" maxy="437577.9120497607"/>
+                <BoundingBox CRS="EPSG:3012" minx="6149628.679350316" miny="-49587.702730933204" maxx="7507233.901010109" maxy="613298.0414017033"/>
+                <BoundingBox CRS="EPSG:3013" minx="6147639.6973777795" miny="-128951.55019495863" maxx="7504999.492870215" maxy="533812.6690782617"/>
+                <BoundingBox CRS="EPSG:3014" minx="6140723.15126164" miny="-223760.21070527186" maxx="7512152.806937882" maxy="469696.2596382351"/>
+                <BoundingBox CRS="EPSG:3015" minx="6135862.431819336" miny="-318476.3257790603" maxx="7520853.4619582705" maxy="405424.7362364627"/>
+                <BoundingBox CRS="EPSG:3016" minx="6133054.392622523" miny="-413075.4284188424" maxx="7531100.61958167" maxy="341029.6285442321"/>
+                <BoundingBox CRS="EPSG:3017" minx="6132297.21033421" miny="-507532.39273573924" maxx="7542893.240870461" maxy="276542.294181708"/>
+                <BoundingBox CRS="EPSG:3018" minx="6133590.392588637" miny="-601821.2987551541" maxx="7556230.06116155" maxy="211993.96146569506"/>
+                <BoundingBox CRS="EPSG:3021" minx="6146709.648725153" miny="1217552.3281543623" maxx="7504614.35220059" maxy="1881476.2715841178"/>
+                <BoundingBox CRS="EPSG:4326" minx="55.31483440513936" miny="9.57150550183441" maxx="67.6061580253164" maxy="24.689978710428793"/>
+                <BoundingBox CRS="EPSG:4258" minx="55.31483437163749" miny="9.57150550183441" maxx="67.60615801128985" maxy="24.689978710428793"/>
+                <BoundingBox CRS="EPSG:900913" minx="1065495.118589223" miny="7423210.377193774" maxx="2748475.8577416986" maxy="1.0330945297334688E7"/>
+                <MetadataURL type="ISO19115:2003">
+                    <Format>text/plain</Format>
+                    <OnlineResource xlink:type="simple"
+                        xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=2410c2e5-2a0e-4a47-9273-b7b77517420a&amp;outputSchema=csw:IsoRecord"
+                    />
+                </MetadataURL>
+                <Style>
+                    <Name>JORD_25K_Blockighet</Name>
+                    <Title>jkar_bl_vy</Title>
+                    <Abstract>A sample style that just draws out a solid gray interior with a black
+                        1px outline</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:type="simple"
+                            xlink:href="https://maps3.sgu.se/geoserver/jord/SE.GOV.SGU.JORD.BLOCKIGHET.25K/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.JORD.BLOCKIGHET.25K"
+                        />
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>jord:SE.GOV.SGU.JORD.LINJER.25K</Name>
+                <Title>Linjeobjekt</Title>
+                <Abstract>Linjeobjekt</Abstract>
+                <KeywordList>
+                    <Keyword>Linjeobjekt</Keyword>
+                    <Keyword>features</Keyword>
+                </KeywordList>
+                <CRS>EPSG:3006</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>9.575237391630544</westBoundLongitude>
+                    <eastBoundLongitude>24.790133507427228</eastBoundLongitude>
+                    <southBoundLatitude>55.21900508830982</southBoundLatitude>
+                    <northBoundLatitude>67.62469317914531</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="CRS:84" minx="9.575237391630544" miny="55.21900508830982" maxx="24.790133507427228" maxy="67.62469317914531"/>
+                <BoundingBox CRS="EPSG:3006" minx="6139058.0" miny="268913.125" maxx="7501060.0" maxy="919683.0"/>
+                <BoundingBox CRS="EPSG:2400" minx="6136312.762705089" miny="1217772.9180115093" maxx="7506668.502174038" maxy="1885549.5224382048"/>
+                <BoundingBox CRS="EPSG:3007" minx="6135652.373046222" miny="46579.732237799006" maxx="7527516.314927456" maxy="760103.2221058278"/>
+                <BoundingBox CRS="EPSG:3008" minx="6137558.0184312" miny="-17340.48817007974" maxx="7515011.207027105" maxy="665040.4557953511"/>
+                <BoundingBox CRS="EPSG:3009" minx="6141514.605842336" miny="-81179.34673869546" maxx="7504061.624649859" maxy="569850.9403761504"/>
+                <BoundingBox CRS="EPSG:3010" minx="6133492.5919630965" miny="-176248.82476488687" maxx="7510432.992672436" maxy="505870.18540509866"/>
+                <BoundingBox CRS="EPSG:3011" minx="6127531.2616244545" miny="-271238.4959108322" maxx="7518351.031309499" maxy="441716.3980675187"/>
+                <BoundingBox CRS="EPSG:3012" minx="6139279.815429197" miny="-49272.03797164778" maxx="7509341.902535104" maxy="617459.9987865656"/>
+                <BoundingBox CRS="EPSG:3013" minx="6137245.718486737" miny="-128722.57831194345" maxx="7507053.934617795" maxy="537884.1678622749"/>
+                <BoundingBox CRS="EPSG:3014" minx="6130254.615541134" miny="-223755.1266609588" maxx="7514198.721010136" maxy="473812.9415627411"/>
+                <BoundingBox CRS="EPSG:3015" minx="6125322.085406278" miny="-318695.9115685181" maxx="7522889.823999513" maxy="409584.50312295964"/>
+                <BoundingBox CRS="EPSG:3016" minx="6122444.903567319" miny="-413520.6087449171" maxx="7533126.39813962" maxy="345230.3918676564"/>
+                <BoundingBox CRS="EPSG:3017" minx="6121621.183266053" miny="-508204.23305248364" maxx="7544907.396199407" maxy="280781.97258079704"/>
+                <BoundingBox CRS="EPSG:3018" minx="6122850.3835389195" miny="-602721.0025974958" maxx="7558231.544081253" maxy="216270.47812175984"/>
+                <BoundingBox CRS="EPSG:3021" minx="6136312.762705089" miny="1217772.9180115093" maxx="7506668.502174038" maxy="1885549.5224382048"/>
+                <BoundingBox CRS="EPSG:4326" minx="55.219005122822914" miny="9.575237391630544" maxx="67.6246931938069" maxy="24.790133507427228"/>
+                <BoundingBox CRS="EPSG:4258" minx="55.21900508919316" miny="9.575237391630544" maxx="67.62469317980857" maxy="24.790133507427228"/>
+                <BoundingBox CRS="EPSG:900913" minx="1065910.550661025" miny="7404487.083561349" maxx="2759625.038744068" maxy="1.0336363389298119E7"/>
+                <MetadataURL type="ISO19115:2003">
+                    <Format>text/plain</Format>
+                    <OnlineResource xlink:type="simple"
+                        xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=2410c2e5-2a0e-4a47-9273-b7b77517420a&amp;outputSchema=csw:IsoRecord"
+                    />
+                </MetadataURL>
+                <Style>
+                    <Name>JORD_25K_Linjer</Name>
+                    <Title>jkar_abcdg_sl_vy</Title>
+                    <Abstract>Default line style, 1 pixel wide blue</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:type="simple"
+                            xlink:href="https://maps3.sgu.se/geoserver/jord/SE.GOV.SGU.JORD.LINJER.25K/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.JORD.LINJER.25K"
+                        />
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>jord:SE.GOV.SGU.JORD.PUNKTER.25K</Name>
+                <Title>Punktobjekt</Title>
+                <Abstract>Punktobjekt</Abstract>
+                <KeywordList>
+                    <Keyword>Punktobjekt</Keyword>
+                    <Keyword>features</Keyword>
+                </KeywordList>
+                <CRS>EPSG:3006</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>9.567114092801864</westBoundLongitude>
+                    <eastBoundLongitude>24.707086045127262</eastBoundLongitude>
+                    <southBoundLatitude>55.22511276078166</southBoundLatitude>
+                    <northBoundLatitude>67.62017108022533</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="CRS:84" minx="9.567114092801864" miny="55.22511276078166" maxx="24.707086045127262" maxy="67.62017108022533"/>
+                <BoundingBox CRS="EPSG:3006" minx="6139406.5" miny="268521.5625" maxx="7500564.0" maxy="916137.0"/>
+                <BoundingBox CRS="EPSG:2400" minx="6136702.349189529" miny="1217385.1403137997" maxx="7506177.342985653" maxy="1881997.1175790727"/>
+                <BoundingBox CRS="EPSG:3007" minx="6135983.602874812" miny="46212.681010820656" maxx="7526847.39766077" maxy="756535.526594886"/>
+                <BoundingBox CRS="EPSG:3008" minx="6137897.98880826" miny="-17719.95929493336" maxx="7514428.634345187" maxy="661482.4709720431"/>
+                <BoundingBox CRS="EPSG:3009" minx="6141863.245298119" miny="-81571.06592637056" maxx="7503565.426170467" maxy="566303.5214085634"/>
+                <BoundingBox CRS="EPSG:3010" minx="6133917.318073746" miny="-176633.18041444523" maxx="7509946.232256723" maxy="502313.92902943515"/>
+                <BoundingBox CRS="EPSG:3011" minx="6128031.740898647" miny="-271615.37015177053" maxx="7517873.965338039" maxy="438153.0606165933"/>
+                <BoundingBox CRS="EPSG:3012" minx="6139624.128968613" miny="-49657.65472043681" maxx="7508802.5141922105" maxy="613907.1910740526"/>
+                <BoundingBox CRS="EPSG:3013" minx="6137632.446184615" miny="-129110.63006660441" maxx="7506562.423162109" maxy="534332.1105933245"/>
+                <BoundingBox CRS="EPSG:3014" minx="6130717.256707122" miny="-224135.7567457264" maxx="7513716.7757254485" maxy="470252.9256539855"/>
+                <BoundingBox CRS="EPSG:3015" minx="6125860.332229973" miny="-319068.9988360325" maxx="7522417.701628592" maxy="406018.2806824383"/>
+                <BoundingBox CRS="EPSG:3016" minx="6123058.499218335" miny="-413886.02512201644" maxx="7532664.356316272" maxy="341659.704083212"/>
+                <BoundingBox CRS="EPSG:3017" minx="6122309.921332169" miny="-508561.84305947565" maxx="7544455.69364123" maxy="277208.55207538826"/>
+                <BoundingBox CRS="EPSG:3018" minx="6123614.107254692" miny="-603070.6628862813" maxx="7557790.440750254" maxy="212696.05134455793"/>
+                <BoundingBox CRS="EPSG:3021" minx="6136702.349189529" miny="1217385.1403137997" maxx="7506177.342985653" maxy="1881997.1175790727"/>
+                <BoundingBox CRS="EPSG:4326" minx="55.22511279528654" miny="9.567114092801864" maxx="67.62017109489393" maxy="24.707086045127262"/>
+                <BoundingBox CRS="EPSG:4258" minx="55.225112761664924" miny="9.567114092801864" maxx="67.62017108088871" maxy="24.707086045127262"/>
+                <BoundingBox CRS="EPSG:900913" minx="1065006.269171855" miny="7405679.064822126" maxx="2750380.2375291623" maxy="1.0335041123267919E7"/>
+                <MetadataURL type="ISO19115:2003">
+                    <Format>text/plain</Format>
+                    <OnlineResource xlink:type="simple"
+                        xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=2410c2e5-2a0e-4a47-9273-b7b77517420a&amp;outputSchema=csw:IsoRecord"
+                    />
+                </MetadataURL>
+                <Style>
+                    <Name>JORD_25K_Punkter</Name>
+                    <Title>jkar_sp</Title>
+                    <Abstract>A sample style that just prints out a 6px wide red square</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:type="simple"
+                            xlink:href="https://maps3.sgu.se/geoserver/jord/SE.GOV.SGU.JORD.PUNKTER.25K/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.JORD.PUNKTER.25K"
+                        />
+                    </LegendURL>
+                </Style>
+            </Layer>
+
+        </Layer>
+    </Capability>
+</WMS_Capabilities>

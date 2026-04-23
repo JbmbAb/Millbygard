@@ -1,0 +1,8 @@
+tellraw @s [{"text":"\n=== Millbygard Manifest ===\n","color":"gold","bold":true},{"text":"Senast genererade kartlager och launch-funktioner.\n","color":"white"}]
+tellraw @s [{"text":"Ortofoto 1:1: ","color":"green","bold":true},{"text":"29989 block, x -71..108, z -352..1, y 64. Vattenfarger = blue_concrete.","color":"white"}]
+tellraw @s [{"text":"Narzon 1:1: ","color":"dark_green","bold":true},{"text":"250000 block, x -250..249, z -287..212, y 64. Egen knapp 500M.","color":"white"}]
+tellraw @s [{"text":"Topografi 2 km: ","color":"yellow","bold":true},{"text":"1 block = 20 m, x -105..105, z 211..429, y 90..94.","color":"white"}]
+tellraw @s [{"text":"Topografi-lager: ","color":"aqua","bold":true},{"text":"vagar 447, mark 976, byggnadsverk 469, hydrografi 71, text 22, byggnad vid workarea 1.","color":"white"}]
+tellraw @s [{"text":"Minecraft-celler: ","color":"light_purple","bold":true},{"text":"hydro 1754, byggnader 616, fastighetslinje 63.","color":"white"}]
+tellraw @s [{"text":"Launch: ","color":"red","bold":true},{"text":"torn/control-panel har ORTO, 500M, SKYLT, START och TOPO. Chatten ar reserv om en knapp missas.","color":"white"}]
+tellraw @s [{"text":"Kommandon: ","color":"gold","bold":true},{"text":"[launch]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function millbygard:launch"}},{"text":"  "},{"text":"[tower]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function millbygard:tower"}},{"text":"  "},{"text":"[visual start]","color":"light_purple","bold":true,"clickEvent":{"action":"run_command","value":"/function millbygard:visual_start"}}]

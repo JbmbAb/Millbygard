@@ -1,0 +1,35 @@
+{
+  "project": "Millbygard",
+  "product": "Laserdata Nedladdning, skog",
+  "lantmateriet_order": "LM2026/051784",
+  "reason": "Avoid downloading the full 664.3 GB delivery. Select only the 2.5 x 2.5 km tile covering Orsa Stackmora 3:12.",
+  "workarea_bbox_wgs84": [
+    14.663559524,
+    61.133579762,
+    14.666859266,
+    61.136740396
+  ],
+  "matched_production_area": {
+    "omradesnamn": "20D026",
+    "status": "Pa lager (Klass 3)",
+    "status_source": "Lantmateriet Laserdata skog production status GeoJSON"
+  },
+  "selected_index_tile": {
+    "indexruta": "677_48_7500",
+    "legacy_expected_laz_filename": "67775_4800_25.laz",
+    "downloaded_laz_filename": "20D026_677_48_7500.laz",
+    "downloaded_laz_path": "01_data_raw/laserdata_skog/20D026_677_48_7500.laz",
+    "downloaded_tile_metadata_path": "01_data_raw/laserdata_skog/20D026_677_48_7500_tile.json",
+    "downloaded_strip_metadata_path": "01_data_raw/laserdata_skog/20D026_677_48_7500_strip.json",
+    "tile_bbox_sweref99_tm": [
+      480000.0,
+      6777500.0,
+      482500.0,
+      6780000.0
+    ],
+    "basis": "Same 2.5 km tile as the resolved markhojd item 677_48_7500 / 67775_4800_25.tif."
+  },
+  "geotorget_download_order_id": "9d388ae1-2b40-42d2-9d22-eab02cb61491",
+  "geotorget_delivery_status": "LYCKAD",
+  "next_step": "Use the downloaded LAZ tile for detailed terrain/forest processing; do not download the full 664.3 GB delivery."
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="sv">
+    <id>https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au</id>
+    <title>Inspire Administrative Units</title>
+    <subtitle>Fördefinierade datamängder för Inspire Administrative Units</subtitle>
+    <updated>2025-09-09T08:12:29+02:00</updated>
+    <link href="https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au" rel="self" type="application/atom+xml" hreflang="sv" title="Detta dokument"/>
+    <link href="https://www.geodata.se/geodataportalen/srv/swe/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=6cfd51fa-3b38-4c96-9849-3764ee7a703f&amp;outputSchema=csw:IsoRecord" rel="describedby" type="application/xml" hreflang="sv" title="Metadata, nedladdningstjänst för Inspire Administrative Units"/>
+    <link href="https://www.geodata.se/geodataportalen/GetMetaDataById?id=6cfd51fa-3b38-4c96-9849-3764ee7a703f" rel="describedby" type="text/html" hreflang="sv" title="Metadata, nedladdningstjänst för Inspire Administrative Units (HTML)"/>
+    <link href="https://www.geodata.se/geodataportalen/opensearch/swe/6cfd51fa-3b38-4c96-9849-3764ee7a703f/OpenSearchDescription.xml" rel="search" type="application/opensearchdescription+xml" hreflang="sv" title="Opensearch-dokument för Inspireanpassad nedladdningstjänst"/>
+    <rights>Produkten omfattas av upphovsrätt. Avtal för användning krävs, avgifter för användning tas ut.</rights>
+    <author>
+        <name>Geodatasupport</name>
+        <email>geodatasupport@lm.se</email>
+    </author>
+    <entry>
+        <id>https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au/sverige</id>
+        <title>Inspire Administrative Units, Sverige (sverige)</title>
+        <summary>Fördefinierad datamängd Inspire Administrative Units, Sverige (sverige)</summary>
+        <updated>2025-09-09T08:12:29+02:00</updated>
+        <inspire_dls:spatial_dataset_identifier_code>5133f778-432d-46e9-bd13-e2caff4cfe78</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>SE.LM.AU.sverige</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="https://api.lantmateriet.se/administrativindelning/atom/v1.1/inspire/au/sverige" rel="alternate" type="application/atom+xml" hreflang="sv" title="Inspire Administrative Units, Sverige (sverige)"/>
+        <link href="https://www.geodata.se/geodataportalen/srv/swe/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=1f185d81-c699-48e3-9ada-c9e1ae297557&amp;outputSchema=csw:IsoRecord" rel="describedby" type="application/xml" hreflang="sv" title="Metadata för datamängden Inspire Administrative Units"/>
+        <link href="https://www.geodata.se/geodataportalen/GetMetaDataById?id=1f185d81-c699-48e3-9ada-c9e1ae297557" rel="describedby" type="text/html" hreflang="sv" title="Metadata för datamängden Inspire Administrative Units (HTML)"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/3006" label="SWEREF99 TM"/>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+        <georss:polygon>10.41511815796339 54.060679728263736 6.319178214322216 71.90510855755623 29.28568567442299 71.56574032948714 22.617608907651288 53.90610084056238 10.41511815796339 54.060679728263736</georss:polygon>
+    </entry>
+</feed>

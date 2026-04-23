@@ -1,0 +1,59 @@
+[    1968ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://apimanager-ver.lantmateriet.se/devportal/site/public/locales/sv.json:0
+[    2364ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    3655ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    3657ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://apimanager-ver.lantmateriet.se/devportal/site/public/locales/sv.json:0
+[    4051ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    4052ms] [LOG] Error: Error: No partial token found,redirecting to Anonymous View @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/ProtectedApp.0db7ca223f595471b77c.bundle.js:0
+[    4627ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    6456ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    6596ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    6867ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    6868ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    6979ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://apimanager-ver.lantmateriet.se/devportal/apis/62c59c1d-41a9-493a-9011-b90ad6e571dc/test:0
+[    7230ms] [LOG] User not found. Token refreshing failed. @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    7231ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://apimanager-ver.lantmateriet.se/api/am/devportal/v3/subscriptions?apiId=62c59c1d-41a9-493a-9011-b90ad6e571dc&limit=25:0
+[    7232ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://apimanager-ver.lantmateriet.se/api/am/devportal/v3/key-managers:0
+[    7233ms] [ERROR] Attempted a call to a protected API without a proper access token @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    7234ms] [ERROR] Attempted a call to a protected API without a proper access token @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    7241ms] Error: No partial token found
+    at fetch.credentials (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:1:42067)
+    at new Promise (<anonymous>)
+    at d.getUserFromToken (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:1:42046)
+    at Object.responseInterceptor (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:34:17614)
+    at https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:27:42843
+    at https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:75:67621
+    at Generator.<anonymous> (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:36:1051)
+    at Generator.next (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:36:1950)
+    at o (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:20:8340)
+    at u (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:20:8539)
+[    7242ms] Error: No partial token found
+    at fetch.credentials (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:1:42067)
+    at new Promise (<anonymous>)
+    at d.getUserFromToken (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:1:42046)
+    at Object.responseInterceptor (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:34:17614)
+    at https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:27:42843
+    at https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:75:67621
+    at Generator.<anonymous> (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:36:1051)
+    at Generator.next (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:36:1950)
+    at o (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:20:8340)
+    at u (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:20:8539)
+[    7304ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://apimanager-ver.lantmateriet.se/api/am/devportal/v3/applications/:0
+[    7306ms] [ERROR] Attempted a call to a protected API without a proper access token @ https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:33
+[    7308ms] Error: No partial token found
+    at fetch.credentials (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:1:42067)
+    at new Promise (<anonymous>)
+    at d.getUserFromToken (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:1:42046)
+    at Object.responseInterceptor (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:34:17614)
+    at https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:27:42843
+    at https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:75:67621
+    at Generator.<anonymous> (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:36:1051)
+    at Generator.next (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:36:1950)
+    at o (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:20:8340)
+    at u (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:20:8539)
+[    7309ms] Error: response status is 401
+    at https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:27:43208
+    at https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:75:67621
+    at Generator.<anonymous> (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:36:1051)
+    at Generator.next (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:36:1950)
+    at o (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:20:8340)
+    at u (https://apimanager-ver.lantmateriet.se/devportal/site/public/dist/index.7f757c390ea8b67e1332.bundle.js:20:8539)

@@ -1,0 +1,49 @@
+{
+  "function": "millbygard:topografi_2km",
+  "minecraft_area": {
+    "x": [
+      -105,
+      105
+    ],
+    "y": [
+      90,
+      94
+    ],
+    "z": [
+      211,
+      429
+    ]
+  },
+  "tp_hint": "/tp @s 0 98 320",
+  "scale_m_per_block": 20.0,
+  "generated_functions": [
+    "topografi_2km",
+    "topografi_2km_land_0",
+    "topografi_2km_land_1",
+    "topografi_2km_land_2",
+    "topografi_2km_land_3",
+    "topografi_2km_land_4",
+    "topografi_2km_roads",
+    "topografi_2km_hydro",
+    "topografi_2km_buildings",
+    "topografi_2km_property"
+  ],
+  "land_cells": {
+    "Aker": 5530,
+    "Built": 1235,
+    "Forest": 30398,
+    "Industry": 707,
+    "Water": 963,
+    "Wetland": 489
+  },
+  "road_cells": {
+    "minecraft:coarse_dirt": 827,
+    "minecraft:dirt_path": 587,
+    "minecraft:gray_concrete": 66,
+    "minecraft:light_gray_concrete": 1442,
+    "minecraft:smooth_sandstone": 2031
+  },
+  "hydro_cells": 1754,
+  "building_cells": 616,
+  "property_outline_cells": 63
+}

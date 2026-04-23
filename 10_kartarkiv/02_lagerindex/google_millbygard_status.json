@@ -1,0 +1,58 @@
+{
+  "updated": "2026-04-13",
+  "scope": "Millbygard / ORSA STACKMORA 3:12",
+  "usage_note": "Google material is useful as visual reference only; do not use it as extracted GIS/raw Minecraft dataset.",
+  "satellite_static_images": [
+    {
+      "path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\exports\\satellite\\ORSA_STACKMORA_3_12_1_satellite.jpg",
+      "bytes": 178858
+    },
+    {
+      "path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\exports\\satellite\\ORSA_STACKMORA_3_12_2_satellite.jpg",
+      "bytes": 163619
+    },
+    {
+      "path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\exports\\satellite\\ORSA_STACKMORA_3_12_3_satellite.jpg",
+      "bytes": 206741
+    }
+  ],
+  "streetview_summary": {
+    "ok_count": 8,
+    "not_found_count": 4,
+    "ok_designations": [
+      "ORSA STACKMORA 3:12>1",
+      "ORSA STACKMORA 3:12>2"
+    ],
+    "not_found_designations": [
+      "ORSA STACKMORA 3:12>3"
+    ],
+    "latest_date_in_manifest": "2024-05"
+  },
+  "elevation_api": [
+    {
+      "designation": "ORSA STACKMORA 3:12>1",
+      "lat": 61.13414172435858,
+      "lon": 14.664895476089422,
+      "status": "OK",
+      "elevation_m": 228.0673217773438,
+      "resolution_m": 152.7032318115234
+    },
+    {
+      "designation": "ORSA STACKMORA 3:12>2",
+      "lat": 61.13482631140796,
+      "lon": 14.664319073134665,
+      "status": "OK",
+      "elevation_m": 221.6411590576172,
+      "resolution_m": 152.7032318115234
+    },
+    {
+      "designation": "ORSA STACKMORA 3:12>3",
+      "lat": 61.135792530917634,
+      "lon": 14.665285846329127,
+      "status": "OK",
+      "elevation_m": 214.5566253662109,
+      "resolution_m": 152.7032318115234
+    }
+  ],
+  "next_use": "Use satellite/streetview for manual visual checks only; keep Lantmateriet markhojd and public geodata as authoritative data sources."
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="sv">
+    <id>https://api.lantmateriet.se/ortnamn/atom/v1/</id>
+    <title>Ortnamn Nedladdning, Inspire</title>
+    <subtitle>Nedladdningstjänst för ortnamn med fördefinierade datamängder</subtitle>
+    <updated>2025-09-09T23:13:41+02:00</updated>
+    <link href="https://api.lantmateriet.se/ortnamn/atom/v1/" rel="self" type="application/atom+xml" hreflang="sv" title="Detta dokument"/>
+    <rights/>
+    <author/>
+    <entry>
+        <id>https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn</id>
+        <title>Inspire Geographical Names</title>
+        <updated>2025-09-09T23:13:41+02:00</updated>
+        <link href="https://api.lantmateriet.se/ortnamn/atom/v1/inspire/gn" rel="alternate" type="application/atom+xml" hreflang="sv" title="Inspire Geographical Names"/>
+    </entry>
+</feed>

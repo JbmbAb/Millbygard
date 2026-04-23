@@ -1,0 +1,111 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - banner [ref=e6]:
+      - generic [ref=e7]:
+        - link "Go to home page" [ref=e8] [cursor=pointer]:
+          - /url: /devportal/
+          - img "[object Object]" [ref=e9]
+        - navigation "primary navigation" [ref=e12]:
+          - link "APIs" [ref=e13] [cursor=pointer]:
+            - /url: /devportal/apis
+            - generic [ref=e14]:
+              - img [ref=e16]
+              - generic [ref=e23]: APIs
+          - link "Applications" [ref=e24] [cursor=pointer]:
+            - /url: /devportal/applications
+            - generic [ref=e25]:
+              - img [ref=e27]
+              - generic [ref=e39]: Applications
+        - combobox [ref=e42]:
+          - generic [ref=e43]:
+            - generic: Environment
+            - generic [ref=e44]:
+              - combobox "Environment" [ref=e45] [cursor=pointer]:
+                - option "All" [selected]
+                - option "Production"
+                - option "Prototyped"
+              - img
+            - generic [ref=e47]:
+              - img [ref=e49]
+              - textbox "Search APIs" [ref=e51]
+          - listbox
+        - button "Search Options" [ref=e52] [cursor=pointer]:
+          - img [ref=e54]
+        - button "user menu" [ref=e58] [cursor=pointer]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: person
+            - text: LMKE/bruc0003
+    - main [ref=e61]:
+      - generic [ref=e62]:
+        - iframe [ref=e63]:
+          
+        - navigation "Secondary Navigation" [ref=e163]:
+          - link "All applications" [ref=e164] [cursor=pointer]:
+            - /url: /devportal/applications
+            - img [ref=e165]
+          - link "Overview" [ref=e177] [cursor=pointer]:
+            - /url: /devportal/applications/e70836ad-5e7b-4923-8375-cf5ed41bf04d/overview
+            - img [ref=e178]
+            - paragraph [ref=e185]: Overview
+          - link "Production Keys" [ref=e187] [cursor=pointer]:
+            - /url: /devportal/applications/e70836ad-5e7b-4923-8375-cf5ed41bf04d/productionkeys/oauth
+            - img [ref=e188]
+            - paragraph [ref=e196]: Production Keys
+          - link "OAuth2 Tokens" [ref=e198] [cursor=pointer]:
+            - /url: /devportal/applications/e70836ad-5e7b-4923-8375-cf5ed41bf04d/productionkeys/oauth
+            - img [ref=e199]
+            - paragraph [ref=e201]: OAuth2 Tokens
+          - link "Subscriptions" [ref=e203] [cursor=pointer]:
+            - /url: /devportal/applications/e70836ad-5e7b-4923-8375-cf5ed41bf04d/subscriptions
+            - img [ref=e204]
+            - paragraph [ref=e210]: Subscriptions
+        - generic [ref=e211]:
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - link "Miljöbeslut" [ref=e216] [cursor=pointer]:
+                - /url: /devportal/applications/e70836ad-5e7b-4923-8375-cf5ed41bf04d/overview
+                - heading "Miljöbeslut" [level=4] [ref=e217]
+              - generic [ref=e219]: 15 Subscriptions
+            - link "[object Object]" [ref=e222] [cursor=pointer]:
+              - /url: /devportal/applications/e70836ad-5e7b-4923-8375-cf5ed41bf04d/edit/fromView
+              - button "[object Object]" [ref=e223]:
+                - generic [ref=e224]:
+                  - generic [ref=e225]: edit
+                  - generic [ref=e226]: Edit
+            - button "[object Object]" [ref=e229] [cursor=pointer]:
+              - generic [ref=e230]:
+                - generic [ref=e231]: delete
+                - generic [ref=e232]: Delete
+          - table [ref=e235]:
+            - rowgroup [ref=e236]:
+              - row "Description" [ref=e237]:
+                - cell "Description" [ref=e238]:
+                  - generic [ref=e239]:
+                    - generic [ref=e240]: description
+                    - generic [ref=e241]: Description
+                - cell [ref=e242]
+              - row "Business Plan _10PerMin_ Allows 10 request per minute(Allows 10 request per minute)" [ref=e243]:
+                - cell "Business Plan" [ref=e244]:
+                  - generic [ref=e245]:
+                    - generic [ref=e246]: settings_input_component
+                    - generic [ref=e247]: Business Plan
+                - cell "_10PerMin_ Allows 10 request per minute(Allows 10 request per minute)" [ref=e248]
+              - row "Workflow Status APPROVED" [ref=e249]:
+                - cell "Workflow Status" [ref=e250]:
+                  - generic [ref=e251]:
+                    - generic [ref=e252]: assignment_turned_in
+                    - generic [ref=e253]: Workflow Status
+                - cell "APPROVED" [ref=e254]
+              - row "Application Owner LMKE/bruc0003" [ref=e255]:
+                - cell "Application Owner" [ref=e256]:
+                  - generic [ref=e257]:
+                    - generic [ref=e258]: account_box
+                    - generic [ref=e259]: Application Owner
+                - cell "LMKE/bruc0003" [ref=e260]
+  - contentinfo [ref=e159]:
+    - paragraph [ref=e160]:
+      - link "Hjälp" [ref=e161] [cursor=pointer]:
+        - /url: https://apimanager-ver.lantmateriet.se/docs/
+      - text: "|"
+      - link "Lantmäteriet" [ref=e162] [cursor=pointer]:
+        - /url: https://lantmateriet.se

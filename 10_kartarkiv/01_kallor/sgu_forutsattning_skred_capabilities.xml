@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WMS_Capabilities xmlns:srv="http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd"
+  xmlns:gmd="http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd"
+  xmlns:gco="http://schemas.opengis.net/iso/19139/20060504/gco/gco.xsd"
+  xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0"
+  xmlns:gml="http://schemas.opengis.net/gml"
+  xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" version="1.3.0"
+  updateSequence="1421" xmlns="http://www.opengis.net/wms"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wms http://maps3.sgu.se:80/geoserver/schemas/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://maps3.sgu.se:80/geoserver/www/inspire/inspire_vs.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title>Förutsättningar för skred i finkornig jordart (visningstjänst)</Title>
+    <Abstract>Visningstjänsten visar datamängden Förutsättningar för skred i finkornig jordart och ger översiktlig information om förutsättningar för jordskred i finjord. Informationen är tänkt att användas i tidigt planeringsskede för att identifiera områden där skredfara kan förekomma och där ytterligare bedömningar/undersökningar kan behöva göras. Informationen bygger på en beräkningsalgoritm (Tryggvason, 2014) som utifrån jordartstyp (enligt SGUs produkt Jordarter 1:25 000 - 1:100 000), terrängmodell (Lantmäteriets nationella höjdmodell) och kritisk lutning (1:10) definierar markområden med finkornig jordart som har förutsättningar för jordskred.</Abstract>
+      <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>SGU</Keyword>
+      <Keyword>Geologi</Keyword>
+      <Keyword>Sveriges geologiska undersökning</Keyword>
+      <Keyword>Skred</Keyword>
+        <Keyword>Geological Survey of Sweden</Keyword>
+        <Keyword>Landslide</Keyword>
+    </KeywordList>
+    <OnlineResource xlink:type="simple" xlink:href="https://www.sgu.se"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>Kundservice (Customer Services)</ContactPerson>
+        <ContactOrganization>SGU - Sveriges geologiska undersökning (Geological Survey of Sweden -
+          SGU)</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>Kundservice (Customer Services)</ContactPosition>
+      <ContactAddress>
+        <AddressType>Postal</AddressType>
+        <Address>Box 670</Address>
+        <City>Uppsala</City>
+        <StateOrProvince/>
+        <PostCode>SE-751 28</PostCode>
+        <Country>Sverige</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone>+4618179000</ContactVoiceTelephone>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>kundservice@sgu.se</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>inga avgifter (NONE)</Fees>
+    <AccessConstraints>inga åtkomstrestriktioner (NONE)</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple"
+                xlink:href="https://resource.sgu.se/service/wms/130/forutsattning-skred-finkornig-jordart"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:type="simple"
+                xlink:href="https://resource.sgu.se/service/wms/130/forutsattning-skred-finkornig-jordart"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>text/html; subtype=openlayers</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/misc/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>text/xml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:type="simple"
+                xlink:href="https://maps3.sgu.se/geoserver/misc/ows?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+    </Exception>
+    <inspire_vs:ExtendedCapabilities>
+      <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+        <inspire_common:URL>
+          https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=e989fc1b-cf56-44ba-a5c2-10960b78f3f3&amp;outputSchema=csw:IsoRecord </inspire_common:URL>
+        <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
+      </inspire_common:MetadataUrl>
+      <inspire_common:SupportedLanguages xsi:type="inspire_common:supportedLanguagesType">
+        <inspire_common:DefaultLanguage>
+          <inspire_common:Language>swe</inspire_common:Language>
+        </inspire_common:DefaultLanguage>
+        <inspire_common:SupportedLanguage>
+          <inspire_common:Language>swe</inspire_common:Language>
+        </inspire_common:SupportedLanguage>
+      </inspire_common:SupportedLanguages>
+      <inspire_common:ResponseLanguage>
+        <inspire_common:Language>swe</inspire_common:Language>
+      </inspire_common:ResponseLanguage>
+    </inspire_vs:ExtendedCapabilities>
+    <Layer>
+      <Title>Förutsättningar för skred i finkornig jordart</Title>
+      <Abstract>Visningstjänsten visar datamängden Förutsättningar för skred i finkornig jordart och ger översiktlig information om förutsättningar för jordskred i finjord. Informationen är tänkt att användas i tidigt planeringsskede för att identifiera områden där skredfara kan förekomma och där ytterligare bedömningar/undersökningar kan behöva göras. Informationen bygger på en beräkningsalgoritm (Tryggvason, 2014) som utifrån jordartstyp (enligt SGUs produkt Jordarter 1:25 000 - 1:100 000), terrängmodell (Lantmäteriets nationella höjdmodell) och kritisk lutning (1:10) definierar markområden med finkornig jordart som har förutsättningar för jordskred.</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:2400</CRS>
+      <CRS>EPSG:3006</CRS>
+      <CRS>EPSG:3007</CRS>
+      <CRS>EPSG:3008</CRS>
+      <CRS>EPSG:3009</CRS>
+      <CRS>EPSG:3010</CRS>
+      <CRS>EPSG:3011</CRS>
+      <CRS>EPSG:3012</CRS>
+      <CRS>EPSG:3013</CRS>
+      <CRS>EPSG:3014</CRS>
+      <CRS>EPSG:3015</CRS>
+      <CRS>EPSG:3016</CRS>
+      <CRS>EPSG:3017</CRS>
+      <CRS>EPSG:3018</CRS>
+      <CRS>EPSG:3021</CRS>
+      <CRS>EPSG:4258</CRS>
+      <CRS>EPSG:4326</CRS>
+      <CRS>EPSG:900913</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>9.341875517008445</westBoundLongitude>
+        <eastBoundLongitude>24.81665765089399</eastBoundLongitude>
+        <southBoundLatitude>55.05955514274499</southBoundLatitude>
+        <northBoundLatitude>67.62493597819315</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" minx="9.341875517008445" miny="55.05955514274499"
+        maxx="24.81665765089399" maxy="67.62493597819315"/>
+      <BoundingBox CRS="EPSG:2400" minx="6103836.151181453" miny="1087014.9746317486"
+        maxx="7531109.269167568" maxy="2074722.767117179"/>
+      <BoundingBox CRS="EPSG:3006" minx="6101532.861450343" miny="138796.87258129253"
+        maxx="7534072.884042601" maxy="1125960.182928706"/>
+      <BoundingBox CRS="EPSG:3007" minx="6103863.0869030645" miny="-19831.380189656542"
+        maxx="7560351.769671395" maxy="966579.7049697932"/>
+      <BoundingBox CRS="EPSG:3008" minx="6103898.526533209" miny="-115621.03335549135"
+        maxx="7547950.340279058" maxy="871485.1481656228"/>
+      <BoundingBox CRS="EPSG:3009" minx="6103974.451230835" miny="-211347.66648530157"
+        maxx="7537087.7191302525" maxy="776210.667195584"/>
+      <BoundingBox CRS="EPSG:3010" minx="6104013.619994604" miny="-306987.98853503214"
+        maxx="7527765.092412" maxy="680782.2035532712"/>
+      <BoundingBox CRS="EPSG:3011" minx="6104247.760353079" miny="-402518.19657956157"
+        maxx="7529751.901230776" maxy="585224.8045999785"/>
+      <BoundingBox CRS="EPSG:3012" minx="6103888.835248016" miny="-163493.6727181503"
+        maxx="7542326.599135726" maxy="823868.7542671793"/>
+      <BoundingBox CRS="EPSG:3013" minx="6104574.345813534" miny="-259180.09047914937"
+        maxx="7532233.841131824" maxy="728514.0984242645"/>
+      <BoundingBox CRS="EPSG:3014" minx="6103873.559297108" miny="-354768.3682268483"
+        maxx="7525492.985550768" maxy="633018.0866547226"/>
+      <BoundingBox CRS="EPSG:3015" minx="6104237.445155623" miny="-450234.39576728793"
+        maxx="7534396.010061152" maxy="537405.3713700492"/>
+      <BoundingBox CRS="EPSG:3016" minx="6104020.222835425" miny="-545553.3451654122"
+        maxx="7544839.313267082" maxy="441699.9186141695"/>
+      <BoundingBox CRS="EPSG:3017" minx="6103968.883101078" miny="-640699.5322703365"
+        maxx="7556821.770826856" maxy="345925.14531299064"/>
+      <BoundingBox CRS="EPSG:3018" minx="6104328.833574907" miny="-735646.277027133"
+        maxx="7570342.021496255" maxy="250104.0557414576"/>
+      <BoundingBox CRS="EPSG:3021" minx="6103836.151181453" miny="1087014.9746317486"
+        maxx="7531109.269167568" maxy="2074722.767117179"/>
+      <BoundingBox CRS="EPSG:4326" minx="55.05955514274499" miny="9.341875517008445"
+        maxx="67.62493597819315" maxy="24.81665765089399"/>
+      <BoundingBox CRS="EPSG:4258" minx="55.059555143630156" miny="9.341875517008445"
+        maxx="67.62493597885641" maxy="24.81665765089399"/>
+      <BoundingBox CRS="EPSG:900913" minx="1039932.8256075293" miny="7373433.141531382"
+        maxx="2762577.6928885155" maxy="1.0336434386854272E7"/>
+      <AuthorityURL name="SGU">
+        <OnlineResource xlink:type="simple" xlink:href="https://resource.sgu.se"/>
+      </AuthorityURL>
+	  <Layer queryable="1" opaque="0">
+        <Name>SE.GOV.SGU.FORUTSATTNING_SKRED_FINKORNING_JORDART.TACKNINGSKARTA</Name>
+        <Title>Täckningsområde med information om karttyp</Title>
+	    <Abstract>Innehåller täckningskarta för den jordartsinformation och höjddata som analysen baserats på</Abstract>
+        <KeywordList>
+          <Keyword>Täckningskarta</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+	    <EX_GeographicBoundingBox>
+	      <westBoundLongitude>9.842035440379936</westBoundLongitude>
+	      <eastBoundLongitude>21.460590646143512</eastBoundLongitude>
+	      <southBoundLatitude>55.14565000416865</southBoundLatitude>
+	      <northBoundLatitude>65.29895957227745</northBoundLatitude>
+	    </EX_GeographicBoundingBox>
+	    <BoundingBox CRS="CRS:84" minx="9.842035440379936" miny="55.14565000416865" maxx="21.460590646143512" maxy="65.29895957227745"/>
+	    <BoundingBox CRS="EPSG:3006" minx="6121288.0" miny="258907.734375" maxx="7241933.5" maxy="802404.9375"/>
+	    <BoundingBox CRS="EPSG:2400" minx="6119903.004660438" miny="1207554.8716920945" maxx="7247529.898461228" maxy="1764921.6832057717"/>
+	    <BoundingBox CRS="EPSG:3007" minx="6117472.922241989" miny="49019.561701703016" maxx="7262571.442388584" maxy="643407.5223075933"/>
+	    <BoundingBox CRS="EPSG:3008" minx="6119577.4378364105" miny="-21122.697330731113" maxx="7252865.496702812" maxy="548014.8060290441"/>
+	    <BoundingBox CRS="EPSG:3009" minx="6123737.494998001" miny="-91188.74112144863" maxx="7244831.432573031" maxy="452525.9478791517"/>
+	    <BoundingBox CRS="EPSG:3010" minx="6118258.551525949" miny="-186645.96738353814" maxx="7251403.905928139" maxy="382417.6454224684"/>
+	    <BoundingBox CRS="EPSG:3011" minx="6114837.647199319" miny="-282022.02709922" maxx="7259645.498587313" maxy="312205.8416948744"/>
+	    <BoundingBox CRS="EPSG:3012" minx="6121400.384284983" miny="-56167.20773544602" maxx="7248639.494917901" maxy="500280.90754744364"/>
+	    <BoundingBox CRS="EPSG:3013" minx="6120740.574408416" miny="-138926.0297886501" maxx="7247909.042798146" maxy="417486.7050238034"/>
+	    <BoundingBox CRS="EPSG:3014" minx="6116291.017353672" miny="-234345.6207655596" maxx="7255316.048553777" maxy="347322.7133826604"/>
+	    <BoundingBox CRS="EPSG:3015" minx="6113898.200896664" miny="-329672.1896106893" maxx="7264392.28444946" maxy="277070.9528137757"/>
+	    <BoundingBox CRS="EPSG:3016" minx="6113560.543236762" miny="-424881.6008451142" maxx="7275137.975305924" maxy="206762.77259023057"/>
+	    <BoundingBox CRS="EPSG:3017" minx="6115277.820921122" miny="-519949.03953493154" maxx="7287553.328294586" maxy="136429.4152901699"/>
+	    <BoundingBox CRS="EPSG:3018" minx="6119051.169781463" miny="-614848.8740146718" maxx="7301638.503050991" maxy="66102.07576917346"/>
+	    <BoundingBox CRS="EPSG:3021" minx="6119903.004660438" miny="1207554.8716920945" maxx="7247529.898461228" maxy="1764921.6832057717"/>
+	    <BoundingBox CRS="EPSG:3034" minx="3142744.9126783162" miny="3992598.4813537523" maxx="4275073.01920447" maxy="4600099.837064849"/>
+	    <BoundingBox CRS="EPSG:3857" minx="1095610.373592446" miny="7390185.283144478" maxx="2388982.0228515863" maxy="9687563.022972442"/>
+	    <BoundingBox CRS="EPSG:4326" minx="55.14565003878039" miny="9.842035440379936" maxx="65.2989595906654" maxy="21.460590646143512"/>
+	    <BoundingBox CRS="EPSG:4258" minx="55.145650005053305" miny="9.842035440379936" maxx="65.29895957299287" maxy="21.460590646143512"/>
+	    <BoundingBox CRS="EPSG:900913" minx="1095610.373592446" miny="7390185.283144478" maxx="2388982.0228515863" maxy="9687563.022972442"/>
+	    <BoundingBox CRS="EPSG:25833" minx="258907.73437499994" miny="6121288.000000001" maxx="802404.9375000001" maxy="7241933.500000002"/>
+        <Style>
+          <Name>JORD_25K_Forutsattning_skred_finkornig_jordart_tackning</Name>
+          <Title>Karttyp</Title>
+          <Abstract>Täckningskarta från Jordarter 25K-100K</Abstract>
+          <LegendURL width="531" height="130">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+              xlink:href="https://maps3.sgu.se/geoserver/misc/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.FORUTSATTNING_SKRED_FINKORNING_JORDART.TACKNINGSKARTA"
+            />
+          </LegendURL>
+        </Style>
+        <MinScaleDenominator>1.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.5E7</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>SE.GOV.SGU.FORUTSATTNING_SKRED_FINKORNING_JORDART</Name>
+        <Title>Aktsamhetsområden - Efterarbetad lutningsanalys</Title>
+        <Abstract>Beräknat och klassat aktsamhetsområde baserat på lutningsanalys</Abstract>
+        <KeywordList>
+          <Keyword>aktsamhetsområde</Keyword>
+          <Keyword>skred</Keyword>
+        </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>9.341875517008445</westBoundLongitude>
+          <eastBoundLongitude>24.81665765089399</eastBoundLongitude>
+          <southBoundLatitude>55.05955514274499</southBoundLatitude>
+          <northBoundLatitude>67.62442598918513</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="9.341875517008445" miny="55.05955514274499"
+          maxx="24.81665765089399" maxy="67.62442598918513"/>
+        <BoundingBox CRS="EPSG:3006" minx="6121305.5" miny="258914.359375" maxx="7501071.5"
+          maxy="920839.0625"/>
+        <BoundingBox CRS="EPSG:2400" minx="6118549.66455919" miny="1207561.7038225355"
+          maxx="7506810.322899066" maxy="1886705.712705914"/>
+        <BoundingBox CRS="EPSG:3007" minx="6117490.685898489" miny="36593.51117475479"
+          maxx="7527584.08466551" maxy="762031.1429382897"/>
+        <BoundingBox CRS="EPSG:3008" minx="6119595.07536392" miny="-27337.411666286294"
+          maxx="7515050.811565045" maxy="666581.9433693432"/>
+        <BoundingBox CRS="EPSG:3009" minx="6123755.0020008" miny="-91182.11347038814"
+          maxx="7504073.1292517" maxy="571007.4654861945"/>
+        <BoundingBox CRS="EPSG:3010" minx="6115727.678088707" miny="-186638.95951765345"
+          maxx="7510686.995770029" maxy="507025.94674785796"/>
+        <BoundingBox CRS="EPSG:3011" minx="6109765.367024472" miny="-282014.63953349827"
+          maxx="7518847.861594412" maxy="442870.8328419612"/>
+        <BoundingBox CRS="EPSG:3012" minx="6121417.95710718" miny="-59272.49174764744"
+          maxx="7509367.448687956" maxy="618808.8363755865"/>
+        <BoundingBox CRS="EPSG:3013" minx="6119482.913402874" miny="-138919.21195209114"
+          maxx="7507186.645878087" maxy="539040.3814718102"/>
+        <BoundingBox CRS="EPSG:3014" minx="6112488.674809208" miny="-234338.4229989113"
+          maxx="7514574.09814102" maxy="474968.10977454064"/>
+        <BoundingBox CRS="EPSG:3015" minx="6107557.302560929" miny="-329664.61232149357"
+          maxx="7523508.18332624" maxy="410738.0646625366"/>
+        <BoundingBox CRS="EPSG:3016" minx="6104685.519493794" miny="-424873.64423552353"
+          maxx="7533988.029379922" maxy="346381.78933476086"/>
+        <BoundingBox CRS="EPSG:3017" minx="6103871.411320062" miny="-519940.70361541025"
+          maxx="7546012.5593367955" maxy="281930.65166127"/>
+        <BoundingBox CRS="EPSG:3018" minx="6105114.434587646" miny="-614840.1586190041"
+          maxx="7559580.465634108" maxy="217415.88679679355"/>
+        <BoundingBox CRS="EPSG:3021" minx="6118549.66455919" miny="1207561.7038225355"
+          maxx="7506810.322899066" maxy="1886705.712705914"/>
+        <BoundingBox CRS="EPSG:4326" minx="55.05955517747081" miny="9.341875517008441"
+          maxx="67.62442600384712" maxy="24.81665765089399"/>
+        <BoundingBox CRS="EPSG:4258" minx="55.05955514363015" miny="9.341875517008445"
+          maxx="67.62442598984839" maxy="24.81665765089399"/>
+        <BoundingBox CRS="EPSG:900913" minx="1039932.825607529" miny="7373433.148280975"
+          maxx="2762577.6928885155" maxy="1.0336285255652903E7"/>
+        <Identifier authority="SGU">
+          40e118cd-87fd-43c4-a095-85efdcc055f8
+        </Identifier>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple"
+            xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=092925e2-12bd-4943-95c8-2476809987ff&amp;outputSchema=csw:IsoRecord"
+          />
+        </MetadataURL>
+        <Style>
+          <Name>JORD_25K_Forutsattning_skred_finkornig_jordart</Name>
+          <Title>Aktsamhetsområde - Skred i finkorning jordart</Title>
+          <Abstract>Aktsamhetsområde - Skred i finkorning jordart</Abstract>
+          <LegendURL width="307" height="100">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+              xlink:href="https://maps3.sgu.se/geoserver/misc/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.FORUTSATTNING_SKRED_FINKORNING_JORDART"
+            />
+          </LegendURL>
+        </Style>
+        <MinScaleDenominator>1.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.2E7</MaxScaleDenominator>
+      </Layer>
+	  <Layer queryable="1" opaque="0">
+        <Name>SE.GOV.SGU.FORUTSATTNING_SKRED_FINKORNING_JORDART_STRANDNARA</Name>
+        <Title>Aktsamhetsområden - Strandnära</Title>
+	    <Abstract>Aktsamhetsområden baserade på närhet till vatten, högsta kustlinjen samt fasta jordarter</Abstract>
+	    <KeywordList>
+	      <Keyword>aktsamhetsområde</Keyword>
+	      <Keyword>skred</Keyword>
+	      <Keyword>strand</Keyword>
+	    </KeywordList>
+        <CRS>EPSG:3006</CRS>
+        <CRS>CRS:84</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>10.094202050609514</westBoundLongitude>
+          <eastBoundLongitude>21.236983127644915</eastBoundLongitude>
+          <southBoundLatitude>55.258834152856785</southBoundLatitude>
+          <northBoundLatitude>64.93317472677437</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" minx="10.094202050609514" miny="55.258834152856785" maxx="21.236983127644915" maxy="64.93317472677437"/>
+        <BoundingBox CRS="EPSG:3006" minx="6133486.5" miny="267577.0" maxx="7201175.5" maxy="795897.8125"/>
+        <BoundingBox CRS="EPSG:2400" minx="6132176.77656721" miny="1216371.287644467" maxx="7206638.180890038" maxy="1757893.34022633"/>
+        <BoundingBox CRS="EPSG:3007" minx="6130029.837389443" miny="59612.51854886979" maxx="7221481.303693763" maxy="636364.3027738996"/>
+        <BoundingBox CRS="EPSG:3008" minx="6131959.192104125" miny="-11487.166291502217" maxx="7211924.291368095" maxy="541237.9858200849"/>
+        <BoundingBox CRS="EPSG:3009" minx="6135940.87635054" miny="-82516.00640256103" maxx="7204057.122849139" maxy="446016.21898759506"/>
+        <BoundingBox CRS="EPSG:3010" minx="6130592.002627367" miny="-177706.33987325738" maxx="7210415.721479923" maxy="374944.2715847915"/>
+        <BoundingBox CRS="EPSG:3011" minx="6127297.9507818865" miny="-272816.8750825518" maxx="7218461.322449172" maxy="303773.6571378012"/>
+        <BoundingBox CRS="EPSG:3012" minx="6133693.36240398" miny="-47012.39962987375" maxx="7207779.50262363" maxy="493637.5377441275"/>
+        <BoundingBox CRS="EPSG:3013" minx="6133009.400260393" miny="-130119.66912917106" maxx="7207025.568815775" maxy="410494.54546803"/>
+        <BoundingBox CRS="EPSG:3014" minx="6128688.289657177" miny="-225273.0682567326" maxx="7214227.6238397155" maxy="339369.3338587439"/>
+        <BoundingBox CRS="EPSG:3015" minx="6126420.75888514" miny="-320334.74811917666" maxx="7223116.86664584" maxy="268161.156039352"/>
+        <BoundingBox CRS="EPSG:3016" minx="6126205.326186513" miny="-415280.45335979504" maxx="7233693.698521011" maxy="196901.29951580334"/>
+        <BoundingBox CRS="EPSG:3017" minx="6128041.850643273" miny="-510085.26454289095" maxx="7245958.539632087" maxy="125620.94949290963"/>
+        <BoundingBox CRS="EPSG:3018" minx="6131931.532778163" miny="-604723.4618420477" maxx="7259911.799150468" maxy="54351.250525698604"/>
+        <BoundingBox CRS="EPSG:3021" minx="6132176.77656721" miny="1216371.287644467" maxx="7206638.180890038" maxy="1757893.34022633"/>
+        <BoundingBox CRS="EPSG:3034" minx="3155119.8975313096" miny="4004464.802648493" maxx="4234059.387934724" maxy="4593061.410801505"/>
+        <BoundingBox CRS="EPSG:3857" minx="1123681.432238269" miny="7412263.471721099" maxx="2364090.147754774" maxy="9590791.419295015"/>
+        <BoundingBox CRS="EPSG:4326" minx="55.258834187316374" miny="10.094202050609514" maxx="64.93317474576713" maxy="21.236983127644915"/>
+        <BoundingBox CRS="EPSG:4258" minx="55.258834153739656" miny="10.094202050609514" maxx="64.93317472749756" maxy="21.236983127644915"/>
+        <BoundingBox CRS="EPSG:900913" minx="1123681.432238269" miny="7412263.471721099" maxx="2364090.147754774" maxy="9590791.419295015"/>
+	      <Identifier authority="SGU">
+	      40e118cd-87fd-43c4-a095-85efdcc055f8
+	      </Identifier>
+        <MetadataURL type="ISO19115:2003">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:type="simple" xlink:href="https://www.geodata.se/geodataportalen/srv/eng/csw-inspire?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;elementSetName=full&amp;id=092925e2-12bd-4943-95c8-2476809987ff&amp;outputSchema=csw:IsoRecord"/>
+        </MetadataURL>
+        <Style>
+          <Name>JORD_25K_Forutsattning_strandnara_skred_finkornig_jordart</Name>
+          <Title>Aktsamhetsområden - Strandnära</Title>
+          <Abstract>Aktsamhetsområden - Strandnära</Abstract>
+          <LegendURL width="251" height="40">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps3.sgu.se/geoserver/misc/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SE.GOV.SGU.FORUTSATTNING_SKRED_FINKORNING_JORDART_STRANDNARA"/>
+          </LegendURL>
+        </Style>
+        <MinScaleDenominator>1.0</MinScaleDenominator>
+        <MaxScaleDenominator>600000.0</MaxScaleDenominator>
+      </Layer>
+      
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

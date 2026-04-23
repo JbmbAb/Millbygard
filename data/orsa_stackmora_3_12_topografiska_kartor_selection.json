@@ -1,0 +1,64 @@
+{
+  "project": "Millbygard",
+  "product": "Topografiska kartor",
+  "delivery_folder": "C:\\Users\\jimmy\\Desktop\\Kartor\\29b34f2e-9bcf-4a40-b62d-bd487c94cd43",
+  "delivery_zip": "C:\\Users\\jimmy\\Desktop\\Kartor\\29b34f2e-9bcf-4a40-b62d-bd487c94cd43.zip",
+  "orderidentitet": "f9c36525-b6b4-44d9-882d-8ccf1593554c",
+  "format": "GeoPackage files inside layer zip archives",
+  "crs": "EPSG:3006",
+  "workarea": "data/orsa_stackmora_3_12_workarea.geojson",
+  "recommended_layers_for_millbygard": [
+    {
+      "zip": "byggnadsverk_sverige.zip",
+      "gpkg": "byggnadsverk_sverige.gpkg",
+      "tables": [
+        "byggnad",
+        "byggnadspunkt",
+        "byggnadsanlaggningslinje",
+        "byggnadsanlaggningspunkt"
+      ],
+      "use": "Building and built-structure reference."
+    },
+    {
+      "zip": "kommunikation_sverige.zip",
+      "gpkg": "kommunikation_sverige.gpkg",
+      "tables": [
+        "vaglinje",
+        "ovrig_vag",
+        "vagpunkt"
+      ],
+      "use": "Roads, tracks and access geometry."
+    },
+    {
+      "zip": "hydrografi_sverige.zip",
+      "gpkg": "hydrografi_sverige.gpkg",
+      "tables": [
+        "hydrolinje",
+        "hydropunkt",
+        "hydrografiskt_intressant_plats"
+      ],
+      "use": "Streams, ditches and water reference."
+    },
+    {
+      "zip": "mark_sverige.zip",
+      "gpkg": "mark_sverige.gpkg",
+      "tables": [
+        "mark",
+        "markkantlinje",
+        "sankmark",
+        "markframkomlighet"
+      ],
+      "use": "Land cover and wetland reference. Large file; clip only when GIS tooling is ready."
+    },
+    {
+      "zip": "text_sverige.zip",
+      "gpkg": "text_sverige.gpkg",
+      "tables": [
+        "textpunkt",
+        "textlinje"
+      ],
+      "use": "Place names and map labels."
+    }
+  ],
+  "next_step": "Clip only selected tables against the Millbygard workarea/buffer. Do not unpack or load the full Sweden-wide GPKG layers unless necessary."
+}

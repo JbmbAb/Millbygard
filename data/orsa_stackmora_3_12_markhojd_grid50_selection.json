@@ -1,0 +1,18 @@
+{
+  "project": "Millbygard",
+  "product": "Markhojdmodell Nedladdning, grid 50+",
+  "source_zip": "C:\\Users\\jimmy\\Desktop\\Kartor\\4100b5a8-af76-46c4-be10-b052b0fda64c\\67_4.zip",
+  "source_entry": "67_4.xyz",
+  "selected_index_tile": "677_48_7500",
+  "selected_bbox_sweref99_tm": [
+    480000.0,
+    6777500.0,
+    482500.0,
+    6780000.0
+  ],
+  "output_path": "C:\\Users\\jimmy\\Desktop\\Millbygård\\data\\orsa_stackmora_3_12_markhojd_grid50_677_48_7500.xyz",
+  "point_count": 2500,
+  "min_z": 163.44,
+  "max_z": 266.84,
+  "note": "Coarse grid 50+ support data. The 1 m GeoTIFF in data/orsa_stackmora_3_12_markhojd.tif remains the main terrain source."
+}

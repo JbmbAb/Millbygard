@@ -1,0 +1,3 @@
+[     425ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://apimanager.lantmateriet.se/devportal/site/public/locales/sv.json:0
+[   23525ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) @ https://apimanager.lantmateriet.se/devportal/applications/f5be3a16-7ed7-4257-9172-95212659b876/productionkeys/oauth:0
+[   71961ms] [LOG] token generated successfully [object Object] @ https://apimanager.lantmateriet.se/devportal/site/public/dist/ApplicationDetails.f9a3dcf875be4e88ca81.bundle.js:0
