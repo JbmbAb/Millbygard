@@ -1,4 +1,5 @@
 import os
+import unittest
 import urllib.request
 from pathlib import Path
 
@@ -13,6 +14,9 @@ def load_env():
 load_env()
 key = os.environ.get("GOOGLE_API_KEY")
 url = f"https://maps.googleapis.com/maps/api/staticmap?center=61.13,14.66&zoom=15&size=400x400&key={key}"
+
+if not key:
+    raise unittest.SkipTest("GOOGLE_API_KEY saknas (forvantad i .env eller miljo).")
 
 print(f"Testar nyckel: {key[:10]}...")
 try:
